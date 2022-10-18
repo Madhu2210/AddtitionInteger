@@ -1,0 +1,513 @@
+.watchlistBase .watchlist-header {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.watchlistBase .watchlist-header .header-name {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+  background-color: var(--bgcolor_12);
+}
+
+.watchlistBase .watchlist-header .name {
+  font-size: var(--font_l3);
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_10);
+  padding-left: 40px;
+}
+
+.watchlistBase .watchlist-header .edit-icon {
+  font-size: var(--font_m4);
+  margin-left: 4px;
+  color: var(--theme_color);
+  top: 10px;
+}
+
+.watchlistBase .watchlist-header .delete-icon,
+.sort-icon {
+  color: var(--txtcolor_6);
+  font-size: var(--font_l3);
+  width: 50px;
+}
+
+.watchlistBase .watchlist-header .sort-icon {
+  transform: rotate(268deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.watchlistBase .watchlist-header .sort-icon span.orange-dot {
+  color: var(--selected);
+  right: 16px;
+  bottom: -9px;
+  position: absolute;
+  font-size: var(--font_l5);
+
+  /* height: 23px; */
+  width: auto;
+}
+
+.watchlistBase .watchlist-header .delete-icon.selected {
+  color: var(--theme_color_4);
+}
+
+.watchlistBase .watchlist-header .delete-icon.not-editable {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.watchlistBase .watchlist-header .clearDeleteSymsBtn {
+  font-size: var(--font_s3);
+  color: var(--theme_color);
+  margin-right: 15px;
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+}
+
+.watchlistBase .watchlist-header .watchlistDiv {
+  flex: 1;
+  width: 100%;
+  background-color: var(--bgcolor_5);
+  padding-left: 34px;
+  border: 1px solid var(--watchlist_header_border);
+}
+
+.watchlistBase .watchlistDiv {
+  position: relative;
+  display: flex;
+}
+
+.watchlistBase .watchlistDiv .watchlistDivGrp {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+
+  /* IE and Edge */
+  -ms-overflow-style: none;
+
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+.watchlistBase .watchlistDiv .watchlistDisp {
+  display: flex;
+  width: calc(100% - 85px);
+  overflow: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.watchlistBase .watchlistDiv .watchlistDisp::-webkit-scrollbar {
+  display: none;
+}
+
+/* .watchlistBase .watchlistDiv .watchlistDisp {
+  -ms-overflow-style: none
+  scrollbar-width: none
+} */
+
+.watchlistBase .watchlistDiv .watchlistDisp :last-child {
+  margin-right: 10px;
+}
+
+.watchlistBase .watchlistDiv .watchGroup.selected {
+  color: var(--theme_color);
+  font-family: "OpenSans-Bold";
+}
+
+.watchlistBase .watchlistDiv .watchGroup .wName {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watchlistBase .watchlistDiv .watchGroup.selected .wName {
+  border-bottom: 2px solid var(--theme_color);
+}
+
+.watchlistBase .watchlistDiv .watchGroup {
+  color: var(--txtcolor_19);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+  cursor: pointer;
+  border-right: 1px solid var(--border_13);
+  padding: 0 15px;
+}
+
+.watchlistBase .watchlistDiv .watchGroup:last-child {
+  border-right: none;
+}
+
+.watchlistBase .watchlistDiv .watchGroup.first {
+  margin-left: 0;
+}
+
+.watchlistBase .watchlistDiv .moveScroll-btn {
+  position: absolute;
+  width: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_l4);
+  color: var(--icon_color4);
+}
+
+.watchlistBase .watchlistDiv .moveScroll-btn.active {
+  color: var(--scroller-arrow-active);
+  cursor: pointer;
+}
+
+.watchlistBase .watchlistDiv .moveScroll-btn.right {
+  right: 60px;
+}
+
+.watchlistBase .watchlistDiv .moveScroll-btn.left {
+  left: 0;
+}
+
+.watchlistBase .watchlistDiv .addWatchlist-btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  font-size: var(--font_xl2);
+  color: var(--icon_color3);
+  background-color: var(--bgcolor_7);
+}
+
+.watchlistBase .emptyWatchlistDiv {
+  height: 100%;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.watchlistBase .emptyWatchlistDiv .errorMsg {
+  font-size: var(--font_s4);
+  margin-bottom: 10px;
+}
+
+.watchlistBase .emptyWatchlistDiv .addGroup {
+  padding: 8px 15px;
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-Bold';
+}
+
+.watchlistBase .addGroupDiv {
+  position: relative;
+}
+
+/* Table css */
+
+.watchlistBase .watchlist-table {
+  padding-top: 5px;
+  padding-right: 5px;
+  height: calc(100% - 110px);
+}
+
+.watchlistBase .watchlist-table thead tr {
+  height: 25px !important;
+  padding-right: 20px;
+}
+
+.watchlistBase .watchlist-table .tbody-scroller {
+  height: calc(100% - 25px);
+}
+
+.watchlistBase .watchlist-table .thead-scroller {
+  /* height: calc(100% - 25px); */
+  padding-right: 20px;
+}
+
+.watchlistBase .watchlist-table .sorting-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--bgcolor_12);
+  border: 1px solid var(--border_13);
+  margin-left: 50px;
+  padding: 2%;
+  box-shadow: 0 0 5px 2px var(--box-shadow3);
+}
+
+.watchlistBase .watchlist-table th .showMoreIcon {
+  font-size: var(--font_m4);
+}
+
+.watchlistBase .watchlist-table .sorting-div .row-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+}
+
+.watchlistBase .watchlist-table .sorting-div .row-div .label {
+  margin-right: 50px;
+  padding-bottom: 5px;
+}
+
+.watchlistBase .watchlist-table .sorting-div .row-div span.sorticon {
+  padding-right: 20px;
+}
+
+.watchlistBase .watchlist-table .showOnHover {
+  display: none;
+}
+
+/* For focusing when demo-tour is active */
+.watchlistBase .watchlist-table .watchlistDataRow.demotour-selected .showOnHover {
+  display: table-cell;
+  width: 50%;
+  position: relative;
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow.demotour-selected .showOnHover .demo-showIcons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow.demotour-selected .hideOnHover {
+  display: none;
+}
+
+/* ends here */
+.watchlistBase .watchlist-table .watchlistDataRow:hover {
+  background-color: var(--bgcolor_5);
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow:hover .showOnHover {
+  display: table-cell;
+  width: 50%;
+  position: relative;
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow .showOnHover > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow:hover .showOnHover .demo-showIcons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow .showOnHover > div button {
+  width: 50px;
+  height: 42px;
+  border-radius: 5px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_m4);
+  margin-left: 10px;
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow .showOnHover > div button.iconBtn {
+  background-color: var(--bgcolor_10);
+  border: 1px solid var(--border_14);
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow .showOnHover > div button.moreBtn {
+  font-size: var(--font_xl4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--can_btn_color);
+  position: relative;
+}
+
+.watchlistBase .watchlist-table .watchlistDataRow:hover .hideOnHover {
+  display: none;
+}
+
+.watchlistBase .watchlist-table .moreOptDropdown .triangleTip {
+  display: block;
+  height: 16px;
+  width: 16px;
+  background-color: inherit;
+  border: inherit;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  transform: rotate(135deg);
+  border-radius: 0 0 0 0.25em;
+  top: -8px;
+  right: 12px;
+}
+
+.watchlistBase .watchlist-table .moreOptDropdown {
+  position: absolute;
+  border: 1px solid var(--border_8);
+
+  /* height: 220px; */
+  width: 180px;
+  top: 64px;
+  right: 5px;
+  background-color: var(--bgcolor_10);
+  z-index: 10;
+  box-shadow: 1px 3px 5px 0 var(--box-shadow3);
+  display: flex;
+  flex-direction: column;
+}
+
+.watchlistBase .watchlist-table .moreOptDropdown > span {
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--border_8);
+  padding: 15px 20px;
+}
+
+.watchlistBase .watchlist-table .moreOptDropdown > span:hover {
+  background-color: var(--bgcolor_5);
+}
+
+.watchlistBase .watchlist-table .moreOptDropdown > span .optText {
+  padding-left: 20px;
+  text-transform: capitalize;
+  color: var(--textcolor2);
+}
+
+.watchlistBase .watchlist-table .reArrangeIconCol {
+  width: 4%;
+
+  /* padding-left: 10px; */
+}
+
+.watchlistBase .watchlist-table .reArrangeIconCol .reArrange-icon {
+  font-size: var(--font_m4);
+  color: var(--txtcolor_6);
+  cursor: move;
+}
+
+.watchlistBase .watchlist-table .reArrangeIconCol .checkboxIcon {
+  font-size: var(--font_l5);
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.watchlistBase .watchlist-table tbody tr {
+  border-bottom: 1px solid var(--border_8);
+}
+
+.watchlistBase .watchlist-table tbody tr.errorRow,
+.watchlistBase .watchlist-table tbody tr.noBorder {
+  border: none;
+}
+
+.watchlistBase .watchlist-table .ltpVal {
+  color: var(--textcolor2) !important;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.watchlistBase .watchlist-table tbody tr td .exc {
+  font-size: var(--font_s3);
+  padding-left: 0;
+  display: flex;
+  margin-top: 7px;
+}
+
+.watchlistBase .watchlist-table .symName-column .symName {
+  font-size: var(--font_s3);
+  display: grid;
+  grid-template-columns: 25px 70px;
+  grid-template-rows: 30px;
+}
+
+.watchlistBase .watchlist-table .symName-column .holdings-qty {
+  font-size: var(--font_m1);
+  font-family: "OpenSans-SemiBold";
+  margin-left: 5px;
+  color: var(--greenColor) !important;
+}
+
+.watchlistBase .watchlist-table .change {
+  font-size: var(--font_s5);
+}
+
+.watchlistBase .watchlist-table .emptyGroupDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.watchlistBase .watchlist-table .emptyGroupDiv img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.watchlistBase .watchlist-table .emptyGroupDiv span {
+  margin-top: 10px;
+}
+
+.watchlistBase .watchlist-table .emptyGroupDiv .empWatchlist {
+  color: var(--txtcolor_secondary);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_s4);
+}
+
+.watchlistBase .watchlist-table .emptyGroupDiv .addSymTxt {
+  color: var(--info_msg3);
+  font-family: "OpenSans-SemiBold";
+}
+
+.watchlistBase .watchlist-table .addSymBtn {
+  margin-top: 15px;
+}
+
+.watchlistBase .watchlist-table .showMoreIcon {
+  cursor: pointer;
+}
+
+.watchlistBase .watchlist-table .dragStarted tr {
+  opacity: 0.7;
+}
+
+.watchlistBase .watchlist-table .dragStarted tr.highlightDrop {
+  opacity: 1;
+  box-shadow: 0 0 5px 2px var(--box-shadow);
+  background-color: var(--bgcolor_secondary);
+}
+
+.watchlistBase .watchlist-table .buy-btn,
+.watchlistBase .watchlist-table .sell-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.watchlistBase .watchlist-table .holdings-icon {
+  font-size: 27px;
+  padding: 5px 2px;
+  vertical-align: sub;
+}
+
+.watchlistBase .watchlist-table .symName-column {
+  height: 50px;
+}
+
+.watchlistBase .watchlist-table .watchlist-holdings {
+  display: flex;
+  align-items: center;
+}

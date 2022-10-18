@@ -1,0 +1,829 @@
+.dashboard-base .chartWidget-base {
+  height: 50%;
+  min-height: 400px;
+}
+
+.dashboard-base .chartWidget-base.with_md_gg {
+  height: 100%;
+}
+
+.dashboard-base .chartWidget-base .header {
+  position: relative;
+
+  /* height: 60px; */
+
+  /* margin-bottom: 2px; */
+  background-color: var(--bgcolor_primary);
+}
+
+.dashboard-base .chartWidget-base .widget-loader-div {
+  height: calc(100% - 30px);
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--border_primary);
+}
+
+.dashboard-base .chartWidget-base .financial-content .widget-loader-div {
+  height: calc(100% - 25px);
+  background-color: var(--bgcolor_primary);
+
+  /* border: 1px solid var(--border_primary); */
+  border: none;
+}
+
+.dashboard-base .chartWidget-base .widget-loader-div .chartFrame.ciq-day,
+.quoteChart-dialog .widget-loader-div .chartFrame.ciq-day {
+  background-color: #fff;                                                          /* For chart, given the color directly */
+}
+
+.dashboard-base .chartWidget-base .widget-loader-div .chartFrame.ciq-night,
+.quoteChart-dialog .widget-loader-div .chartFrame.ciq-night {
+  background-color: #15181d;                                                          /* For chart, given the color directly */
+}
+
+.dashboard-base .chartWidget-base .shareHolding-pattern .widget-loader-div {
+  border: none;
+}
+
+.dashboard-base .chartWidget-base .menu-div {
+  height: 100%;
+  font-size: var(--font_s5);
+  background-color: unset;
+  margin: 0 !important;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  border: 1px solid var(--border_primary);
+  border-top: none;
+  border-bottom: 1px solid var(--border_7);
+}
+
+.dashboard-base .chartWidget-base .menu-div .chart-menu {
+  margin-left: 8%;
+  color: var(--table_thead_color);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--font_m2);
+}
+
+.dashboard-base .chartWidget-base .menu-div .chart-menu.active {
+  color: var(--selected);
+}
+
+.dashboard-base .chartWidget-base .menu-div .chart-menu:first-child {
+  margin-left: 0;
+}
+
+.dashboard-base .chartWidget-base .menu-div .hrDIv {
+  border-bottom: 0.13rem solid var(--theme_btn_border);
+  width: 95%;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.dashboard-base .chartWidget-base .menu-div .active .hrDIv {
+  visibility: visible;
+}
+
+.dashboard-base .depth_gaugeChart {
+  height: 35%;
+  min-height: 265px;
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid var(--border_15);
+}
+
+.dashboard-base .depth_gaugeChart > div {
+  flex: 1;
+  background-color: var(--bgcolor_primary);
+}
+
+.dashboard-base .depth_gaugeChart .widget-loader-div {
+  margin: 0 5px 0 0;
+}
+
+.dashboard-base .depth_gaugeChart .quote-details-base {
+  margin: 0 0 0 5px;
+}
+
+.chartWidget-base .maximizeIcon {
+  font-size: var(--font_l2);
+  background-color: var(--bgcolor_4);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 1px;
+  top: -2px;
+  color: var(--icon_color11);
+}
+
+/* Css for Quote details Guage chart */
+
+.quote-details-base .quote-details-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border_15);
+}
+
+.quote-details-base .quote-details-body {
+  height: calc(100% - 40px);
+}
+
+.quote-details-base .quote-details-header .quote-detls {
+  height: 100%;
+  flex: 1;
+  font-size: var(--font_s5);
+  color: var(--tooltip_bg2);
+  font-family: 'OpenSans-semibold';
+  border-right: 1px solid var(--border_15);
+}
+
+.quote-details-base .quote-details-header .technicals {
+  height: 100%;
+  flex: 1;
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-semibold';
+  color: var(--tooltip_bg2);
+}
+
+.quote-details-base .quote-details-header .selected {
+  color: var(--positive_btn_color);
+  font-family: 'OpenSans-Bold';
+}
+
+/* .dashboard-base .depth_gaugeChart .marketDepth-div .marketDepth-table-div .table-body {
+    padding: 0px 20px;
+}
+
+.dashboard-base .depth_gaugeChart .marketDepth-div .marketDepth-table-div .table-head {
+    padding: 0px 10px;
+} */
+
+/* Css for Quote details Guage chart ends here */
+
+/* News css starts here */
+
+.chartWidget-base .trendingNews {
+  height: 100%;
+}
+
+.chartWidget-base .trendingNews .newsList_div {
+  height: calc(100% - 1px);
+}
+
+.newsList_div {
+  height: 100%;
+  color: var(--newsDetails);
+  font-size: var(--font_s2);
+  font-family: "OpenSans-Regular";
+}
+
+.newsList_div .row {
+  border-bottom: 1px solid var(--newsDetails_row_border);
+  display: flex;
+  padding-left: 10px;
+}
+
+.newsList_div .row .list_icon_div {
+  flex: 3;
+  min-width: 20px;
+  display: flex;
+  padding-top: 14px;
+}
+
+.newsList_div .row .list_icon_div .list_icon {
+  background-color: var(--newsDetails_list_icon);
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.newsList_div .row .dataRow {
+  flex: 95;
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--textcolor12);
+}
+
+.newsList_div .dataRow .date_time,
+.newsList_div .excName {
+  font-size: var(--font_s4);
+  color: var(--txtcolor_6);
+  padding-top: 2px;
+  font-family: 'OpenSans-Regular';
+}
+
+.newsList_div .symName {
+  padding-top: 2px;
+  font-size: var(--font_s2);
+  color: var(--newsDetails);
+}
+
+.newsList_div .excName {
+  padding-left: 4px;
+}
+
+/* .newsList_div .row:hover {
+    background-color: var(--bgcolor_secondary);
+} */
+
+.newsList_div .errorDiv {
+  height: 100%;
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+}
+
+.newsList_div .button_div {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.newsList_div .button_div button {
+  height: 28px;
+  margin-right: 15px;
+  padding: 0 8px;
+  font-size: var(--font_s2);
+}
+
+.newsList_div .reportIcon {
+  font-size: var(--font_l3);
+}
+
+/* News css ends here */
+
+.chartWidget-base .futureChain-base {
+  height: 100%;
+}
+
+.chartWidget-base .futureChain-base table thead th {
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+}
+
+.chartWidget-base .futureChain-base .symName-column {
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+  font-size: var(--font_m2);
+}
+
+.chartWidget-base span.bfsl-font.downArrowIcon.showMoreIcon {
+  color: var(--button-arrow);
+}
+
+/* .chartWidget-base .futureChain-base table tbody tr td {
+  font-size: var(--font_m2);
+  color: var(--textcolor2);
+} */
+
+.chartWidget-base .futureChain-base table tbody tr td .date {
+  color: var(--txtcolor_4);
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.chartWidget-base .futureChain-base table thead tr th.firstChild,
+.chartWidget-base .futureChain-base table tbody tr td.firstChild {
+  padding-left: 20px;
+}
+
+.chartWidget-base .futureChain-base table table tbody tr td span.exc {
+  color: var(--txtcolor_4);
+  font-size: var(--font_s2);
+  font-family: 'OpenSans-Regular';
+}
+
+.chartWidget-base .optionChain-base {
+  height: calc(100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.chartWidget-base .optionChain-base .sub-header.expiry {
+  flex: 12;
+  height: 12%;
+  min-height: 60px;
+  border-bottom: 1px solid var(--input_border);
+}
+
+.chartWidget-base .optionChain-base table {
+  flex: 88;
+  height: 88%;
+}
+
+.chartWidget-base .optionChain-base.noExpiry table {
+  height: 100%;
+}
+
+.chartWidget-base .futureChain-base table {
+  height: 100%;
+}
+
+.chartWidget-base .optionChain-base .thead-scroller.thead1 th {
+  border-bottom: 1px solid var(--border_primary);
+  color: var(--textcolor2);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m2);
+}
+
+.chartWidget-base .optionChain-base thead.thead-scroller.thead2 th {
+  font-family: 'OpenSans-SemiBold';
+}
+
+/* .chartWidget-base .optionChain-base tbody td {
+  font-size: var(--font_m4);
+} */
+
+.chartWidget-base .optionChain-base .nearRight,
+.chartWidget-base .optionChain-base .center {
+  text-align: right;
+}
+
+.chartWidget-base .optionChain-base .strikePrice {
+  text-align: center;
+  width: 20%;
+}
+
+.chartWidget-base .optionChain-base table thead tr th.bgColor,
+.chartWidget-base .optionChain-base table tr td.strikePrice {
+  background-color: var(--bgcolor_21);
+}
+
+.chartWidget-base .optionChain-base table .nearLeft {
+  padding-right: 4%;
+}
+
+.chartWidget-base .optionChain-base table .nearRight.firstChild {
+  padding-left: 4%;
+  text-align: left;
+}
+
+.chartWidget-base .optionChain-base table .lastChild {
+  padding-right: 3.2%;
+}
+
+.chartWidget-base .optionChain-base table .firstChild {
+  padding-left: 3.2%;
+}
+
+.chartWidget-base .optionChain-base table .center,
+.chartWidget-base .optionChain-base table .nearRight.center {
+  text-align: center;
+}
+
+.chartWidget-base .optionChain-base .thead-scroller {
+  padding-right: 4px;
+}
+
+.chartWidget-base .futureChain-base .tbody-scroller {
+  height: calc(100% - 34px);
+}
+
+.chartWidget-base .optionChain-base .tbody-scroller {
+  height: calc(100% - 70px);
+  padding-right: 0;
+}
+
+.chartWidget-base .optionChain-base .tbody-scroller tr {
+  padding-right: 0;
+}
+
+.chartWidget-base .optionChain-base .sub-header {
+  overflow-x: hidden;
+  white-space: nowrap;
+  padding: 0 2px;
+  scrollbar-color: var(--scroll_thumb) transparent;
+}
+
+.chartWidget-base .optionChain-base .sub-header:hover {
+  overflow-x: auto;
+}
+
+.sub-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* --------------- Company info css starts here -------------- */
+
+.chartWidget-base .companyInfo-base {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.chartWidget-base .companyInfo-base .comp-profile {
+  display: flex;
+  flex-direction: column;
+  font-family: 'OpenSans-SemiBold';
+  margin: 2%;
+  height: 100%;
+}
+
+.chartWidget-base .companyInfo-base .comp-profile .prof-title {
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+  display: flex;
+  align-items: center;
+}
+
+.chartWidget-base .companyInfo-base .comp-profile .prof-title::before,
+.chartWidget-base .companyInfo-base .comp-addr .title::before,
+.chartWidget-base .companyInfo-base .comp-profile .shareHolding-pattern .title::before {
+  content: "• ";
+  margin-left: 1px;
+  margin-right: 10px;
+  color: var(--newsDetails_list_icon);
+  font-size: var(--font_l4);
+}
+
+.chartWidget-base .companyInfo-base .comp-profile .prof-content {
+  color: var(--txtcolor_6);
+  padding: 5px 15px 10px 15px;
+  line-height: 1.8;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  letter-spacing: 0.2px;
+}
+
+.chartWidget-base .companyInfo-base .comp-profile .info-footer {
+  font-size: var(--font_s4);
+  display: flex;
+  padding: 5px 0;
+  min-height: 250px;
+}
+
+.chartWidget-base .companyInfo-base .comp-profile .shareHolding-pattern {
+  flex: 1;
+  border-right: 1px solid var(--border_8);
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.chartWidget-base .companyInfo-base .comp-profile .info-footer .comp-addr {
+  flex: 1;
+  font-size: var(--font_s4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chartWidget-base .companyInfo-base .info-footer .comp-addr .title,
+.chartWidget-base .companyInfo-base .comp-profile .shareHolding-pattern .title {
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  display: flex;
+  align-items: center;
+}
+
+.chartWidget-base .companyInfo-base .info-footer .comp-addr .details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px 15px 7px 15px;
+}
+
+.chartWidget-base .companyInfo-base .info-footer .comp-addr .det {
+  display: flex;
+  padding-top: 5px;
+  align-items: baseline;
+  justify-content: space-between;
+  width: px;
+  width: 100%;
+}
+
+.chartWidget-base .companyInfo-base .info-footer .comp-addr .det .data {
+  width: 100px;
+
+  /* flex: 1 1; */
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.chartWidget-base .companyInfo-base .info-footer .comp-addr .det .seperator {
+  color: var(--textcolor2);
+  width: 100px;
+  display: flex;
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+
+.chartWidget-base .companyInfo-base .info-footer .comp-addr .det .val {
+  flex: 8;
+  color: var(--textcolor10);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.chartWidget-base .companyInfo-base .info-footer .comp-addr .det .val.link {
+  flex: 8;
+  color: var(--icon_color10);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.chartWidget-base .companyInfo-base .error-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+  height: 100%;
+}
+
+/* --------------- Company info ends starts here -------------- */
+
+/* ======= shareholding chart ======= */
+
+.shareHolding-pattern .shareHolding-base {
+  display: flex;
+}
+
+.shareHolding-pattern .shareHolding-base > div {
+  flex: 1;
+}
+
+.shareHolding-pattern .shareHolding-base .labels {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 5%;
+}
+
+.shareHolding-pattern .shareHolding-base .labels .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareHolding-pattern .shareHolding-base .labels .row .box {
+  height: 17px;
+  width: 17px;
+  border-radius: 25%;
+}
+
+.shareHolding-pattern .shareHolding-base .labels .row .label {
+  padding-left: 20px;
+  color: var(--textcolor9);
+  font-size: var(--font_m2);
+}
+
+.shareHolding-pattern .shareHolding-base .labels .row .value {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor2);
+}
+
+.shareHolding-pattern .shareHolding-base .labels .column {
+  display: flex;
+  align-items: center;
+}
+
+/* ======= shareholding chart ======= */
+
+/**********     Financial Css Starts Here   ***********/
+.chartWidget-base .financial-base {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chartWidget-base .financial-base .finacial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--quote_financial_header);
+  padding: 0 2%;
+  flex: 12;
+  height: 12%;
+  min-height: 60px;
+}
+
+.financial-base .financial-content {
+  flex: 88;
+  height: 88%;
+}
+
+.chartWidget-base .financial-base .finacial-header > div {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  color: var(--table_thead_color);
+}
+
+.chartWidget-base .financial-base .finacial-header .menuLeft {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+}
+
+.chartWidget-base .financial-base .finacial-header .menuLeft .key-results {
+  padding-right: 4%;
+}
+
+.chartWidget-base .financial-base .finacial-header .toggle-status {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.chartWidget-base .financial-base .finacial-header .selected {
+  color: var(--theme_color);
+}
+
+.chartWidget-base .financial-base .doggleBase-div {
+  background-color: inherit;
+}
+
+.chartWidget-base .financial-base .doggleBase-div span {
+  color: var(--label_color);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.financial-base .doggleBase-div.orderAction {
+  border: none;
+  box-shadow: none;
+  background-color: none;
+}
+
+.financial-base .doggleBase-div.orderAction span.active:nth-child(1),
+.financial-base .doggleBase-div.orderAction span.active:nth-child(2) {
+  background-color: inherit;
+  color: var(--theme_color);
+  border: 1px solid var(--theme_color);
+  border-radius: 1;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s5);
+  box-shadow: none;
+}
+
+.financial-base .keyResults table.keyResults-years thead.thead-scroller,
+.financial-base .keyRatios-base table.keyRatios thead.thead-scroller {
+  font-family: 'OpenSans-Bold';
+  color: var(--label_color);
+  background-color: var(--quote_financial_header);
+  height: 50px;
+  font-size: var(--font_s5);
+  text-align: right;
+  padding: 0 2%;
+}
+
+.financial-base .keyResults table.keyResults-years thead.thead-scroller th,
+.financial-base .keyRatios-base table.keyRatios thead.thead-scroller th {
+  font-size: var(--font_s5);
+  color: var(--table_thead_color);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.financial-base .keyResults table .tbody-scroller tr td .first,
+.financial-base .keyRatios-base table.keyRatios .tbody-scroller tr td .first {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Regular';
+  color: var(--textcolor9);
+}
+
+.financial-base .keyResults table.keyResults-years thead.thead-scroller .firstChild,
+.financial-base table.keyRatios th.firstChild.width24 {
+  text-align: left;
+}
+
+.financial-base .keyResults table tbody tr,
+.financial-base table.keyRatios tbody tr {
+  border-bottom: none;
+  padding: 0 1% 0 2%;
+}
+
+.financial-base .keyResults table .tbody-scroller tr td,
+.financial-base table.keyRatios .tbody-scroller tr td {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--textcolor2);
+}
+
+.financial-base .keyResults table .tbody-scroller tr td:first-child,
+.financial-base table.keyRatios .tbody-scroller tr td:first-child {
+  text-align: left;
+  color: var(--label_color);
+}
+
+.financial-base .keyRatios-base table.keyRatios .tbody-scroller tr.title {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  color: var(--theme_color_4);
+}
+
+.financial-base .keyRatios-base table.keyRatios .tbody-scroller tr.top-border {
+  border-top: 1px solid var(--border_primary);
+}
+
+.financial-base .keyRatios-base table.keyRatios .tbody-scroller tr.border-bottom {
+  border-bottom: 1px solid var(--border_primary);
+}
+
+.financial-base .keyRatios-base,
+.financial-base .keyResults {
+  height: 100%;
+}
+
+.financial-base .keyRatios-base table,
+.financial-base .keyResults table {
+  height: 100%;
+}
+
+.financial-base .keyRatios-base table thead th,
+.financial-base .keyResults table thead th {
+  height: 30px;
+}
+
+.financial-base .keyRatios-base table tbody,
+.financial-base .keyResults table tbody {
+  height: calc(100% - 30px);
+}
+
+.financial-base .keyRatios-base table tbody tr.errorDiv,
+.financial-base .keyResults table tbody tr.errorDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+}
+
+/**********     Financial Css Ends Here     ***********/
+
+/* =========== chart dialog css starts here =========== */
+
+.quoteChart-dialog .window {
+  height: 75%;
+  width: 90%;
+  min-width: 800px;
+  min-height: 600px;
+}
+
+.quoteChart-dialog .window .content {
+  height: 100%;
+  padding: 20px !important;
+  background-color: var(--chart_bg) !important;
+}
+
+.quoteChart-dialog .window .content .chartWidget {
+  height: 100%;
+}
+
+.quoteChart-dialog .window .closeIcon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--bgcolor_6);
+  z-index: 1;
+  border-radius: 50%;
+  font-size: var(--font_l2);
+  color: var(--txtcolor_4);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#chart_iframe_modal {
+  border: 2px solid var(--border_8);
+  background-color: transparent !important;
+}
+
+/* =========== chart dialog css ends here =========== */

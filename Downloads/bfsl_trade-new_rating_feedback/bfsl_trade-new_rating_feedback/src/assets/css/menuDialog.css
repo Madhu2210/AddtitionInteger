@@ -1,0 +1,273 @@
+.menu-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--dialog_bg2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  text-align: center;
+}
+
+.menu-dialog > .window {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  min-width: 410px;
+  max-width: 410px;
+  background-color: var(--bgcolor_primary);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.6s;
+  animation-name: animatetop;
+  animation-duration: 0.6s;
+  border-top-right-radius: 30px;
+}
+
+.menu-dialog > .window > .header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--bgcolor_9);
+  border-top-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8% 0 5%;
+}
+
+.menu-dialog > .window > .header .logoImg {
+  height: 40%;
+}
+
+.menu-dialog > .window > .content {
+  height: calc(100% - 100px);
+  background-color: var(--bgcolor_primary);
+}
+
+.menu-dialog > .window > .content .widget-loader-div {
+  height: 125px;
+}
+
+.menu-dialog > .window > .content .widget-loader-div .loader-container {
+  left: calc(50% - 30px);
+}
+
+.menu-dialog > .window > .content .widget-loader-div .loader-container .spinner > div {
+  height: 7px;
+  width: 7px;
+}
+
+.menu-dialog > .window > .content .profile-details {
+  height: 100%;
+  border-bottom: 1px solid var(--input_border_1);
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.menu-dialog .content .profile-details .details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
+  width: 75%;
+}
+
+.menu-dialog .content .profile-details .details-container .plan-type {
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+  align-items: center;
+  color: var(--textcolor2);
+}
+
+.menu-dialog .content .profile-details .details-container .plan-type .pack {
+  padding-left: 7px;
+  color: var(--txtcolor_11);
+}
+
+.menu-dialog .content .profile-details .details-container .goldpack_ico {
+  font-size: var(--font_l4);
+}
+
+.menu-dialog .content .profile-details .details-container .profile-name {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  width: 100%;
+  text-align: left;
+  color: var(--textcolor2);
+}
+
+.menu-dialog .content .profile-details .details-container .profile-id {
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  width: 100%;
+  color: var(--txtcolor_12);
+  text-align: left;
+}
+
+.menu-dialog .content .profile-details .img-container {
+  height: 60%;
+  position: relative;
+}
+
+.menu-dialog .content .profile-details .img-container img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.menu-dialog .content .profile-details .img-container .camera-bg {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background-color: var(--txtcolor_9);
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px 2px var(--box-shadow);
+  font-size: var(--font_l4);
+  color: var(--theme_btn_bg);
+}
+
+.menu-dialog > .window > .content .menu-details {
+  height: calc(100% - 10px);
+}
+
+.menu-dialog > .window > .content .menu-details.withTaxDeclare {
+  height: calc(100% - 70px);
+}
+
+.menu-dialog > .window > .content .menu-details .menu-row {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border_8);
+  cursor: pointer;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menu-dialog > .window > .content .menu-details .menu-row:hover,
+.menu-dialog > .window > .content .profile-details:hover {
+  background-color: var(--bgcolor_3);
+}
+
+.menu-dialog > .window > .content .menu-details .menu-row.inactive {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.menu-dialog .menu-details .menu-row.selected .menu-name {
+  font-family: "OpenSans-Bold";
+  color: var(--theme_color_secondary);
+}
+
+.menu-dialog .menu-details .menu-row.selected .menu-icon {
+  color: var(--theme_color_secondary);
+}
+
+.menu-dialog .menu-details .menu-row .menu-icon {
+  flex: 15;
+  font-size: var(--font_xl3_1);
+  color: var(--label_color3);
+  text-align: left;
+}
+
+.tax-declare-btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgcolor_secondary);
+  border: 1px solid var(--border_24);
+  font-family: "Opensans-Semibold";
+  font-size: var(--font_l1_1);
+  color: var(--positive_btn_color);
+  cursor: pointer;
+}
+
+.tax-declare-btnDiv .incomeDeclareIcon {
+  font-size: var(--font_xl5);
+}
+
+.menu-dialog .tax-declare-btnDiv {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+}
+
+.menu-dialog .tax-declare-btnDiv .tax-declare-btn {
+  padding-left: 10px;
+}
+
+.menu-dialog .tax-declare-btnDiv .tax-icon {
+  font-size: 40px;
+}
+
+.menu-dialog .menu-details .menu-row .menu-name {
+  flex: 85;
+  text-align: left;
+  font-family: "OpenSans-SemiBold";
+  color: var(--label_color3);
+  font-size: var(--font_m4);
+}
+
+.menu-dialog .menu-details .menu-row .menu-name.other {
+  flex: 80;
+}
+
+.menu-dialog .menu-details .menu-row .downArrowIcon.faceDown {
+  transform: rotate(0deg);
+  transition: transform 0.3s linear;
+  color: var(--theme_color_4);
+  font-size: var(--font_l5);
+}
+
+.menu-dialog .menu-details .menu-row .downArrowIcon.faceUp {
+  transform: rotate(180deg);
+  transition: transform 0.3s linear;
+  color: var(--theme_color_4);
+  font-size: var(--font_l5);
+}
+
+.menu-dialog .menu-details .submenu-list {
+  padding: 1% 5% 1% 6%;
+}
+
+.menu-dialog > .window > .header .closeIcon {
+  font-size: var(--font_xl3);
+  color: var(--txtcolor_9);
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}

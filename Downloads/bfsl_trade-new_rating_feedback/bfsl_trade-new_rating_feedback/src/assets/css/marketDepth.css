@@ -1,0 +1,213 @@
+.marketDepth-div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.marketDepth-div .noData-MD {
+  height: 100%;
+  width: 100%;
+  font-size: var(--font_m3);
+  color: var(--bgcolor_gray);
+}
+
+.marketDepth-div .base {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border_15);
+}
+
+.marketDepth-div .marketDepth-table-div {
+  flex: 4;
+}
+
+.marketDepth-div .marketDepth-table-div .table-head {
+  height: 40px;
+  background-color: var(--btn_bg2);
+}
+
+.marketDepth-div .marketDepth-table-div .table-head .valRow {
+  font-size: var(--font_s5);
+  height: 100%;
+  color: var(--txtcolor_8);
+  font-family: 'OpenSans-SemiBold';
+  border: 1px solid var(--thead-border);
+}
+
+.marketDepth-div .marketDepth-table-div .scrollArea {
+  height: calc(100% - 40px);
+}
+
+.marketDepth-div .marketDepth-table-div .valRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "OpenSans-SemiBold";
+}
+
+.marketDepth-div .marketDepth-table-div .table-body {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font_s3);
+}
+
+.marketDepth-div .marketDepth-table-div .table-body .valRow {
+  font-size: var(--font_s5);
+  flex: 1;
+  font-family: "OpenSans-SemiBold";
+}
+
+.marketDepth-div .marketDepth-table-div .valRow > span {
+  padding-top: 2%;
+  flex: 1;
+  height: 100%;
+  font-size: var(--font_s4);
+}
+
+.marketDepth-div .marketDepth-table-div .valRow > span.last {
+  border: none;
+}
+
+.marketDepth-div .marketDepth-table-div .valRow .alignLeft .valueSpan,
+.marketDepth-div .footer .totalData .alignLeft .valueSpan {
+  margin-left: 20px;
+}
+
+.marketDepth-div .marketDepth-table-div .valRow .alignRight .valueSpan,
+.marketDepth-div .footer .totalData .alignRight .valueSpan {
+  margin-right: 20px;
+}
+
+.orderPad-dialog .marketDepth-div .marketDepth-table-div .valRow .alignLeft .valueSpan,
+.orderPad-dialog .marketDepth-div .footer .totalData .alignLeft .valueSpan {
+  margin-left: 12px;
+}
+
+/* .marketDepth-div .marketDepth-table-div .valRow .alignRight .valueSpan, */
+.marketDepth-div .footer .totalData .alignRight .valueSpan {
+  margin-right: 12px;
+}
+
+.marketDepth-table-div .table-head .valueSpan {
+  font-size: var(--font_s5);
+  color: var(--textcolor7);
+  font-family: "OpenSans-SemiBold";
+}
+
+.marketDepth-div .footer .totalData .alignRight .valueSpan,
+.marketDepth-div .footer .totalData .alignLeft .valueSpan {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_8);
+  font-family: "OpenSans-SemiBold";
+}
+
+.marketDepth-div .header,
+.marketDepth-div .footer {
+  flex: 1;
+  display: flex;
+  background-color: var(--btn_bg2);
+  font-size: var(--font_s3);
+  max-height: 40px;
+  padding: 0 !important;
+}
+
+.marketDepth-div .footer .totalData {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.marketDepth-div .footer .totalData.left .valueSpan.value {
+  color: var(--marketDepth_ttl_qty_clr);
+  font-size: var(--font_m2);
+}
+
+.marketDepth-div .footer .totalData.right .valueSpan.sVal {
+  color: var(--redColor);
+  font-size: var(--font_m2);
+}
+
+.marketDepth-div .footer .totalData .label {
+  color: var(--textcolor7);
+  flex: 1;
+  white-space: nowrap;
+  font-size: var(--font_m2);
+}
+
+.marketDepth-div .footer .totalData .value {
+  color: var(--txtcolor_primary);
+  flex: 1;
+  font-family: "OpenSans-Bold";
+}
+
+.marketDepth-div.noHeader .header {
+  display: none;
+}
+
+.marketDepth-div .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ===========  orderPad market depth starts here =========== */
+
+.orderPad-dialog .orderPad-marketDepth {
+  height: 290px;
+}
+
+.orderPad-dialog .marketDepth-div {
+  margin: 20px;
+  height: 100%;
+}
+
+.orderPad-dialog .marketDepth-div .header,
+.orderPad-dialog .marketDepth-div .footer .label {
+  color: var(--orderPad_label_color);
+  font-size: var(--font_s3);
+}
+
+.orderPad-dialog .marketDepth-div .header > span {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderPad-dialog .marketDepth-div .header > span:nth-child(2),
+.orderPad-dialog .marketDepth-div .footer .totalData:nth-child(2) {
+  padding-left: 1px;
+}
+
+.orderPad-dialog .marketDepth-div .base {
+  height: 100%;
+}
+
+.orderPad-dialog .marketDepth-div .marketDepth-table-div .valRow > span {
+  border: none;
+}
+
+.marketDepth-div .marketDepth-table-div .valRow > span.middle {
+  border-right: 1px solid var(--border_8);
+}
+
+.orderPad-dialog .marketDepth-div .header,
+.orderPad-dialog .marketDepth-div .footer {
+  flex: 1;
+  background-color: var(--bgcolor_secondary) !important;
+}
+
+.orderPad-dialog .marketDepth-div .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.orderPad-dialog .marketDepth-div .footer .label {
+  flex: 2;
+}
+
+/* ===========  orderPad market depth ends here =========== */

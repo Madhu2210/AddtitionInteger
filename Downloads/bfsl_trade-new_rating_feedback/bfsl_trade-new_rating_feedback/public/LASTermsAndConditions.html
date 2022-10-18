@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS Terms and Conditions</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'OpenSans-Regular';
+        src: url('assets/fonts/openSans/OpenSans-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'OpenSans-SemiBold';
+        src: url('assets/fonts/openSans/OpenSans-SemiBold.ttf');
+    }
+
+    /* html::-webkit-scrollbar {
+    width: 0;
+    } */
+    .las-terms-base {
+        height: 100%;
+        font-family: "OpenSans-Regular";
+        padding: 10px 10px 10px 15px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .las-terms-base .las-terms-content{
+        font-family: 'OpenSans-Regular';
+        font-size: 14px;
+        line-height: 2;
+        color:#75787b;
+
+    }
+
+    .las-terms-base .las-terms-content h3{
+     color:#747474 ;
+     text-decoration: underline;
+
+    }
+
+    .las-terms-base .las-terms-content p{
+        padding-bottom: 15px;
+        margin: 0;
+
+    }
+
+    .las-terms-base .las-terms-content li::after {
+        display: inline-block;
+
+    }
+
+    /* The container */
+    .checkbox-container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 14px;
+        width: 14px;
+        border: solid #eee;
+        background-color: #ffffff;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .checkbox-container:hover input~.checkmark {
+        background-color: #eee;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .checkbox-container input:checked~.checkmark {
+        background-color: #ff6700;
+        border: solid #ff6700;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .checkbox-container input:checked~.checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .checkbox-container .checkmark:after {
+        left: 5px;
+        top: 2px;
+        width: 2px;
+        height: 7px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /* .las-terms-base .condition {
+        padding-bottom: 15px;
+        color: #999999;
+    } */
+
+    .las-terms-base .condition-row {
+        flex: 1;
+        display: flex;
+    }
+
+    .las-terms-base .condition-row.border {
+        border-bottom: 1px solid #eaebec;
+        margin-bottom: 15px;
+    }
+
+ 
+
+
+    .las-terms-base .las-btn {
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        font-family: "OpenSans-SemiBold";
+        padding: 10px;
+        width: 150px;
+    }
+
+    .las-terms-base .positive-btn {
+        margin-left: 30px;
+        font-weight: 500;
+        background-color: #00b500;
+        border: 2px solid #00b500;
+        color: #fff;
+    }
+
+    .las-terms-base .negative-btn {
+        border: 1px solid gray;
+        color: gray;
+        background-color: white;
+    }
+
+    .las-terms-base .positive-btn.inactive {
+        opacity: 0.5;
+        pointer-events: none !important;
+        cursor: default;
+        user-select: none;
+    }
+</style>
+
+<body>
+    <div class="las-terms-base">
+        <div class="las-terms-content">
+
+            <div className="EKYC-div">
+                <h3>Confirm your KYC </h3>
+                <ul>
+                    <li>I agree to share my details including CKYC number with Bajaj Finance Limited which are as per the records of Bajaj Financial Securities Limited. 
+                        I hereby conﬁrm that the details furnished by me are true and correct to the best of my knowledge and belief and undertake to inform Bajaj Finance Ltd. 
+                        ("BFL") of any changes therein, immediately. In case any of the above information is found to be false or untrue or misleading or misrepresenting, I am aware that I may be held liable for it.</li>
+                    <li>I hereby authorize BFL to verify/check/obtain/download/upload/update/retrieve/receive my KYC details from the CKYC Registry by (i) 
+                        verifying such details through the CKYC number (i.e. KYC Identiﬁer Number- KIN) provided by me or (ii) by obtaining such CKYC number/ KYC Number-KIN, through details shared by me/us for this Application Form. 
+                        I further consent to receiving information from Central KYC Registry (CERSAI) and  BFL through SMS/Email on the number/email address provided by  me/us to BFL.</li>
+                        <span>In case of any change in address or any other details, I agree and undertake to notify Bajaj Finance Limited (BFL) and will submit the latest self-attested KYC documents through acceptable mode of communication.</span>
+                    <li>I agree and confirm to share my demat account number along with my holdings information, and my bank account number, 
+                        with Bajaj Finance Limited.</li>
+                    <li>I hereby conﬁrm, certify and declare that my current address is same as the address on the KYC documents retrieved/ downloaded from CKYCR and the same is correct and updated. In case of any change in address or any other details, 
+                        I agree and undertake to notify Bajaj Finance Limited (BFL) and will submit the latest self-attested KYC documents through acceptable mode of communication.</li>
+                </ul>
+            </div>
+            <div className="EKYC-div">
+                <h3>Bank Account</h3>
+                <ul>
+                    <li>I confirm that all my details mentioned above are correct and up to date.</li>
+                    <li>I allow Bajaj Finance Limited to check my credit score with a RBI recognized credit information company.</li>
+                </ul>
+            </div>
+            <div className="EKYC-div">
+                <h3>Personal Details </h3>
+                <ul>
+                    <li>I confirm that the information provided above is true, correct, and complete to the best of my knowledge. 
+                        In case any of the above specified information is found to be false or untrue, I am aware that I will be liable for it.</li>
+                    <li>In case of any change in the above given status on a future date, I undertake to inform Bajaj Finance Limited immediately therein.</li>
+                </ul>
+            </div>
+            <div className="EKYC-div">
+                <h3>Apply for Loan</h3>
+                <ul>
+                    <li>Maximum available amount is shown after haircut.</li>
+                    <li>Securities shown here are only as per the Approved list of securities as permitted by Bajaj Finance Limited.</li>
+                    <li>The minimum amount of loan that can be availed is Rs. 25,000/- and maximum would be Rs. 50,00,000/- after the applicable haircuts.</li>
+                    <li>I declare that none of the above holdings are promotor shares and are free 
+                        from any lien marking in case any declaration to be provided with respect to promotor shares or for any liens that may be marked.</li>
+                    <li>First Disbursement will be auto credited to your account.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="condition-row">
+            <label class="checkbox-container">
+                <input id="checkbox2" type="checkbox" onchange="onchangeInput(this,1)">
+                <span class="checkmark"></span>
+            </label>
+            <span class="condition">I agree and confirm to allow Bajaj Finance Limited to Fetch my KYC details, using my
+                CKYC number.</span>
+        </div>
+        <div class="condition-row">
+            <label class="checkbox-container">
+                <input id="checkbox3" type="checkbox" onchange="onchangeInput(this,2)">
+                <span class="checkmark"></span>
+            </label>
+            <span class="condition">I agree and confirm to read and understand English as a language and confirm to have
+                read and understood the terms & conditions of Bajaj Finance Limited.</span>
+        </div>
+        <div class="condition-row">
+            <label class="checkbox-container">
+                <input id="checkbox4" type="checkbox" onchange="onchangeInput(this,3)">
+                <span class="checkmark"></span>
+            </label>
+            <span class="condition">I agree and confirm that I have read and agree to the Terms & conditions and Privacy
+                Policy.</span>
+        </div>
+        <div class="condition-row">
+            <label class="checkbox-container">
+                <input id="checkbox4" type="checkbox" onchange="onchangeInput(this,4)">
+                <span class="checkmark"></span>
+            </label>
+            <span class="condition">I agree and confirm all KYC details are correct.</span>
+        </div> -->
+        <!-- <div class="condition-row">
+            <button id="negative-btn" class="las-btn negative-btn" onclick="onclickActions('negative')">BACK</button>
+            <button id="positive-btn" class="las-btn positive-btn inactive" onclick="onclickActions('positive')">
+                ACCEPT
+            </button>
+        </div> -->
+    </div>
+</body>
+
+<script>
+    var checkboxArray = [false]
+    function onchangeInput(e, index) {
+        checkboxArray[index] = e.checked
+        let isAllChecked = true
+        checkboxArray.map((item) => {
+            if (!item)
+                isAllChecked = false
+        })
+        let positiveBtn = document.getElementById("positive-btn")
+        if (isAllChecked) {
+            positiveBtn.classList.remove("inactive")
+            positiveBtn.classList.add("active")
+        } else {
+            positiveBtn.classList.remove("active")
+            positiveBtn.classList.add("inactive")
+        }
+    }
+
+    function onclickActions(type) {
+        console.log("onclickActions step1 init")
+        let sendObj = {
+            id: "LASTerms",
+            data: {
+                click: type
+            }
+        }
+        sendObj = JSON.stringify(sendObj)
+        if (window.LASTerms) {
+            console.log("onclickActions step2 android")
+            window.LASTerms.postMessage(sendObj);
+        }
+        if (window.webkit) {
+            console.log("onclickActions step2 webkit iOS")
+            if (window.webkit.messageHandlers && window.webkit.messageHandlers.LASTerms) {
+                console.log("onclickActions step2 LASTerms iOS")
+                window.webkit.messageHandlers.LASTerms.postMessage(sendObj)
+            }
+        }
+        if (window) {
+            window.postMessage(sendObj, "*");
+        }
+        if (parent) {
+            parent.postMessage(sendObj, '*');
+        }
+    }
+
+</script>
+
+</html>

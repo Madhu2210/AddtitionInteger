@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="check_selected" transform="translate(-899 -542)">
+    <g id="check_normal" transform="translate(899 539)">
+      <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(0 3)" fill="#1b1d34" stroke="#979797" stroke-miterlimit="10" stroke-width="1">
+        <rect width="16" height="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="15" height="15" fill="none"/>
+      </g>
+    </g>
+    <g id="tick" transform="translate(901 545)">
+      <g id="Group_8766" data-name="Group 8766">
+        <path id="Path_29319" data-name="Path 29319" d="M3.422,53.313,1.214,51.105,0,52.319l2.914,2.914,0,0,.532.532,8.226-8.226L10.437,46.3Z" transform="translate(0 -46.298)" fill="#34d178"/>
+      </g>
+    </g>
+  </g>
+</svg>

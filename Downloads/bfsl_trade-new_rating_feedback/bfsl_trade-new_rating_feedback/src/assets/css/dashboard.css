@@ -1,0 +1,40 @@
+.dashboard-base {
+  height: calc(100% - 90px);
+  display: flex;
+}
+
+.dashboard-base.setMinHeight {
+  min-height: 950px;
+}
+
+.dashboard-base .watchlist-with-search {
+  height: 100%;
+  flex: 32;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--bgcolor_4);
+  position: relative;
+}
+
+.dashboard-base .watchlist-with-search .watchlist-search {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-base .watchlist-with-search > .widget-loader-div {
+  height: calc(100% - 65px);
+}
+
+.dashboard-base .orderContents {
+  flex: 68;
+  width: 68%;
+  background-color: var(--bgcolor_3);
+  position: relative;
+}
+
+.dashboard-base .watchlistBase {
+  height: 100%;
+}

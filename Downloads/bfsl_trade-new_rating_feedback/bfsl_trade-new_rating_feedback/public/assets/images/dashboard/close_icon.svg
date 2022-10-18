@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="close_ico" transform="translate(-1841 -481)">
+    <g id="Rectangle_3563" data-name="Rectangle 3563" transform="translate(1841 481)" fill="#fff" stroke="#ccc" stroke-width="1">
+      <rect width="26" height="26" stroke="none"/>
+      <rect x="0.5" y="0.5" width="25" height="25" fill="none"/>
+    </g>
+    <g id="cancel_1_" data-name="cancel (1)" transform="translate(1848.22 487.469)">
+      <g id="Group_18595" data-name="Group 18595" transform="translate(0 0)">
+        <path id="Path_34443" data-name="Path 34443" d="M6.648,5.988,11.837.8a.468.468,0,0,0-.661-.661L5.987,5.326.8.138A.468.468,0,1,0,.137.8L5.325,5.988.137,11.176a.468.468,0,0,0,.662.661L5.987,6.649l5.188,5.188a.468.468,0,0,0,.662-.661Z" transform="translate(0 -0.001)"/>
+      </g>
+    </g>
+  </g>
+</svg>

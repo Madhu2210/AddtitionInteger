@@ -1,0 +1,22 @@
+{
+  "projectId": "",
+  "watchForFiles": false,
+  "chromeWebSecurity": false,
+  "viewportWidth": 1150,
+  "viewportHeight": 700,
+  "waitForAnimation": true,
+  "animationDistanceTreshold": 20,
+  "video": false,
+  "failOnStatusCode": false,
+  "defaultCommandTimeout": 2000,
+  "screenshotOnRunFailure": false,
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "reportDir": "./testOutput/mochawesome-report",
+    "charts": true,
+    "reportPageTitle": "BFSL-TEST-REPORT"
+  }
+}

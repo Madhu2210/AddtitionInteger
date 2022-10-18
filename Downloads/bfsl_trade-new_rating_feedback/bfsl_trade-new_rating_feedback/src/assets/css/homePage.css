@@ -1,0 +1,16 @@
+.home-page {
+  height: 100%;
+}
+
+.home-page > div:nth-child(1) {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 51;
+  min-width: 850px;
+}
+
+.home-page > div:nth-child(2) {
+  position: relative;
+  top: 90px;
+}

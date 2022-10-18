@@ -1,0 +1,138 @@
+
+.flash-positive {
+  animation-name: fadePositive;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: 1px 0 1px 0;
+}
+
+.flash-positive2 {
+  animation-name: fadePositive2;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: 1px 0 1px 0;
+}
+
+.flash-negative {
+  animation-name: fadeNegative;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: 1px 0 1px 0;
+}
+
+.flash-negative2 {
+  animation-name: fadeNegative2;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: 1px 0 1px 0;
+}
+
+@keyframes fadePositive {
+  0% {
+    background-color: var(--greenColor);
+    color: #fff;
+  }
+
+  70% {
+    background-color: var(--greenColor);
+    color: #fff;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes fadeNegative {
+  0% {
+    background-color: red;
+    color: #fff;
+  }
+
+  70% {
+    background-color: red;
+    color: #fff;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes fadePositive2 {
+  0% {
+    background-color: var(--greenColor);
+    color: #fff;
+  }
+
+  70% {
+    background-color: var(--greenColor);
+    color: #fff;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes fadeNegative2 {
+  0% {
+    background-color: red;
+    color: #fff;
+  }
+
+  70% {
+    background-color: red;
+    color: #fff;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.flash-highlight {
+  animation-name: fadeHighlight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: 1px 0 1px 0;
+}
+
+.flash-highlight2 {
+  animation-name: fadeHighlight2;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: 1px 0 1px 0;
+}
+
+@keyframes fadeHighlight {
+  0% {
+    background-color: rgb(182, 218, 25);
+    color: #fff;
+  }
+
+  70% {
+    background-color: rgb(182, 218, 25);
+    color: #fff;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes fadeHighlight2 {
+  0% {
+    background-color: rgb(182, 218, 25);
+    color: #fff;
+  }
+
+  70% {
+    background-color: rgb(182, 218, 25);
+    color: #fff;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}

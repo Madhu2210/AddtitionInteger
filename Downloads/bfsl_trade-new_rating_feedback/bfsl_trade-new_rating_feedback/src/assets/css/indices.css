@@ -1,0 +1,304 @@
+.orderBase.indices_view .orderTableBase-div {
+  height: 45px;
+  max-height: 95px;
+  min-height: 60px;
+}
+
+.orderBase.indices_view .headerTab-base {
+  height: 100%;
+}
+
+/* .orderBase.indices_view .without_md_gg {
+    height: 100%;
+} */
+
+.orderBase.indices_view .headerTab-base .tab {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgcolor_5) !important;
+  padding: 0 25px;
+}
+
+/* .orderBase.indices_view .quote-view {
+  border-bottom: 1px solid var(--border_21);
+} */
+
+.orderBase.indices_view .headerTab-base .tab.selected {
+  background-color: var(--bgcolor_4);
+  border-bottom: none;
+}
+
+.orderBase.indices_view .headerTab-base .valueLabel {
+  display: none;
+}
+
+.orderBase.indices_view .headerTab-base .tab.order .value {
+  flex-direction: row;
+  flex: 2;
+}
+
+.orderBase.indices_view .headerTab-base .tab.order .label {
+  flex: 1;
+}
+
+/* .orderBase.indices_view .headerTab-base .tab.order .value {
+  flex: 2;
+} */
+
+.orderBase.indices_view .headerTab-base .tab .head {
+  color: var(--txtcolor_10) !important;
+  font-family: "OpenSans-SemiBold" !important;
+}
+
+.pullersDraggers-details {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.pullersDraggers-details .base {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pullersDraggers-details .pd-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bgcolor_6);
+  height: 40px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s5);
+}
+
+.pullersDraggers-details .pd-content {
+  height: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.pullersDraggers-details .pd-content .pullers-left,
+.pullersDraggers-details .pd-content .draggers-right {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pullersDraggers-details .pd-content .pullers-left,
+.contributors .contri-content .pullers-left {
+  border-right: 1px solid var(--border_8);
+}
+
+.pullersDraggers-details .pd-content .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s5);
+  padding: 0 10px;
+  height: 20%;
+}
+
+.pullersDraggers-details .pd-content .row .symbol-name {
+  color: var(--txtcolor_4);
+}
+
+.pullersDraggers-details .pd-content .row .contributions-pullers,
+.pullersDraggers-details .pd-title .pullers {
+  color: var(--greenColor);
+}
+
+.pullersDraggers-details .pd-content .row .contributions-draggers,
+.pullersDraggers-details .pd-title .draggers {
+  color: var(--redColor);
+}
+
+.pullersDraggers-details .pd-content .empty-ErrMsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_tertiary);
+  font-size: var(--font_s3);
+  height: 100%;
+}
+
+.pullersDraggers-details .pd-content .errorMsg {
+  display: flex;
+  height: calc(100% - 40px);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+}
+
+/* ======= Contributors CSS starts here ====== */
+
+.contributors {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--border_21);
+}
+
+.contributors .contri-title {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  background-color: var(--bgcolor_7);
+  border: 1px solid var(--border_20);
+  color: var(--dialog_msg_color);
+}
+
+.contributors .iPullers,
+.contributors .iDraggers {
+  font-family: "OpenSans-Bold";
+  font-size: var(--font-s5);
+  display: flex;
+  align-items: center;
+}
+
+.contributors .p-total,
+.contributors .d-total {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: var(--font_s3);
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  font-family: "OpenSans-SemiBold";
+  justify-content: center;
+}
+
+.contributors .p-total {
+  background-color: var(--greenColor);
+  color: white;
+}
+
+.contributors .d-total {
+  background-color: var(--redColor);
+  color: white;
+}
+
+.contributors .contri-content {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100% - 50px);
+  background-color: var(--bgcolor_primary);
+  padding: 0 0 0 10px;
+}
+
+.contributors .contri-content .pullers-left,
+.contributors .contri-content .draggers-right {
+  flex: 1;
+}
+
+.contributors .contri-content .pullers-left table,
+.contributors .contri-content .draggers-right table {
+  height: 100%;
+}
+
+.contributors .contri-content .pullers-left table .tbody-scroller,
+.contributors .contri-content .draggers-right table .tbody-scroller {
+  height: calc(100% - 34px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.contributors .contri-content table thead th {
+  color: var(--table_thead_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_s5);
+}
+
+.contributors .contri-content table tbody td.firstChild.width24 {
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_4);
+  font-size: var(--font_m1);
+}
+
+.contributors .contri-content .contributions-d {
+  color: var(--redColor);
+}
+
+.contributors .contri-content .contributions {
+  color: var(--greenColor);
+}
+
+.contributors .contri-content .errorMsg {
+  width: 100%;
+  height: 100%;
+  color: var(--txtcolor_tertiary);
+  font-size: var(--font_s3);
+}
+
+.constituents {
+  display: flex;
+  flex-direction: column;
+  height: 99%;
+
+  /* padding: 0 15px 10px; */
+  border: 1px solid var(--border_21);
+  border-bottom: none;
+}
+
+.constituents table {
+  height: 100%;
+}
+
+.constituents table thead.title {
+  height: 40px !important;
+}
+
+.constituents .tbody-scroller {
+  height: calc(100% - 34px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.constituents .moreDetails {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 10px;
+  border-bottom: 1px solid var(--border-color_1);
+}
+
+.constituents .moreDetails button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--border_14);
+  color: var(--textcolor2);
+  font-family: "OpenSans-Regular" !important;
+  font-size: var(--font_s5);
+  width: 120px;
+  height: 32px;
+  padding: 3px 3px;
+  text-transform: capitalize;
+  flex: 1;
+  margin: 0 4%;
+}
+
+.constituents .moreDetails button img {
+  padding-right: 8px;
+  height: 15px;
+}
+
+.constituents .moreDetails button.tradeBtn img {
+  height: 18px;
+}
+
+.constituents .moreDetails button.addWatchlist {
+  width: 140px;
+}

@@ -1,0 +1,335 @@
+.ipo-base {
+  height: calc(100% - 90px);
+  background-color: var(--bgcolor_3);
+}
+
+.ipo-base .ipo-data-base {
+  padding: 1% 7% 0 7%;
+  height: 100%;
+}
+
+.ipo-base .ipo-data-base .head-name {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--textcolor11);
+  height: 40px;
+  padding: 0 2%;
+}
+
+.ipo-base .ipo-data {
+  height: calc(100% - 40px);
+  background-color: var(--app_dialog_bg2);
+  box-shadow: 0 0 2px var(--box-shadow);
+}
+
+.ipo-base .ipo-header {
+  height: 50px;
+  background-color: var(--bgcolor_22);
+  padding: 0 2%;
+  display: flex;
+  box-shadow: 0 1px 3px -1px var(--box-shadow);
+}
+
+.ipo-base .ipo-header .menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  margin-left: 6%;
+  color: var(--textcolor11);
+  cursor: pointer;
+}
+
+.ipo-base .ipo-header .menu.active {
+  color: var(--selected);
+  font-family: "OpenSans-Bold";
+  border-bottom: 2px solid var(--selected);
+}
+
+.ipo-base .ipo-header .menu:first-child {
+  margin-left: 0;
+}
+
+.ipo-base .ipo-table-base {
+  height: calc(100% - 50px);
+}
+
+/*   =========== IPO-table css starts here ===========   */
+
+.ipo-base .IPO-table {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.ipo-base .IPO-table .dataRow {
+  padding: 0 0 22px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border_8);
+  margin-top: 25px;
+}
+
+.ipo-base .IPO-table .dataRow:last-child {
+  border-bottom: none;
+}
+
+.ipo-base .IPO-table .dataRow .name {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--orderbook-dialog-order-trial-col);
+  flex: 3;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ipo-base .IPO-table .dataRow .data {
+  flex: 7;
+  display: flex;
+}
+
+.ipo-base .IPO-table .dataRow .data .column {
+  flex: 15;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: end;
+}
+
+.ipo-base .IPO-table .dataRow .data .column.column-gujarati {
+  width: 20%;
+  flex: none;
+}
+
+.ipo-base .IPO-table .dataRow .data .column-xl {
+  flex: 35;
+  width: 35%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ipo-base .IPO-table .dataRow .data .column-lg {
+  flex: 25;
+  width: 25%;
+}
+
+.ipo-base .IPO-table .dataRow .data .column-lg2 {
+  flex: 20;
+  width: 20%;
+}
+
+.ipo-base .IPO-table .dataRow .data .column-md {
+  flex: 12;
+  width: 12%;
+}
+
+.ipo-base .IPO-table .dataRow .data .column-sm {
+  flex: 10;
+  width: 10%;
+}
+
+.ipo-base .IPO-table .dataRow .data .column.statusCloumn .value-status {
+  padding: 5px;
+  width: 65%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  text-transform: capitalize;
+  text-align: end;
+  color: var(--positive_btn_color);
+}
+
+.ipo-base .IPO-table .dataRow .data .column.statusCloumn .statusBtn {
+  padding: 5px;
+  width: 65%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  text-transform: capitalize;
+  text-align: end;
+}
+
+.ipo-base .IPO-table .dataRow .data .column.statusCloumn .statusBtn.success-btn {
+  color: var(--greenColor);
+  border: 1px solid var(--greenColor);
+}
+
+.ipo-base .IPO-table .dataRow .data .column.statusCloumn .statusBtn.pending-btn {
+  color: var(--positive_btn_color);
+  border: 1px solid var(--positive_btn_color);
+}
+
+.ipo-base .IPO-table .dataRow .data .column.statusCloumn .statusBtn.cancelled-btn {
+  color: var(--negative_btn_color);
+  border: 1px solid var(--negative_btn_color);
+}
+
+.ipo-base .IPO-table .dataRow .data .statusBtn > span:first-child {
+  padding-right: 8px;
+}
+
+.ipo-base .IPO-table .dataRow .data .column.first {
+  align-items: flex-start;
+}
+
+.ipo-base .IPO-table .dataRow .data .label {
+  color: var(--textcolor12);
+  font-size: var(--font_s5);
+}
+
+.ipo-base .IPO-table .dataRow .data .value {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.ipo-base .IPO-table .appliNo {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_4);
+  font-family: "OpenSans-Regular";
+  margin-left: 15px;
+  padding-bottom: 4px;
+}
+
+.ipo-base .IPO-table .dataRow .data .value.endDate {
+  color: var(--error_input_color2);
+}
+
+.ipo-base .IPO-table .dataRow .data button {
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  padding: 8px 25px;
+  margin-right: 8%;
+  border-radius: 8px;
+}
+
+.ipo-base .IPO-table .dataRow .data button.cancel-btn {
+  background-color: inherit;
+  color: var(--txtcolor_tertiary);
+  border: 1px solid var(--sym_search_add_border);
+}
+
+.ipo-base .IPO-table .dataRow .data .statusBtn {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.ipo-base .IPO-table .errorDiv {
+  height: 100%;
+  font-size: var(--font_s5);
+  color: var(--txtcolor_tertiary);
+}
+
+/*   =========== IPO-table css ends here ===========   */
+
+/*   =========== Open IPO css starts here ===========   */
+
+.ipo-base .ipo-content-base {
+  height: 100%;
+  padding: 4px 2% 4px 2%;
+}
+
+.ipo-base .open-ipo-base {
+  height: 100%;
+  padding: 2% 2% 2px 2%;
+}
+
+.ipo-base .ipo-content-base .infoMsg-div {
+  height: 80px;
+  background-color: var(--ipo-infomsg-div);
+  border: 1px solid var(--border_19);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: var(--font_m4);
+  letter-spacing: 0.1px;
+  color: var(--input_color);
+}
+
+.ipo-base .open-ipo-base .open-ipo-table {
+  height: calc(100% - 80px);
+}
+
+/*   =========== Open IPO css starts here ===========   */
+
+/* ========== Order tracker css starts here ========== */
+
+.order-status-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 3%;
+  margin-top: 30px;
+  position: relative;
+}
+
+.order-status-tracker .row {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.order-status-tracker .row .circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--app_dialog_bg2);
+  border: 2px solid var(--theme_btn_bg_gr);
+}
+
+.closed-ipo-base .order-status-tracker .row .circle {
+  background-color: var(--theme_btn_bg_gr);
+}
+
+.order-status-tracker .row .label {
+  color: var(--positive_btn_color);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.order-status-tracker .row .date {
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_primary);
+}
+
+.order-status-tracker .lineDiv {
+  position: absolute;
+  border-bottom: 2px solid var(--hr_center_line_ipo) !important;
+  width: 88%;
+  top: 7px;
+  left: 6.6%;
+  z-index: 1;
+}
+
+/* ========== Order tracker css starts here ========== */
+
+/* ========== CSS for IPO and NCD Options header starts here ====== */
+
+.ipo-base .ipo-data-base .ipo-ncd-headers {
+  display: flex;
+}
+
+.ipo-base .ipo-data-base .head-name.selected {
+  color: var(--selected);
+}
+
+/* ========== CSS for IPO and NCD Options header ends here  ======  */

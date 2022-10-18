@@ -1,0 +1,73 @@
+.gaugeMeter {
+  height: 100%;
+}
+
+.gaugeMeter .body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 5px 0;
+}
+
+.gaugeGraph {
+  flex: 5;
+  position: relative;
+}
+
+.gaugeGraph .indicator,
+.gaugeGraph .pointer {
+  position: absolute;
+}
+
+.gaugeGraph .pointer {
+  bottom: 2px;
+  transition: transform 0.5s linear;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+}
+
+.gaugeGraph .pointer.rotate {
+  transform: rotate(0deg);
+}
+
+.quote_view .gaugeMeter .values,
+.indices_view .gaugeMeter .values {
+  flex: 5;
+  margin: 20px 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.quote_view .gaugeMeter .values > div,
+.indices_view .gaugeMeter .values > div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  /* border-top: 1px solid var(--gaugeGraph_data_border); */
+  padding: 0 10px;
+}
+
+.quote_view .gaugeMeter .values .heading > span,
+.indices_view .gaugeMeter .values .heading > span {
+  color: var(--label_color4) !important;
+  margin-top: 10px;
+  font-size: var(--font_s3) !important;
+  font-family: "OpenSans-SemiBold" !important;
+}
+
+.quote_view .gaugeMeter .values > div > span,
+.indices_view .gaugeMeter .values > div > span {
+  flex: 1;
+}
+
+.quote_view .gaugeMeter .values .alignLeft,
+.quote_view .gaugeMeter .values .alignRight,
+.quote_view .gaugeMeter .values .alignCenter,
+.indices_view .gaugeMeter .values .alignLeft,
+.indices_view .gaugeMeter .values .alignRight,
+.indices_view .gaugeMeter .values .alignCenter {
+  font-size: var(--font_s4);
+  font-family: "OpenSans-SemiBold" !important;
+}

@@ -1,0 +1,760 @@
+.ncd-base {
+  height: calc(100% - 90px);
+  background-color: var(--bgcolor_3);
+}
+
+.ncd-base .ncd-data-base {
+  padding: 1% 7% 0 7%;
+  height: 100%;
+}
+
+.ncd-base .ncd-data-base .head-name {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--textcolor11);
+  height: 40px;
+  padding: 0 2%;
+}
+
+.ncd-base .ncd-data-base .head-name.selected {
+  color: var(--selected);
+}
+
+.ncd-base .ncd-data {
+  height: calc(100% - 40px);
+  background-color: var(--app_dialog_bg2);
+  box-shadow: 0 0 2px var(--box-shadow);
+}
+
+.ncd-base .ncd-header {
+  height: 50px;
+  background-color: var(--bgcolor_22);
+  padding: 0 2%;
+  display: flex;
+  box-shadow: 0 1px 3px -1px var(--box-shadow);
+}
+
+.ncd-base .ncd-header .menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  margin-left: 6%;
+  color: var(--textcolor11);
+  cursor: pointer;
+}
+
+.ncd-base .ncd-header .menu.active {
+  color: var(--selected);
+  font-family: "OpenSans-Bold";
+  border-bottom: 2px solid var(--selected);
+}
+
+.ncd-base .ncd-header .menu:first-child {
+  margin-left: 0;
+}
+
+.ncd-base .ncd-table-base {
+  height: calc(100% - 50px);
+}
+
+.ncd-base .ncd-data-base .ipo-ncd-headers {
+  display: flex;
+}
+
+/*   =========== ncd-table css starts here ===========   */
+
+.ncd-base .ncd-table {
+  overflow: hidden;
+
+  /* overflow-y: scroll; */
+  height: 100%;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.ncd-base .ncd-table .body {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.ncd-base .ncd-table .body::-webkit-scrollbar-button {
+  height: 20px;
+}
+
+.ncd-base .ncd-table .dataRow {
+  padding: 0 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border_8);
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.ncd-base .ncd-table .dataRow .rejection-reason {
+  color: var(--redColor) !important;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.ncd-base .ncd-table .dataRow:last-child {
+  border-bottom: none;
+}
+
+.ncd-base .ncd-table .dataRow .name {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--orderbook-dialog-order-trial-col);
+  flex: 3;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ncd-base .ncd-table .dataRow .name .exchange {
+  color: var(--textcolor12);
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  flex: 3;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5px;
+}
+
+.ncd-base .ncd-table .dataRow .data {
+  flex: 7;
+  display: flex;
+}
+
+.ncd-base .ncd-table .dataRow .data .column {
+  /* flex: 15; */
+
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: end;
+  white-space: nowrap;
+
+  /* padding-left: 50px; */
+  margin-right: 20px;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.first {
+  width: 30%;
+  align-items: flex-start;
+  white-space: break-spaces;
+  text-align: left;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.med {
+  width: 13%;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.lg-2 {
+  width: 15%;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.lastchild {
+  width: 12%;
+  padding-left: 40px;
+  padding-right: 5px;
+  margin-right: 0;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.offerprice {
+  /* padding-left: 50px; */
+  width: 40%;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.enddate {
+  padding-left: 20px;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn {
+  padding-right: 10px;
+
+  /* flex: 15 1; */
+
+  /* width: 15%; */
+  display: flex;
+  margin-left: 70px;
+
+  /* flex-direction: column; */
+  align-items: flex-end;
+  justify-content: center;
+  text-align: end;
+  white-space: nowrap;
+  padding-left: 20px;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .value-status.can-clr {
+  color: var(--can_text_color) !important;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .value-status.pend-clr {
+  color: var(--theme_color_4) !important;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .labelwithvalue {
+  display: flex;
+  flex-direction: column;
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .labelwithvalue .rejection-and-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ncd-base .ncd-table .dataRow .data .rejection-and-icon .infoIcon {
+  font-size: 20px;
+  margin-left: 3px;
+  color: var(--ncd-rejection-reason-icon);
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .value-status {
+  padding: 5px;
+  padding-right: 0;
+  width: 100%;
+  border-radius: 10px;
+
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  text-transform: capitalize;
+  text-align: end;
+  color: var(--txtcolor_primary);
+
+  /* color: var(--positive_btn_color); */
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .statusBtn {
+  padding: 5px;
+  width: 65%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  text-transform: capitalize;
+  text-align: end;
+}
+
+/* .ncd-content-base .ncd-table .data .flex-center .cursor {
+  font-size: 28px;
+  color: var(--ncd-options-icon);
+} */
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .statusBtn.success-btn {
+  color: var(--greenColor);
+  border: 1px solid var(--greenColor);
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .statusBtn.pending-btn {
+  color: var(--positive_btn_color);
+  border: 1px solid var(--positive_btn_color);
+}
+
+.ncd-base .ncd-table .dataRow .data .column.statusColumn .statusBtn.cancelled-btn {
+  color: var(--negative_btn_color);
+  border: 1px solid var(--negative_btn_color);
+}
+
+.ncd-base .ncd-table .dataRow .data .statusBtn > span:first-child {
+  padding-right: 8px;
+}
+
+.ncd-base .ncd-table .dataRow .data .label {
+  color: var(--textcolor12);
+  font-size: var(--font_s5);
+}
+
+.ncd-base .ncd-table .dataRow .data .value {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.ncd-base .ncd-table .dataRow .data .value.colorRed {
+  color: var(--redColor);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.ncd-base .ncd-table .appliNo {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_4);
+  font-family: "OpenSans-Regular";
+  margin-left: 15px;
+  padding-bottom: 4px;
+}
+
+.ncd-base .ncd-table .dataRow .data .value.endDate {
+  color: var(--error_input_color2);
+}
+
+.ncd-base .ncd-table .dataRow .data button {
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  padding: 8px 25px;
+  margin-right: 8%;
+  border-radius: 8px;
+}
+
+.ncd-base .ncd-table .dataRow .data button.cancel-btn {
+  background-color: inherit;
+  color: var(--txtcolor_tertiary);
+  border: 1px solid var(--sym_search_add_border);
+}
+
+.ncd-base .ncd-table .dataRow .data .statusBtn {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.ncd-base .ncd-table .dataRow .tooltip-div {
+  cursor: default;
+}
+
+.ncd-base .ncd-table .errorDiv {
+  height: 100%;
+  font-size: var(--font_s5);
+  color: var(--txtcolor_tertiary);
+}
+
+.ncd-content-base .ncd-table .data .tooltip-div.options .flex-center {
+  margin-right: 30px;
+}
+
+.ncd-content-base .ncd-table .data .tooltip-div.options .flex-center .moreInfoIcon {
+  font-size: var(--font_xl3);
+  color: var(--ncd-options-icon);
+}
+
+.ncd-content-base .ncd-table .data .tooltip-div.options .flex-center .hide-into-background {
+  opacity: 0;
+  pointer-events: none;
+  cursor: none;
+}
+
+/* .ncd-content-base .ncd-table .data .tooltip-div.options .flex-center .cursor.hide-into-background {
+  pointer-events: none;
+} */
+
+.ncd-content-base .ncd-table .tooltip-div .options {
+  display: flex;
+  flex-direction: column;
+}
+
+.ncd-content-base .ncd-table .tooltip-div .options .option {
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--tooltip_border);
+  font-family: 'OpenSans-SemiBold';
+  font-size: 14px;
+  color: var(--ncd-options-color);
+}
+
+.ncd-base .ncd-table .tooltip-container.options-tooltip {
+  width: 150px;
+  border-radius: 0;
+  padding: unset;
+}
+
+.ncd-base .ncd-table .reason-tooltip {
+  bottom: -20px;
+  margin-top: unset;
+  white-space: pre-line;
+  width: 250px;
+  background-color: var(--ncd-rejection-reason-tooltipbg);
+  color: var(--ncd-rejection-reason-text);
+}
+
+.ncd-base .ncd-table .reason-tooltip .triangle {
+  top: unset !important;
+  bottom: -6px;
+}
+
+/*   =========== ncd-table css ends here ===========   */
+
+/*   =========== Open ncd css starts here ===========   */
+
+.ncd-base .ncd-content-base {
+  height: 100%;
+  padding: 4px 1% 4px 2%;
+}
+
+.ncd-base .list-ncd-base {
+  height: 100%;
+  padding: 2% 2% 2px 2%;
+  overflow-y: hidden;
+}
+
+.ncd-base .ncd-content-base .infoMsg-div {
+  height: 90px;
+  background-color: var(--ncd-infomsg-div);
+  border: 1px solid var(--border_19);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  font-size: var(--font_m4);
+  letter-spacing: 0.1px;
+  color: var(--input_color);
+  margin-bottom: 15px;
+  width: 99%;
+}
+
+.ncd-base .ncd-content-base .infoMsg-div .info-timerange {
+  font-family: 'OpenSans-Bold';
+}
+
+.ncd-base .ncd-content-base .infoMsg-div .info {
+  padding-bottom: 10px;
+}
+
+.ncd-base .list-ncd-base .list-ncd-table {
+  height: calc(100% - 120px);
+  overflow-y: scroll;
+  padding-right: 0;
+}
+
+.ncd-base .list-ncd-base .list-ncd-table .dataRow {
+  margin-right: 0;
+}
+
+.ncd-base .list-ncd-base .list-ncd-table::-webkit-scrollbar-button {
+  height: 20px;
+}
+
+.ncd-content-base.list-ncd-base .ncd-table.list-ncd-table .column .apply {
+  border-radius: 8px;
+  height: 80%;
+  font-size: var(--font_s3);
+  font-family: "OpenSans-Bold";
+  padding: 5px 22px;
+  width: 100%;
+}
+
+/*   =========== Open ncd css ends here ===========   */
+
+/*  ============NCD orderbook css starts here ========= */
+
+.ncd-table {
+  overflow: hidden;
+
+  /* overflow-y: scroll; */
+  height: 100%;
+  padding-right: 10px;
+}
+
+.ncd-table .body {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* .ncd-content-base .ncd-table .date {
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font_m2);
+  color: var(--icon_color3);
+  justify-content: flex-end;
+  font-family: "OpenSans-Semibold" !important;
+} */
+
+.ncd-table .dataRow {
+  padding: 0 0 22px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border_8);
+  margin-top: 25px;
+}
+
+.ncd-table .dataRow:last-child {
+  border-bottom: none;
+}
+
+.ncd-table .dataRow .name {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--orderbook-dialog-order-trial-col);
+  flex: 3;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ncd-table .dataRow .name .exchange {
+  color: var(--textcolor12);
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  flex: 3;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5px;
+}
+
+.ncd-table .dataRow .data {
+  flex: 7;
+  display: flex;
+}
+
+.ncd-table .dataRow .data .column {
+  /* flex: 15; */
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: end;
+  white-space: nowrap;
+
+  /* padding-left: 50px; */
+  margin-right: 20px;
+}
+
+.ncd-table .dataRow .data .column.offerprice {
+  /* padding-left: 50px; */
+  width: 40%;
+}
+
+.ncd-table .dataRow .data .column.enddate {
+  padding-left: 20px;
+}
+
+.ncd-table .dataRow .data .column-xl {
+  flex: 35;
+  width: 35%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ncd-table .dataRow .data .column-lg {
+  flex: 25;
+  width: 25%;
+}
+
+.ncd-table .dataRow .data .column-lg2 {
+  flex: 20;
+  width: 20%;
+}
+
+.ncd-table .dataRow .data .column-md {
+  flex: 12;
+  width: 12%;
+}
+
+.ncd-table .dataRow .data .column-sm {
+  flex: 10;
+  width: 10%;
+}
+
+.ncd-table .dataRow .data .column.statusColumn {
+  padding-right: 10px;
+
+  /* flex: 15 1; */
+
+  /* width: 15%; */
+  display: flex;
+  margin-left: 70px;
+
+  /* flex-direction: column; */
+  align-items: flex-end;
+  justify-content: center;
+  text-align: end;
+  white-space: nowrap;
+  padding-left: 20px;
+}
+
+.ncd-table .dataRow .data .column.statusColumn .value-status.can-clr {
+  color: var(--can_text_color) !important;
+}
+
+.ncd-table .dataRow .data .column.statusColumn .labelwithvalue {
+  display: flex;
+  flex-direction: column;
+}
+
+.ncd-table .dataRow .data .column.statusColumn .labelwithvalue .rejection-and-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ncd-table .dataRow .data .rejection-and-icon .infoIcon {
+  font-size: 20px;
+  margin-left: 3px;
+  color: var(--ofs-rejection-reason-icon);
+}
+
+.ncd-table .dataRow .data .column.statusColumn .value-status {
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  text-transform: capitalize;
+  text-align: end;
+  color: var(--txtcolor_primary);
+
+  /* color: var(--positive_btn_color); */
+}
+
+.ncd-table .dataRow .data .column.statusColumn .statusBtn {
+  padding: 5px;
+  width: 65%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  text-transform: capitalize;
+  text-align: end;
+}
+
+/* .ncd-content-base .ncd-table .data .flex-center {
+  margin-right: 30px;
+} */
+
+.ncd-content-base .ncd-table .data .flex-center .cursor {
+  font-size: 28px;
+  color: var(--ofs-options-icon);
+}
+
+.ncd-content-base .ncd-table .data .tooltip-div .tooltip-container.bottom {
+  margin-top: 40px;
+}
+
+.ncd-table .dataRow .data .column.statusColumn .statusBtn.success-btn {
+  color: var(--greenColor);
+  border: 1px solid var(--greenColor);
+}
+
+.ncd-table .dataRow .data .column.statusColumn .statusBtn.pending-btn {
+  color: var(--positive_btn_color);
+  border: 1px solid var(--positive_btn_color);
+}
+
+.ncd-table .dataRow .data .column.statusColumn .statusBtn.cancelled-btn {
+  color: var(--negative_btn_color);
+  border: 1px solid var(--negative_btn_color);
+}
+
+.ncd-table .dataRow .data .statusBtn > span:first-child {
+  padding-right: 8px;
+}
+
+.ncd-table .dataRow .data .column.first {
+  align-items: flex-start;
+}
+
+.ncd-table .dataRow .data .label {
+  color: var(--textcolor12);
+  font-size: var(--font_s5);
+}
+
+.ncd-table .dataRow .data .value {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.ncd-table .dataRow .data .value.colorRed {
+  color: var(--redColor);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.ncd-table .appliNo {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_4);
+  font-family: "OpenSans-Regular";
+  margin-left: 15px;
+  padding-bottom: 4px;
+}
+
+.ncd-table .dataRow .data button {
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  padding: 8px 25px;
+  margin-right: 8%;
+  border-radius: 8px;
+}
+
+.ncd-table .dataRow .data button.cancel-btn {
+  background-color: inherit;
+  color: var(--txtcolor_tertiary);
+  border: 1px solid var(--sym_search_add_border);
+}
+
+.ncd-table .dataRow .data .statusBtn {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.ncd-table .errorDiv {
+  height: 100%;
+  font-size: var(--font_s5);
+  color: var(--txtcolor_tertiary);
+}
+
+/* .ncd-content-base .ncd-table .data .tooltip-div.options .flex-center {
+  margin-right: 30px;
+}
+
+.ncd-content-base .ncd-table .data .tooltip-div.options .flex-center .cursor.hide-into-background {
+  opacity: 0;
+}
+
+.ncd-content-base .ncd-table .tooltip-div .options {
+  display: flex;
+  flex-direction: column;
+}
+
+.ncd-content-base .ncd-table .tooltip-div .options .option {
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--tooltip_border);
+  font-family: 'OpenSans-SemiBold';
+  font-size: 14px;
+  color: var(--ofs-options-color);
+} */
+
+.ncd-table .tooltip-container.options-tooltip {
+  width: 150px;
+  border-radius: 0;
+  padding: unset;
+}
+
+.ncd-table .reason-tooltip {
+  bottom: -20px;
+  margin-top: unset;
+  white-space: pre-line;
+
+  /* background-color: var(--tooltip_bg2); */
+
+  /* color: var(--tooltip_color2); */
+  width: 250px;
+  background-color: var(--ofs-rejection-reason-tooltipbg);
+  color: var(--ofs-rejection-reason-text);
+}
+
+.ncd-table .reason-tooltip .triangle {
+  top: unset !important;
+  bottom: -6px;
+}
+
+/* =========  NCD orderbook css ends here ========== */

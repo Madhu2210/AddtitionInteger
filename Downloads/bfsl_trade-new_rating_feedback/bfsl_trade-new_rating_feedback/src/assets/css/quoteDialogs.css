@@ -1,0 +1,131 @@
+
+/* Select watchgroup dialog */
+.selectWatchGroup-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-left: 18px; */
+}
+
+.selectWatchGroup-dialog .window {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid var(--dlgbox_border);
+  font-family: 'OpenSans-SemiBold';
+  background-color: var(--bgcolor_primary);
+  width: 40%;
+  min-width: 500px;
+  max-height: 50%;
+  border-bottom: none;
+}
+
+.selectWatchGroup-dialog .window-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid var(--dlgbox_border);
+  font-family: 'OpenSans-SemiBold';
+  background-color: var(--bgcolor_primary);
+  width: 40%;
+  min-width: 500px;
+  height: 30%;
+}
+
+.selectWatchGroup-dialog .window .content {
+  padding-bottom: 10px;
+}
+
+.selectWatchGroup-dialog .window-empty .content {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  padding-top: 7%;
+}
+
+.selectWatchGroup-dialog .window-empty .empty-info {
+  color: var(--info_msg_color);
+  font-size: var(--font_m4);
+  padding-bottom: 5px;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.selectWatchGroup-dialog .window .footer,
+.selectWatchGroup-dialog .window-empty .footer {
+  height: 55px;
+  display: flex;
+  border-top: 1px solid var(--border_primary);
+}
+
+.selectWatchGroup-dialog .window .footer > button,
+.selectWatchGroup-dialog .window-empty .footer > button {
+  flex: 1 1;
+  font-size: var(--font_m4);
+  height: 100%;
+  font-family: "OpenSans-SemiBold";
+  text-transform: capitalize;
+}
+
+.selectWatchGroup-dialog .window-empty .footer > button {
+  background-color: transparent;
+  color: var(--positive_btn_color);
+}
+
+.selectWatchGroup-dialog .window .footer button.negativeBtn {
+  border-bottom: 1px solid var(--dlgbox_border);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+}
+
+.selectWatchGroup-dialog .window .footer button.left-btn.positiveBtn {
+  background-color: var(--greenColor);
+  color: var(--bgcolor_primary);
+}
+
+.selectWatchGroup-dialog .window .scrollArea {
+  min-height: 100px;
+  max-height: 250px;
+}
+
+.selectWatchGroup-dialog .window .watchGroup_row {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border_8);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+}
+
+.selectWatchGroup-dialog .window .watchGroup_row.last {
+  padding-bottom: 5px;
+  border-bottom: none;
+}
+
+.selectWatchGroup-dialog .window .watchGroup_row > img {
+  flex: 1;
+  height: 18px;
+  width: 18px;
+}
+
+.selectWatchGroup-dialog .window .watchGroup_row > span {
+  flex: 5;
+  text-align: left;
+}
+
+.selectWatchGroup-dialog .window .title,
+.selectWatchGroup-dialog .window-empty .title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 6%;
+  border-bottom: 1px solid var(--border_primary);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m4);
+  color: var(--icon_color9);
+}
+
+.selectWatchGroup-dialog .window .watchGroup_row .watchListNames {
+  color: var(--textcolor2);
+}

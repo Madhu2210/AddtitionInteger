@@ -1,0 +1,739 @@
+.orderPad-dialog .window {
+  width: 85%;
+  min-width: 1010px;
+  max-width: 1010px;
+}
+
+.orderPad-dialog .title .doggleBase-div {
+  position: absolute;
+  right: 20px;
+}
+
+.orderPad-dialog .content {
+  height: 500px;
+  display: flex;
+  padding: 0 !important;
+}
+
+.orderPad-dialog .symDetails-div {
+  flex: 55;
+  padding: 15px 0;
+}
+
+.orderPad-dialog .symDetails-div .sym-details,
+.orderPad-dialog .symDetails-div .quote-details {
+  padding: 0 20px;
+}
+
+.orderPad-dialog .symDetails-div .sym-details {
+  border-bottom: 1px solid var(--border_secondary);
+}
+
+.orderPad-dialog .symDetails-div .sym-details .symNameDiv {
+  padding: 5px 0;
+}
+
+.orderPad-dialog .symDetails-div .data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderPad-dialog .symDetails-div .data .symBaseName {
+  display: flex;
+  align-items: center;
+}
+
+.orderPad-dialog .symDetails-div .data .symBaseName .excBlock {
+  font-size: var(--font_s2);
+  margin-left: 10px;
+  color: var(--txtcolor_secondary);
+}
+
+.orderPad-dialog .symDetails-div .data .symBaseName .doggleBase-div {
+  height: 70%;
+}
+
+.orderPad-dialog .symDetails-div .data .symBaseName,
+.orderPad-dialog .symDetails-div .data .ltp {
+  font-size: var(--font_m2);
+  color: var(--orderPad_primary);
+  height: 30px;
+}
+
+.orderPad-dialog .symDetails-div .data .column {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: var(--font_s2);
+}
+
+.orderPad-dialog .symDetails-div .data .column .date {
+  padding-top: 4px;
+}
+
+.orderPad-dialog .symDetails-div .data .change {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_primary);
+}
+
+.orderPad-dialog .symDetails-div .data .change .values {
+  display: flex;
+  align-items: flex-end;
+}
+
+.orderPad-dialog .symDetails-div .data .change .values .upArrow,
+.orderPad-dialog .symDetails-div .data .change .values .downArrow {
+  font-size: var(--font_m4);
+  margin-right: 4px;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div {
+  position: relative;
+  cursor: pointer;
+  color: var(--orderPad_secondary);
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .arrowDiv {
+  display: flex;
+  align-items: center;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .upArrowIcon,
+.orderPad-dialog .symDetails-div .data .comDate-div .downArrowIcon {
+  font-size: var(--font_m1);
+  margin-left: 10px;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv {
+  position: absolute;
+  width: 210px;
+  background-color: var(--preLogin_app_dialog_body_bg);
+  font-size: var(--font_s2);
+  z-index: 50;
+  top: 20px;
+  min-height: 50px;
+  max-height: 200px;
+  box-shadow: 0 5px 10px 1px rgba(15, 15, 15, 0.602);
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .errorDiv {
+  height: 100%;
+  font-size: var(--font_s3);
+  padding: 5px;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .modalDialog-loader {
+  height: 100% !important;
+  top: 0 !important;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .modalDialog-loader .loading-img {
+  height: 30px;
+  width: 30px;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--border_gray);
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow:hover {
+  background-color: rgb(58, 60, 73);
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow.selected .dispSym {
+  color: #99c8fc;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow .dispSym {
+  color: var(--sub_con_text_color);
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow .exc {
+  color: var(--order_exc_text_color);
+  padding-top: 2px;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow.last {
+  border-bottom: none;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow .dateCol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow .dateCol .strike {
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--sub_con_text_color);
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .scrollArea::-webkit-scrollbar-thumb {
+  background: var(--scroll_thumb_gray);
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .scrollArea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .scrollArea::-webkit-scrollbar-thumb:hover {
+  /* background: #555;  */
+  background: var(--scroll_thumb_gray_hover);
+}
+
+.orderPad-dialog .symDetails-div .scroller_firefox {
+  scrollbar-color: var(--scroll_thumb_gray) transparent;
+}
+
+.orderPad-dialog .quote-details {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderPad-dialog .quote-details > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 14px;
+}
+
+.orderPad-dialog .quote-details .label {
+  color: var(--orderPad_label_color);
+  font-size: var(--font_s1);
+}
+
+.orderPad-dialog .quote-details .value {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_s3);
+  padding-top: 5px;
+}
+
+.orderPad-dialog .tradeFields {
+  background-color: var(--postLogin_app_dialog_header_bg);
+  flex: 46;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px 20px;
+  overflow-x: auto;
+}
+
+.orderPad-dialog .row .hidingDiv {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.orderPad-dialog .tradeFields.modifyOrder .disabled .hidingDiv,
+.orderPad-dialog .tradeFields.squareOff-order .disabled .hidingDiv {
+  display: block;
+}
+
+.orderPad-dialog .tradeFields.modifyOrder .disabled,
+.orderPad-dialog .tradeFields.squareOff-order .disabled {
+  opacity: 0.4;
+}
+
+.orderPad-dialog .tradeFields.modifyOrder .hide,
+.orderPad-dialog .tradeFields.squareOff-order .hide {
+  display: none;
+}
+
+.orderPad-dialog .inputRow {
+  display: flex;
+}
+
+.orderPad-dialog .inputRow.disableLot .plusIcon,
+.orderPad-dialog .inputRow.disableLot .minusIcon {
+  display: none;
+}
+
+.orderPad-dialog .inputRow.disableLot #qtyInput {
+  width: 100px;
+  text-align: left !important;
+  padding: 5px 0 !important;
+}
+
+.orderPad-dialog .inputRow.noPrice {
+  width: 50%;
+}
+
+.orderPad-dialog .inputRow.disableLot .lotDiv.disableLot {
+  visibility: hidden;
+}
+
+.orderPad-dialog .inputRow .row {
+  flex: 1;
+}
+
+.orderPad-dialog .input-ele {
+  padding-left: 0 !important;
+}
+
+.orderPad-dialog .inputRow input[type="text"] {
+  border: none;
+  border-bottom: 1px solid var(--input_border_orderPad);
+  outline: none;
+  width: 100px;
+  letter-spacing: 0.05rem;
+}
+
+.orderPad-dialog .row {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.orderPad-dialog .row.first {
+  padding-top: 15px;
+}
+
+.orderPad-dialog .row.errorDisp {
+  padding-top: 8px;
+}
+
+.orderPad-dialog .row.typeDiv {
+  padding-top: 25px !important;
+}
+
+.orderPad-dialog .row.disable {
+  opacity: 0.4;
+}
+
+.orderPad-dialog .row.errorInputDiv .label {
+  color: var(--error_input_color);
+}
+
+.orderPad-dialog .row .errorMsg-div {
+  font-size: var(--font_s1);
+  display: flex;
+  padding-top: 2px;
+  padding-right: 4px;
+  height: 20px;
+  color: var(--error_input_color);
+}
+
+.orderPad-dialog .row.errorInputDiv .input-ele,
+.orderPad-dialog .row.errorInputDiv .p-inputtext {
+  border-bottom: 1px solid var(--error_input_color);
+}
+
+.orderPad-dialog .row.focusInputDiv .label {
+  color: var(--success_color) !important;
+}
+
+.orderPad-dialog .row.focusInputDiv .input-ele,
+.orderPad-dialog .row.focusInputDiv .p-inputtext {
+  border-bottom: 1px solid var(--success_color) !important;
+}
+
+.orderPad-dialog .row .label {
+  flex: 1;
+  font-size: var(--font_s2);
+  display: flex;
+  align-items: center;
+  color: var(--orderPad_label_color);
+}
+
+.orderPad-dialog .row .data {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.orderPad-dialog .row .data.inputData {
+  padding-top: 0;
+}
+
+.orderPad-dialog .row .data.inputData.largeInput input {
+  width: 130px;
+}
+
+.orderPad-dialog .row .range {
+  height: 15px;
+  font-size: var(--font_s1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3px;
+}
+
+/* .orderPad-dialog .row .errorMsg-div {
+  height: 20px;
+} */
+
+.orderPad-dialog .row .optionData {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_s3);
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+
+.orderPad-dialog .row .optionData .AMOcheckboxDiv {
+  position: relative;
+  display: flex;
+  color: var(--orderPad_primary);
+}
+
+.orderPad-dialog .row .optionData.orderValidity {
+  padding-bottom: 20px;
+}
+
+.orderPad-dialog .row .optionData.orderValidity span {
+  flex: 1;
+}
+
+.orderPad-dialog .row .optionData.orderValidity .options {
+  margin-left: 0;
+}
+
+.orderPad-dialog .row .optionData .AMOcheckboxDiv .checkbox {
+  padding-right: 10px;
+}
+
+.orderPad-dialog .row .optionData .options {
+  color: var(--orderPad_primary);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.orderPad-dialog .row .optionData .options .radioBtn,
+.orderPad-dialog .row .optionData .amoCheckbox {
+  margin-right: 7px;
+}
+
+.orderPad-dialog .row .optionData .options.first {
+  margin-left: 0 !important;
+}
+
+.orderPad-dialog .row .data .menu {
+  color: var(--orderPad_primary);
+  font-size: var(--font_s3);
+  padding-top: 5px;
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+  font-family: "OpenSans-Regular";
+  letter-spacing: 1px;
+}
+
+.orderPad-dialog .row .data .menu.first {
+  margin-left: 0 !important;
+}
+
+.orderPad-dialog .row .data .menu .radioBtn {
+  padding-right: 7px;
+}
+
+.orderPad-dialog label {
+  display: block;
+  position: relative;
+  padding-left: 23px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.orderPad-dialog input[type="radio"] {
+  display: none;
+}
+
+.orderPad-dialog label > .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--orderPad_radio_bor);
+
+  /* margin-top: 2px; */
+}
+
+.orderPad-dialog label > .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--orderPad_radio_select);
+}
+
+.orderPad-dialog label input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.orderPad-dialog .row .infoIcon {
+  font-size: var(--font_m1);
+  margin-left: 7px;
+}
+
+.orderPad-dialog .row .dateIcon {
+  font-size: var(--font_l1);
+}
+
+.orderPad-dialog .row .p-inputtext:hover {
+  border: none !important;
+  border-bottom: 1px solid var(--input_border_orderPad) !important;
+}
+
+.orderPad-dialog .row .addOn-base {
+  width: 160px;
+}
+
+.orderPad-dialog .row .addOn-base input {
+  width: 100%;
+  padding: 5px 30px !important;
+  text-align: center;
+}
+
+.orderPad-dialog .row .data.addOn {
+  position: relative;
+}
+
+.orderPad-dialog .row .plusIcon,
+.orderPad-dialog .row .minusIcon {
+  position: absolute;
+  font-size: var(--font_l4);
+  color: var(--success_color);
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 3px;
+}
+
+.orderPad-dialog .row .plusIcon.disable,
+.orderPad-dialog .row .minusIcon.disable {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.orderPad-dialog .row .plusIcon {
+  right: 0;
+}
+
+.orderPad-dialog .row .minusIcon {
+  left: 0;
+}
+
+.orderPad-dialog .footer {
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 50px !important;
+  border: none !important;
+  background-color: var(--orderpad_dialog_footer_bg) !important;
+}
+
+.orderPad-dialog .footer .btn-div {
+  font-size: var(--font_s3) !important;
+  height: 100%;
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.orderPad-dialog .footer button {
+  margin-right: 20px;
+  font-family: "OpenSans-Regular" !important;
+}
+
+.orderPad-dialog .footer .orderValue {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.orderPad-dialog .footer .orderValue .label {
+  font-size: var(--font_s2);
+  color: var(--orderPad_label_color);
+  margin-left: 20px;
+}
+
+.orderPad-dialog .footer .orderValue .value {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_primary);
+  margin-left: 20px;
+}
+
+.orderPad-dialog .p-inputtext {
+  width: 130px !important;
+}
+
+.orderPad-dialog .marketDepth-div .marketDepth-table-div {
+  margin-right: 0;
+}
+
+.orderPad-dialog .marketDepth-div .header,
+.orderPad-dialog .marketDepth-div .footer {
+  padding-right: 0 !important;
+}
+
+/* ============= Order confirm dialog css starts here ============== */
+
+.orderConfirm-dialog .window {
+  width: 60%;
+  min-width: 650px;
+  max-width: 650px;
+  font-family: "OpenSans-Regular" !important;
+}
+
+.orderConfirm-dialog .content {
+  display: flex;
+  padding: 0 !important;
+}
+
+.orderConfirm-dialog .content > div {
+  flex: 1;
+}
+
+.orderConfirm-dialog .content .row {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border_secondary);
+  padding: 0 5px 0 15px;
+}
+
+/* .orderConfirm-dialog .content .row {
+  padding: 0 5px 0 15px;
+} */
+
+.orderConfirm-dialog .content .left .row {
+  border-right: 1px solid var(--border_secondary);
+}
+
+.orderConfirm-dialog .content .left .row:last-child {
+  border-bottom: none;
+}
+
+.orderConfirm-dialog .content .row .label {
+  color: var(--txtcolor_tertiary);
+  font-size: var(--font_s3);
+  opacity: 0.8;
+  text-align: left;
+  flex: 5;
+  text-transform: capitalize;
+  width: 50px;
+}
+
+.orderConfirm-dialog .content .right .row .label {
+  padding-left: 5px;
+}
+
+.orderConfirm-dialog .content .row .value {
+  font-size: var(--font_s4);
+  color: var(--txtcolor_primary);
+  text-align: left;
+  flex: 5;
+  width: 50px;
+}
+
+.orderConfirm-dialog .footer {
+  height: 50px !important;
+  border-top: 1px solid var(--border_secondary) !important;
+}
+
+.orderConfirm-dialog .footer > div {
+  flex: 1;
+}
+
+.orderConfirm-dialog .footer .btn-div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.orderConfirm-dialog .footer .btn-div button {
+  min-width: 80px;
+  font-size: var(--font_s3);
+  font-family: "OpenSans-Regular" !important;
+}
+
+.orderConfirm-dialog .footer .errorDiv {
+  color: var(--error_input_color);
+  font-size: var(--font_s1);
+  padding-left: 10px;
+}
+
+/* ============= Order confirm dialog css ends here ============== */
+
+/* ============= Order result dialog css starts here ============== */
+
+.orderResult-dialog .window {
+  width: 60%;
+  min-width: 450px;
+  max-width: 450px;
+  font-family: "OpenSans-Regular" !important;
+}
+
+.orderResult-dialog .window .successIcon {
+  font-size: var(--font_b2);
+  color: var(--success_order_color);
+}
+
+.orderResult-dialog .window .errorIcon {
+  font-size: var(--font_b2);
+  color: var(--error_input_color2);
+}
+
+.orderResult-dialog .window .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px 20px 20px;
+}
+
+.orderResult-dialog .window .content > div {
+  padding-top: 5px;
+}
+
+.orderResult-dialog .footer > div {
+  flex: 1;
+}
+
+.orderResult-dialog .footer button {
+  width: 100%;
+}
+
+.orderResult-dialog .symDetails {
+  font-size: var(--font_s5);
+  color: var(--orderResult_primary);
+  font-family: "OpenSans-Bold";
+}
+
+.orderResult-dialog .orderStatus {
+  font-size: var(--font_s3);
+}
+
+.orderResult-dialog .orderId {
+  font-size: var(--font_s3);
+}
+
+/* ============= Order result dialog css ends here ============== */

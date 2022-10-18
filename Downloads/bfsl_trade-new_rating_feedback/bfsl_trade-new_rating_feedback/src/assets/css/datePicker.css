@@ -1,0 +1,308 @@
+/* .p-calendar {
+    z-index: 10003;
+}
+
+body .p-datepicker {
+    height: auto;
+    font-family: "OpenSans-Regular" !important;
+    border-radius: 8px;
+    width: 320px;
+}
+
+body .p-inputtext {
+    background-color: transparent !important;
+    border: 1px solid var(--input_border);
+    color: var(--txtcolor_primary) !important;
+}
+
+body .p-inputtext:hover {
+    border: 1px solid var(--input_border) !important;
+}
+
+.p-inputtext:enabled:focus {
+    box-shadow: none !important;
+}
+
+body .p-datepicker .p-datepicker-header {
+    height: 40px;
+    background: none !important;
+    font-size: 16px !important;
+    color: var(--txtcolor_primary);
+    border-bottom: 1px solid var(--bgcolor_tertiary);
+}
+
+body .p-datepicker .p-datepicker-header .p-datepicker-prev,
+body .p-datepicker .p-datepicker-header .p-datepicker-next {
+    box-shadow: none !important;
+    background-color: var(--preLogin_app_dialog_body_bg) !important;
+    border-radius: 50%;
+}
+
+body .p-datepicker .p-datepicker-header .p-datepicker-prev > span,
+body .p-datepicker .p-datepicker-header .p-datepicker-next > span {
+    font-size: 10px;
+}
+
+body .p-datepicker table {
+    margin: 0px 0px 0px 0px !important;
+}
+
+body .p-datepicker table thead tr {
+    border-bottom: 1px solid var(--bgcolor_tertiary);
+    height: 35px !important;
+}
+
+.date-picker .p-datepicker table thead tr,
+.date-picker .p-datepicker table tbody tr {
+    height: auto;
+}
+
+body .p-datepicker table thead tr td {
+    font-size: 14px;
+}
+
+.date-picker .p-datepicker table span {
+    border-radius: 42%;
+    color: var(--txtcolor_primary) !important;
+}
+
+.date-picker .p-datepicker table tbody span:hover {
+    background-color: var(--theme_btn_bg) !important;
+}
+
+.date-picker .p-datepicker table tbody span.p-disabled:hover {
+    background:none !important;
+}
+
+.date-picker .p-datepicker table tbody .p-datepicker-today span.p-disabled:hover {
+    background-color: var(--txtcolor_tertiary) !important;
+}
+
+.date-picker .p-datepicker table .p-datepicker-today span {
+    background-color: rgb(180, 180, 180);
+}
+
+.trade-date .p-datepicker{
+    border-radius: 0px !important;
+    background-color: var(--bgcolor_primary);
+}
+ */
+
+/* From and To date picker */
+
+.trade-date .date-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  flex: 1;
+}
+
+.trade-date .window > .content {
+  padding: 0 !important;
+}
+
+.trade-date .window > .title {
+  height: 60px;
+}
+
+.trade-date .loader {
+  z-index: 100;
+}
+
+.trade-book-date .date {
+  position: relative;
+}
+
+.trade-date .trade-book-date {
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  right: 0;
+  width: 320px;
+}
+
+.trade-date .date-icon {
+  font-size: var(--font_l2);
+  margin-right: 4px;
+  cursor: pointer;
+  color: var(--selected);
+}
+
+.trade-book-date .window {
+  position: relative;
+  border: 1px solid var(--app_version);
+}
+
+.trade-book-date .window > .title {
+  font-size: 16px;
+  background-color: var(--tradebook_datepicker_header);
+}
+
+.trade-book-date .window > .title h4 {
+  margin: 0;
+}
+
+.trade-book-date .window > .content {
+  padding: 15px 45px;
+}
+
+.trade-book-date .window > .footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
+  background-color: var(--bgcolor_primary);
+}
+
+.trade-book-date .window > .footer button {
+  flex: 1;
+  background-color: transparent;
+  height: 100%;
+  font-size: 14px;
+}
+
+.trade-book-date .window > .title .sm-title {
+  color: var(--txtcolor_5);
+}
+
+/* .trade-date .date-tab {
+  flex: 1;
+} */
+
+.trade-date .tab-container {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+
+.trade-date .tab {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  width: 100px;
+  justify-content: center;
+}
+
+.trade-date .title-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+/* .trade-date .date-tab {
+  height: 100% !important;
+  font-size: 18px;
+} */
+
+.trade-date .disble-select {
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.trade-date > .window > .title {
+  padding: 0 !important;
+}
+
+.trade-date .date {
+  display: flex;
+  align-items: center;
+  font-size: var(--font_s5);
+  color: var(--selected);
+}
+
+.trade-date .date-tab .date {
+  background-color: var(--date_bg_1);
+  padding: 3px 10px;
+  border: 1px solid var(--date_bg_1);
+  color: var(--textcolor17);
+  border-radius: 3px;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.trade-date .date-tab.active .date {
+  background-color: var(--date_bg);
+  border: 1px solid var(--selected);
+}
+
+.trade-date .sm-title {
+  font-size: 10px;
+  text-align: left;
+}
+
+.trade-date .btwLine {
+  width: 10px;
+  border-bottom: 1px solid var(--txtcolor_9);
+}
+
+body .p-datepicker .p-datepicker-header .p-datepicker-prev {
+  left: 20px;
+}
+
+body .p-datepicker .p-datepicker-header .p-datepicker-next {
+  right: 20px;
+}
+
+body .p-datepicker .p-datepicker-prev span,
+.p-datepicker .p-datepicker-next span {
+  font-size: var(--font_s3);
+}
+
+.p-calendar {
+  width: 100%;
+}
+
+body .p-datepicker {
+  padding: 0 !important;
+  border: none !important;
+  background-color: var(--bgcolor_10);
+}
+
+body .p-datepicker .p-datepicker-header {
+  padding: 22px;
+  color: var(--txtcolor_primary);
+  background-color: var(--bgcolor_19);
+  font-size: var(--font_m2);
+}
+
+body .p-datepicker .p-datepicker-header .p-link {
+  top: 18px;
+  font-size: var(--font_m1);
+  color: var(--bgcolor_primary);
+  background-color: var(--selected);
+  border-radius: 50%;
+  text-decoration: none;
+  outline: none;
+}
+
+body .p-datepicker .p-datepicker-header .p-link:hover {
+  color: var(--bgcolor_primary);
+}
+
+body .p-datepicker table tbody tr {
+  border-bottom: none !important;
+  height: 30px;
+}
+
+body .p-datepicker-calendar-container {
+  font-size: var(--font_s5);
+}
+
+body .p-datepicker table td {
+  padding: 4px !important;
+}
+
+body .p-datepicker table td > span.p-highlight {
+  background-color: var(--datePic_header_bg) !important;
+  padding: 7px;
+}
+
+body .p-datepicker table td > span {
+  border-radius: 50%;
+  outline: none !important;
+  padding: 5px;
+  color: var(--datePicker-date-clr);
+}

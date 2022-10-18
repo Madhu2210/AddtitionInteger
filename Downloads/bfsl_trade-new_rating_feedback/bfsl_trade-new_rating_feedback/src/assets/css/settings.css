@@ -1,0 +1,433 @@
+.settings-base-div {
+  position: absolute;
+
+  /* height: 150px; */
+  width: 450px;
+  top: 85px;
+  right: -10px;
+  background-color: var(--bgcolor_tertiary);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 1px rgba(15, 15, 15, 0.602);
+  padding: 30px 20px;
+}
+
+.settings-base-div::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 8%;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent var(--tooltip_bg) transparent;
+}
+
+.settings-base-div .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.settings-base-div .row > div {
+  flex: 1;
+}
+
+.settings-base-div .row .btnDiv {
+  text-align: center;
+}
+
+.settings-base-div .closeIcon-div {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: var(--delete_btn_color);
+  border-radius: 50%;
+}
+
+.settings-base-div .closeIcon-div .closeIcon {
+  font-size: 22px;
+  padding: 2px;
+  color: #fff;
+}
+
+.settings-base-div .select-input-div .options-div {
+  top: 31px;
+}
+
+.settings-base .app-version {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+  color: var(--txtcolor_tertiary);
+  font-size: 12px;
+}
+
+.settings-base .window {
+  width: 500px;
+}
+
+.settings-base .window > .content {
+  padding: 0 !important;
+  background-color: var(--preLogin_app_dialog_body_bg);
+}
+
+.settings-base .settings-header-bg {
+  background-color: var(--settings_bg_color);
+  display: flex;
+  justify-content: space-between;
+
+  /* border: 1px solid var(--order_tab_bor_color); */
+}
+
+.settings-base .settings-header {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: flex-start;
+
+  /* width: 100%; */
+  margin: 0 14px;
+  align-items: center;
+  color: var(--settings_tab_text_color);
+  font-size: 12px;
+}
+
+.settings-base .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+  margin-right: 34px;
+}
+
+.settings-base .submenu span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.settings-base .active span {
+  color: var(--selected);
+}
+
+.settings-base hr {
+  display: block;
+  visibility: hidden;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.settings-base .active hr {
+  display: block;
+  width: 20px;
+
+  /* margin-bottom: 1px; */
+  visibility: visible;
+  color: var(--selected);
+  background-color: var(--selected);
+  height: 1px;
+  border: none;
+}
+
+.settings-base .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  align-items: center;
+  border-bottom: 1px solid var(--settings_line_color);
+  text-align: left;
+}
+
+.notify-base .main-content {
+  color: var(--dialog_title_color);
+  font-size: 13px;
+}
+
+.notify-base .sub-content {
+  color: var(--dialog_sub_title_color);
+  font-size: 11px;
+}
+
+.settings-base .notify-base,
+.settings-base .pwd-sett-base {
+  height: 300px;
+}
+
+.settings-base .theme-sett-base {
+  height: 300px;
+}
+
+.pwd-sett-base {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 48px 8px;
+}
+
+.pwd-sett-base .label {
+  color: var(--settings_label_color);
+  font-size: 11px;
+}
+
+#lightTheme .pwd-sett-base .password-label {
+  font-family: "OpenSans-Bold";
+}
+
+.pwd-sett-base .password-label {
+  display: flex;
+  align-items: center;
+}
+
+.pwd-sett-base .input-div {
+  margin-top: 2px;
+  display: flex;
+}
+
+.pwd-sett-base .input-div .input-ele {
+  padding-right: 50px;
+  margin-left: -2px;
+}
+
+.pwd-sett-base .inputVal {
+  width: 100%;
+  padding: 12px;
+}
+
+.pwd-sett-base .eyeOpenIcon,
+.pwd-sett-base .eyeCloseIcon {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--settings_icon_color);
+}
+
+.pwd-sett-base .passwordIcon {
+  font-size: 23px;
+  color: var(--input_icon_color_appDialog);
+}
+
+.settings-base .window .title {
+  background-color: var(--order_dialog_header_bg) !important;
+  border: 0 !important;
+}
+
+.settings-base .input-ele {
+  border: 1px solid var(--settings_input_border);
+  border-left: none !important;
+}
+
+.settings-base .errorInput.hasAddOn .addOnIcon,
+.settings-base .focusInputDiv.hasAddOn .addOnIcon {
+  border-right: 1px solid var(--settings_input_border) !important;
+}
+
+.settings-base .focusInputDiv .input-ele,
+.settings-base .focusInputDiv.hasAddOn .addOnIcon {
+  border: 1px solid var(--settings_input_selected);
+}
+
+.settings-base .input-ele::placeholder {
+  color: var(--search_input_color);
+}
+
+.settings-base .blurInputDiv input[type=password] {
+  color: var(--settings_input_blur);
+}
+
+.settings-base .errorInput .eyeOpenIcon,
+.settings-base .errorInput .eyeCloseIcon {
+  color: var(--settings_icon_color) !important;
+}
+
+.settings-base .focusInputDiv .eyeOpenIcon,
+.settings-base .focusInputDiv .eyeCloseIcon {
+  color: var(--settings_input_selected);
+}
+
+.settings-base .input-div .addOnIcon {
+  border: 1px solid var(--settings_input_border);
+}
+
+.settings-base .footer {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background-color: var(--app_dialog_footer_bg);
+  border-top: 1px solid var(--settings_divider_color);
+}
+
+.settings-base .footer button {
+  flex: 1;
+  background-color: transparent;
+  height: 70%;
+  font-size: 14px;
+}
+
+.settings-base .footer .negativeBtn {
+  color: var(--settings_neg_btn_color);
+}
+
+.settings-base .footer .negativeBtn:hover {
+  color: var(--negative_btn_hover);
+}
+
+.settings-base .footer .positiveBtn {
+  color: var(--positive_btn_color);
+}
+
+.settings-base .footer .positiveBtn:hover {
+  color: var(--positive_btn_hover);
+}
+
+.settings-base .footer button.left-btn {
+  border-left: 2px solid var(--settings_divider_color);
+}
+
+.theme-sett-base .theme {
+  display: flex;
+  align-items: center;
+  color: var(--settings_text_color);
+}
+
+.theme-sett-base .dark-icon {
+  background: var(--order_tab_bg_color);
+  color: var(--selected);
+  padding: 6px;
+  border-radius: 16px;
+  margin-right: 24px;
+  font-size: 18px !important;
+  border: 1px solid var(--settings_icon_bg_bor);
+}
+
+.theme-sett-base .light-icon {
+  background: var(--order_tab_bg_color);
+  color: var(--settings_light_icon);
+  padding: 3px;
+  border-radius: 16px;
+  margin-right: 23px;
+  font-size: 24px !important;
+  border: 1px solid var(--settings_icon_bg_bor);
+}
+
+.theme-sett-base {
+  font-size: 13px;
+}
+
+.theme-sett-base .row {
+  padding: 20px 14px;
+}
+
+.theme-sett-base .switch,
+.notify-base .switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+}
+
+.theme-sett-base .switch input,
+.notify-base .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-sett-base .slider,
+.notify-base .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--btn_text_primary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid var(--switch_border);
+}
+
+.theme-sett-base .slider::before,
+.notify-base .slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: -4px;
+  top: -4px;
+  background-color: var(--switch_disable);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme-sett-base input:checked + .slider::before,
+.notify-base input:checked + .slider::before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+  background-color: var(--switch_enable);
+}
+
+.theme-sett-base input:focus + .slider::before,
+.notify-base input:focus + .slider::before {
+  box-shadow: 0 0 1px var(--switch_enable);
+}
+
+/* Rounded sliders */
+
+.theme-sett-base .slider.round,
+.slider.round {
+  border-radius: 34px;
+}
+
+.theme-sett-base .slider.round::before,
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.success-modal .window {
+  width: 40%;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.success-modal .window .title {
+  background-color: var(--order_dialog_header_bg);
+  color: var(--app_dialog_header_txt);
+  border: none;
+  font-size: 15px;
+}
+
+.success-modal .window .footer {
+  background-color: var(--settings_succ_dialog_footer);
+  border: none;
+  font-size: 13px;
+}
+
+.success-modal .window > .footer .positiveBtn {
+  color: var(--settings_succ_btn_color);
+}
+
+#lightTheme .app-modalDialog2.success-modal .window > .footer {
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.success-modal .infoMsg {
+  font-size: 13px;
+  padding-top: 4px;
+}
+
+.success-modal .success-icon {
+  font-size: 74px;
+  color: var(--suc_icon_color);
+}
+
+.success-modal .window > .content {
+  padding: 10px 45px 30px 45px;
+  background-color: var(--preLogin_app_dialog_body_bg);
+  color: var(--settings_succ_text_color);
+}
+
+.language-setting-header {
+  height: 300px;
+  background-color: yellow;
+}

@@ -1,0 +1,432 @@
+/*   =========== Edis Dashboard css starts here ===========   */
+.edis-dashboard-base {
+  padding: 1% 3% 0 7%;
+  height: calc(100% - 40px);
+}
+
+.edis-dashboard-base .edis-dashboard-header {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--selected);
+  height: 40px;
+}
+
+.edis-dashboard-base .widget-loader-div {
+  height: calc(100% - 80px);
+  margin-top: 0.3em;
+  width: 100% !important;
+}
+
+.edis-dashboard-base .edis-dashboard-table {
+  height: 100%;
+  background-color: var(--app_dialog_bg2);
+  box-shadow: 0 0 2px var(--box-shadow);
+}
+
+.edis-dashboard-base .edis-dashboard-table .thead-scroller {
+  padding-right: 5px;
+  height: 80px;
+}
+
+.edis-dashboard-base .edis-dashboard-table .thead-scroller th {
+  border-bottom: 1px solid var(--border_primary);
+}
+
+.edis-dashboard-base .edis-dashboard-table .thead-scroller .firstChild {
+  width: 30%;
+  border-right: 1px solid var(--border_primary);
+}
+
+.edis-dashboard-base .edis-dashboard-table .tbody-scroller tr {
+  height: 80px;
+}
+
+.edis-dashboard-base .edis-dashboard-table .tbody-scroller .firstChild {
+  width: 30%;
+  border-right: 1px solid var(--border_primary);
+}
+
+.edis-dashboard-base .edis-dashboard-table .tbody-scroller .firstChild .data-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.edis-dashboard-base .edis-dashboard-table .tbody-scroller .firstChild .data-block .val1 {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.edis-dashboard-base .edis-dashboard-table .tbody-scroller .firstChild .data-block .val2 {
+  color: var(--mtf_isin_val);
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-Regular';
+}
+
+.edis-dashboard-base .edis-dashboard-table .holding-qty,
+.edis-dashboard-base .edis-dashboard-table .auth-qty,
+.edis-dashboard-base .edis-dashboard-table .input-qty {
+  /* display: flex; */
+  align-items: center;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.edis-dashboard-base .edis-dashboard-table .thead-scroller .lastChild,
+.edis-dashboard-base .edis-dashboard-table .tbody-scroller .lastChild {
+  padding-right: 25px;
+}
+
+.edis-dashboard-base .edis-dashboard-table .symbol-head {
+  display: flex;
+  align-items: center;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.edis-dashboard-base .edis-dashboard-table .symbol-head .label {
+  display: flex;
+  flex-direction: column;
+}
+
+.edis-dashboard-base .edis-dashboard-table .symbol-head .label .first {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.edis-dashboard-base .edis-dashboard-table .symbol-head .label .second {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s4);
+}
+
+.edis-dashboard-base .edis-dashboard-table .checkboxunit .checkboxIcon {
+  font-size: var(--font_l5);
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.edis-dashboard-base .edis-dashboard-table .tbody-scroller {
+  height: calc(100% - 160px);
+}
+
+.edis-dashboard-base .edis-dashboard-table tfoot {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding-left: 25px;
+}
+
+.edis-dashboard-base .edis-dashboard-table tfoot .generate-epin-btn {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+  margin-right: 30px;
+  font-family: 'OpenSans-SemiBold';
+  border-radius: 10px;
+  width: 160px;
+  height: 60px;
+  font-size: var(--font_m4);
+}
+
+.edis-dashboard-base .edis-dashboard-table tfoot .proceed-btn {
+  background-color: var(--greenColor);
+  color: var(--btn_text_primary);
+  border-radius: 10px;
+  width: 160px;
+  height: 60px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.edis-dashboard-base .edis-dashboard-table .errorRow {
+  height: 100%;
+}
+
+.edis-dashboard-base .edis-dashboard-table .errorRow .colspan {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*   =========== Edis Dashboard css ends here ===========   */
+
+/*   =========== Epledge Popup css starts here ===========   */
+
+.e-pledge-dialog {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.e-pledge-dialog .e-pledge-base {
+  height: 68%;
+  min-height: 400px;
+  width: 40%;
+  min-width: 500px;
+  position: relative;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+  border: 1px solid var(--input_border);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  /* justify-content: space-evenly; */
+  padding-top: 30px;
+
+  /* padding-bottom: 30px; */
+}
+
+.e-pledge-dialog .e-pledge-base .header {
+  height: 15%;
+  font-size: var(--font_m4);
+  width: 100%;
+}
+
+.e-pledge-dialog .e-pledge-base .header-text {
+  padding-bottom: 21px;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+}
+
+.e-pledge-dialog .e-pledge-base .header .client-code-with-date {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--bgcolor_22);
+  border-top: 1px solid var(--border_13);
+  border-bottom: 1px solid var(--border_13);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'OpenSans-SemiBold';
+
+  /* box-shadow: 0 5px 0 var(--box-shadow); */
+}
+
+.e-pledge-dialog .e-pledge-base .header .client-code-with-date .client-code {
+  padding-left: 50px;
+  color: var(--txtcolor_11);
+  font-size: var(--font_m4);
+}
+
+.e-pledge-dialog .e-pledge-base .header .client-code-with-date .client-code .client-code-value {
+  color: var(--input_color);
+  font-size: var(--font_l1);
+  padding-left: 5px;
+}
+
+.e-pledge-dialog .e-pledge-base .header .client-code-with-date .date {
+  padding-right: 50px;
+  color: var(--txtcolor_11);
+  font-size: var(--font_m4);
+}
+
+.e-pledge-base .mtf-table-div {
+  height: 80%;
+
+  /* padding-top: 20px; */
+  width: 100%;
+}
+
+.e-pledge-base .mtf-table-div .mtf-table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+.e-pledge-base .mtf-table-div .mtf-table .thead-scroller {
+  height: 60px;
+}
+
+.e-pledge-base .mtf-table-div .mtf-table .tbody-scroller {
+  height: calc(60% - 30px);
+}
+
+/* .e-pledge-base .mtf-table-div .mtf-table tbody {
+  height: 55%;
+} */
+
+.e-pledge-base .mtf-table-div .mtf-table .mtf-table-row {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--border_26);
+}
+
+.e-pledge-base .mtf-table-div .mtf-table .mtf-table-row .mtf-table-column1 {
+  text-align: left;
+  padding: 5px 5px 5px 50px;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.e-pledge-base .mtf-table-div .mtf-table .mtf-table-row .mtf-table-column2 {
+  text-align: center;
+  padding: 5px;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.e-pledge-base .mtf-table-div .mtf-table .mtf-table-row .mtf-table-column3 {
+  text-align: right;
+  padding: 5px 50px 5px 5px;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.e-pledge-base .mtf-table-div .mtf-table .mtf-table-row .mtf-table-column3.dataval {
+  padding-right: 43px;
+}
+
+.e-pledge-base .footer-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35%;
+}
+
+.e-pledge-base .footer-div .footer-text {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Regular';
+  text-align: left;
+  color: var(--textcolor3);
+  padding-left: 50px;
+  padding-top: 25px;
+  display: flex;
+}
+
+.e-pledge-base .footer-div .footer-text .agree-terms {
+  padding-right: 5px;
+}
+
+.e-pledge-base .footer-div .footer-text .checkboxIcon {
+  font-size: var(--font_xl1);
+}
+
+.e-pledge-base .footer-div .footer-text .checkboxIcon.checked {
+  color: var(--selected);
+}
+
+.e-pledge-base .footer-div .footer-text .checkboxIcon.unChecked {
+  color: var(--border_7);
+  margin-left: -4px;
+}
+
+.e-pledge-base .footer-div .btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 60px 50px 60px;
+}
+
+.e-pledge-base .footer-div .btn-div .cancel-btn {
+  color: var(--settings_neg_btn_color);
+  border: 1px solid var(--border_6);
+  padding: 15px;
+  width: 185px;
+  border-radius: 5px;
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  background-color: var(--bgcolor_18);
+}
+
+.e-pledge-base .footer-div .btn-div .proceed-btn {
+  /* color: var(--bgcolor_10); */
+  color: var(--app_dialog_bg);
+  background-color: var(--greenColor);
+  padding: 15px;
+  width: 185px;
+  border-radius: 5px;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.e-pledge-base .footer-div .btn-div .proceed-btn.inactive {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/*   =========== MTF PLedge Confirmation dialog css starts here ===========   */
+
+.mtf-confirm-dlg {
+  align-items: flex-end;
+}
+
+.mtf-confirm-dlg .window {
+  height: 30%;
+  min-height: 350px;
+  width: 30%;
+  min-width: 550px;
+  border: 1px solid var(--border_17);
+  background-color: var(--bgcolor_primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 7px;
+}
+
+.mtf-confirm-dlg .header {
+  padding-bottom: 20px;
+  color: var(--textcolor15);
+  font-size: var(--font_l3);
+  font-family: "Opensans-Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 68%;
+}
+
+.mtf-confirm-dlg .statusDiv {
+  padding-top: 5px;
+}
+
+.mtf-confirm-dlg .msg-content {
+  padding-bottom: 20px;
+  margin: auto;
+  width: 100%;
+}
+
+.mtf-confirm-dlg .msg-content li::marker {
+  color: var(--txtcolor_11);
+}
+
+.mtf-confirm-dlg .msg-content li span {
+  display: flex;
+  text-align: left;
+  color: var(--txtcolor_11);
+  font-size: var(--font_m2);
+}
+
+.mtf-confirm-dlg .action-button {
+  display: flex;
+  align-items: center;
+}
+
+.mtf-confirm-dlg .action-button .okBtn {
+  font-size: var(--font_m4);
+  border-radius: 7px;
+  height: 56px;
+  width: 160px;
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+  margin-right: 30px;
+  font-family: "OpenSans-Bold";
+}
+
+.mtf-confirm-dlg .action-button .proceedBtn {
+  margin-right: 16px;
+  background-color: var(--greenColor);
+  color: white;
+  font-size: var(--font_m4);
+  border-radius: 7px;
+  height: 56px;
+  width: 160px;
+}
+
+/*   =========== MTF PLedge Confirmation dialog css ends here ===========   */

@@ -1,0 +1,67 @@
+.large-widget,
+.small-widget {
+  position: relative;
+  font-size: 14px;
+}
+
+.small-widget hr {
+  border: 0;
+  border-top: 1px solid var(--border_widget);
+  padding: 0;
+  margin: 0;
+}
+
+.large-widget hr {
+  display: none;
+}
+
+.widgetBorder {
+  border: 1px solid var(--border_widget);
+  min-height: calc(100vh - 157px);
+  height: 100%;
+}
+
+.withBorder {
+  border: 1px solid var(--border_widget);
+}
+
+.small-widget .widgetBorder {
+  border: none;
+  background: transparent;
+}
+
+.maximizeIcon,
+.minimizeIcon {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  height: 27px;
+  width: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgcolor_tertiary);
+
+  /* border: 1px solid var(--border_secondary); */
+  color: #ecc983;
+  font-size: 18px;
+}
+
+.widget-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30px;
+
+  /* margin: 5px 42px 5px 10px; */
+}
+
+.watchlist-tableBase .widget-header {
+  margin: 5px 42px 5px 0;
+  margin-left: 4%;
+}
+
+.large-widget.watchlist-tableBase .widget-header {
+  margin-left: 2%;
+}

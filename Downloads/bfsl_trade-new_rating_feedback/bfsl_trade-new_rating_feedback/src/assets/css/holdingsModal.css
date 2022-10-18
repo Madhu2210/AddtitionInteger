@@ -1,0 +1,268 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal-main {
+  position: absolute;
+  background: white;
+  box-shadow: 0 8px 3px -7px var(--box-shadow4);
+  width: 65%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.modal-main ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-main ul li {
+  list-style: none;
+  width: 50%;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #242424;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.modal-figure {
+  text-align: right;
+  font-family: 'OpenSans-Bold';
+}
+
+.modal-main input {
+  border: 1px solid var(--bgcolor_6);
+  height: 40px;
+  width: 130px;
+  text-align: right;
+  font-size: 20px;
+  color: #242424;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.modal-main button.ok-btn {
+  background-color: var(--greenColor);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 13px 40px;
+}
+
+.modal-main button.ok-btn:hover {
+  background-color: #00a100;
+}
+
+.cancel-btn {
+  background-color: var(--txtcolor_tertiary);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 13px 40px;
+  cursor: pointer;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.orderBase .orderTable-base.holding-table .postion-filter .filter-right {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  color: var(--textcolor2);
+  text-align: right;
+  padding: 20px 0 10px 20px;
+}
+
+.orderBase .orderTable-base.holding-table .postion-filter .filter-right > div {
+  padding-right: 20px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  color: var(--selected) !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.orderBase .orderTable-base.holding-table .postion-filter .filter-right > div span {
+  color: var(--can_btn_color);
+  margin-left: 5px;
+}
+
+.modalError {
+  color: red !important;
+  text-align: center;
+  font-size: 16px;
+}
+
+.modalSuccess {
+  color: green !important;
+  text-align: center;
+  font-size: 16px;
+}
+
+.otp-declaration {
+  width: 100% !important;
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px !important;
+  line-height: 21px !important;
+}
+
+.otp-check {
+  width: 19px !important;
+  height: 19px !important;
+  margin-right: 8px !important;
+}
+
+.holdingsModalCloseBtn {
+  float: right;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.holdingsModalForm {
+  margin-top: 15px;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper button {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.modal-main p {
+  font-size: 19px;
+  line-height: 27px;
+  color: #000;
+}
+
+.input-check {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-check label {
+  font-size: 18px;
+}
+
+/* Chart View CSS */
+
+.viewList ul {
+  display: flex;
+}
+
+.viewList ul li {
+  list-style: none;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.viewList ul li input {
+  margin-right: 5px;
+}
+
+.input-radio {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.input-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.input-radio input:checked ~ .checkmark {
+  background-color: #ff7b21;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.input-radio input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.input-radio .checkmark::after {
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+}

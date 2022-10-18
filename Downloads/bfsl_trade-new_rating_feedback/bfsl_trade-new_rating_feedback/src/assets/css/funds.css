@@ -1,0 +1,1018 @@
+.funds-base-comp {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: calc(100% - 90px);
+  padding: 30px 5% 7px 5%;
+  background-color: var(--bgcolor_3);
+  min-height: 780px;
+}
+
+.funds-base-comp .funds-header {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m4);
+  color: var(--theme_color_4);
+  padding-left: 30px;
+}
+
+.funds-base-comp .funds-data {
+  height: calc(100% - 150px);
+}
+
+.funds-base-comp .funds-content {
+  display: flex;
+  height: calc(100% - 30px);
+
+  /* justify-content: space-around; */
+}
+
+.funds-base-comp .funds-footer {
+  height: 150px;
+  background-color: var(--withdraw-funds-footer);
+  border: 1px solid var(--error_msg_border);
+  margin-top: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.funds-base-comp .funds-header span.right {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.funds-base-comp .funds-header span.left {
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.funds-base-comp .funds-content .content-left {
+  margin-right: 20px;
+  flex: 1;
+  height: 100%;
+}
+
+.funds-base-comp .funds-content .content-right {
+  flex: 1;
+  border: 1px solid var(--funds_limits_border);
+  background-color: var(--bgcolor_10);
+}
+
+/* .funds-base-comp .fund-actions {
+    display: flex;
+    flex-direction: column;
+} */
+
+.funds-base-comp .fundTransfer-base {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.funds-base-comp .fundTransfer-base .widget-loader-div {
+  flex: 50;
+  height: 50%;
+}
+
+.funds-base-comp .fundTransfer-base .available-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border_primary);
+  background-color: var(--bgcolor_10);
+}
+
+.funds-base-comp .fundTransfer-base .available-details .errorMsg {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.funds-base-comp .fundTransfer-base .available-funds,
+.funds-base-comp .fundTransfer-base .opening-bal {
+  flex: 35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  padding: 0 30px 0 30px;
+}
+
+.funds-base-comp .fundTransfer-base .funds,
+.funds-base-comp .fundTransfer-base .bal,
+.funds-base-comp .fundTransfer-base .margin-used {
+  display: flex;
+  flex-direction: column;
+}
+
+.funds-base-comp .fundTransfer-base .opening-bal {
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  padding: 0 30px 0 30px;
+}
+
+.funds-base-comp .fundTransfer-base .available-details span.label {
+  color: var(--orderbook-dialog-exc-color);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.funds-base-comp .fundTransfer-base .available-details span.val {
+  color: var(--txtcolor_primary);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l4);
+}
+
+.funds-base-comp .fundTransfer-base .available-details span.value {
+  font-size: var(--font_xl1);
+  color: var(--txtcolor_primary);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.funds-base-comp .fundTransfer-base .statements {
+  color: var(--password_eye_icon);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  text-decoration: underline;
+}
+
+.funds-base-comp .fundTransfer-base .action-btns {
+  flex: 30;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.funds-base-comp .fundTransfer-base .action-btns > button {
+  width: 35%;
+  font-family: "OpenSans-SemiBold";
+  border-radius: 8px;
+  height: 55px;
+  color: var(--app_dialog_bg);
+  font-size: var(--font_m4);
+}
+
+.funds-base-comp .fundTransfer-base button.add-funds {
+  background-color: var(--greenColor);
+}
+
+.funds-base-comp .fundTransfer-base button.withdraw-funds {
+  background-color: var(--redColor);
+}
+
+.funds-base-comp .fundTransfer-base .recent-withdrawals {
+  flex: 50;
+  height: 50%;
+}
+
+.funds-base-comp .fundTransfer-base .recent-withdrawals .recent-withdrawals-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgcolor_10);
+  margin-top: 10px;
+  border: 1px solid var(--bgcolor_primary);
+}
+
+.funds-base-comp .fundTransfer-base .recent-withdrawals .header {
+  height: 50px;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  background-color: var(--recent_withdrawals_header);
+  color: var(--icon_color2);
+}
+
+.funds-base-comp .fundTransfer-base .recent-withdrawals .content {
+  height: calc(100% - 50px);
+}
+
+.funds-base-comp .fundTransfer-base .recent-withdrawals .content .widget-loader-div {
+  height: 100% !important;
+}
+
+.funds-base-comp .fundTransfer-base .recent-withdrawals .err-msg {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+
+/******* Withdraw funds CSS starts here *******/
+
+.funds-base-comp .available-details.withdrawal .action-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 3;
+}
+
+.funds-base-comp .available-details.withdrawal .addwithdraw-fields {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+}
+
+.funds-base-comp .available-details.withdrawal .amount-details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px 0 40px;
+  flex: 7;
+}
+
+.funds-base-comp .available-details.withdrawal .bankdetails {
+  padding: 10px 30px 10px 30px;
+
+  /* height: calc(100% - 80px); */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  flex: 3;
+}
+
+.funds-base-comp .available-details.withdrawal .bankdetails.bank-details-col-rev {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.funds-base-comp .available-details.withdrawal .bankdetails > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.funds-base-comp .selectBankOptions .select-input-div .select-input {
+  max-width: fit-content;
+  width: auto;
+  border: none;
+  border-bottom: 1px solid var(--withdrawfunds-border-bottom) !important;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  color: var(--input_color);
+  height: 40px;
+  padding: 15px;
+}
+
+.funds-base-comp .selectBankOptions .select-input-div .select-input .downArrowIcon {
+  color: var(--orderbook-dialog-exc-color);
+}
+
+.funds-base-comp .selectBankOptions .select-input-div .options-div {
+  background-color: var(--addFunds_bankDetails_bg);
+}
+
+.funds-base-comp .selectBankOptions .select-input-div .options-div .option {
+  border-bottom: 1px solid var(--bgcolor_tertiary);
+  padding: 10px 10px;
+}
+
+.funds-base-comp .selectBankOptions .select-input-div .options-div .option:hover {
+  background-color: var(--bgcolor_tertiary);
+}
+
+.funds-base-comp .selectBankOptions .select-input-div .options-div .option:last-child {
+  border: none !important;
+}
+
+.funds-base-comp .selectBankOptions .select-input-div.non-symbolSearch .options-div {
+  width: auto;
+  max-width: fit-content;
+  border-radius: 5px;
+  background-color: var(--bgcolor_3);
+  border-top: none;
+  top: 4px;
+}
+
+.funds-base-comp .available-details .action-btns {
+  border-top: 1px solid var(--border_26);
+}
+
+.funds-base-comp .available-details .amount-details span.amount-label {
+  color: var(--orderbook-dialog-exc-color);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  flex: 2;
+}
+
+.funds-base-comp .available-details .amount-details .amount-val {
+  flex: 4;
+}
+
+.funds-base-comp .available-details .addwithdraw-fields .errorDiv {
+  height: 12px;
+}
+
+.funds-base-comp .available-details .amount-details .amount-val,
+.funds-base-comp .available-details .enterAmount .amount-val {
+  color: var(--input_color);
+  font-size: var(--font_l4);
+  border-bottom: 1px solid var(--withdrawfunds-border-bottom);
+  width: 50%;
+  position: relative;
+}
+
+.funds-base-comp .available-details input.input-ele.inputVal.withdraw-amt-input {
+  border: none;
+  font-size: var(--font_l4);
+  font-family: 'OpenSans-SemiBold';
+  padding-bottom: 0;
+  color: var(--txtcolor_primary);
+  position: relative;
+  left: 5%;
+}
+
+.funds-base-comp .available-details .amount-details .symbol-rupee,
+.funds-base-comp .available-details .enterAmount .symbol-rupee {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.funds-base-comp .available-details .amount-details span.withdrawing-amt {
+  font-family: 'OpenSans-SemiBold';
+  color: var(--orderbook-dialog-exc-color);
+  font-size: var(--font_m4);
+  padding-top: 10px;
+  flex: 4;
+}
+
+.funds-base-comp .available-details .amount-details span.avl-amt {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_primary);
+  padding-left: 10px;
+}
+
+.funds-base-comp .available-details .bankdetails .card-details {
+  display: flex;
+  align-items: center;
+}
+
+.funds-base-comp .available-details .bankdetails .bank-name,
+.funds-base-comp .available-details .bankdetails .acc-no {
+  padding-left: 10px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  color: var(--input_color);
+}
+
+.funds-base-comp .available-details .action-btns button.theme-btn2 {
+  color: var(--theme_color_4);
+  border: 2px solid var(--theme_color_4) !important;
+}
+
+.funds-base-comp .available-details.withdrawal .action-btns > button {
+  width: 35%;
+  font-family: "OpenSans-SemiBold";
+  border-radius: 8px;
+  font-size: var(--font_m4);
+  height: 50px;
+}
+
+/******* Withdraw Success Starts Here ******/
+.funds-base-comp .available-details.withdraw-success {
+  align-items: center;
+  padding: 15px 7px;
+}
+
+.funds-base-comp .available-details.withdraw-success .success-action {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color: var(--date_icon_color);
+  font-size: var(--font_l1_1);
+  font-family: 'OpenSans-SemiBold';
+  flex-direction: column;
+}
+
+.funds-base-comp .available-details.withdraw-success .success-action .status {
+  color: var(--greenColor);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_l1_1);
+}
+
+.funds-base-comp .available-details.withdraw-success .amt-withdwrd {
+  flex: 3 1;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border-bottom: 1px solid var(--hr_login);
+  justify-content: center;
+  color: var(--recent-withdrawals_successMsg);
+  font-size: var(--font_l1_1);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.funds-base-comp .available-details.withdraw-success span.success-btn > img {
+  width: 80px;
+}
+
+/* .funds-base-comp .available-details.withdraw-success .success-action {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color: var(--date_icon_color);
+  font-size: var(--font_l1_1);
+  font-family: 'OpenSans-SemiBold';
+} */
+
+.funds-base-comp .available-details.withdraw-success .amt-withdwrd span.val,
+.funds-base-comp .available-details.withdraw-success .amt-withdwrd span.label {
+  color: var(--recent-withdrawals_successMsg);
+  font-size: var(--font_l1_1);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.funds-base-comp .available-details.withdraw-success .amt-withdwrd span.label {
+  padding-right: 10px;
+}
+
+.funds-base-comp .available-details.withdraw-success .success-msg {
+  flex: 3;
+  overflow-wrap: break-word;
+  width: 80%;
+  text-align: center;
+  color: var(--recent-withdrawals_successMsg);
+  font-size: var(--font_l1_1);
+  font-family: 'OpenSans-SemiBold';
+  padding-top: 10px;
+}
+
+.funds-base-comp .addFundsMode {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.funds-base-comp .addFundsMode .radioField {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 10%;
+  position: relative;
+}
+
+.funds-base-comp .addFundsMode .radioField .value {
+  margin-left: 30px;
+  font-family: "OpenSans-SemiBold";
+  color: var(--recent-withdrawals_successMsg);
+  font-size: var(--font_m4);
+}
+
+.funds-base-comp .addFundsMode .radioField input[type=radio] {
+  display: none;
+}
+
+.funds-base-comp .addFundsMode .radioField input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.funds-base-comp .addFundsMode .radioField input:checked ~ .checkmark {
+  display: block;
+  border: 2px solid var(--selected);
+}
+
+.funds-base-comp .addFundsMode .radioField .checkmark {
+  position: absolute;
+  padding-right: 7px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--border_7);
+}
+
+.funds-base-comp .addFundsMode .radioField .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--selected);
+}
+
+.funds-base-comp .addFundsMode .radioField input {
+  padding: 0;
+  margin: 0;
+}
+
+/******* Withdraw Success Ends Here ******/
+
+/********* Add Funds Starts here *********/
+.add-fundsDetails {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.add-fundsDetails .funds-binding-header {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.add-fundsDetails .funds-biniding-footer {
+  flex: 2 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.add-fundsDetails .selectBankOptions {
+  flex: 20 !important;
+  padding: 10px 30px 10px 30px;
+}
+
+.add-fundsDetails .addFundsMode {
+  flex: 20 !important;
+  padding: 10px 30px 10px 40px;
+}
+
+.add-fundsDetails .enterAmount {
+  flex: 1 !important;
+  padding: 10px 30px 10px 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-fundsDetails .enterAmount .errorDiv {
+  height: 14px;
+}
+
+.add-fundsDetails .enterAmount .amount-label {
+  color: var(--orderbook-dialog-exc-color);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.add-fundsDetails .action-btns {
+  flex: 1 !important;
+}
+
+.funds-base-comp .available-details.withdrawal {
+  height: 100%;
+  display: flex;
+}
+
+.funds-base-comp .add-fundsDetails .ecollect-details {
+  padding: 0 45px;
+}
+
+.funds-base-comp .ecollect-details .header {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  padding-bottom: 2%;
+  color: var(--orderbook-dialog-exc-color);
+}
+
+.funds-base-comp .ecollect-details .header .last-digit {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m4);
+  padding-bottom: 2%;
+  color: var(--orderbook-dialog-exc-color);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.funds-base-comp .ecollect-details .content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+  color: var(--txtcolor_primary);
+}
+
+.funds-base-comp .ecollect-details .content .copy-icon {
+  display: flex;
+  width: 65%;
+  height: 25px;
+  justify-content: flex-start;
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_l4);
+  color: var(--orderbook-dialog-exc-color);
+  cursor: pointer;
+  align-items: center;
+}
+
+.funds-base-comp .ecollect-details .content .copy-icon .tooltip-container {
+  position: absolute;
+  z-index: 0;
+  height: 30px;
+  text-align: center;
+  background-color: var(--tooltip_funs_bg);
+  border: 2px solid var(--tooltip_funs_border);
+  border-radius: 1px;
+  padding: 1px 2px 2px 2px;
+  left: 30px;
+  top: 5px;
+  right: 10px;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Regular';
+  width: 160px;
+  color: var(--tooltip_funs_text);
+  box-shadow: none;
+}
+
+.funds-base-comp .ecollect-details .content .detail {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.funds-base-comp .ecollect-details .content .item {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_23);
+  font-family: 'OpenSans-SemiBold';
+  flex: 4 1;
+  display: flex;
+}
+
+.funds-base-comp .ecollect-details .content .detail .value {
+  text-align: left;
+  display: flex;
+  flex: 6 1;
+  width: 100%;
+  font-size: var(--font_m2);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  justify-content: space-between;
+}
+
+/********* Add funds Ends Here ************/
+
+/****** Fund Limits  CSS starts here ********/
+
+.funds-base-comp .content-right .funds-limits-base {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.funds-base-comp .funds-limits-base .limits-header {
+  display: flex;
+  justify-content: space-around;
+  flex: 10;
+  height: 10%;
+  align-items: center;
+  font-family: 'OpenSans-Bold';
+  color: var(--txtcolor_6);
+  font-size: var(--font_m4);
+  border-bottom: 1px solid var(--border_primary);
+  background-color: var(--funds-limits-header);
+  flex-shrink: 0;
+}
+
+.funds-base-comp .funds-limits-base .limits-header .selected {
+  color: var(--theme_color_4);
+}
+
+.funds-base-comp .fundTransfer-base .opening-bal span.line-seperate,
+.funds-base-comp .funds-limits-base .limits-header span.line-seperate {
+  height: 40px;
+  border-right: 1px solid var(--funds-limits-border-bottom);
+}
+
+.funds-base-comp .funds-limits-base .limits-content {
+  flex: 90;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.funds-base-comp .funds-limits-base .fund-basic-detailed-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.funds-base-comp .funds-limits-base .fund-basic-detailed-view .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px 15px 30px;
+}
+
+.funds-base-comp .funds-limits-base .row span.label,
+.funds-base-comp .funds-limits-base .row span.data {
+  font-size: var(--font_l1);
+  font-family: 'OpenSans-SemiBold';
+  padding-bottom: 2px;
+}
+
+.funds-base-comp .funds-limits-base .row {
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+}
+
+.funds-base-comp .funds-limits-base .row span.label {
+  color: var(--orderbook-dialog-exc-color);
+}
+
+.funds-base-comp .errorDiv {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--error_input_color);
+}
+
+.funds-base-comp .banks-errorDiv {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.funds-base-comp .banks-errorDiv-addfunds {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s5);
+  color: var(--txtcolor_tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 40px;
+}
+
+.funds-base-comp .funds-limits-base .row span.label.last,
+.funds-base-comp .funds-limits-base .row span.label.margin,
+.funds-base-comp .funds-limits-base .row span.label.first,
+.funds-base-comp .funds-limits-base .row span.data {
+  color: var(--txtcolor_primary);
+}
+
+.funds-base-comp .funds-limits-base .row .label.bold {
+  font-family: 'OpenSans-Bold' !important;
+}
+
+.funds-base-comp .funds-limits-base .row.last {
+  border-bottom: none;
+}
+
+.funds-base-comp .fund-basic-detailed-view .error-div {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/****** Fund Limits CSS ends here ***********/
+
+/******* Funds Footer CSS starts here *******/
+
+ul.footer-list {
+  list-style-position: outside;
+}
+
+.funds-base-comp .footer-list {
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m4);
+  margin: 15px;
+  color: var(--input_color);
+}
+
+/******* Funds Footer CSS ends here *********/
+
+/********* Recent Withdrawasl *******/
+
+.funds-base-comp .recent-withdrawals .recent-trans-base .trans-details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.recent-trans-base .trans-heading {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  height: 50px;
+  align-items: center;
+  color: var(--orderbook-dialog-exc-color);
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  padding: 0 4%;
+}
+
+.recent-trans-base .trans-content {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  padding: 0 4%;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  height: 80px;
+}
+
+.recent-trans-base .trans-body {
+  height: calc(100% - 50px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.recent-trans-base .trans-content .confirmCancelRequest {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  padding: 0 5%;
+  margin: 0;
+}
+
+.recent-trans-base .trans-content.cancel-selected {
+  background-color: var(--bgcolor_20);
+}
+
+.recent-trans-base .trans-content .confirmCancelRequest .confirMsg {
+  flex: 7;
+  color: var(--textcolor2);
+}
+
+.recent-trans-base .trans-content .confirmCancelRequest .button {
+  display: flex;
+  justify-content: space-around;
+  flex: 3;
+}
+
+.recent-trans-base .trans-content .confirmCancelRequest .button .action-button {
+  height: 35px;
+  width: 37%;
+  border: 1px solid var(--border_6);
+  border-radius: 8px;
+  font-size: var(--font_s5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgcolor_10);
+  color: var(--withdrawfunds-button-clr);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.recent-trans-base .trans-content .confirmCancelRequest .button .action-button.confirmCancel {
+  color: var(--theme_color_4);
+  border: 1px solid var(--theme_color_4);
+}
+
+.recent-trans-base .trans-content .trans-date {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.recent-trans-base .trans-heading .left,
+.recent-trans-base .trans-content .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.recent-trans-base .trans-heading .center,
+.recent-trans-base .trans-content .center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-trans-base .trans-heading .right {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.recent-trans-base .trans-content .right {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+}
+
+/* .recent-trans-base .trans-heading {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  height: 50px;
+  align-items: center;
+}
+
+.recent-trans-base .trans-content {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  height: 80px;
+} */
+
+/* .recent-trans-base .trans-content .right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+} */
+
+.recent-trans-base .trans-content .left,
+.recent-trans-base .trans-content .center {
+  text-align: left;
+}
+
+.recent-trans-base .trans-content .right .cancel {
+  color: var(--password_eye_icon);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+}
+
+.recent-trans-base .trans-content .trans-time {
+  color: var(--orderbook-dialog-exc-color);
+  padding-right: 10px;
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-Regular';
+}
+
+.recent-trans-base .trans-content .trans-status {
+  padding: 2px 25px;
+  border: 0.6px solid var(--recentWithdrawals_status_bdr);
+  border-radius: 10px;
+  background-color: inherit;
+}
+
+.recent-trans-base .trans-content span.trans-right {
+  color: var(--input_color);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.recent-trans-base .buy-clr {
+  color: var(--greenColor) !important;
+}
+
+.recent-trans-base .sell-clr {
+  color: var(--redColor) !important;
+}
+
+.recent-trans-base .pend-clr {
+  color: var(--theme_color_secondary) !important;
+}
+
+.recent-trans-base .can-clr {
+  color: var(--can_text_color) !important;
+}
+
+.recent-trans-base {
+  height: 100%;
+}
+
+.recent-trans-base .success-action {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.funds-base-comp .recent-trans-base span.success-btn > img {
+  width: 80px;
+}
+
+.funds-base-comp .recent-trans-base span.close-button {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.funds-base-comp .recent-trans-base span.success-btn {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.funds-base-comp .recent-trans-base .message {
+  flex: 6;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--recent-withdrawals_successMsg);
+}

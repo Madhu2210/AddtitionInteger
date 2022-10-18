@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas Pickright</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'OpenSans-Regular';
+        src: url('assets/fonts/openSans/OpenSans-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'OpenSans-SemiBold';
+        src: url('assets/fonts/openSans/OpenSans-SemiBold.ttf');
+    }
+
+    html::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .ideas-content {
+        height: 100%;
+        font-family: "OpenSans-Regular";
+        padding: 10px;
+        min-height: 300px;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .ideas-content .ideas-card {
+        width: 40%;
+    }   
+
+    .ideas-content .us-stocks {
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .ideas-content .positive-btn {
+        margin-left: 30px;
+        font-weight: 500;
+        background-color: #00b500;
+        border: 2px solid #00b500;
+        color: #fff;
+    }
+
+</style>
+
+<body>
+    <div class="ideas-content">
+    <div id="investpack-btn" class="ideas-card" onclick="onclickPickright('Pick')">
+
+    </div>
+    <div id="us-stocks" class="ideas-card" onclick="onclickUSstocks('US_STOCKS')">
+        <button class="positive-btn">
+            US_STOCKS
+        </button>
+    </div>
+</div>
+</body>
+<!-- <script src=window.parent.picksrc></script> -->
+
+<script>
+    let myScript = document.createElement("script");
+    myScript.setAttribute("src", window.parent.PickSrc);
+    document.body.appendChild(myScript);
+
+      setTimeout(() => {
+        // console.log('iframe',Pickright,window.parent.PickInit)
+        Pickright.initialize(window.parent.PickInit)
+        },1000) 
+
+    function onclickPickright(type) {
+        console.log('iframe',Pickright)
+    
+        let sendObj = {
+            id: "IdeasPickRight",
+            data: {
+                click: type
+            }
+        }
+        sendObj = JSON.stringify(sendObj)
+        // if (window.Pickright) {
+        //     console.log("onclickPickright step2 android")
+        //     window.Pickright.postMessage(sendObj);
+        // }
+        // if (window.webkit) {
+        //     console.log("onclickPickright step2 webkit iOS")
+        //     if (window.webkit.messageHandlers && window.webkit.messageHandlers.Pickright) {
+        //         console.log("onclickPickright step2 LASTerms iOS")
+        //         window.webkit.messageHandlers.Pickright.postMessage(sendObj)
+        //     }
+        // }
+        if (window) {
+            window.postMessage(sendObj, "*");
+        }
+        if (parent) {
+            parent.postMessage(sendObj, '*');
+        }
+    }
+    function onclickUSstocks() {
+        window.open(window.parent.IdeasInfo[1].link)
+    }
+</script>
+
+</html>

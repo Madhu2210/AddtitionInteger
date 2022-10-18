@@ -1,0 +1,615 @@
+.marketBase {
+  height: 100%;
+  padding: 18px 18px 15px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border_primary);
+  background-color: var(--bgcolor_3);
+}
+
+.marketBase .marketBase-header {
+  /* height: 110px; */
+  background-color: var(--bgcolor_3);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid var(--border-color_3);
+}
+
+.marketBase .marketBase-content {
+  height: calc(100% - 40px);
+  background-color: var(--bgcolor_primary);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.marketBase .marketBase-header .headerBase {
+  /* height: 100%; */
+  padding: 0 20px;
+  height: 55px;
+  font-size: var(--font_s5);
+
+  /* background-color: unset; */
+  background-color: var(--bgcolor_primary);
+  border: none;
+  margin: 0 !important;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marketBase .marketBase-header .menuArray {
+  height: 55px;
+  background-color: rgb(245, 245, 245);
+}
+
+.marketBase .marketBase-header .headerBase .menuLeft {
+  display: flex;
+  height: 100%;
+  flex: 2 1;
+  justify-content: flex-start;
+}
+
+.marketBase .marketBase-header .headerBase .filtersOnRight {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.marketBase .marketBase-header .headerBase .menuLeft .menuBaseTab:first-child {
+  margin-left: 0;
+}
+
+.marketBase .marketBase-header .headerBase .menuLeft .menuBaseTab {
+  margin-left: 10%;
+  color: var(--textcolor2);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+  align-items: center;
+  font-size: var(--font_m4);
+}
+
+.marketBase .marketBase-header .headerBase .menuLeft .menuBaseTab.selected {
+  color: var(--selected);
+  border-bottom: 2px solid var(--theme_color);
+}
+
+.marketBase .marketBase-header .headerBase .equity-filters {
+  display: flex;
+}
+
+.marketBase .marketBase-header .headerBase .equity-filters .doggleBase-div {
+  margin-left: 10px;
+  padding: 1px 10px;
+  box-shadow: none;
+}
+
+.marketBase .marketBase-header .headerBase .equity-filters .doggleBase-div.orderAction {
+  width: 100px;
+  margin: 1px 15px;
+  background-color: inherit;
+  border: none;
+  box-shadow: none;
+}
+
+.marketBase .marketBase-header .headerBase .equity-filters .doggleBase-div span {
+  background-color: inherit;
+  color: var(--toggle-button-border);
+  font-family: 'OpenSans-SemiBold';
+  border: none;
+  font-size: var(--font_s5);
+}
+
+.marketBase .marketBase-header .headerBase .equity-filters .doggleBase-div span.active {
+  background-color: inherit;
+  border: 1px solid var(--theme_color) !important;
+  color: var(--theme_btn_bg);
+  border-radius: 10%;
+}
+
+.marketBase .equity-filters .doggleBase-div.orderAction span.active:nth-child(1),
+.marketBase .equity-filters .doggleBase-div.orderAction span.active:nth-child(2) {
+  /* background-color: inherit; */
+  color: var(--theme_color);
+  border: 1px solid var(--theme_color);
+  border-radius: 1;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s5);
+  box-shadow: none;
+}
+
+.marketBase .marketBase-header .headerBase .equityFilter-dropdown.exc .select-input-div.non-symbolSearch .options-div-base {
+  width: 200px;
+  right: 0;
+  left: unset;
+}
+
+.marketBase .marketBase-header .headerBase .equityFilter-dropdown .select-input-div.non-symbolSearch .options-div-base {
+  top: 43px;
+}
+
+.marketBase .marketBase-header .headerBase .equityFilter-dropdown.exc .select-input-div .select-input {
+  width: auto;
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div-base .searchInput {
+  width: 100%;
+  padding: 8px 8px 8px 30px;
+  color: var(--txtcolor_22);
+  border: none;
+  border-bottom: 1px solid var(--input_border);
+  font-size: var(--font_s5);
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div-base .input-addOn .addOn-icon {
+  font-size: var(--font_l1);
+  padding-left: 7px;
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div-base .input-addOn {
+  display: flex;
+  align-items: center;
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div-base {
+  top: 35px;
+  width: 200px;
+  right: 10px;
+  left: unset;
+  background-color: var(--bgcolor_10);
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div.showOption {
+  max-height: 215px;
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div {
+  background-color: var(--bgcolor_10);
+  box-shadow: none;
+  border: 1px solid var(--border_22);
+}
+
+.marketBase .marketBase-header .headerBase .equityFilter-dropdown.sector .select-input-div .options-div-base {
+  right: 50px;
+}
+
+.marketBase .marketBase-header .headerBase .equityFilter-dropdown.sector .select-input-div .options-div {
+  max-height: 300px;
+  width: 250px;
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .select-input {
+  border: none;
+
+  /* max-width: none; */
+  width: auto;
+  color: var(--label_color3);
+  font-family: 'OpenSans-SemiBold';
+  padding-right: 10px;
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .select-input .select-value {
+  color: var(--theme_color_4);
+  font-size: var(--font_m2);
+}
+
+.marketBase .marketBase-header .headerBase .selected {
+  color: var(--theme_color_4);
+  font-family: "OpenSans-Semibold" !important;
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div .option {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 15px;
+  border-bottom: 1px solid var(--border_8) !important;
+  font-size: var(--font_m2);
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .options-div .option:hover {
+  background-color: var(--select_option_hover);
+}
+
+.marketBase .marketBase-header .headerBase .select-input-div .select-input .downArrowIcon {
+  color: var(--theme_color);
+}
+
+.marketBase .marketMenu-div {
+  position: relative;
+  display: flex;
+  height: 100%;
+  background-color: var(--bgcolor_5);
+  border-top: 1px solid var(--vr_line);
+  border-bottom: 1px solid var(--vr_line);
+}
+
+.marketBase .marketMenu-div .marketMoverstDisp .sector-selected-indices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+}
+
+.marketBase .marketMenu-div .marketMoverstDisp .sector-selected-indices span.sector-indices {
+  color: var(--textcolor2);
+  font-family: "OpenSans-Bold";
+  display: flex;
+  align-items: center;
+  font-size: var(--font_m2);
+}
+
+.marketBase .marketMenu-div .marketMoverstDisp .sector-selected-indices span.sector-ltp {
+  color: var(--textcolor2);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  font-size: var(--font_m2);
+}
+
+.marketBase .marketMenu-div .marketMoverstDisp .sector-selected-indices span.sector-changeVal {
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  padding-left: 10px;
+}
+
+.marketBase .marketMenu-div .marketMoverstDisp {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.marketBase .marketMenu-div .menusTab.first,
+.marketBase .marketMenu-div .menusGuestTab.first {
+  margin-left: 0;
+}
+
+.marketBase .marketMenu-div .menusTab.selectedMenu,
+.marketBase .marketMenu-div .menusGuestTab.selectedMenu {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+}
+
+.marketBase .marketMenu-div .menusTab {
+  color: var(--markets_menu);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+  border-right: 1px solid var(--border_13);
+  padding: 0 24px;
+  white-space: nowrap;
+}
+
+.marketBase .marketMenu-div .menusGuestTab {
+  color: var(--markets_menu);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+  border-right: 1px solid var(--border_13);
+  padding: 0 24px;
+  white-space: nowrap;
+  width: 35%;
+}
+
+.marketBase .marketMenu-div .menusTab.selectedMenu .menuName,
+.marketBase .marketMenu-div .menusGuestTab.selectedMenu .menuName {
+  border-bottom: 2px solid var(--theme_color);
+}
+
+.marketBase .marketMenu-div .menusTab .menuName,
+.marketBase .marketMenu-div .menusGuestTab .menuName {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketBase .marketMenu-div .marketMoverstDisp::-webkit-scrollbar {
+  display: none;
+}
+
+/* .marketBase .marketMenu-div .marketMoverstDisp {
+  -ms-overflow-style: none
+  scrollbar-width: none
+} */
+
+.marketBase .marketMenu-div .moveScroll-btn {
+  width: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--font_l4);
+  color: var(--icon_color4);
+}
+
+.marketBase .marketMenu-div .moveScroll-btn.active {
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.marketBase .marketMenu-div .moveScroll-btn.right {
+  right: 60px;
+  padding-right: 0;
+  padding-left: 5px;
+}
+
+.marketBase .marketMenu-div .moveScroll-btn.left {
+  left: 0;
+  padding-left: 15px;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable {
+  height: 100%;
+  border-left: 1px solid var(--border-color_3);
+  border-right: 1px solid var(--border-color_3);
+}
+
+.marketBase .marketBase-content table.maretMovers-table,
+.marketBase .marketBase-content table.marketDeals-table,
+.marketBase .marketBase-content table.ipoPerformance-table,
+.marketBase .marketBase-content table.marketfiidii-table,
+.marketBase .marketBase-content table.derivatives-table,
+.marketBase .marketBase-content table .putcall-tabl {
+  height: 100%;
+  padding-left: 15px;
+}
+
+.marketBase .marketBase-content table.globalindices-table {
+  height: 100%;
+
+  /* padding-left: 15px; */
+}
+
+.marketBase .marketBase-content table .putcall-table thead th {
+  padding-left: 15px;
+}
+
+.marketBase .marketBase-content .putcall-table .thead-scroller,
+.marketBase .marketBase-content .putcall-table .tbody-scroller tr {
+  padding-right: 0 !important;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable table.maretMovers-table thead th,
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table thead th,
+.marketBase .marketBase-content .marketMovers-baseTable .ipoPerformance-table thead th,
+.marketBase .marketBase-content .marketMovers-baseTable .marketfiidii-table thead th,
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead th,
+.marketBase .marketBase-content .marketMovers-baseTable .derivatives-table thead th,
+.marketBase .marketBase-content .marketMovers-baseTable .globalindices-table thead th {
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .maretMovers-table .tbody-scroller,
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table .tbody-scroller,
+.marketBase .marketBase-content .marketMovers-baseTable .ipoPerformance-table .tbody-scroller,
+.marketBase .marketBase-content .marketMovers-baseTable .marketfiidii-table .tbody-scroller,
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table .tbody-scroller,
+.marketBase .marketBase-content .marketMovers-baseTable .derivatives-table .tbody-scroller,
+.marketBase .marketBase-content .marketMovers-baseTable .globalindices-table .tbody-scroller {
+  height: calc(100% - 34px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table {
+  height: 100%;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead {
+  height: 85px;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table .tbody-scroller {
+  height: calc(100% - 85px);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .marketfiidii-table .lastChild,
+.marketBase .marketBase-content .marketMovers-baseTable .ipoPerformance-table .lastChild,
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table .lastChild {
+  padding-right: 15px;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .maretMovers-table .symName-column,
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table .symName-column {
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+  font-size: var(--font_m2);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table td.client-name {
+  font-size: var(--font_s5);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table .clientName {
+  text-align: left;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table .action-date {
+  text-align: left;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .marketfiidii-table span.date,
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table span.date {
+  font-family: "OpenSans-SemiBold" !important;
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .marketDeals-table span.action {
+  text-transform: uppercase;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .ipoPerformance-table .tbody-scroller span.company-name {
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_primary) !important;
+}
+
+.marketBase .marketBase-header .headerBase .equityFilter-dropdown.derivative .select-input-div .select-input {
+  width: auto !important;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table .firstChild {
+  border-right: 1px solid var(--chart_icon_border);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead th.symbolHeader {
+  border-bottom: 1px solid var(--chart_icon_border) !important;
+  background-color: var(--bgcolor_5);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead th.blankHeader {
+  background-color: var(--bgcolor_5);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead .columnsLeft {
+  /* border-right: 1px solid #f1f2f3 !important; */
+  background-color: var(--bgcolor_7);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead .columnsLeft.pcr {
+  border-right: 1px solid var(--chart_icon_border);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead .columnsRight {
+  /* border-right: 1px solid #f1f2f3 !important; */
+  background-color: var(--bgcolor_25);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table thead .pcr {
+  color: var(--input_color);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_s5);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table td .item {
+  font-size: var(--font_m3) !important;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .putcall-table .symName-column {
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_4) !important;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable table .oiRatio-left {
+  border-right: 1px solid var(--chart_icon_border) !important;
+  padding-right: 3%;
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable table .volRatio-right {
+  padding-right: 3%;
+}
+
+.marketBase .marketBase-content .moreDetails {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 10px;
+  border-bottom: 1px solid var(--border-color_1);
+}
+
+.marketBase .marketBase-content .moreDetails button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--border_14);
+  color: var(--textcolor2);
+  font-family: "OpenSans-Regular" !important;
+  font-size: var(--font_s5);
+  width: 120px;
+  height: 30px;
+  padding: 3px 3px;
+  text-transform: capitalize;
+  flex: 1;
+  margin: 0 4%;
+}
+
+.marketBase .marketBase-content .moreDetails button.addWatchlist {
+  width: 135px;
+}
+
+.marketBase .marketBase-content .moreDetails button img {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+.marketBase .marketBase-content .moreDetails button.addWatchlist img {
+  height: 30px;
+  width: 25px;
+}
+
+.marketBase .marketBase-content .derivatives-table tbody .symName-column,
+.marketBase .marketBase-content .globalindices-table tbody .indexname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+}
+
+.marketBase .marketBase-content .globalindices-table tbody .date-global {
+  display: flex;
+  width: 300%;
+  align-items: baseline;
+  padding-top: 3px;
+}
+
+.marketBase .marketBase-content .globalindices-table tbody .last-update {
+  color: var(--txtcolor_19);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+}
+
+.marketBase .marketBase-content .globalindices-table tbody .index-date {
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m1);
+  color: var(--txtcolor_4);
+  display: flex;
+  padding-left: 1%;
+}
+
+.marketBase .marketBase-content .globalindices-table tbody .clock-date {
+  display: flex;
+  justify-content: flex-end;
+
+  /* position: relative; */
+
+  /* padding: 20px; */
+  padding: 20px 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+}
+
+.marketBase .marketBase-content .globalindices-table tbody .clock-date span.bfsl-font.clockIcon.clock {
+  font-size: var(--font_l3);
+}
+
+.marketBase .marketBase-content .derivatives-table tbody .lotSize,
+.marketBase .marketBase-content .globalindices-table tbody .lotSize {
+  font-size: var(--font_s3);
+  font-family: "OpenSans-Regular";
+  color: var(--txtcolor_4);
+}
+
+.marketBase span.bfsl-font.downArrowIcon.showMoreIcon {
+  color: var(--button-arrow);
+}
+
+.marketBase .marketBase-content .marketMovers-baseTable .maretMovers-table .tbody-scroller span.changePer,
+.marketBase .marketBase-content .marketMovers-baseTable .derivatives-table .tbody-scroller .changePer,
+.marketBase .marketBase-content .marketMovers-baseTable .globalindices-table .tbody-scroller .changePer,
+.marketBase .marketBase-content .marketMovers-baseTable .globalindices-table .tbody-scroller .date {
+  font-size: var(--font_s5);
+}

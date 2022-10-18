@@ -1,0 +1,992 @@
+.orderDialogBase {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--coverBG);
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  z-index: 10;
+}
+
+.orderDialogBase.marketDepthBase {
+  align-items: center;
+}
+
+.orderDialogBase .widget-loader-div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.orderDialog-displayDetails {
+  height: 350px !important;
+}
+
+.orderDialog-displayDetails,
+.orderSymDetails-modal {
+  width: 100%;
+  background-color: var(--bgcolor_primary);
+  padding-bottom: 20px;
+  border: 1px solid var(--convert_dialog_border);
+}
+
+.orderSymDetails-modal span.bfsl-font.rightArrowIcon {
+  color: var(--convert_dialog_arrow_clr);
+}
+
+.orderSymDetails-modal .orderDialog-headerDetails {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--orderbook-dialog-header-bg-color);
+  height: 55px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.orderSymDetails-modal .orderDialog-headerDetails .dialogHeader-orderAction {
+  text-align: center;
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold" !important;
+
+  /* color: var(--greenColor); */
+  margin-right: 5px;
+}
+
+.orderSymDetails-modal .orderDialog-headerDetails .dialogHeader-symbolname,
+.pending-cancel-order .order-symname-details .order-symName {
+  color: var(--textcolor2);
+  font-family: "OpenSans-SemiBold" !important;
+  font-size: var(--font_l2);
+}
+
+.orderSymDetails-modal .orderDialog-headerDetails .dialogHeader-exchange,
+.pending-cancel-order .order-symname-details .order-symExc {
+  text-align: center;
+  font-size: var(--font_s5);
+  font-family: "OpenSans-Regular" !important;
+  color: var(--txtcolor_24);
+  opacity: 1;
+  margin-left: 10px;
+}
+
+.orderSymDetails-modal .dialogHeader-statusDetails {
+  display: flex;
+  align-items: center;
+}
+
+.orderSymDetails-modal .dialogHeader-statusDetails .dialogHeader-orderStatus {
+  padding: 5px 20px;
+  background-color: var(--bgcolor_primary);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold" !important;
+  color: var(--greenColor);
+  border: 1px solid var(--txtcolor_5);
+}
+
+.orderSymDetails-modal .status-n-orderaction .ordAction-ordertrail {
+  padding: 3px 13px;
+  font-size: var(--font_s5);
+  border: 1px solid var(--txtcolor_5);
+}
+
+.orderSymDetails-modal .status-n-orderaction {
+  font-family: "OpenSans-SemiBold" !important;
+}
+
+.orderSymDetails-modal .status-n-orderaction .currordStatus {
+  padding-left: 15px;
+  font-size: var(--font_s4);
+}
+
+/* .orderSymDetails-modal .status-n-orderaction .ordAction-ordertrail {
+    font-size: var(--font_s5);
+} */
+
+.orderSymDetails-modal .orderDialog-bodyDetails {
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 0 20px;
+}
+
+.orderDialog-bodyDetails > div {
+  width: 100%;
+  flex: 1;
+}
+
+.orderSymDetails-modal .orderDialog-bodyDetails-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderSymDetails-modal .orderDialog-bodyDetails .orderDialog-bodyDetails-Row1,
+.orderSymDetails-modal .orderDialog-bodyDetails .orderDialog-bodyDetails-Row2,
+.orderSymDetails-modal .orderDialog-bodyDetails .orderDialog-bodyDetails-Row3 {
+  display: flex;
+}
+
+.orderSymDetails-modal > span,
+.orderDialog-bodyDetails-Row2 > span {
+  font-size: var(--font_s5);
+  color: var(--orderbook-dialog-exc-color);
+  flex: 1;
+}
+
+.orderSymDetails-modal .details.first,
+.orderDialog-bodyDetails-Row2 .details.first {
+  text-align: left;
+}
+
+.orderSymDetails-modal .details.last,
+.orderDialog-bodyDetails-Row2 .details.last {
+  text-align: right;
+}
+
+.orderSymDetails-modal .details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--txtcolor_23);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_s5);
+  flex: 1;
+}
+
+.orderSymDetails-modal .orderDialog-bodyDetails-Row2 span.details.avgprice {
+  padding-left: 12%;
+}
+
+.orderSymDetails-modal .orderDialog-bodyDetails-Row2 span.details.date-guest {
+  margin-left: 15px;
+  padding-right: 23%;
+}
+
+.orderSymDetails-modal .details.date {
+  margin-left: 15px;
+}
+
+.orderSymDetails-modal .details.gtd {
+  flex: 1 1 200px;
+}
+
+.orderSymDetails-modal .details.gtd.date {
+  text-align: right;
+}
+
+.orderSymDetails-modal .details.gtc-exec.date {
+  text-align: right;
+}
+
+.orderSymDetails-modal .orderDialog-bodyDetails .value {
+  margin-top: 10px;
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+  white-space: nowrap;
+}
+
+.convert-dialog input.input-ele {
+  color: var(--txtcolor_primary);
+}
+
+.orderSymDetails-modal .orderDialog-bodyDetails .details span:first-child {
+  white-space: nowrap;
+}
+
+.orderSymDetails-modal .footer {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderSymDetails-modal .footer .actionDiv {
+  height: 100%;
+  margin-right: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.orderSymDetails-modal .footer .actionDiv button,
+.pending-cancel-order .cancel-action-pending button {
+  height: 90%;
+  width: 135px;
+  margin-right: 15px;
+  border-radius: 0;
+  font-size: var(--font_m4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.orderSymDetails-modal .footer .actionDiv button.theme-btn2 {
+  background-color: inherit !important;
+}
+
+.orderSymDetails-modal .footer .actionDiv .convert-btn {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+}
+
+.orderSymDetails-modal .footer .actionDiv .trade-btn {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+}
+
+.orderSymDetails-modal .footer .actionDiv .stopLoss-btn {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+}
+
+.orderSymDetails-modal .footer .actionDiv button:last-child {
+  margin-right: 0;
+}
+
+.orderSymDetails-modal .footer .theme-btn3 {
+  font-family: "OpenSans-SemiBold";
+  padding: 5px;
+  color: var(--icon_color10);
+  background-color: inherit;
+  border: 1px solid var(--icon_color10) !important;
+}
+
+.orderSymDetails-modal .footer .modify-pending-order {
+  text-transform: capitalize;
+}
+
+.orderSymDetails-modal .msgDiv {
+  flex: 1;
+  width: 43%;
+}
+
+.orderSymDetails-modal .footer.netPostions {
+  display: flex;
+}
+
+.orderSymDetails-modal .footer.netPostions .msgDiv {
+  flex: 2;
+}
+
+.orderSymDetails-modal .footer.netPostions .actionDiv {
+  flex: 1;
+}
+
+.orderSymDetails-modal .footer.netPostions .errorDiv {
+  align-items: flex-start;
+  color: var(--redColor);
+  font-size: var(--font_s5);
+  padding: 0 30px;
+  display: flex;
+}
+
+.orderSymDetails-modal .msgDiv .rejected-reason {
+  align-items: flex-start;
+  color: var(--redColor);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  padding: 0 30px;
+  flex-grow: 1;
+  display: flex;
+}
+
+.orderSymDetails-modal .msgDiv .reason-lbl {
+  font-family: "OpenSans-Bold";
+  margin-right: 5px;
+}
+
+.orderSymDetails-modal .action-btns {
+  width: 200px;
+}
+
+.orderSymDetails-modal .dialogHeader-statusDetails .close-button {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+/* Pending order  Cancel Dialog Confirmation */
+
+.pending-cancel-order {
+  height: 300px;
+  width: 100%;
+  background-color: var(--bgcolor_17);
+  border: 1px solid var(--border-color_2);
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: thin;
+  justify-content: space-evenly;
+}
+
+.pending-cancel-order .cancel-confirmation {
+  color: var(--orderbook-pending-cancel-col);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Regular";
+}
+
+.pending-cancel-order .cancel-action-pending {
+  display: flex;
+}
+
+.pending-cancel-order .cancel-action-pending .not-cancel-order {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+  font-family: "OpenSans-SemiBold";
+}
+
+.pending-cancel-order .cancel-action-pending button {
+  width: 150px;
+  padding: 5px;
+  height: 50px;
+}
+
+/* Pending Order Cancel Confirmation Dialog */
+
+.cancel-confirmation-dialog {
+  height: 40%;
+  width: 100%;
+  background-color: var(--bgcolor_primary);
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: thin;
+}
+
+.cancel-confirmation-dialog .cancelled-sym-details,
+.cancel-order-message {
+  padding-top: 20px;
+}
+
+.cancel-confirmation-dialog .order-symName,
+.order-qty {
+  padding-top: 20px;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold" !important;
+  font-size: var(--font_l2);
+}
+
+.cancel-confirmation-dialog .order-qty,
+.label-qty {
+  padding-left: 10px;
+}
+
+.cancel-confirmation-dialog .cancel-order-message {
+  color: var(--table_thead_color);
+  font-size: var(--font_m4);
+}
+
+/* Net positions symdetails css starts here  */
+
+.netPositions-details {
+  height: 320px !important;
+}
+
+.netPositions-details .orderDialog-bodyDetails {
+  flex-direction: row !important;
+}
+
+/* Net positions symdetails css ends here  */
+
+/* Order Trail Symdetails css starts here */
+
+.ordertrail-details {
+  height: 400px;
+  padding-bottom: 0 !important;
+}
+
+.ordertrail-details .ordertrail-body {
+  height: calc(100% - 55px);
+  padding: 20px;
+  display: flex;
+}
+
+.ordertrail-details .orderTrail-details-left {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.ordertrail-details .orderTrail-details-right {
+  flex: 4;
+  overflow: scroll;
+  display: grid;
+}
+
+.ordertrail-details .orderTrail-details-left .left-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--orderbook-dialog-order-trial-col);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_l2);
+}
+
+.ordertrail-details .orderTrail-details-left .left-title .leftArrowIcon {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_l5);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.ordertrail-details .orderTrail-details-left .left-body {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-right: 1px solid var(--vr_line_order_trail);
+}
+
+.ordertrail-details .orderTrail-details-left .left-body .trail-details {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_24);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+}
+
+.ordertrail-details .orderTrail-details-left .trail-details .label {
+  flex: 3;
+}
+
+.ordertrail-details .orderTrail-details-left .trail-details .separator {
+  flex: 1;
+}
+
+.ordertrail-details .orderTrail-details-left .trail-details .value {
+  flex: 5;
+  color: var(--textcolor2);
+}
+
+.ordertrail-details .orderTrail-details-right .errorMsg {
+  color: var(--label_color);
+  font-size: var(--font_s5);
+}
+
+.ordertrail-details .orderTrail-details-right .orderIdDiv {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 63px;
+  font-family: "OpenSans-Regular";
+  font-size: var(--font_s3);
+}
+
+.ordertrail-details .content .main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 12px;
+  margin: 14px 15%;
+}
+
+.ordertrail-details .main-content .date {
+  width: 44px;
+  color: var(--order_date_text_color);
+  font-size: var(--font_s3);
+}
+
+.ordertrail-details .main-content .detail {
+  display: flex;
+  margin-left: 28px;
+  font-size: var(--font_m1);
+}
+
+.ordertrail-details .main-content .text {
+  text-align: left;
+  padding-left: 26px;
+  padding-top: 4px;
+
+  /* width: 100%; */
+  width: 400px;
+  margin: 0;
+  word-break: break-word;
+  color: var(--table_tbody_td_color);
+}
+
+.ordertrail-details .dot-line > span,
+.ordertrail-details .circle-line > span {
+  position: relative;
+}
+
+.ordertrail-details .dot-line > span::before {
+  content: '\25CB';
+  color: var(--circle_icon_color);
+  font-size: 20px;
+  z-index: 10;
+}
+
+.ordertrail-details .dot > span::before,
+.ordertrail-details .circle-line > span::before {
+  content: '\25CF';
+  color: var(--circle_icon_color);
+  font-size: 20px;
+  z-index: 10;
+}
+
+.ordertrail-details .dot-line > span::after,
+.ordertrail-details .circle-line > span::after {
+  position: absolute;
+  left: 0;
+  top: 19px;
+  content: '';
+  border-left: 1px solid var(--dialog_hr_color);
+  margin-left: 6px;
+  height: 116%;
+}
+
+.ordertrail-details .main-content .time {
+  width: 9%;
+  text-align: left;
+}
+
+/* Order Trail symdetails css ends here */
+
+/* convert css starts here  */
+
+.convert-dialog {
+  height: 280px;
+}
+
+.convert-dialog .orderDialog-bodyDetails {
+  flex-direction: row !important;
+  padding: 30px 20px 30px 20px;
+}
+
+.convert-dialog .pTypeDiv {
+  display: flex;
+  flex: 25 !important;
+}
+
+.convert-dialog .qtyDiv {
+  display: flex;
+  flex: 20 !important;
+  margin-left: 100px;
+}
+
+.convert-dialog .orderDialog-bodyDetails .details {
+  text-align: left !important;
+}
+
+.convert-dialog .orderDialog-bodyDetails .details .rightArrowIcon {
+  font-size: var(--font_xl3);
+}
+
+.convert-dialog .orderDialog-bodyDetails .details > span:last-child {
+  margin-top: 30px;
+}
+
+.convert-dialog .orderDialog-bodyDetails .details .types {
+  background-color: inherit;
+  border: 1px solid var(--input_border_orderPad);
+  color: var(--textcolor9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.convert-dialog .orderDialog-bodyDetails .details .types:first-child {
+  margin-left: 0 !important;
+}
+
+.convert-dialog .orderDialog-bodyDetails .details .types.selected {
+  border: 1px solid var(--selected);
+  color: var(--selected);
+}
+
+.convert-dialog .qtyDiv .details {
+  flex: none;
+}
+
+.convert-dialog .qtyDiv .details:last-child {
+  margin-left: 45px;
+}
+
+/* .convert-dialog .orderDialog-bodyDetails {
+  padding: 30px 20px 30px 20px;
+} */
+
+.convert-dialog .qtyDiv input {
+  /* background-color: var(--border_primary); */
+  padding: 10px;
+  font-size: var(--font_m4);
+  width: 140px;
+}
+
+.convert-dialog .actionDiv button {
+  text-transform: capitalize;
+}
+
+/* convert css ends here  */
+
+/* convert result css starts here  */
+
+.convert-result-dialog {
+  height: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 10px solid var(--redBorder);
+}
+
+.cancel-result-dialog {
+  height: 300px !important;
+}
+
+.convert-result-dialog.success {
+  border-top: 1px solid var(--greenBorder);
+}
+
+/* .convert-result-dialog .iconDiv {
+
+} */
+
+.convert-result-dialog .statusDiv {
+  font-size: var(--font_l3);
+  font-family: "OpenSans-Bold";
+  color: var(--redColor);
+}
+
+.convert-result-dialog.success .statusDiv {
+  color: var(--greenColor);
+}
+
+.convert-result-dialog .compName,
+.convert-result-dialog .qtyDiv {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor2);
+}
+
+.convert-result-dialog .messageDiv {
+  color: var(--table_thead_color);
+  padding-top: 20px;
+  font-size: var(--font_m4);
+}
+
+/* convert result css ends here  */
+
+/* Orderpad Marketdepth css starts here */
+
+.marketdepth-dialog {
+  border: 1px solid var(--border_primary);
+  height: 380px !important;
+  width: 100%;
+  margin: 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 15px var(--box-shadow);
+}
+
+.marketdepth-dialog .dialog-header {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border_primary);
+  font-family: 'OpenSans-Bold';
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.marketdepth-dialog .dialog-title {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--border_primary);
+  font-family: 'OpenSans-Bold';
+  align-items: center;
+}
+
+.marketdepth-dialog .dialog-content {
+  flex: 6;
+}
+
+.marketdepth-dialog .marketDepth-table-div .table-head {
+  background-color: #fff;
+}
+
+.marketdepth-dialog .marketDepth-div .footer {
+  background-color: #fff;
+}
+
+/* ============= Orderpad Marketdepth css ends here =============== */
+
+/* ============= Netposition confirmation screen css starts here =========== */
+
+.orderDialogBase .squareofConfirm {
+  /* height: 520px !important; */
+  height: 80%;
+  width: 100%;
+  background-color: var(--bgcolor_primary);
+  padding-bottom: 20px;
+  border: 1px solid var(--convert_dialog_border);
+}
+
+.orderDialogBase .squareofConfirm span.bfsl-font.checkboxIcon.checked.undefined {
+  font-size: var(--font_l5);
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.orderDialogBase .squareofConfirm .checkboxIcon {
+  font-size: var(--font_l5);
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.orderDialogBase .squareofConfirm .confirm-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--orderbook-dialog-header-bg-color);
+  height: 55px;
+  align-items: center;
+  padding: 0 20px;
+  color: var(--textcolor2);
+  font-family: "OpenSans-SemiBold" !important;
+  font-size: var(--font_m5);
+}
+
+.orderDialogBase .squareofConfirm .confirm-body {
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 0 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.orderDialogBase .squareofConfirm .confirm-body .odr-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.orderDialogBase .squareofConfirm .confirm-body .odr-details .orderaction {
+  margin-right: 17px;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.orderDialogBase .squareofConfirm .confirm-body .odr-details .orderaction.buy-clr {
+  border: 1px solid var(--greenColor) !important;
+}
+
+.orderDialogBase .squareofConfirm .confirm-body .odr-details .orderaction.sell-clr {
+  border: 1px solid var(--redColor) !important;
+}
+
+.orderDialogBase .squareofConfirm .confirm-footer {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderDialogBase .squareofConfirm .confirm-footer .msgDiv {
+  flex: 1;
+  width: 43%;
+}
+
+.orderDialogBase .squareofConfirm .confirm-footer .actionDiv {
+  height: 100%;
+  margin-right: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.orderDialogBase .squareofConfirm .confirm-footer .actionDiv button {
+  height: 90%;
+  width: 180px;
+  margin-right: 15px;
+  border-radius: 5px;
+  font-size: var(--font_m4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.squareoffConfirm.confirm-result-dialog {
+  height: 450px;
+  display: flex;
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 10px solid var(--redBorder);
+  border: 1px solid var(--border_17);
+  background-color: var(--bgcolor_primary);
+  width: 100%;
+}
+
+.confirm-result-dialog .success {
+  border-top: 1px solid var(--greenBorder);
+}
+
+.confirm-result-dialog .statusDiv {
+  font-size: var(--font_l3);
+  font-family: "OpenSans-Bold";
+  color: var(--redColor);
+}
+
+.confirm-result-dialog.success .statusDiv {
+  color: var(--greenColor) !important;
+}
+
+.confirm-result-dialog .messageDiv {
+  color: var(--table_thead_color);
+  padding-top: 20px 0 20px 0;
+  font-size: var(--font_m4);
+}
+
+.confirm-result-dialog .okay-btn {
+  border: 2px solid var(--theme_color_4);
+  padding: 10px 20px;
+  font-family: 'OpenSans-SemiBold';
+  color: var(--theme_color_4);
+  background-color: var(--bgcolor_primary);
+  height: 60px;
+  width: 200px;
+  font-size: var(--font_l1);
+  border-radius: 5px;
+}
+
+/* ============= Netposition confirmation screen css ends here =============== */
+
+.btst-charge-block-base {
+  height: 15%;
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--bgcolor_primary);
+}
+
+.orderDialogBase .btst-charge-block {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--txtcolor_5);
+}
+
+.orderDialogBase .btst-charge-block .details-div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.orderDialogBase .btst-charge-block .details-div .sym-name {
+  color: var(--txtcolor_primary);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l2);
+}
+
+.orderDialogBase .btst-charge-block .details-div .exc {
+  color: var(--txtcolor_11);
+  font-size: var(--font_s5);
+  padding-left: 5px;
+}
+
+.orderDialogBase .btst-charge-block .text {
+  color: var(--textcolor9);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  display: flex;
+  justify-content: center;
+}
+
+.orderDialogBase .btst-charge-block .action-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.orderDialogBase .btst-charge-block .action-div .cancel-btn {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+  margin-right: 30px;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  height: 60px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.orderDialogBase .btst-charge-block .action-div .proceed-btn {
+  color: var(--login_bg);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  height: 60px;
+  background-color: var(--greenColor);
+  border-radius: 10px;
+  width: 150px;
+}
+
+/* mtf-knowmore popup css starts here */
+
+.mtf-knowmore-base {
+  height: 68%;
+  min-height: 300px;
+  width: 90%;
+  background-color: var(--bgcolor_primary);
+}
+
+.orderDialogBase .mtf-knowmore-base .info-block {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid var(--txtcolor_5);
+  border-radius: 5px;
+  padding: 25px 25px 25px 25px;
+}
+
+.orderDialogBase .mtf-knowmore-base .info-block .margin-head {
+  color: var(--data-value-popup);
+  font-family: OpenSans-Bold;
+  font-size: var(--font_m4);
+}
+
+.orderDialogBase .mtf-knowmore-base .info-block .terms-head {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.orderDialogBase .mtf-knowmore-base .info-block .details-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 3.5%;
+}
+
+.orderDialogBase .mtf-knowmore-base .info-block .details-div span {
+  list-style: disc;
+  display: list-item;
+  list-style-position: outside;
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+  font-size: var(--font_m2);
+
+  /* margin-bottom: -5px; */
+}
+
+/* .orderDialogBase .mtf-knowmore-base .info-block .details-div .item.lastChild {
+  margin-bottom: 15px;
+} */

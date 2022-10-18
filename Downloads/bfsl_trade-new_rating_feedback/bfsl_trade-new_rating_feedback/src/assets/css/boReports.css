@@ -1,0 +1,2667 @@
+.bo-base {
+  height: calc(100% - 90px);
+
+  /* padding: 20px 5% 5px 5%; */
+  background-color: var(--bgcolor_3);
+  overflow: hidden;
+}
+
+.bo-base .bo-data-base {
+  padding: 1% 3% 0 7%;
+  height: calc(100% - 40px);
+}
+
+.bo-base .bo-data {
+  height: 100%;
+  background-color: var(--app_dialog_bg2);
+  box-shadow: 0 0 2px var(--box-shadow);
+}
+
+.bo-base .bo-header {
+  position: relative;
+  display: flex;
+  height: 50px;
+  background-color: var(--bgcolor_5);
+  border-top: 1px solid var(--vr_line);
+  border-bottom: 1px solid var(--vr_line);
+}
+
+.bo-base .bo-header .moveScroll-btn.left {
+  left: 0;
+  padding-left: 15px;
+}
+
+.bo-base .bo-header .moveScroll-btn {
+  width: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--font_l4);
+  color: var(--icon_color4);
+}
+
+.bo-base .bo-header .bo-header-values {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  padding: 0 1%;
+}
+
+.bo-base .bo-header .bo-header-values .menusTab.selectedMenu {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-base .bo-header .bo-header-values .menusTab.first {
+  margin-left: 0;
+}
+
+.bo-base .bo-header .bo-header-values .menusTab.selectedMenu .menuName {
+  border-bottom: 2px solid var(--theme_color);
+}
+
+.bo-base .bo-header .bo-header-values .menusTab .menuName {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bo-base .bo-header .bo-header-values .menusTab {
+  color: var(--markets_menu);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+  margin-right: 6%;
+  white-space: nowrap;
+}
+
+.bo-base .bo-header .moveScroll-btn.right {
+  right: 60px;
+  padding-right: 0;
+  padding-left: 5px;
+}
+
+.bo-base .bo-header .moveScroll-btn.active {
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.bo-base .bo-filters {
+  font-size: var(--font_s5);
+  background-color: unset;
+  border: none;
+  margin: 0 !important;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.bo-base .bo-data .bo-table-base {
+  height: calc(100% - 100px);
+}
+
+.bo-base .bo-header .menu {
+  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_m3);
+  font-family: "OpenSans-SemiBold";
+  margin-left: 6%;
+  color: var(--textcolor11);
+  cursor: pointer;
+}
+
+.bo-base .bo-header .menu.active {
+  color: var(--selected);
+  font-family: "OpenSans-Bold";
+  border-bottom: 2px solid var(--selected);
+}
+
+.bo-base .bo-header .menu:first-child {
+  margin-left: 0;
+}
+
+.bo-base .head-name {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--selected);
+  height: 40px;
+  padding: 0 2%;
+}
+
+.bo-base .bo-filters .bo-top-left {
+  display: flex;
+  height: 100%;
+  flex: 2 1;
+
+  /* align-items: center; */
+  justify-content: flex-start;
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case {
+  padding: 0 30px 0 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .radioField {
+  display: flex;
+  align-items: center;
+  margin-right: 9%;
+  position: relative;
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .radioField .checkmark {
+  position: absolute;
+  padding-right: 7px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--input_border_orderPad);
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .radioField input[type=radio] {
+  display: none;
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .radioField input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .radioField input:checked ~ .checkmark {
+  display: block;
+  border: 2px solid var(--selected);
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .radioField .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--selected);
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .radioField .value {
+  margin-left: 30px;
+  font-family: "OpenSans-SemiBold";
+  color: var(--table_tbody_td_color);
+  font-size: var(--font_m3);
+}
+
+.bo-base .bo-filters .bo-top-left .bo-search {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 10%;
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .bo-search .bo-trade-search {
+  font-size: var(--font_l2);
+  color: var(--selected);
+}
+
+.bo-base .bo-filters .bo-top-left .bo-select-case .bo-search .searchInput {
+  border: none;
+  border-bottom: 1px solid var(--selected);
+  font-size: var(--font_s5);
+  width: 170px;
+  padding: 5px 10px;
+}
+
+.bo-base .bo-filters .bo-top-right {
+  display: flex;
+  flex: 2 1;
+  height: 100%;
+  align-items: center;
+
+  /* flex-direction: column; */
+  justify-content: flex-end;
+}
+
+.bo-base .bo-filters .bo-top-right .date-row {
+  display: flex;
+  align-items: flex-end;
+  width: 316px;
+
+  /* padding-left: 50%; */
+}
+
+.bo-base .bo-filters .bo-top-right span.datetext {
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_s4);
+  padding-right: 8px;
+  color: var(--textcolor2);
+}
+
+.bo-base .bo-filters .bo-top-right .currentDate {
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font_s4);
+  color: var(--icon_color3);
+  justify-content: center;
+  font-family: "OpenSans-Semibold" !important;
+
+  /* padding-right: 2%; */
+}
+
+.bo-base .bo-filters .select-input-div .select-input {
+  border: none;
+
+  /* max-width: none; */
+  width: auto;
+  color: var(--label_color3);
+  font-family: 'OpenSans-SemiBold';
+  padding-right: 27px;
+}
+
+.bo-base .bo-filters .select-input-div .select-input .select-value {
+  font-family: "OpenSans-SemiBold";
+  color: var(--theme_color_4);
+  font-size: var(--font_m1);
+}
+
+.bo-base .bo-filters .bo-top-right .tax-drop .bo-dropdown .select-input-div .select-input {
+  font-family: "OpenSans-SemiBold";
+  color: var(--theme_color_4);
+  font-size: var(--font_m1);
+}
+
+.bo-base .bo-filters .select-input-div .select-input .downArrowIcon {
+  color: var(--theme_color);
+}
+
+.bo-base .bo-filters .select-input-div.non-symbolSearch .options-div-base {
+  top: 43px;
+}
+
+.bo-base .bo-filters .select-input-div .options-div-base {
+  top: 37px;
+  width: 200px;
+  right: 25px;
+  left: unset;
+  background-color: var(--bgcolor_10);
+}
+
+.bo-base .bo-filters .select-input-div .options-div {
+  background-color: var(--bgcolor_10);
+  box-shadow: none;
+  border: 1px solid var(--border_22);
+  max-height: fit-content;
+}
+
+.bo-base .bo-filters .select-input-div .options-div .option {
+  padding: 20px;
+  border-bottom: 1px solid var(--border_8) !important;
+  font-size: var(--font_m2);
+}
+
+.bo-base .bo-filters .select-input-div .options-div .option .custom-date .date-icon-bo {
+  font-size: var(--font_l5);
+  padding-left: 5px;
+  color: var(--label_color3);
+}
+
+.bo-base .bo-filters .selected {
+  color: var(--theme_color_4);
+  font-family: "OpenSans-Semibold" !important;
+}
+
+.bo-base .bo-filters .bo-date-picker {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px 0 15px;
+
+  /* border-left: 1px solid var(--bgcolor_4);
+  border-right: 1px solid var(--bgcolor_4); */
+  cursor: pointer;
+}
+
+.bo-base .bo-filters .bo-date-picker .calender-icon {
+  color: var(--txtcolor_6);
+  font-size: var(--font_l3);
+  margin: 7px;
+}
+
+.bo-base .bo-filters .bo-date-quick .bo-date-picker .trade-date .trade-book-date {
+  position: absolute;
+  z-index: 100;
+  top: 150px;
+  right: 220px;
+  width: 300px;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .trade-book-date {
+  position: absolute;
+  z-index: 100;
+  top: 150px;
+  right: 390px;
+  width: 300px;
+}
+
+.bo-base .bo-filters .bo-date-picker-custom .trade-date .trade-book-date {
+  right: 220px;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date {
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font_m2);
+  color: var(--icon_color3);
+  justify-content: center;
+  font-family: "OpenSans-Semibold" !important;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date-icon {
+  font-size: var(--font_l2);
+  margin-right: 4px;
+  cursor: pointer;
+  color: var(--icon_color3);
+}
+
+/* .bo-base .bo-filters .bo-date-picker .calender-icon.selected {
+  color: var(--theme_color_4);
+}
+
+.bo-base .bo-filters .bo-date-picker .calender-icon.not-editable {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date {
+  position: absolute;
+  z-index: 100;
+  top: 150px;
+  right: 330px;
+  width: 300px;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window {
+  position: relative;
+  border: 1px solid var(--app_version);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window > .footer {
+  background-color: var(--bgcolor_19);
+  border-top: 1px solid var(--app_version);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window .title.flex-center {
+  font-size: 16px;
+  background-color: var(--bgcolor_19);
+  height: 80px;
+  border-bottom: 1px solid var(--app_version);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window .content .p-datepicker .p-datepicker-header {
+  padding: 22px;
+  color: var(--txtcolor_primary);
+  background-color: var(--bgcolor_19);
+  font-size: var(--font_m2);
+  border-bottom: 1px solid var(--app_version);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window .content .p-datepicker .p-datepicker-header .p-link {
+  top: 18px;
+  font-size: var(--font_m1);
+  color: var(--datePicker-date-clr);
+  background-color: var(--bgcolor_primary);
+  border-radius: 50%;
+  text-decoration: none;
+  outline: none;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window .content .p-datepicker table td > span.p-highlight {
+  background-color: var(--selected) !important;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window button.calender-bo-cancel {
+  flex: 1 1;
+  background-color: transparent;
+  height: 100%;
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  color: var(--datePicker-date-clr);
+  border-right: 1px solid var(--app_version);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window button.calender-bo-ok {
+  flex: 1 1;
+  background-color: transparent;
+  height: 100%;
+  font-size: 14px;
+  font-family: "OpenSans-Regular";
+  color: var(--theme_btn_bg);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date-tab {
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  height: 100%;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date-tab.active {
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Regular";
+  color: var(--theme_color_4);
+  border-bottom: 1px solid var(--selected);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date-tab.active .title-bo {
+  font-size: var(--font_m3);
+  color: var(--selected);
+  font-family: "OpenSans-Regular";
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date-tab .title-bo {
+  font-size: var(--font_s3);
+  color: var(--datePicker-date-clr);
+  font-family: "OpenSans-Regular";
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-book-date .window .content .p-datepicker .p-datepicker-header .p-datepicker-title {
+  font-size: var(--font_m2);
+  color: var(--datePicker-date-clr);
+  font-family: "OpenSans-Regular";
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date {
+  display: flex;
+  align-items: center;
+  font-size: var(--font_m2);
+  color: var(--icon_color3);
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .tab-container-bo {
+  width: 100%;
+  cursor: pointer;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .tab-bo {
+  width: 100%;
+  cursor: pointer;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .tab-bo .date-align {
+  padding-right: 20px;
+  justify-content: end;
+  display: flex;
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .tab-bo .date-align .day {
+  font-size: var(--font_xl3_1);
+  color: var(--textcolor1);
+  font-family: "OpenSans-Regular";
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date-tab.active .tab-bo .date-align .day,
+.bo-base .bo-filters .bo-date-picker .trade-date .date-tab.active .tab-bo .date-align .month {
+  color: var(--selected);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .tab-bo .date-align .month {
+  font-size: var(--font_s5);
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "OpenSans-Regular";
+  color: var(--datePicker-date-clr);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .date-tab.active .title-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  color: var(--theme_color_4);
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .title-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-base .bo-filters .bo-date-picker .trade-date .btwLine {
+  width: 30px;
+  border-bottom: 1px solid var(--txtcolor_9);
+}
+
+.bo-base .bo-filters .bo-date-picker .date-icon {
+  margin-right: 4px;
+  cursor: pointer;
+  font-size: var(--font_l3);
+  color: var(--icon_color3);
+}
+
+.bo-base .bo-top-right .currentDate {
+  font-family: 'OpenSans-Bold';
+  padding-right: 25px;
+  font-size: var(--font_m2);
+  color: var(--icon_color3);
+} */
+
+/* .bo-base .bo-table-base {
+    height: calc(100% - 50px);
+} */
+
+/*   =========== bo-table css starts here ===========   */
+
+.bo-base .bo-baseTable {
+  height: 100%;
+  border-left: 1px solid var(--border-color_3);
+  border-right: 1px solid var(--border-color_3);
+}
+
+.bo-baseTable .bo-table {
+  height: 100%;
+
+  /* padding-left: 10px; */
+
+  /* margin-top: 15px; */
+  border-spacing: 0;
+  width: 100%;
+}
+
+.bo-baseTable .bo-table .thead-scroller {
+  font-family: "OpenSans-Bold";
+  padding-right: 30px;
+  align-items: center;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.bo-baseTable .bo-table .tbody-scroller {
+  height: calc(100% - 40px);
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.bo-baseTable .bo-table .tbody-scroller .modifyDateNew {
+  font-size: var(--font_l2);
+  color: var(--selected);
+  cursor: pointer;
+  display: none;
+}
+
+.bo-baseTable .bo-table span.total-cost {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--table_thead_color);
+  height: 40px;
+  padding: 0 2%;
+}
+
+.bo-baseTable .bo-table thead th {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+
+  /* text-align: center; */
+}
+
+.bo-baseTable .bo-table thead th.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 3%;
+}
+
+.bo-baseTable .bo-table.cost-report tfoot {
+  height: 10%;
+  color: var(--textcolor2);
+
+  /* display: flex; */
+  font-size: var(--font_m2);
+  padding: 0 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+  box-shadow: 0 4px 4px 0 var(--box-shadow2);
+  border: 1px solid var(--chart_icon_bg);
+  background: var(--bo-report-footer-bg);
+}
+
+.bo-baseTable .bo-table.cost-report tfoot tr {
+  padding: 0 15px 0 20px;
+  margin-top: 20px;
+}
+
+.bo-baseTable .bo-table.cost-report tfoot tr td {
+  text-align: end;
+  padding-right: 15px;
+  font-size: var(--font_m3);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+}
+
+.bo-baseTable .bo-table.cost-report tfoot tr td.cost-total {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+  text-align: left;
+  padding-left: 15px;
+}
+
+.bo-baseTable .bo-table.cost-report .tbody-scroller {
+  height: calc(100% - 60px);
+  overflow: hidden;
+  overflow-y: scroll;
+
+  /* padding: 0 20px; */
+}
+
+.bo-baseTable .bo-table .thead-scroller tr th.view-date {
+  padding-left: 30px;
+  text-align: justify;
+}
+
+.bo-baseTable .bo-table .thead-scroller tr th.trade-sym-head {
+  /* display: flex;
+    padding-left: 20px;
+    padding-top: 5px; */
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.fund-report .thead-scroller tr th.fund-trans.width18 {
+  text-align: left;
+}
+
+/*
+.bo-baseTable .bo-table .thead-scroller tr th.exchange-head,
+.bo-baseTable .bo-table .thead-scroller tr th.qty-head {
+    padding-right: 1px;
+} */
+
+.bo-baseTable .bo-table .thead-scroller span.transaction-details {
+  padding-right: 40px;
+}
+
+.bo-baseTable .bo-table tr td.colspan {
+  text-align: center !important;
+  border: none !important;
+  font-size: var(--font_m2);
+  color: var(--txtcolor_tertiary);
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-baseTable .bo-table tbody tr {
+  border-bottom: 1px solid var(--border_8);
+}
+
+.bo-baseTable .bo-table tbody td {
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+
+  /* padding: 0 5px 0 5px; */
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-baseTable .bo-table tbody td.fund-trans-type {
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.fund-report tbody td span.payment {
+  color: var(--redColor);
+}
+
+.bo-baseTable .bo-table.fund-report tbody td span.receipt {
+  color: var(--greenColor);
+}
+
+.bo-baseTable .bo-table tbody td.trade-sym {
+  /* display: flex;
+    width: 100%; */
+  text-align: left;
+
+  /* margin: 20px; */
+
+  /* padding-top: 20px; */
+}
+
+.bo-baseTable .bo-table .tbody-scroller span {
+  /* font-family: "OpenSans-Bold"; */
+  font-size: var(--font_m2);
+
+  /* color: var(--txtcolor_primary) !important; */
+}
+
+/* .bo-baseTable .bo-table .tbody-scroller span.icon-unset {
+  font-family: unset !important;
+} */
+
+.bo-baseTable .bo-table .tbody-scroller span.trade-symbol {
+  padding: 20px 10px 0 0;
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.trade-td-values {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.arrow-tradeicon {
+  border: 1px solid var(--chart_icon_bg);
+  box-shadow: 0 0 2px 0 var(--box-shadow2);
+  padding: 1px;
+  margin-left: 10px;
+  font-size: var(--font_s4);
+  color: var(--selected);
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.trade-td-edit .edit-price {
+  font-size: var(--font_l2);
+  color: var(--selected);
+  cursor: pointer;
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.trade-td-edit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.trade-td-edit .editInput {
+  border: none;
+  border-bottom: 1px solid var(--selected);
+  font-size: var(--font_s5);
+  width: 100px;
+  padding: 5px 10px;
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.trade-exc-values {
+  display: flex;
+  justify-content: flex-end;
+
+  /* padding-right: 10px; */
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.action {
+  text-transform: uppercase;
+  font-size: var(--font_s4);
+  font-family: 'OpenSans-Bold';
+
+  /* padding-top: 5px; */
+  border: 1px solid var(--chart_icon_bg);
+
+  /* height: 20%; */
+
+  /* margin-top: 5px; */
+  box-shadow: 0 0 2px 0 var(--box-shadow2);
+  padding: 1px 2px;
+
+  /* border-radius: 5px; */
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.fund-date {
+  font-family: "OpenSans-Bold";
+  display: flex;
+  align-items: center;
+  flex: 1 1;
+
+  /* padding-left: 20px; */
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.payment-type {
+  font-family: "OpenSans-Bold";
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: center;
+
+  /* padding-left: 40px; */
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.payment,
+.bo-baseTable .bo-table .tbody-scroller span.receipt {
+  font-family: "OpenSans-Bold";
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+/*   ===========view transaction css ================= */
+
+/* .bo-baseTable .bo-table .tbody-scroller span.trd-date {
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    padding-left: 5px;
+
+} */
+
+.bo-baseTable .bo-table .tbody-scroller a.download {
+  font-family: "OpenSans-Bold";
+  display: flex;
+  justify-content: center;
+}
+
+.bo-baseTable .bo-table.fund-report tfoot,
+.bo-baseTable .bo-table.interest-dpc tfoot,
+.bo-baseTable .bo-table.interest-mtf tfoot {
+  height: 10%;
+  color: var(--textcolor2);
+
+  /* display: flex; */
+  font-size: var(--font_m2);
+  padding: 0 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+  box-shadow: 0 4px 4px 0 var(--box-shadow2);
+  border: 1px solid var(--chart_icon_bg);
+  background: var(--bo-report-footer-bg);
+}
+
+.bo-baseTable .bo-table.fund-report tfoot tr,
+.bo-baseTable .bo-table.interest-dpc tfoot tr,
+.bo-baseTable .bo-table.interest-mtf tfoot tr {
+  padding: 0 15px 0 5px;
+  margin-top: 20px;
+}
+
+.bo-baseTable .bo-table.fund-report tfoot tr td.fund-total,
+.bo-baseTable .bo-table.interest-dpc tfoot tr td.interest-total,
+.bo-baseTable .bo-table.interest-mtf tfoot tr td.interest-total {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+  padding: 0 5px 0 35px;
+}
+
+.bo-baseTable .bo-table.fund-report tfoot tr td.total-transaction,
+.bo-baseTable .bo-table.fund-report tfoot tr td.total-payment,
+.bo-baseTable .bo-table.fund-report tfoot tr td.total-receipt {
+  text-align: end;
+  padding-right: 20px;
+  font-size: var(--font_m3);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+}
+
+.bo-baseTable .bo-table.interest-dpc tfoot tr td.total-charge {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  font-size: var(--font_m3);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  padding-right: 1%;
+}
+
+.bo-baseTable .bo-table.interest-mtf tfoot tr td.total-charge {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  font-size: var(--font_m3);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  padding-right: 1%;
+}
+
+.bo-baseTable .bo-table.fund-report .tbody-scroller {
+  height: calc(100% - 60px);
+  overflow: hidden;
+  overflow-y: scroll;
+
+  /* padding: 0 20px; */
+}
+
+/***********************  Financial ledger  ******************/
+
+.financial-ledger-quicksnapshot .bo-list .title2 {
+  padding-bottom: 10px;
+}
+
+.financial-ledger-quicksnapshot .bo-list .title3,
+.financial-ledger-quicksnapshot .bo-list .title4 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.error-div-quicksnapshotfl {
+  display: flex;
+  align-items: center;
+  text-align: center !important;
+  border: none !important;
+  font-size: var(--font_m2);
+  color: var(--txtcolor_tertiary);
+  font-family: "OpenSans-SemiBold";
+  justify-content: center;
+  height: 100%;
+
+  /* height: 80%; */
+}
+
+.bo-quick {
+  display: flex;
+  justify-content: flex-start;
+  width: calc(100% - 50px);
+  padding-left: 20px;
+  height: 80%;
+}
+
+.bo-list {
+  /* padding-top: 20px; */
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: var(--font_m3);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  padding: 20px 2%;
+}
+
+/* .bo-quick .bo-list .title1,
+.bo-quick .bo-list .title5{
+    height: 50px;
+    background-color: var(--bgcolor_22);
+    padding: 0px 2%;
+    display: flex;
+    box-shadow: 0 1px 3px -1px var(--box-shadow);
+} */
+.bo-quick .bo-list .line {
+  width: 240%;
+  border-bottom: 1px solid var(--border_8);
+}
+
+.funds-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 0px 2%; */
+}
+
+.bo-quick .bo-list .title2 .funds-sub,
+.bo-quick .bo-list .title2 span.funds-head-value,
+.bo-quick .bo-list .title3 .funds-sub,
+.bo-quick .bo-list .title3 span.funds-head-value,
+.bo-quick .bo-list .title4 .funds-sub,
+.bo-quick .bo-list .title4 span.funds-head-value {
+  font-size: var(--font_m2);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+}
+
+.bo-quick .bo-list .title2 .sub-values,
+.bo-quick .bo-list .title3 .sub-values,
+.bo-quick .bo-list .title4 .sub-values {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Bold";
+  color: var(--table_thead_color);
+}
+
+.bo-quick .bo-list .title2 span.sub-head-title,
+.bo-quick .bo-list .title3 span.sub-head-title {
+  display: flex;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.bo-quick .bo-list .title4 span.sub-head-title {
+  display: flex;
+  width: 90%;
+  padding-left: 50px;
+}
+
+/********************  Detail view  ***********/
+.bo-baseTable .bo-table .thead-scroller tr th.effec-date,
+.bo-baseTable .bo-table .thead-scroller tr th.exch-head,
+.bo-baseTable .bo-table .thead-scroller tr th.voc-head,
+.bo-baseTable .bo-table .thead-scroller tr th.narration-head {
+  text-align: left;
+}
+
+/* .bo-baseTable .bo-table .tbody-scroller span.credit {
+  color: var(--greenColor);
+}
+
+.bo-baseTable .bo-table .tbody-scroller span.debit {
+  color: var(--redColor);
+} */
+
+.bo-baseTable .bo-table tbody td.effec-values,
+.bo-baseTable .bo-table tbody td.exc-values,
+.bo-baseTable .bo-table tbody td.voctype,
+.bo-baseTable .bo-table tbody td.narration-value {
+  text-align: left;
+}
+
+.bo-base .bo-data .bo-table-base .financial-ledger-quicksnapshot {
+  height: 100%;
+  overflow: scroll;
+}
+
+.bo-base .bo-data .bo-table-base .financial-detail {
+  height: 100%;
+  overflow: scroll;
+}
+
+.quick-balance-detail {
+  display: flex;
+  margin-left: 30px;
+  justify-content: space-between;
+
+  /* padding-right: 50px; */
+  align-items: center;
+  width: calc(100% - 50px);
+  font-size: var(--font_m2);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  height: 50px;
+  background-color: var(--bgcolor_22);
+  box-shadow: 0 1px 3px -1px var(--box-shadow);
+}
+
+.open-title {
+  padding-left: 10px;
+  display: flex;
+  width: 42%;
+  justify-content: space-between;
+  color: var(--greenColor);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Bold';
+}
+
+.close-title {
+  padding-left: 10px;
+  display: flex;
+  width: 42%;
+  justify-content: space-between;
+  color: var(--redColor);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Bold';
+}
+
+.detail-open-title {
+  padding-left: 10px;
+  color: var(--greenColor);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Bold';
+}
+
+.detail-close-title {
+  padding-left: 10px;
+  color: var(--redColor);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Bold';
+}
+
+.balance-detail {
+  display: flex;
+  margin-left: 20px;
+  justify-content: flex-end;
+  padding-right: 10px;
+  align-items: center;
+  width: calc(100% - 40px);
+  font-size: var(--font_m2);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  height: 50px;
+  background-color: var(--bgcolor_22);
+  box-shadow: 0 1px 3px -1px var(--box-shadow);
+
+  /* padding-top: 10px; */
+}
+
+.balance-detail span.open-balance {
+  color: var(--textcolor2);
+  font-size: var(--font_m3);
+
+  /* padding: 0 5px 0 5px; */
+  font-family: "OpenSans-Bold";
+  padding-left: 15px;
+}
+
+.bo-detail-baseTable {
+  height: 80%;
+  border-left: 1px solid var(--border-color_3);
+  border-right: 1px solid var(--border-color_3);
+}
+
+.bo-baseTable.detail-view {
+  height: 80%;
+  border-left: 1px solid var(--border-color_3);
+  border-right: 1px solid var(--border-color_3);
+}
+
+tr.holdings-foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  margin-top: 15px;
+}
+
+tfoot.total-clientholdings {
+  height: 10%;
+  color: var(--textcolor2);
+
+  /* display: flex; */
+  font-size: var(--font_m2);
+  padding: 0 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+  box-shadow: 0 4px 4px 0 var(--box-shadow2);
+  border: 1px solid var(--chart_icon_bg);
+  background: var(--bo-report-footer-bg);
+}
+
+tfoot.total-clientholdings span.total-label-holdings {
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+}
+
+.bo-baseTable span.holding-totalvalue {
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m3);
+}
+
+.bo-baseTable table.bo-table-dptransaction {
+  width: 50%;
+}
+
+.bo-baseTable table.bo-table-dptransaction thead th {
+  white-space: nowrap;
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.bo-baseTable table.bo-table-dptransaction tbody td {
+  white-space: nowrap;
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m2);
+}
+
+.bo-base .bo-header-values::-webkit-scrollbar {
+  display: none;
+}
+
+.bo-baseTable table.bo-table.dptransaction tbody.tbody-scroller {
+  height: calc(100% - 60px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.bo-baseTable .bo-table.dptransaction .errorRow .colspan {
+  text-align: center !important;
+  border: none !important;
+  font-size: var(--font_m2);
+  color: var(--txtcolor_tertiary);
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-baseTable .bo-table.dptransaction th.dp-scrip {
+  width: 18%;
+  text-align: right;
+}
+
+.bo-baseTable .bo-table.dptransaction th.dp-qty {
+  width: 15%;
+  text-align: right;
+  padding-left: 1%;
+}
+
+.bo-baseTable .bo-table.dptransaction th.dp-chrge {
+  width: 30%;
+  text-align: right;
+
+  /* padding-right: 1%; */
+}
+
+/* .bo-baseTable .bo-table.dptransaction th.dp-qty .last-child-header {
+  display: flex;
+  width: 15%;
+  justify-content: end;
+} */
+
+.bo-baseTable .bo-table.dptransaction th.dp-chrge .last-child-header {
+  /* display: flex; */
+  width: 15%;
+  justify-content: end;
+}
+
+.bo-baseTable .bo-table.dptransaction td.dp-scrip {
+  width: 18%;
+  text-align: right;
+  padding-left: 8%;
+}
+
+.bo-baseTable .bo-table.dptransaction td.dp-qty {
+  width: 15%;
+  text-align: right;
+  padding-left: 2%;
+}
+
+.bo-baseTable .bo-table.dptransaction td.dp-chrge {
+  width: 30%;
+  text-align: right;
+  padding-left: 14%;
+}
+
+/* .bo-baseTable .bo-table.dptransaction td.dp-qty .last-child-data {
+  display: flex;
+  width: 15%;
+  justify-content: end;
+} */
+
+.bo-baseTable .bo-table.dptransaction td.dp-chrge .last-child-data {
+  /* display: flex; */
+  width: 15%;
+  justify-content: end;
+}
+
+.bo-baseTable .bo-table.interest-dpc .tbody-scroller {
+  height: calc(100% - 60px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.bo-baseTable .bo-table.interest-dpc th.dpc-interest-charges {
+  width: 20%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.bo-baseTable .bo-table.interest-dpc th.dpc-ledger-balance {
+  /* width: 2; */
+  text-align: left;
+  padding-left: 4%;
+}
+
+.bo-baseTable .bo-table.interest-dpc th.dpc-ledger-rate {
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.interest-dpc .tbody-scroller td.dpc-interest-charges {
+  width: 20%;
+  text-align: center;
+  padding-right: 2%;
+}
+
+.bo-baseTable .bo-table.interest-dpc .tbody-scroller td.dpc-ledger-balance {
+  text-align: left;
+  padding-left: 4%;
+}
+
+.roi span.debit-or-mtm-roi {
+  font-family: 'OpenSans-SemiBold';
+  white-space: nowrap;
+  color: var(--txtcolor_6);
+  font-size: var(--font_m2);
+}
+
+.roi span.debit-or-mtm-roi-val {
+  font-family: 'OpenSans-Bold';
+  color: var(--textcolor2);
+  font-size: var(--font_m5);
+}
+
+.bo-baseTable .bo-table.interest-dpc .tbody-scroller span.dpc-ledger-balance-val {
+  display: flex;
+  width: 15%;
+  justify-content: end;
+}
+
+.bo-baseTable .bo-table.interest-dpc .tbody-scroller span.dpc-ledger-rate-val {
+  display: flex;
+  width: 15%;
+  justify-content: end;
+}
+
+.bo-baseTable .interest-mtf,
+.bo-baseTable .interest-dpc {
+  height: 100%;
+  overflow: scroll;
+}
+
+/* .bo-baseTable .bo-table.interest-mtf .thead-scroller {
+    height: 25%;
+    padding-left: 0;
+    border-bottom: 1px solid var(--border_8);
+    border-top: 1px solid var(--border_8);
+    padding-right: 10px;
+  } */
+
+.bo-baseTable .bo-table.interest-mtf .tbody-scroller {
+  height: calc(100% - 60px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* .bo-baseTable .bo-table.interest-mtf thead th {
+    height: 60px;
+    text-align: center;
+    padding-left: 2%;
+  } */
+
+/* .bo-baseTable .bo-table.interest-mtf thead th p {
+    display: contents;
+    font-family: "OpenSans-Bold";
+    font-size: var(--font_m2);
+    color: var(--txtcolor_primary) !important;
+  } */
+
+/* .bo-baseTable .bo-table.interest-mtf thead th span { */
+
+/* height: 90px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; */
+
+/* align-items: end; */
+
+/* } */
+
+.bo-baseTable .bo-table.interest-mtf thead th.mtf-date {
+  text-align: left !important;
+  padding-left: 25px;
+}
+
+/* height: 100%;
+    display: flex; */
+
+/* padding-right: 0; */
+
+/* width: 99%;
+    padding-top: 20px;
+    padding-left: 22%;
+    justify-content: left;
+    border-right: 1px solid var(--border_primary); */
+
+/* } */
+
+/* .bo-baseTable .bo-table.interest-mtf tbody td {
+    text-align: center;
+    padding-left: 2%;
+  } */
+
+.bo-baseTable .bo-table.interest-mtf tbody td.mtf-date.width12 {
+  width: 99%;
+  height: 101%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 35px;
+  border-right: 1px solid var(--border_primary);
+}
+
+.bo-baseTable .bo-table.interest-mtf thead th span.mtf-rate {
+  padding-top: 10px;
+}
+
+.bo-baseTable .bo-table.interest-mtf thead th.dp-qty {
+  padding-left: 3%;
+}
+
+.bo-baseTable .bo-table.interest-mtf thead th.dp-scrip {
+  padding-right: 12px;
+}
+
+.bo-baseTable .bo-table.interest-mtf thead th.dp-margin {
+  padding-left: 4%;
+}
+
+.bo-baseTable .bo-table.interest-mtf thead th.dp-net-debit {
+  padding-left: 3%;
+}
+
+/* .bo-baseTable .bo-table.tax-report tr th {
+    border: 0.5px solid var(--txtcolor_5);
+    border-collapse: collapse;
+  }
+
+  .bo-baseTable .bo-table.tax-report tr td {
+    border: 1px solid var(--txtcolor_5);
+    border-collapse: collapse;
+  } */
+
+.bo-baseTable .bo-table.tax-report .thead-scroller {
+  text-align: right;
+
+  /* background-color: var(--bgcolor_23); */
+  height: 65px;
+}
+
+/* .bo-baseTable .bo-table.tax-report .thead-scroller tr.scrip-headings th {
+    border: 1px solid var(--border_primary);
+  } */
+
+/* .bo-baseTable .bo-table.tax-report .thead-scroller th {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+  }
+
+  .bo-baseTable .bo-table.tax-report .tbody-scroller td {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+  } */
+
+.bo-baseTable .bo-table.tax-report .thead-scroller .tax-intradaytax,
+.bo-baseTable .bo-table.tax-report .thead-scroller .tax-shorttermtax,
+.bo-baseTable .bo-table.tax-report .thead-scroller .tax-longtermtax {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller .tax-intradaytax .tax-val,
+.bo-basetable .bo-table.tax-report .thead-scroller .tax-longtermtax .tax-val {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+}
+
+.bo-basetable .bo-table.tax-report .thead-scroller .tax-shorttermtax .tax-value {
+  color: var(--table_thead_color);
+}
+
+input.input-ele.inputVal.taxpercent-input {
+  width: 30px;
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m3);
+  padding-left: 5px;
+  border: none;
+  color: var(--txtcolor_primary);
+}
+
+/* .bo-baseTable .bo-table.tax-report-derivative thead.thead-scroller.derivative .instrument,
+  .bo-baseTable .bo-table.tax-report-derivative thead.thead-scroller.derivative .strike,
+  .bo-baseTable .bo-table.tax-report-derivative thead.thead-scroller.derivative .optiontype,
+  .bo-baseTable .bo-table.tax-report-derivative thead.thead-scroller.derivative .pnl */
+
+.bo-baseTable .bo-table.tax-report-derivative thead.thead-scroller.derivative .expiry {
+  width: 20%;
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller.derivative {
+  text-align: right;
+  background-color: white;
+  height: 65px;
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller.derivative .symbol {
+  width: 20%;
+  padding-left: 1%;
+}
+
+.bo-baseTable .bo-table.tax-report .tbody-scroller tr.pnl-headings {
+  /* background-color: #f6f6f7; */
+  height: 32px;
+  border-bottom: none;
+}
+
+.bo-baseTable .bo-table.tax-report .tbody-scroller tr.pnl-headings td {
+  border-right: 1px solid var(--border_primary);
+  padding-right: 10px;
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scrollerinputVal .taxpercent-input {
+  width: 20%;
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller {
+  height: calc(100% - 70px);
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller tr.equity {
+  border-bottom: none;
+  height: 50px;
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .thead-scroller th.scrip-name-header {
+  width: 20%;
+  text-align: left;
+  padding-left: 25px;
+
+  /* background-color: var(--bgcolor_23); */
+  background-color: var(--tax-report-header-bg);
+  border: 1px solid var(--border_primary);
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller th.intradayTax,
+.bo-baseTable .bo-table.tax-report .thead-scroller th.shorttermTax,
+.bo-baseTable .bo-table.tax-report .thead-scroller th.longtermTax {
+  width: 25%;
+  text-align: right;
+  padding-left: 5px;
+  border: 1px solid var(--border_primary);
+  border-left: none;
+
+  /* background-color: var(--bgcolor_23); */
+  background-color: var(--tax-report-header-bg);
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller th.pnl-tax-header-empty {
+  width: 5%;
+  text-align: right;
+  padding-left: 5px;
+
+  /* border-right: 1px solid var(--border_primary);
+    border-left: 1px solid var(--border_primary); */
+  border: 1px solid var(--border_primary);
+  border-left: none;
+
+  /* background-color: var(--bgcolor_23); */
+  background-color: var(--tax-report-header-bg);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller .pnl-headings td {
+  width: 25%;
+  text-align: right;
+  padding-left: 25px;
+  color: var(--table_thead_color);
+  background-color: var(--bgcolor_20);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.scrip-name {
+  width: 20%;
+  text-align: left;
+  padding-left: 25px;
+  border-left: 1px solid var(--border_primary);
+  padding-bottom: 2%;
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.scrip-name span {
+  display: flex;
+  height: 100%;
+  flex-direction: column-reverse;
+  position: absolute;
+
+  /* margin-top: 20%; */
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.scrip-name-empty {
+  width: 20%;
+  text-align: left;
+  padding-left: 25px;
+  border-bottom: 2px solid var(--border_primary);
+  border-left: 1px solid var(--border_primary);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.pnl-text {
+  width: 5%;
+  text-align: left;
+  padding-left: 25px;
+  border: 1px solid var(--border_primary);
+
+  /* border-bottom: none; */
+  background-color: var(--tax-report-rowbg);
+  color: var(--txtcolor_6);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.tax-text {
+  width: 5%;
+  text-align: left;
+  padding-left: 25px;
+  border: 1px solid var(--border_primary);
+  border-bottom: 3px solid var(--tax-report-thick-border);
+  background-color: var(--tax-report-rowbg);
+  color: var(--txtcolor_6);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.intradayPnl,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.shorttermPnl,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.longtermPnl {
+  width: 25%;
+  text-align: right;
+  padding-left: 25px;
+  border: 1px solid var(--border_primary);
+
+  /* border-bottom: none; */
+  background-color: var(--tax-report-rowbg);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.intradayTax-data,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.shorttermTax-data,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.longtermTax-data {
+  width: 25%;
+  text-align: right;
+  padding-left: 25px;
+  border: 1px solid var(--border_primary);
+  border-bottom: 3px solid var(--tax-report-thick-border);
+  background-color: var(--tax-report-rowbg);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.intradayPnl span,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.shorttermPnl span,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.longtermPnl span,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.intradayTax-data span,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.shorttermTax-data span,
+.bo-baseTable .bo-table.bo-table.tax-report .tbody-scroller td.longtermTax-data span {
+  padding-right: 10px;
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report tfoot,
+.bo-baseTable .bo-table.bo-table.tax-report-derivative tfoot {
+  height: 10%;
+  color: var(--textcolor2);
+
+  /* display: flex; */
+  font-size: var(--font_m2);
+  padding: 0 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+  box-shadow: 0 4px 4px 0 var(--box-shadow2);
+  border: 1px solid var(--chart_icon_bg);
+  background: var(--bo-report-footer-bg);
+}
+
+.bo-baseTable .bo-table.bo-table.tax-report tfoot tr td {
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m3);
+  text-align: right;
+  width: 20%;
+}
+
+.bo-baseTable .bo-table.tax-report-derivative tfoot tr td.derivative-total {
+  text-align: right;
+}
+
+.bo-baseTable .bo-table span.derivative-total-pnl-val {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m3);
+  padding-right: 25px;
+}
+
+.bo-base .bo-filters .bo-top-right .approximate-tax {
+  /* padding-right: 5%; */
+
+  position: fixed;
+  width: 50%;
+}
+
+.bo-base .bo-filters .bo-top-right .approximate-tax .approximate-tax-text {
+  font-family: 'OpenSans-SemiBold';
+  white-space: nowrap;
+  color: var(--txtcolor_6);
+  font-size: var(--font_m2);
+}
+
+.bo-base .bo-filters .bo-top-right .approximate-tax .approximate-tax-val {
+  font-family: 'OpenSans-Bold';
+  color: var(--textcolor2);
+  font-size: var(--font_l1);
+}
+
+.bo-baseTable .bo-table.tax-report tfoot tr.tax-report-equity {
+  padding: 0 15px 0 5px;
+  margin-top: 20px;
+}
+
+.bo-baseTable .bo-table.tax-report tfoot tr td.intTotal,
+.bo-baseTable .bo-table.tax-report tfoot tr td.shrtTermTotal,
+.bo-baseTable .bo-table.tax-report tfoot tr td.lngTermTotal {
+  text-align: end;
+  padding-right: 20px;
+  font-size: var(--font_m3);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+}
+
+.bo-baseTable .bo-table.tax-report tfoot tr td.tax-report-equity-total {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+  padding: 0 5px 0 35px;
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.tax-report-derivative tfoot tr.derivative-total-row {
+  padding: 0 15px 0 5px;
+  margin-top: 20px;
+}
+
+.bo-baseTable .bo-table.tax-report-derivative tfoot tr.derivative-total-row .firstchild {
+  padding-left: 25px;
+  color: var(--table_thead_color);
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller .intradayTax .tax-intradaytax .header,
+.bo-baseTable .bo-table.tax-report .thead-scroller .shorttermTax .tax-shorttermtax .header,
+.bo-baseTable .bo-table.tax-report .thead-scroller .longtermTax .tax-longtermtax .header {
+  color: var(--taxreport-head);
+  font-family: 'OpenSans-Bold';
+  margin-right: 5px;
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller .intradayTax .tax-intradaytax .atPercentInput,
+.bo-baseTable .bo-table.tax-report .thead-scroller .shorttermTax .tax-shorttermtax .atPercentInput,
+.bo-baseTable .bo-table.tax-report .thead-scroller .longtermTax .tax-longtermtax .atPercentInput {
+  color: var(--txtcolor_primary);
+  font-family: 'OpenSans-Bold';
+  padding-right: 5px;
+  font-size: var(--font_m3);
+  padding-left: 5px;
+  border: 2px solid var(--txtcolor_5);
+  margin-right: 3px;
+  background-color: var(--bgcolor_primary);
+}
+
+.bo-baseTable .bo-table.tax-report .thead-scroller .intradayTax .tax-intradaytax .atPercentInput .input-ele,
+.bo-baseTable .bo-table.tax-report .thead-scroller .shorttermTax .tax-shorttermtax .atPercentInput .input-ele,
+.bo-baseTable .bo-table.tax-report .thead-scroller .longtermTax .tax-longtermtax .atPercentInput .input-ele {
+  color: var(--txtcolor_primary);
+}
+
+.bo-base .bo-data-base .bo-filters .bo-top-right .approximate-tax .atPercentInput {
+  color: var(--txtcolor_primary);
+  font-family: 'OpenSans-Bold';
+  padding-right: 5px;
+  font-size: var(--font_m3);
+  padding-left: 5px;
+  border: 2px solid var(--txtcolor_5);
+  margin-right: 3px;
+}
+
+/* ==== Common download css starts here ==== */
+
+.bo-base .bo-data-base .bo-filters .download-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 2%;
+}
+
+.bo-base .bo-data-base .bo-filters .download-option button.download-btn {
+  font-family: 'OpenSans-SemiBold';
+  color: var(--icon_color3);
+  font-size: var(--font_m1);
+
+  /* padding-top: 3%; */
+  background: none;
+}
+
+.bo-base .bo-data-base .bo-filters .download-option .downloadAs .option-content .pdficon,
+.bo-base .bo-data-base .bo-filters .download-option .downloadAs .option-content .csvicon {
+  font-size: var(--font_b3);
+  padding-left: 2px;
+}
+
+/* ==== Common download css ends here ==== */
+
+.bo-base .bo-data-base .bo-filters .download-option .download-bo {
+  font-family: 'OpenSans-SemiBold';
+  color: var(--icon_color3);
+  font-size: var(--font_l5);
+}
+
+.bo-base .bo-filters .bo-date-picker .bo-dropdown {
+  padding-top: 3px;
+}
+
+.bo-base .bo-data-base .bo-filters .download-option.last-transactions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bo-base .bo-data-base .bo-filters .download-option.last-transactions a.download {
+  padding-top: 0%;
+}
+
+/* ==== LTCG Report css starts here ==== */
+
+.bo-baseTable .bo-table.ltcg-report {
+  border-top: 1px solid var(--border_8);
+  padding-top: 3px;
+}
+
+.bo-baseTable .bo-table.ltcg-report .tbody-scroller {
+  height: calc(100% - 100px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.bo-base .bo-data-base .bo-filters .download-option.ltcg-report {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bo-base .bo-data-base .bo-filters .download-option.ltcg-report a.download {
+  padding-top: 0%;
+}
+
+.bo-baseTable .bo-table.ltcg-report .ltcg-sym-head {
+  text-align: left;
+  width: 16%;
+}
+
+.bo-baseTable .bo-table.ltcg-report td.ltcg-sym {
+  text-align: left;
+  width: 16%;
+  white-space: nowrap;
+}
+
+.bo-base .bo-data-base .download-format {
+  position: relative;
+}
+
+.bo-base .bo-data-base .download-format .download-format-options {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 200px;
+  height: 100px;
+}
+
+.bo-base .bo-data-base .download-format .download-format-options .downloadAs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.bo-base .bo-data-base .download-format .download-format-options .downloadAs .option-content {
+  background-color: var(--bgcolor_10);
+  box-shadow: none;
+  border: 1px solid var(--border_22);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+}
+
+.bo-base .bo-data-base .download-format .download-format-options .downloadAs .option-content span.format-option-val {
+  border-bottom: 1px solid var(--border_8) !important;
+  display: flex;
+  height: 50%;
+  align-items: center;
+  color: var(--label_color3);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.bo-base .bo-data-base .download-format .download-format-options .downloadAs .option-content span.format-option-val a {
+  color: var(--label_color3);
+}
+
+.bo-base .bo-data-base .download-format .download-format-options .downloadAs .option-content span.format-option-val.selected,
+.bo-base .bo-data-base .download-format .download-format-options .downloadAs .option-content span.format-option-val.selected a {
+  color: var(--icon_color3);
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-totalRow {
+  padding: 0 15px 0 5px;
+  margin-top: 20px;
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-totalRow .firstchild {
+  padding-left: 25px;
+  color: var(--table_thead_color);
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-total-footer tr.ltcg-totalRow td.ltcg-total-short {
+  text-align: end;
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m3);
+  width: 72%;
+  padding-right: 10px;
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-total-footer tr.ltcg-totalRow td.ltcg-total-long {
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m3);
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-total-footer tr.ltcg-totalRow td.ltcg-total {
+  text-align: right;
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m3);
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-totalRow .ltcg-total .ltcg-total-val {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m3);
+  padding-right: 25px;
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-total-footer {
+  height: 10%;
+  color: var(--textcolor2);
+
+  /* display: flex; */
+  font-size: var(--font_m2);
+  padding: 0 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+  box-shadow: 0 4px 4px 0 var(--box-shadow2);
+  border: 1px solid var(--chart_icon_bg);
+  background: var(--bo-report-footer-bg);
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-total-footer tr.ltcg-totalRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  margin-top: 15px;
+}
+
+.bo-baseTable .bo-table.ltcg-report tfoot.ltcg-total-footer tr.ltcg-totalRow .ltcg-total-text,
+.bo-baseTable .DPbill-total-text {
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+}
+
+/* .bo-base .bo-data-base .bo-filters .download-option.ltcg-report .download-btn {
+    font-family: 'OpenSans-SemiBold';
+    color: var(--icon_color3);
+    font-size: var(--font_m1);
+    padding-top: 3%;
+  } */
+
+.bo-baseTable .bo-table.ltcg-report .short-term-tax {
+  height: 60px;
+  padding-top: 20px;
+  width: 10%;
+
+  /* display: flex; */
+}
+
+.bo-baseTable .bo-table.ltcg-report .long-term-tax {
+  height: 60px;
+  padding-top: 20px;
+  width: 10%;
+
+  /* display: flex; */
+}
+
+.bo-baseTable .bo-table.ltcg-report .short-term-tax p.first-text,
+.bo-baseTable .bo-table.ltcg-report .long-term-tax p.first-text {
+  height: 4px;
+}
+
+.bo-baseTable .bo-table.ltcg-report .short-term-tax span {
+  padding-top: 20px;
+  height: 90px;
+  position: relative;
+}
+
+.bo-baseTable .bo-table.ltcg-report .long-term-tax span {
+  padding-top: 20px;
+  height: 90px;
+  position: relative;
+}
+
+/* === PNL-REPORT css starts here === */
+
+.bo-baseTable .bo-table.pnl-report {
+  border-top: 1px solid var(--border_8);
+  padding-top: 3px;
+}
+
+.bo-baseTable .bo-table.pnl-report .thead-scroller th.firstchild {
+  width: 15%;
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.pnl-report .thead-scroller th.current-price-head {
+  width: 10%;
+}
+
+.bo-baseTable .bo-table.pnl-report .thead-scroller th.current-price-head span {
+  white-space: nowrap;
+}
+
+.bo-baseTable .bo-table.pnl-report .tbody-scroller {
+  /* height: 100%; */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.bo-baseTable .bo-table.pnl-report .tbody-scroller td.firstchild {
+  width: 15%;
+  text-align: left;
+}
+
+.bo-base .bo-data-base .bo-filters .download-option.pnl-report {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bo-baseTable .bo-table.pnl-report .pnl-sym-head {
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.pnl-report td.pnl-sym {
+  text-align: left;
+}
+
+.bo-baseTable .bo-table.pnl-report th.realized-pnl-head {
+  width: 11%;
+}
+
+.bo-baseTable .bo-table.pnl-report th.unrealized-pnl-head {
+  width: 11%;
+}
+
+.bo-baseTable .bo-table.pnl-report th.total-pnl-head {
+  width: 11%;
+}
+
+.bo-baseTable .bo-table.pnl-report td.realized-pnl-data {
+  width: 11%;
+}
+
+.bo-baseTable .bo-table.pnl-report td.unrealized-pnl-data {
+  width: 11%;
+}
+
+.bo-baseTable .bo-table.pnl-report td.total-pnl-data {
+  width: 11%;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-totalRow {
+  padding: 0 15px 0 5px;
+  margin-top: 20px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-totalRow .firstchild {
+  padding-left: 25px;
+  color: var(--table_thead_color);
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-totalRow .pnl-total {
+  text-align: right;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-totalRow .pnl-total .pnl-total-val {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m3);
+  padding-right: 25px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer {
+  height: 10%;
+  color: var(--textcolor2);
+
+  /* display: flex; */
+  font-size: var(--font_m2);
+  padding: 0 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+  box-shadow: 0 4px 4px 0 var(--box-shadow2);
+  border: 1px solid var(--chart_icon_bg);
+  background: var(--bo-report-footer-bg);
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow {
+  display: flex;
+
+  /* justify-content: space-between; */
+  padding: 0;
+  margin-top: 15px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .firstchild {
+  text-align: left;
+  padding-left: 25px;
+  position: relative;
+  width: 65%;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .firstchild.derivative {
+  width: 66%;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .pnl-total-realized {
+  text-align: right;
+  position: relative;
+  width: 14%;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .pnl-total-realized.derivative {
+  width: 11%;
+  padding-right: 10px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .pnl-total-unrealized {
+  text-align: right;
+  position: relative;
+  width: 14%;
+  padding-right: 10px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .pnl-total-unrealized.derivative {
+  width: 11%;
+  padding-right: 15px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .pnl-total-totalOfTotal {
+  text-align: right;
+  padding-left: 25px;
+  position: relative;
+  width: 12%;
+  padding-right: 25px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .pnl-total-totalOfTotal.derivative {
+  width: 11%;
+  padding-right: 15px;
+}
+
+.bo-baseTable .bo-table.pnl-report tfoot.pnl-total-footer tr.pnl-totalRow .pnl-total-text {
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--table_thead_color);
+}
+
+.bo-base .bo-filters .bo-dropdown.pnl-report .select-input-div .select-input,
+.bo-base .bo-filters .bo-dropdown.pnl-report-timerange .select-input-div .select-input {
+  max-width: none;
+}
+
+.bo-base .bo-filters .bo-dropdown.pnl-report .select-input-div .options-div-base {
+  top: 43px;
+  width: 200px;
+  right: 20px;
+  left: unset;
+  box-shadow: 0 1px 4px 0 var(--box-shadow2);
+}
+
+.bo-base .bo-filters .bo-dropdown.pnl-report-timerange .select-input-div .options-div-base {
+  width: 200px;
+}
+
+.bo-base .bo-filters .bo-dropdown.pnl-report .select-input-div .options-div {
+  background-color: var(--bgcolor_10);
+  box-shadow: none;
+  border: 1px solid var(--border_22);
+  width: 200px;
+}
+
+.bo-baseTable .bo-table .tbody-scroller td span span input.input-ele.editInput {
+  color: var(--textcolor2);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m2);
+}
+
+/* For Brokerage Reports */
+.bo-base .bo-filters .bo-dropdown.brokerage-report-timerange .select-input-div .select-input {
+  max-width: none;
+}
+
+.bo-base .bo-filters .bo-dropdown.brokerage-report-timerange .select-input-div .options-div-base {
+  width: 200px;
+}
+
+.bo-baseTable .brokerage-header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--border_8);
+  border-bottom: 1px solid var(--border_8);
+  background-color: var(--bgcolor_5);
+}
+
+.bo-baseTable .brokerage-header .brokerage-header-label {
+  width: calc(100% - 400px);
+  display: flex;
+  align-items: center;
+  color: var(--txtcolor_6);
+  font-size: var(--font_m2);
+  justify-content: space-between;
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-baseTable .brokerage-header .brokerage-header-label .brokerage-header-val {
+  margin-left: 20px;
+  color: var(--input_color);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+}
+
+.bo-baseTable .bo-table .thead-scroller .tr-brokerage {
+  height: 60px;
+}
+
+.bo-baseTable .bo-table.brokerage-report .tbody-scroller {
+  height: calc(100% - 120px) !important;
+}
+
+.bo-baseTable .bo-table .tbody-scroller .moreDetails {
+  background-color: var(--bgcolor_5);
+}
+
+.bo-baseTable .bo-table .tbody-scroller .moreDetails .moreDetlRow {
+  border-bottom: none;
+}
+
+.bo-baseTable .bo-table .tbody-scroller .moreDetails .moreDetlRow span.moreDetLabel {
+  color: var(--txtcolor_6);
+  font-family: "OpenSans-SemiBold";
+}
+
+.bo-baseTable .bo-table tbody .moreDetails td.moreDetTd {
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+  padding: 20px 5px 0 5px;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* /====   DP Bill charges css starts here        ===/ */
+
+.bo-baseTable .DPbill-total-long {
+  width: 60% !important;
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m3);
+  text-align: end;
+}
+
+.bo-baseTable td .credit {
+  color: var(--greenColor);
+}
+
+.bo-baseTable td .debit {
+  color: var(--redColor);
+}
+
+.bo-baseTable .dpbill-charges .qty-chrgs {
+  color: var(--textcolor2);
+  font-family: "OpenSans-Bold" !important;
+}
+
+.bo-baseTable .dpbill-charges .script-name {
+  white-space: nowrap;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller .qty-charges-header .qty-col,
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller .qty-charges-header .chrg-col {
+  /* border: none;
+    background-color: var(--bgcolor_5); */
+  border-right: none;
+  border-bottom: 1px solid var(--border_8);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_m2);
+  color: var(--txtcolor_primary) !important;
+  text-align: center;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller .qty-charges-header .qty-col.last,
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller .qty-charges-header .chrg-col.last {
+  border-right: 1px solid var(--border_8);
+}
+
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller .qty-charges-header .lastcol {
+  border: none;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller .qty-charges-header .scrip-namecol,
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller .qty-charges-header .datecol {
+  border-bottom: none;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller {
+  height: calc(100% - 250px);
+  padding-right: 21px;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller .isin {
+  color: var(--dpbill_isin_data);
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.bo-baseTable .bo-table.dpbill-charges th {
+  white-space: nowrap;
+  border-right: 1px solid var(--border_8);
+}
+
+.bo-baseTable.dpbill {
+  border-top: 1px solid var(--border_8);
+}
+
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller {
+  height: 110px;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .thead-scroller th {
+  border-bottom: 1px solid var(--border_8);
+  padding-right: 8px;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller tr {
+  /* border-bottom: none; */
+  border-bottom: 1px solid var(--border_8);
+}
+
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller tr:last-child {
+  border-bottom: 1px solid var(--border_8);
+}
+
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td {
+  border-right: 1px solid var(--border_8);
+  height: 70px;
+  padding-right: 8px;
+}
+
+.bo-baseTable .bo-table.dpbill-charges th.dep-charges-header,
+.bo-baseTable .bo-table.dpbill-charges th.cred-debit-header,
+.bo-baseTable .bo-table.dpbill-charges th.taxes-header {
+  white-space: break-spaces;
+  text-align: center;
+}
+
+/* .bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.dep-charges-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.cred-debit-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.taxes-data {
+  text-align: center;
+} */
+
+.bo-baseTable .bo-table.dpbill-charges th.opening-qty-header,
+.bo-baseTable .bo-table.dpbill-charges th.balance-qty-header,
+.bo-baseTable .bo-table.dpbill-charges th.total-chrgs-header,
+.bo-baseTable .bo-table.dpbill-charges th.date-header {
+  text-align: center;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.dep-charges-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.cred-debit-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.taxes-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.opening-qty-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.balance-qty-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.total-charges-data,
+.bo-baseTable .bo-table.dpbill-charges .tbody-scroller td.date-data {
+  text-align: center;
+}
+
+.bo-baseTable .bo-table.dpbill-charges th.lastChild {
+  border-right: none;
+  white-space: break-spaces;
+  text-align: center;
+}
+
+.bo-baseTable .bo-table.dpbill-charges td.lastChild {
+  border-right: none;
+  white-space: break-spaces;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.bo-baseTable .bo-table.dpbill-charges .DPbill-total-footer {
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  color: var(--textcolor2);
+  width: 99.75%;
+
+  /* display: flex; */
+  font-size: var(--font_m2);
+
+  /* padding: 0 5px 0 5px; */
+  font-family: "OpenSans-SemiBold";
+  box-shadow: 0 4px 4px 0 var(--box-shadow2);
+  border: 1px solid var(--chart_icon_bg);
+
+  /* background: var(--withdraw-funds-footer); */
+}
+
+.bo-baseTable .bo-table.dpbill-charges .DPbill-total-footer .firstChild {
+  width: 10%;
+}
+
+.bo-baseTable .DPbill-totalRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  height: 45px;
+  padding-top: 10px;
+  background: var(--bo-report-footer-bg);
+
+  /* border: 2px solid var(--border_19); */
+}
+
+.bo-baseTable .DPbill-total-footer .colorcode-row {
+  padding-top: 10px;
+  padding-left: 2%;
+  display: flex;
+}
+
+.bo-baseTable .DPbill-total-footer .disclaimer-text {
+  padding-top: 20px;
+  padding-left: 2%;
+}
+
+.bo-baseTable .DPbill-total-footer .colorcode-row .credit-row .circle {
+  background-color: var(--greenColor);
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+
+  /* top: 90px; */
+
+  /* left: 2%; */
+}
+
+.bo-baseTable .DPbill-total-footer .colorcode-row .debit-row .circle.red {
+  background-color: var(--redColor);
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+
+  /* top: 90px; */
+
+  /* left: 8%; */
+}
+
+.bo-baseTable .DPbill-total-footer .colorcode-row .credit-row {
+  padding-left: 27px;
+  position: relative;
+  right: 2%;
+}
+
+.bo-baseTable .DPbill-total-footer .colorcode-row .debit-row {
+  position: relative;
+}
+
+.bo-baseTable .DPbill-total-footer .colorcode-row .debit-row .debittext,
+.bo-baseTable .DPbill-total-footer .colorcode-row .credit-row .credittext {
+  padding-left: 25px;
+}
+
+/* /====   DP Bill charges css ends here        ===/ */
+
+/* ====   E-voting css starts here        ===/ */
+
+.bo-base .bo-filters .bo-top-right .e-voting-row {
+  display: flex;
+
+  /* background-color: var(--bgcolor_3); */
+
+  /* justify-content: space-between; */
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 50px;
+
+  /* align-items: center; */
+  padding-top: 13px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.bo-base .bo-filters .bo-top-right .e-voting-row .text {
+  display: flex;
+  color: var(--markets_menu);
+  font-size: var(--font_s4);
+  font-family: "OpenSans-SemiBold";
+  padding-right: 20px;
+  padding-left: 25px;
+}
+
+.bo-base .bo-filters .bo-top-right .e-voting-row .e-vote-button {
+  color: var(--positive_btn_color);
+  border: 2px solid var(--theme_color);
+  border-radius: 7px;
+  height: 30px;
+  width: 100px;
+  margin-right: -5px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  background-color: var(--bgcolor_primary);
+
+  /* padding-left: ; */
+}
+
+.bo-base .bo-filters .bo-top-right .e-voting-row .e-vote-button.long {
+  width: 120px;
+}
+
+/* ====   E-voting css ends here        ===/ */
+
+.tradeSummaryDialogBase.tradesummary-result-base {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.tradeSummaryDialogBase.tradesummary-result-base .window {
+  width: 26%;
+  min-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 2% 4.5% 1.5% 4.5%;
+  border: 1px solid var(--input_border);
+  box-shadow: 0 -1px 3px 0 var(--box-shadow);
+  background-color: var(--bgcolor_primary);
+  border-radius: 10px;
+  height: 43%;
+}
+
+.tradeSummaryDialogBase.tradesummary-result-base .window .status.fail {
+  color: var(--redColor);
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-Bold';
+  margin-bottom: 10px;
+}
+
+.tradeSummaryDialogBase.tradesummary-result-base .window .status.success {
+  color: var(--greenColor);
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-Bold';
+  margin-bottom: 10px;
+}
+
+.tradeSummaryDialogBase.tradesummary-result-base .window .statusDetail {
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-SemiBold';
+  margin-bottom: 10px;
+}
+
+.tradeSummaryDialogBase.tradesummary-result-base .window .successImgDiv {
+  text-align: center;
+}
+
+.tradeSummaryDialogBase.tradesummary-result-base .window .btnDiv {
+  width: 45%;
+}
+
+.tradeSummaryDialogBase.tradesummary-result-base .window .btnDiv button {
+  font-size: var(--font_m5);
+  color: var(--positive_btn_color);
+  background-color: var(--bgcolor_primary);
+  border: 2px solid var(--positive_btn_color);
+  height: 60px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.app-modalDialog2.tradeSummaryWindow .window {
+  width: 400px;
+}
+
+.tradeSummaryWindow .content {
+  padding: 35px 50px !important;
+  color: var(--info_msg_color) !important;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.tradeSummaryWindow .modalTitle {
+  font-size: var(--font_m4);
+}
+
+.app-modalDialog2.tradeSummaryWindow > .window > .footer {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  background-color: var(--app_dialog_footer_bg);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-content: center;
+}
+
+.bo-baseTable .bo-table.interest-mtf tfoot tr td.total-charge.mtfWidth-totalcharge {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  font-size: var(--font_m3);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  padding-right: 0;
+}
+
+.bo-baseTable .bo-table.interest-mtf tfoot tr td.interest-total.mtfWidth-total {
+  width: 56% !important;
+}

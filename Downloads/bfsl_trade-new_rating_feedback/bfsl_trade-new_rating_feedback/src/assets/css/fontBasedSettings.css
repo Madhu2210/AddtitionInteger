@@ -1,0 +1,41 @@
+
+input,
+.label {
+  font-family: "OpenSans-Regular";
+}
+
+button {
+  font-family: "OpenSans-Bold";
+}
+
+.menu-div .active,
+.active-HeaderMenu,
+.dashboard-base .header .selected,
+.trendingNews .header,
+.gaugeMeter-base .header {
+  font-family: "OpenSans-Bold";
+}
+
+.primary-symName {
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+}
+
+.primary-ltp {
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_4) !important;
+}
+
+.watchlist-tableBase .select-input .select-value {
+  font-family: "OpenSans-Bold";
+}
+
+#lightTheme .orderPad-dialog .row .data .menu,
+#lightTheme .orderPad-dialog .row .optionData .options {
+  font-family: "OpenSans-Bold";
+}
+
+.widget-container .widget-menu .menu-item.active,
+.market-menu-item.active {
+  font-family: "OpenSans-Bold";
+}

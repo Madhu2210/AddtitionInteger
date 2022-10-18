@@ -1,0 +1,1442 @@
+
+/* ==== [Modal Dialog starts] ==== */
+.modal-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--dialog_bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  text-align: center;
+}
+
+.modal-dialog > .window {
+  width: 25%;
+  min-width: 350px;
+  max-width: 350px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.modal-dialog > .window > .title {
+  color: var(--app_dialog_header_txt);
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+}
+
+.modal-dialog > .window > .title h4 {
+  margin: 0;
+}
+
+.modal-dialog > .window > .content {
+  padding: 25px;
+  color: var(--app_dialog_body_txt);
+  font-weight: 500;
+}
+
+.modal-dialog > .window > .footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--app_dialog_footer_bg);
+  height: 45px;
+}
+
+.modal-dialog > .window > .footer button {
+  flex: 1;
+  background-color: transparent;
+  height: 70%;
+  font-size: var(--font_s5);
+}
+
+.modal-dialog > .window > .footer > .negativeBtn {
+  height: 100%;
+  width: 30%;
+  color: var(--negative_btn_color);
+  font-size: var(--font_m1);
+}
+
+.modal-dialog > .window > .footer > .negativeBtn:hover {
+  color: var(--negative_btn_hover);
+}
+
+.modal-dialog > .window > .footer > .positiveBtn {
+  color: var(--positive_btn_color);
+  border-left: 1px solid #707070;
+}
+
+.modal-dialog > .window > .footer > .positiveBtn:hover {
+  color: var(--positive_btn_hover);
+}
+
+.modalTitle {
+  font-weight: 600;
+  font-size: var(--font_m1);
+  margin: 0;
+}
+
+/* ==== [ModalDialog ends] ==== */
+
+/* ==============  PopUp dialog css starts here ============= */
+
+.app-modalDialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--appdialog_bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  text-align: center;
+}
+
+.app-modalDialog > .window {
+  background-color: var(--app_dialog_bg2);
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.app-modalDialog > .window > .title {
+  color: var(--app_dialog_header_txt);
+  font-size: var(--font_l3);
+  padding: 16px 40px;
+  border-bottom: 1px solid var(--app_dialog_title_border);
+  font-family: 'OpenSans-Bold';
+  text-align: left;
+}
+
+.app-modalDialog > .window > .title h4 {
+  margin: 0;
+}
+
+.app-modalDialog > .window > .content {
+  padding: 15px 45px 25px 45px;
+
+  /* color: var(--app_dialog_body_txt); */
+  font-weight: 500;
+}
+
+.app-modalDialog > .window > .guest-footer-btn {
+  height: 70px;
+  color: var(--theme_btn_bg);
+  background-color: var(--app_dialog_footer_bg);
+  font-size: var(--font_l3);
+
+  /* padding: 16px 20px 20px 40px; */
+  border-top: 1px solid var(--app_dialog_title_border);
+  border-radius: 5px;
+  font-family: 'OpenSans-Bold';
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.app-modalDialog > .window > .footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--app_dialog_footer_bg);
+  height: 60px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.app-modalDialog > .window > .footer button {
+  flex: 1;
+  background-color: transparent;
+  height: 70%;
+  font-size: var(--font_l1);
+  font-family: 'OpenSans-Bold';
+}
+
+.app-modalDialog > .window > .footer .negativeBtn {
+  color: var(--negative_btn_color);
+}
+
+.app-modalDialog > .window > .footer .negativeBtn:hover {
+  color: var(--negative_btn_hover);
+}
+
+.app-modalDialog > .window > .footer .positiveBtn {
+  color: var(--positive_btn_color);
+}
+
+.app-modalDialog > .window > .footer .positiveBtn:hover {
+  color: var(--positive_btn_hover);
+}
+
+.app-modalDialog > .window > .footer button.left-btn {
+  border-left: 1px solid var(--vr_line);
+}
+
+.app-modalDialog .row {
+  padding-top: 20px;
+}
+
+.app-modalDialog .row.OTP {
+  padding-top: 25px;
+}
+
+.app-modalDialog .row .otp_time {
+  display: flex;
+  align-items: center;
+}
+
+.app-modalDialog .row .otp-span-time {
+  padding-left: 7%;
+  font-family: 'OpenSans-Bold';
+  color: var(--info_msg_color);
+  font-size: var(--font_m5);
+}
+
+.app-modalDialog .row.infoMsg-div {
+  padding-top: 8px;
+}
+
+.app-modalDialog .infoMsg {
+  font-family: 'OpenSans-SemiBold';
+  text-align: left;
+}
+
+.app-modalDialog .commonErrorDiv {
+  /* height: 20px; */
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-modalDialog .commonErrorDiv .receive-otp {
+  height: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  font-family: 'OpenSans-SemiBold';
+  color: var(--info_msg_color);
+  font-size: var(--font_m2);
+  margin: 10px 0;
+}
+
+.app-modalDialog .commonErrorDiv .receive-otp .resend {
+  color: var(--theme_color);
+  padding-left: 7px;
+  font-size: var(--font_m3);
+}
+
+.app-modalDialog .commonErrorDiv .receive-otp.isDisabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.app-modalDialog .commonErrorDiv .error {
+  /* height: 10px; */
+  padding-top: 10px;
+}
+
+.app-modalDialog .row .label {
+  color: var(--label_color);
+  font-size: var(--font_m2);
+  text-align: left;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.app-modalDialog .row .input-div {
+  margin-top: 10px;
+  display: flex;
+}
+
+.app-modalDialog .row .input-div .input-ele {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--input_border_appDialog);
+  margin-left: -2px;
+  font-size: var(--font_m4);
+}
+
+.app-modalDialog .row .input-div .input-ele:disabled {
+  background-color: var(--bgcolor_3);
+}
+
+.app-modalDialog .row .input-div .addOnIcon {
+  border: 1px solid var(--input_border_appDialog);
+  border-right: none;
+}
+
+.app-modalDialog .row .input-div.errorInput .addOnIcon {
+  border-right: 1px solid var(--input_border_appDialog) !important;
+}
+
+.app-modalDialog .title .title-name {
+  flex: 1;
+}
+
+.app-modalDialog .title .closeIcon {
+  font-size: var(--font_l3);
+}
+
+.app-modalDialog .userIcon,
+.app-modalDialog .panNumIcon,
+.app-modalDialog .passwordIcon {
+  font-size: var(--font_xl2);
+  color: var(--input_icon_color_appDialog);
+}
+
+.app-modalDialog.reset-password-dialog .passwordIcon {
+  font-size: var(--font_xl4);
+}
+
+/* ==============  PopUp dialog css ends here ============= */
+
+/* ==============  Home page popup dialog css starts here ============ */
+
+.app-modalDialog2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  text-align: center;
+}
+
+.app-modalDialog2 > .window {
+  position: relative;
+  background-color: var(--app_dialog_bg2);
+  box-shadow: 0 0 20px #090909;
+  border-radius: 10px;
+}
+
+.app-modalDialog2 > .window > .title {
+  color: var(--app_dialog_header_txt);
+  font-size: var(--font_l1);
+  padding: 15px 12px;
+  border-bottom: 1px solid var(--app_dialog_title_border);
+}
+
+.app-modalDialog2 > .window > .title-none {
+  display: none;
+}
+
+.app-modalDialog2 > .window > .title h4 {
+  margin: 0;
+}
+
+.app-modalDialog2 > .window > .content {
+  padding: 15px 45px;
+  color: var(--app_dialog_body_txt);
+  font-weight: 500;
+}
+
+.app-modalDialog2 > .window > .footer {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  background-color: var(--app_dialog_footer_bg);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.app-modalDialog2 > .window > .footer button {
+  flex: 1;
+  background-color: transparent;
+  height: 70%;
+  font-size: var(--font_m4);
+}
+
+.app-modalDialog2 > .window > .footer .negativeBtn {
+  color: var(--negative_btn_color);
+}
+
+.app-modalDialog2 > .window > .footer .negativeBtn:hover {
+  color: var(--negative_btn_hover);
+}
+
+.app-modalDialog2 > .window > .footer .positiveBtn {
+  color: var(--positive_btn_color);
+}
+
+.app-modalDialog2 > .window > .footer .positiveBtn:hover {
+  color: var(--positive_btn_hover);
+}
+
+.app-modalDialog2 > .window > .footer button.left-btn {
+  border-left: 2px solid var(--app_dialog_title_border);
+}
+
+.app-modalDialog2 > .window > .footer .deleteBtn {
+  color: var(--delete_btn_color);
+}
+
+.app-modalDialog2 > .window > .footer .deleteBtn:hover {
+  color: var(--delete_btn_hover);
+}
+
+.app-modalDialog2 .title .title-name {
+  flex: 1;
+}
+
+.app-modalDialog2 .title .closeIcon {
+  font-size: var(--font_l3);
+}
+
+.alertModal.alertModal .content {
+  padding: 35px 50px !important;
+  color: var(--info_msg_color) !important;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.alertModal.alertModal .content .negativeBtn.single {
+  color: var(--positive_btn_color) !important;
+}
+
+.alertModal .window {
+  width: 400px;
+}
+
+.alertModal .window .title .modalTitle {
+  font-size: var(--font_m4);
+}
+
+/* ==============  Home page popup dialog css ends here ============ */
+
+.addFund_dialog .window {
+  width: 80%;
+  min-width: 900px;
+  height: 90%;
+  position: relative;
+  background-color: var(--bgcolor_primary);
+}
+
+.addFund_dialog .window .modalDialog-loader {
+  height: 100%;
+  top: 0;
+}
+
+.addFund_dialog .window iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.addFund_dialog .closeIcon-div {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  right: -18px;
+  top: -18px;
+  border-radius: 50%;
+  font-size: var(--font_l1);
+
+  /* color: #FFFFFF; */
+  cursor: pointer;
+  z-index: 1000;
+  background-color: var(--bgcolor_secondary);
+}
+
+.addFund_dialog .window .error-div {
+  height: 100%;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+}
+
+/* ===== Toast message css starts here ===== */
+
+.toastMsgDiv {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: var(--font_m2);
+  color: var(--success_msg_border2);
+  background-color: var(--success_msg_bg);
+  border: 1px solid var(--success_msg_border);
+  border-left: 7px solid var(--success_msg_border2);
+  max-width: 0;
+  overflow: hidden;
+  padding: 15px 12px;
+
+  /* Set our transitions up. */
+  -webkit-transition: max-width 2s;
+  -moz-transition: max-width 2s;
+  transition: max-width 2s;
+  visibility: hidden;
+  box-shadow: 0 0 5px 2px var(--box-shadow);
+}
+
+.toastMsgDiv.error {
+  color: var(--secondaryName_color) !important;
+  background-color: var(--error_msg_bg) !important;
+  border: 1px solid var(--error_msg_border) !important;
+  border-left: 7px solid var(--error_msg_border2) !important;
+}
+
+.toastMsgDiv .message {
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.toastMsgDiv.show {
+  visibility: visible;
+  max-width: 1000px;
+}
+
+.toastMsgDiv .message.show {
+  visibility: visible;
+}
+
+/* ===== Toast message css ends here ===== */
+
+/* ===== Profile Dialog CSS starts here ===== */
+
+/* .alertModal .window.profile-details {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    height: 780px;
+    border-radius: 0;
+    justify-content: flex-end;
+} */
+.profileDialogbase,
+.help-and-support-base.blur,
+.Terms-condition-Dialog {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--coverBG2);
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  z-index: 10;
+  justify-content: center;
+}
+
+.settingsDialogbase {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  background-color: var(--coverBG2);
+  top: 90px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  justify-content: center;
+}
+
+.profileDialogbase .widget-loader-div {
+  height: 85%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.headerPorfilePage {
+  height: 705px;
+  width: 750px;
+  background-color: var(--app_dialog_bg2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  justify-content: center;
+  border-width: thin;
+  border: 1px solid var(--funds-limits-border-bottom);
+  box-shadow: 0 0 5px var(--box-shadow);
+}
+
+.headerPorfilePage.withTaxDeclare {
+  height: 730px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-header {
+  display: flex;
+  flex-direction: column;
+  flex: 20;
+  justify-content: center;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  align-items: center;
+  padding: 10px 0;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body {
+  flex: 70;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileDialogbase .headerPorfilePage .profile-footer {
+  flex: 20;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-header .uname {
+  font-size: var(--font_m4);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.profileDialogbase .headerPorfilePage .profile-header .client-no {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_12);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.profileDialogbase .headerPorfilePage .plan-type {
+  display: flex;
+  font-size: var(--font_s4);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-SemiBold';
+  align-items: center;
+}
+
+.profileDialogbase .headerPorfilePage .profile-header .pack {
+  font-size: var(--font_s4);
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-Regular';
+  padding-left: 3px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-header .ddpid-field {
+  display: flex;
+}
+
+.profileDialogbase .headerPorfilePage .profile-header .ddpid-field .label {
+  font-size: var(--font_s4);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.profileDialogbase .headerPorfilePage .profile-header .ddpid-field .value {
+  font-size: var(--font_s4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_11);
+  padding-left: 3px;
+}
+
+.profileDialogbase .headerPorfilePage .upgrade {
+  font-size: var(--font_m2);
+  color: var(--theme_color);
+  font-family: 'OpenSans-SemiBold';
+  text-decoration: underline;
+}
+
+.profileDialogbase .headerPorfilePage img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profileDialogbase .headerPorfilePage .profile-Icon {
+  position: relative;
+}
+
+.profileDialogbase .headerPorfilePage .camera-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--txtcolor_9);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  box-shadow: 0 0 5px 2px var(--box-shadow);
+  font-size: var(--font_l3);
+  color: var(--theme_btn_bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .content-title {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  align-items: center;
+  padding: 8px 30px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .tax-declare-btnDiv {
+  padding: 5px 20px;
+  justify-content: flex-start;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .tax-declare-btnDiv .title {
+  padding-left: 10px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .content-title .title {
+  font-size: var(--font_m4);
+  color: var(--profile_dialog_header);
+  font-family: 'OpenSans-Bold';
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .row {
+  display: flex;
+  padding: 0 30px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .data {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_23);
+  font-family: 'OpenSans-SemiBold';
+  flex: 4;
+  padding-top: 6px !important;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val {
+  text-align: left;
+  display: flex;
+  flex: 6;
+  width: 100%;
+  font-size: var(--font_m2);
+  color: var(--textcolor2);
+  font-family: 'OpenSans-Bold';
+  padding-top: 6px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val.rmDetails {
+  flex-direction: column;
+}
+
+.headerPorfilePage .profile-body .contents .val.rmDetails span.bfsl-font.phoneIcon,
+.headerPorfilePage .profile-body .contents .val.rmDetails span.bfsl-font.emailIcon {
+  color: var(--theme_color);
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val.rmDetails .rmName {
+  padding-bottom: 5px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .rmContacts {
+  display: flex;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .rmContacts .rmMob,
+.profileDialogbase .headerPorfilePage .profile-body .rmContacts .rmEmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val.rmDetails .icon {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-right: 7px;
+  font-size: var(--font_l3);
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val.rmDetails .mobileNo {
+  padding-right: 15px;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val.rmDetails .email {
+  color: var(--email-color);
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val.segments {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .val.inactive {
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .activate-msg,
+.profileDialogbase .headerPorfilePage .profile-body .contents .activate-poa {
+  color: var(--theme_color_4);
+  padding-left: 10px;
+  text-decoration: underline;
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.profileDialogbase .headerPorfilePage .profile-body .contents .data span.edit-icon {
+  padding-left: 7px;
+  color: var(--theme_color);
+}
+
+.profileDialogbase .headerPorfilePage .profile-footer .footer-title {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+  border-top: 1px solid var(--funds-limits-border-bottom);
+  padding: 10px 30px;
+  font-size: var(--font_m4);
+  color: var(--profile_dialog_header);
+  font-family: 'OpenSans-Bold';
+  align-items: center;
+}
+
+.profileDialogbase .headerPorfilePage .profile-footer .footer-title .changePrimary {
+  /* padding-left: 5px; */
+  color: var(--theme_color_4);
+  padding-left: 10px;
+  text-decoration: underline;
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.profileDialogbase .headerPorfilePage .profile-footer .footer-content {
+  display: flex;
+  flex: 9;
+  padding: 5px 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.profileDialogbase .headerPorfilePage .profile-footer .footer-content span.card-details {
+  font-size: var(--font_m1);
+  color: var(--txtcolor_23);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.profileDialogbase .headerPorfilePage .profile-footer .footer-content span.card-details.primary {
+  color: var(--textcolor2);
+}
+
+.profileDialogbase .headerPorfilePage .profile-footer .footer-content span.primaryAcc {
+  padding: 0 8px;
+  background-color: var(--profile_primary_account_bg);
+  border: 1px solid var(--profile_primary_account_border);
+  margin-left: 5px;
+  border-radius: 5px;
+  color: var(--profile_primary_account_txtclr);
+}
+
+.headerPorfilePage .errorMsg {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+
+/* ===== Image Upload CSS starts here ====== */
+
+.upload-profile-pic {
+  height: 500px;
+  width: 750px;
+  background-color: var(--bgcolor_primary);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  align-items: center;
+  border-width: thin;
+  border: 1px solid var(--dlgbox_border);
+}
+
+.upload-profile-pic .profile-Imgtitle,
+.upload-profile-pic .attach-file,
+.upload-profile-pic .remove-pic {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'OpenSans-SemiBold';
+  flex-direction: column;
+}
+
+.upload-profile-pic .profile-Imgtitle {
+  flex: 2;
+  background-color: var(--app_dialog_bg2);
+  font-size: var(--font_m5);
+  color: var(--txtcolor_19);
+  border-bottom: 1px solid var(--app_dialog_title_border);
+}
+
+.upload-profile-pic .attach-file {
+  flex: 6;
+}
+
+.upload-profile-pic .upload-action {
+  flex-direction: column;
+  display: flex;
+  width: 84%;
+  background-color: var(--app_dialog_bg2);
+  border-radius: 20px;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: var(--font_m3);
+}
+
+.upload-profile-pic .upload-action span.upload-here {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  color: var(--txtcolor_19);
+}
+
+.upload-profile-pic .upload-action .upload-here .image {
+  padding-left: 10px;
+}
+
+.upload-profile-pic .upload-action .img-size {
+  color: var(--app_dialog_body_txt);
+}
+
+.upload-profile-pic .upload-action .upload-here .image span.error-msg {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+}
+
+.upload-profile-pic .remove-pic {
+  flex: 3;
+  font-size: var(--font_m3);
+  color: var(--txtcolor_19);
+}
+
+.upload-profile-pic .action-btns {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--app_dialog_footer_bg);
+}
+
+.upload-profile-pic span.browse {
+  padding-left: 7px;
+  color: brown;
+}
+
+.upload-profile-pic input.profile-pic {
+  display: none;
+}
+
+.upload-profile-pic .remove-pic .confirmRmv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 62%;
+}
+
+.upload-profile-pic .confirmRmv .action-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.upload-profile-pic .confirmRmv span.yes.cursor {
+  padding: 3px 7px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background-color: var(--bgcolor_10);
+  color: var(--theme_color_4);
+  border: 1px solid var(--theme_color_4);
+}
+
+.upload-profile-pic .confirmRmv span.no.cursor {
+  padding: 3px 7px;
+  border-radius: 8px;
+  background-color: var(--bgcolor_10);
+  border: 1px solid var(--border_6);
+  color: var(--withdrawfunds-button-clr);
+  margin-right: 10px;
+}
+
+.upload-profile-pic .action-btns > button {
+  font-size: var(--font_m3);
+  height: 60%;
+  width: 30%;
+}
+
+.upload-profile-pic .action-btns .cancel {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+}
+
+.upload-profile-pic .action-btns .upload {
+  border: 2px solid var(--buyBtn-border);
+  background-color: var(--greenColor);
+  color: var(--login_bg);
+}
+
+/* ====== Profile page Css ends here ===== */
+
+/* ====== Settings page css starts here ===== */
+.settingsBase {
+  height: 630px;
+  width: 60%;
+  min-width: 850px;
+  background-color: var(--app_dialog_bg2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  justify-content: center;
+  border-width: thin;
+  border: 1px solid var(--funds-limits-border-bottom);
+}
+
+.settingsDialogbase .settingsBase .settings-header {
+  flex: 15;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'OpenSans-SemiBold';
+  justify-content: center;
+  padding-left: 3%;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+}
+
+.settingsDialogbase .settingsBase .settings-content {
+  flex: 85;
+  height: 85%;
+  display: flex;
+}
+
+.settingsDialogbase .settingsBase .settings-header .title,
+.settingsDialogbase-guest .settingsBase.guest-user .settings-header .title {
+  font-size: var(--font_m5);
+  color: var(--textcolor15);
+}
+
+.settingsDialogbase .settingsBase .settings-header .message,
+.settingsDialogbase-guest .settingsBase.guest-user .settings-header .message {
+  font-size: var(--font_m1);
+  color: var(--txtcolor_24);
+}
+
+.settingsDialogbase .settingsBase .settings-content .content-left {
+  flex: 4;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--app_dialog_title_border);
+}
+
+.settingsDialogbase .settingsBase .settings-content .content-right {
+  flex: 6;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsDialogbase .settingsBase .settings-content .content-right .pwd-sett {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.settingsDialogbase .settingsBase .settings-content .content-right .themesetting-base {
+  margin: 5% 0  0 5%;
+  height: 100%;
+}
+
+.settingsDialogbase .content-right .themesetting-bas .toggle-status .doggleBase-div.orderAction {
+  width: 105px;
+  height: 80%;
+}
+
+.settingsDialogbase .doggleBase-div.orderAction span.active:nth-child(2),
+.settingsDialogbase .doggleBase-div.orderAction span.active:nth-child(1) {
+  background-color: white !important;
+  border: 1px solid var(--theme_color) !important;
+  color: var(--theme_btn_bg);
+}
+
+.settingsDialogbase .content-right .themesetting-bas .doggleBase-div span {
+  background-color: white;
+  color: var(--icon_color);
+  font-family: 'OpenSans-SemiBold';
+  border: none;
+  font-size: var(--font_s5);
+}
+
+.settingsDialogbase .content-right .themesetting-bas .doggleBase-div span.active {
+  background-color: white !important;
+  border: 1px solid var(--theme_color) !important;
+  color: var(--theme_btn_bg);
+}
+
+.settingsDialogbase .settings-content .content-left .item1,
+.settingsDialogbase .settings-content .content-left .item2,
+.settingsDialogbase .settings-content .content-left .item3,
+.settingsDialogbase .settings-content .content-left .item4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20%;
+  margin: 0 4%;
+}
+
+.settingsDialogbase .settings-content .content-left .item1,
+.settingsDialogbase .settings-content .content-left .item2,
+.settingsDialogbase .settings-content .content-left .item3,
+.settingsDialogbase-guest .settings-content .content-left .item3 {
+  border-bottom: 1px solid var(--app_dialog_title_border);
+}
+
+.settingsDialogbase .settings-content .content-left .icon,
+.settingsDialogbase-guest .settings-content .content-left .icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7%;
+  font-size: var(--font_xl4);
+  background-color: inherit;
+  border-radius: 50%;
+  border: 1px solid var(--bgcolor_24);
+  color: var(--app_dialog_header_txt);
+}
+
+.settingsDialogbase .settings-content .content-left .cont-desc,
+.settingsDialogbase-guest .settings-content .content-left .cont-desc {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+}
+
+.settingsDialogbase .settings-content .content-left span.heading,
+.settingsDialogbase-guest .settings-content .content-left span.heading {
+  color: var(--textcolor2);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.settingsDialogbase .settings-content .content-left span.desc,
+.settingsDialogbase-guest .settings-content .content-left span.desc {
+  color: var(--txtcolor_24);
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.settingsDialogbase .settings-content .content-left .selected,
+.settingsDialogbase-guest .settings-content .content-left .selected {
+  color: var(--positive_btn_color) !important;
+}
+
+.settingsDialogbase .settings-content .content-left .password-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40%;
+  margin: 1px 30px;
+  width: 100%;
+}
+
+.app-modalDialog.reset-password-dialog .content .password-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  height: 50%;
+
+  /* margin: 1px 30px; */
+  width: 100%;
+}
+
+.settingsDialogbase .settings-content .content-left .password-policy .password-should {
+  color: var(--txtcolor_24);
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-SemiBold';
+  display: flex;
+
+  /* padding-left: 30px; */
+  margin-top: 10px;
+  width: 100%;
+}
+
+.app-modalDialog.reset-password-dialog .content .password-policy .password-should {
+  color: var(--txtcolor_24);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  display: flex;
+
+  /* padding-left: 30px; */
+  margin-top: 10px;
+  width: 100%;
+}
+
+.settingsDialogbase .settings-content .content-left .password-policy .password-msg {
+  color: var(--txtcolor_24);
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-SemiBold';
+  display: flex;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.app-modalDialog.reset-password-dialog .content .password-policy .password-msg {
+  color: var(--txtcolor_24);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  display: flex;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.settingsDialogbase .settings-content .content-left .password-policy .passdiv {
+  width: 100%;
+  display: flex;
+
+  /* padding-left: 50px; */
+}
+
+.app-modalDialog.reset-password-dialog .content .password-policy .passdiv {
+  width: 100%;
+  display: flex;
+
+  /* padding-left: 60px; */
+}
+
+.settingsDialogbase .settings-content .content-left .password-policy img.tick-img {
+  padding-top: 8px;
+
+  /* margin-top: 15px; */
+  position: fixed;
+}
+
+.app-modalDialog.reset-password-dialog .content .password-policy img.tick-img {
+  padding-top: 10px;
+
+  /* margin-top: 15px; */
+  position: fixed;
+}
+
+.settings .content-left,
+.item3 {
+  position: relative;
+}
+
+.settingsDialogbase .switch {
+  right: 0;
+  height: 15px;
+}
+
+.settingsDialogbase input:checked + .slider {
+  background-color: inherit;
+  border: 2px solid var(--selected);
+}
+
+.settingsDialogbase .slider {
+  background-color: white;
+  border: 2px solid var(--slider-border-clr);
+  width: 35px;
+}
+
+.settingsDialogbase input:checked + .slider.round::before {
+  background-color: var(--selected);
+}
+
+.settingsDialogbase .slider.round::before {
+  background-color: var(--switch_disable);
+  height: 20px;
+  width: 20px;
+  left: -5px;
+  top: -5px;
+  bottom: unset;
+}
+
+.settingsDialogbase input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.settingsDialogbase .settings-content .content-left .icon .sort-icon,
+.settingsDialogbase-guest .settings-content .content-left .icon .sort-icon {
+  transform: rotate(268deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.settingsDialogbase .settings-content .content-left .icon .sort-icon.selected,
+.settingsDialogbase-guest .settings-content .content-left .icon .sort-icon.selected {
+  color: var(--positive_btn_color) !important;
+}
+
+/* .settingsDialogbase .settingsBase .settings-content .content-right .language-setting-base {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+} */
+
+/* ====== Settings page css ends  here  ====== */
+
+/* ====== Iframe dialog css starts  here  ====== */
+.iFrame_dialog .window {
+  height: 75%;
+  width: 90%;
+  min-width: 800px;
+  min-height: 600px;
+}
+
+.iFrame_dialog .window .closeIcon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--bgcolor_6);
+  z-index: 1000;
+  border-radius: 50%;
+  font-size: var(--font_l2);
+  color: var(--txtcolor_4);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.iFrame_dialog .window .content {
+  width: 100%;
+  height: 100%;
+  padding: 20px !important;
+}
+
+/* ====== Iframe dialog css ends  here  ====== */
+
+/* ====== LAS dialog css starts here ===== */
+
+/* .terms-conditionBase {
+  height: 630px;
+  width: 60%;
+  min-width: 850px;
+/* ====== settings guest css starts  here  ====== */
+
+.settingsDialogbase-guest {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--coverBG2);
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  justify-content: center;
+}
+
+.settingsDialogbase-guest .settingsBase.guest-user {
+  height: 35%;
+  width: 30%;
+  min-width: 30%;
+  background-color: var(--app_dialog_bg2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  justify-content: center;
+  border-width: thin;
+  border: 1px solid var(--funds-limits-border-bottom);
+}
+
+.settingsDialogbase-guest .settingsBase.guest-user .settings-header {
+  flex: 15 1;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'OpenSans-SemiBold';
+  justify-content: center;
+  padding-left: 3%;
+  border-bottom: 1px solid var(--funds-limits-border-bottom);
+}
+
+.settingsDialogbase-guest .settingsBase.guest-user .settings-content {
+  flex: 35 1;
+  height: 85%;
+  display: flex;
+}
+
+.settingsDialogbase-guest .settingsBase.guest-user .settings-content .content-left {
+  flex: 4 1;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--app_dialog_title_border);
+}
+
+.settingsDialogbase-guest .settingsBase.guest-user .settings-content .content-left .item3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60%;
+  margin: 0 4%;
+}
+
+.settingsDialogbase-guest .settingsBase.guest-user .settings-content .content-left .switch-btn {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+/* ====== settings guest css ends  here  ====== */
+
+/******************* Guest user logout dialog  ****************/
+
+.alertModal.alertModal .guest-logout-content {
+  padding: 40px 50px !important;
+  color: var(--info_msg_color) !important;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.alertModal.alertModal .guest-footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  padding-bottom: 20px;
+}
+
+.alertModal.alertModal .guest-footer .open-account-btn-guestuser {
+  font-size: var(--font_m1);
+  color: var(--theme_color_secondary);
+  background-color: unset;
+  border: 1px solid var(--theme_color_4);
+  border-radius: 10px;
+  font-family: "OpenSans-Bold";
+  padding: 15px 15px;
+}
+
+.alertModal.alertModal .guest-footer .become-a-partner-btn-guestuser {
+  font-size: var(--font_m1);
+  width: 45%;
+  padding: 15px 15px;
+  color: var(--app_dialog_bg);
+  background-image: linear-gradient(to right, var(--theme_btn_bg), var(--theme_btn_bg_gr));
+  border: 1px solid var(--theme_btn_bg) !important;
+  border-radius: 10px;
+}
+
+.alertModal .window.emandate-reject {
+  width: 485px;
+}

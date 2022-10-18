@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="youtube" transform="translate(-1183 -759)">
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="15" cy="15" r="15" transform="translate(1183 759)" fill="#fff"/>
+    <g id="youtube_1_" data-name="youtube(1)" transform="translate(1191 689)">
+      <path id="Path_28609" data-name="Path 28609" d="M13.405,80.927c-.38-.675-.792-.8-1.631-.847S8.828,80,7,80s-3.938.024-4.776.08-1.25.172-1.634.848A8.258,8.258,0,0,0,0,84.81v.007a8.228,8.228,0,0,0,.592,3.875c.383.675.8.8,1.633.855s2.947.078,4.777.078,3.934-.029,4.773-.077,1.251-.179,1.631-.855A8.176,8.176,0,0,0,14,84.818v-.007A8.193,8.193,0,0,0,13.405,80.927Z" transform="translate(0 0)" fill="#f44336"/>
+      <path id="Path_28610" data-name="Path 28610" d="M192,165.4V160l4.228,2.7Z" transform="translate(-186.67 -77.886)" fill="#fafafa"/>
+    </g>
+  </g>
+</svg>

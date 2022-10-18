@@ -1,0 +1,2482 @@
+
+.availLoan-base {
+  /* height: calc(100% - 90px); */
+  height: 100%;
+  background-color: var(--bgcolor_3);
+}
+
+.availLoan-base .availLoan-data-base {
+  padding: 1% 7% 0 7%;
+  height: 100%;
+}
+
+.availLoan-base .availLoan-data-base .heading-name {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--selected);
+  height: 40px;
+  padding-left: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.availLoan-data-base .faq-head-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--selected);
+  height: 40px;
+
+  /* padding: 0 2%; */
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2%;
+  padding-right: 3%;
+}
+
+.availLoan-data-base .faq-head-content .faq-data {
+  padding-left: 6%;
+}
+
+.faq-head-content .close-notify {
+  color: var(--need_help_text);
+  padding-right: 5%;
+  font-size: 27px;
+}
+
+.availLoan-base .availLoan-data-base .heading-name .faq {
+  color: var(--selected);
+  font-family: "OpenSans-Bold";
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+/* .availLoan-base .availLoan-data {
+  height: calc(100% - 40px);
+  background-color: var(--app_dialog_bg2);
+  box-shadow: 0 0 2px var(--box-shadow);
+} */
+.availLoan-base .availLoan-data-base .availLoan-table-base {
+  background-color: var(--app_dialog_bg2);
+  margin-top: 3%;
+  border-radius: 1%;
+  height: 80%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border: 1px solid  var(--input_border);
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 4%;
+
+  /* height: calc(100% - 40px); */
+}
+
+.availLoan-base .availLoan-header {
+  width: 90%;
+  height: 50px;
+  background-color: var(--bgcolor_27);
+  display: flex;
+  border-radius: 99px;
+  box-shadow: 0 1px 3px -1px var(--box-shadow);
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.availLoan-base .availLoan-header .menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  width: 20%;
+  color: var(--las_service_txt_1);
+
+  /* color: var(--txtcolor_22); */
+  cursor: pointer;
+}
+
+.availLoan-base .availLoan-header .menu.active {
+  /* color: var(--textcolor18); */
+  font-family: "OpenSans-Bold";
+  background-color: var(--selected);
+  border-radius: 99px;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 20%;
+  color: var(--txtcolor_9);
+}
+
+/* ==================== css for Repayment screen starts here========================== */
+
+.repayment-base {
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.repayment-base .failure-error {
+  text-align: center;
+  padding-top: 23%;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.repayment-base .repayment-head {
+  text-align: left;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_l2);
+  letter-spacing: 0;
+  color: var(--las_service_txt_1);
+  padding-left: 15px;
+}
+
+.repayment-base .repayment-head-description {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid var(--input_border);
+  padding-left: 15px;
+}
+
+.repayment-base .repayment-head-description .e-collect-start {
+  color: var(--textcolor12);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+}
+
+.repayment-base .repayment-head-description .e-collect-middle {
+  color: var(--las_service_txt_1);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.repayment-base .repayment-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.repayment-base .payment-content {
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m2);
+  line-height: 36px;
+}
+
+.repayment-base .payment-content .payment-list {
+  padding-left: 40px;
+}
+
+.repayment-base .payment-content .las-crm {
+  color: var(--icon_color10);
+  font-family: "OpenSans-SemiBold";
+  margin-left: 5px;
+}
+
+.repayment-base .payment-details {
+  padding-top: 2%;
+  border-bottom: 1px solid var(--input_border);
+
+  /* padding-bottom: 2%; */
+
+  padding-left: 15px;
+  display: flex;
+
+  /* width: 100%; */
+
+  /* align-items: center; */
+}
+
+.repayment-base .payment-details .princple-div {
+  width: 50%;
+  border-right: 1px solid var(--input_border);
+  overflow: auto;
+}
+
+.repayment-base .payment-details .princple-div .principle-amt {
+  text-align: center;
+  color: var(--las_service_txt_1);
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  padding-bottom: 4%;
+
+  /* padding-top: 4%; */
+}
+
+.repayment-base .payment-details .emi-div {
+  width: 50%;
+  padding-left: 3%;
+  overflow: auto;
+}
+
+.repayment-base .payment-details .emi-div .emi-amount {
+  text-align: center;
+  color: var(--las_service_txt_1);
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  padding-bottom: 4%;
+
+  /* padding-top: 4%; */
+}
+
+/* .repayment-base .payment-details .payment-table {
+  border-right: 1px solid var(--input_border);
+} */
+
+.repayment-base .payment-details .payment-table .col-one {
+  padding-bottom: 4%;
+  color: var(--txtcolor_11);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  width: 28%;
+}
+
+.repayment-base .payment-details .payment-table .collon {
+  padding-bottom: 4%;
+  color: var(--txtcolor_11);
+}
+
+.repayment-base .payment-details .payment-table .col-two {
+  padding-left: 5%;
+  padding-bottom: 4%;
+  color: var(--input_color);
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+}
+
+.repayment-base .payment-details .col-two .copy-icon {
+  color: var(--las_link);
+  font-size: var(--font_l4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.repayment-base .payment-details .col-two .tooltip-container.copy-Clipboard {
+  font-size: var(--font_m1);
+  width: 92px;
+  color: var(--input_color);
+  position: absolute;
+  margin-top: 50px;
+
+  /* margin-left: 44%; */
+}
+
+.repayment-base .payment-details .col-two .copy-icon .tooltip-container {
+  width: 175px;
+  margin-left: 50px;
+  background-color: var(--tooltip_funs_bg);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Regular';
+  color: var(--tooltip_funs_text);
+  box-shadow: none;
+}
+
+/* .repayment-base .payment-details {
+  color: var(--textcolor12);
+} */
+
+/* ==================== css for Disbursement screen starts here========================== */
+.disbursment-base {
+  /* padding-left: 2%; */
+  padding-top: 1%;
+
+  /* padding-right: 2%; */
+
+  /* margin-left: 2%; */
+}
+
+.disbursment-base .content-partition {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+
+  /* height: 90vh; */
+}
+
+.disbursment-base .content-partition .right-side-main {
+  width: 60%;
+  border-right: 2px solid var(--input_border);
+  padding-right: 2%;
+  padding-left: 2%;
+
+  /* border-bottom: 2px solid var(--input_border); */
+
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+
+.disbursment-base .content-partition .right-side-main .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.disbursment-base .content-partition .right-side-main .heading .sanctioned-amount {
+  text-align: end;
+}
+
+.disbursment-base .content-partition .right-side-main .loan-against-shares {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+.disbursment-base .content-partition .right-side-main .loan-against-shares .las-heading {
+  font-size: var(--font_l2);
+  color: var(--textcolor14);
+  font-family: "OpenSans-SemiBold";
+}
+
+.right-side-main .loan-against-shares .fas-number {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  padding-top: 5px;
+}
+
+.right-side-main .loan-against-shares .fas-number .fas-number-head {
+  padding-right: 5px;
+}
+
+.right-side-main .loan-against-shares .fas-number .fas-data {
+  padding-left: 0;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.right-side-main .sanctioned-amount .loan-snctn-amt {
+  color: var(--label_color6);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+  text-align: right;
+}
+
+.right-side-main .sanctioned-amount .sanctioned-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  padding-top: 5px;
+}
+
+.right-side-main .sanctioned-amount .sanctioned-div .percentage-snctn {
+  font-size: var(--font_l2);
+  color: var(--txtcolor_23);
+  font-family: 'OpenSans-SemiBold';
+  padding-left: 2px;
+}
+
+.right-side-main .sanctioned-amount .sanctioned-div .sanctioned-data {
+  color: var(--las_service_txt_4);
+  font-size: var(--font_l4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.right-side-main .percentage {
+  font-size: var(--font_l2);
+  color: var(--txtcolor_23);
+  font-family: 'OpenSans-SemiBold';
+  padding-left: 2%;
+}
+
+.right-side-main .sanctioned-data {
+  padding: none;
+}
+
+.disbursment-base .content-partition .right-side-main .check-now {
+  /* border: 1px solid var(--input_border); */
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+
+  /* border-radius: 5px; */
+  padding-right: 3%;
+  display: flex;
+  width: 95%;
+
+  /* background-color: var(--bgcolor_22); */
+}
+
+.disbursment-base .content-partition .right-side-main .check-now .checknow-btn {
+  color: var(--txtcolor_9);
+  border: 1px solid var(--input_border);
+  background-color: var(--las_service_checknow_bg);
+  height: 49px;
+
+  /* width: 204px; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* padding-left: 20px; */
+  border-radius: 5px;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+
+  /* margin-left: 23%; */
+  margin-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.disbursment-base .content-partition .right-side-main .cbil-score {
+  color: var(--las_service_txt_2);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_l1);
+  padding-bottom: 2%;
+  padding-top: 2%;
+  width: inherit;
+  padding-right: 12%;
+  white-space: nowrap;
+}
+
+.content-partition .right-side-main .details {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.content-partition .right-side-main .table-two {
+  padding-top: 3%;
+  padding-bottom: 1%;
+  height: 420px;
+}
+
+.content-partition .right-side-main .table-two .table-loan {
+  padding-top: 4%;
+
+  /* border-top: 1px solid var(--input_border); */
+  width: 103.5%;
+}
+
+.details .table-details .row-one {
+  color: var(--label_color6);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+}
+
+.details .table-details .row-two {
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_l2);
+}
+
+.content-partition .right-side-main .details .column-one {
+  text-align: left;
+}
+
+.content-partition .right-side-main .details .column-two {
+  text-align: center;
+}
+
+.content-partition .right-side-main .details .row-two .column-one,
+.content-partition .right-side-main .details .row-two .column-two,
+.content-partition .right-side-main .details .row-two .column-three {
+  color: var(--las_service_txt_4);
+}
+
+.content-partition .right-side-main .details .column-three {
+  text-align: right;
+
+  /* padding-right: 3%; */
+}
+
+.right-side-main .table-two .array-table {
+  border-top: 1px solid var(--input_border);
+  height: calc(100% - 30px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.right-side-main .table-two .array-table::-webkit-scrollbar {
+  display: none;
+}
+
+.right-side-main .table-two .table-column-left {
+  /* padding-bottom: 3%; */
+  color: var(--txtcolor_11);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+  margin-right: 50%;
+  width: 37%;
+}
+
+.right-side-main .table-two .table-column-right {
+  /* padding-bottom: 3%; */
+  color: var(--txtcolor_primary);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_l1);
+  text-align: left;
+  padding-left: 25%;
+}
+
+.disbursment-base .content-partition .left-side {
+  padding-left: 1%;
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+
+  /* padding: 15px 0 15px;
+  height: calc(100% - 45px);
+  display: flex;
+  flex-direction: column;
+  width: 30%; */
+}
+
+/* .disbursment-base .content-partition .left-side .piechart-div {
+  flex: 7;
+} */
+
+.disbursment-base .content-partition .left-side .piechart {
+  position: relative;
+  padding-left: 65%;
+  height: 400px;
+  justify-content: center;
+  display: flex;
+  padding-top: 5%;
+
+  /* position: relative; */
+}
+
+.disbursment-base .content-partition .left-side .piechart .payable-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  /* top: 50%;
+  left: 87%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
+.content-partition .left-side .payable-div .label {
+  color: var(--txtcolor_11);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+
+  /* padding-right: 12%; */
+  width: max-content;
+}
+
+.content-partition .left-side .payable-div .payable-amt {
+  /* padding-right: 11%; */
+  color: var(--las_service_txt_2);
+  font-size: var(--font_xl1);
+  font-family: "OpenSans-Bold";
+}
+
+.content-partition .left-side .color-indication {
+  display: flex;
+  padding-left: 45px;
+
+  /* grid: 67px/ auto auto 40px;
+  grid-gap: 20px; */
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 5%;
+
+  /* height: 150px; */
+}
+
+.left-side .color-indication .color-one {
+  height: 25px;
+  width: 25px;
+  background-color: var(--las_service_sanamt_circle);
+  border-radius: 50%;
+  display: inline-block;
+  grid-gap: 15px;
+}
+
+.left-side .color-indication .indicate-left {
+  display: flex;
+
+  /* grid: 150px/auto auto auto;
+  grid-gap: 15px; */
+
+  /* width: -webkit-fill-available; */
+}
+
+.left-side .color-indication .indicate-left .indicate-name-one {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  width: max-content;
+  padding-left: 10px;
+}
+
+/* .left-side .color-indication .indicate-left .indicate-name-two {
+  padding-left: 5px;
+  color: var(--txtcolor_11);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4); */
+
+.left-side .color-indication .indicate-right {
+  display: flex;
+  padding-left: 20px;
+
+  /* grid: 150px/auto auto auto;
+  grid-gap: 15px; */
+}
+
+.left-side .color-indication .indicate-right .indicate-name-two {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  width: max-content;
+  padding-left: 10px;
+}
+
+.left-side .color-indication .color-two {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  grid-gap: 15px;
+  background-color: var(--theme_btn_bg);
+}
+
+.right-side-main .table-details {
+  color: var(--txtcolor_11);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+}
+
+.left-side .withdraw-funds {
+  position: relative;
+
+  /* padding-top: 5%; */
+  width: 100%;
+  padding-top: 13%;
+
+  /* right: 5%; */
+  padding-left: 44%;
+  text-align: center;
+}
+
+.left-side .withdraw-funds .withdraw-btn {
+  border: 1px solid var(--theme_btn_bg);
+  background-color: var(--bgcolor_18);
+  border-radius: 10px;
+  height: 73px;
+
+  /* padding: 4%; */
+
+  /* padding-top: 4%;
+  text-align: center;
+  padding-left: 15%;
+  padding-bottom: 4%; */
+  width: 297px;
+
+  /* padding-right: 10%; */
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+  color: var(--theme_btn_bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side .withdraw-funds .withdraw-btn .withdraw-icon {
+  font-size: 30px;
+  padding-left: 5%;
+}
+
+/* ==================== css for Disbursement screen ends here========================== */
+
+/* ==================== css for Release share screen starts here========================== */
+.release-share-base {
+  padding-top: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  height: calc(100% - 5px);
+  overflow: auto;
+}
+
+.release-share-base .response-error {
+  text-align: center;
+  padding-top: 23%;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.release-share-base .release-share-head {
+  padding-bottom: 2%;
+  border-bottom: 1px solid var(--input_border);
+  color: var(--textcolor14);
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.release-share-base .release-share-table {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.release-share-base .release-share-table .share-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.release-share-base .release-share-table .share-table .row-one {
+  text-align: center;
+  color: var(--txtcolor_11);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+}
+
+.release-share-base .release-share-table .share-table .row-two {
+  text-align: center;
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--input_color);
+  padding-top: 5%;
+}
+
+.release-share-base .release-share-table .share-table .row-two .value-red {
+  text-align: center;
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--negative-value);
+
+  /* padding-top: 7%; */
+}
+
+.release-share-base .release-share-table .share-table .row-two .value-green {
+  color: var(--greenColor);
+  text-align: center;
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+
+  /* padding-top: 7%; */
+}
+
+.release-share-base .release-share-table .share-table .row-two .value-black {
+  color: var(--input_color);
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+
+  /* padding-top: 7%; */
+}
+
+.release-share-base .release-share-table .share-table .row-two .value-no-color {
+  text-align: center;
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--input_color);
+
+  /* padding-top: 7%; */
+}
+
+.release-share .unpledge-table {
+  border-bottom: 1px solid var(--input_border);
+  height: calc(100% - 260px);
+  padding-top: 10px;
+
+  /* padding-top: 1%; */
+
+  /* padding-bottom: 1%;
+  padding-top: 1%; */
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.release-share .unpledge-table .unpledge-table-head {
+  color: var(--textcolor11);
+  text-align: left;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  height: 40px;
+  flex: 0 0 auto;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.release-share .unpledge-table .unpledge-table-head .unpledge-head {
+  width: 15%;
+  text-align: center;
+  border-bottom: 1px solid var(--input_border);
+  border-top: 1px solid var(--input_border);
+  padding: 1%;
+}
+
+.release-share .unpledge-table .unpledge-table-head .unpledge-head.firstChild {
+  width: 25%;
+}
+
+.release-share .unpledge-table .unpledge-table-head .unpledge-head.unpledge-no {
+  width: 17%;
+}
+
+.release-share .unpledge-table .addtn-pld-tbody {
+  /* height: calc(100% - 40px); */
+  display: block;
+  height: 120px;
+  overflow: auto;
+  width: 100%;
+}
+
+.release-share .unpledge-table .addtn-pld-tbody::-webkit-scrollbar {
+  display: none;
+}
+
+.release-share .unpledge-table .addtn-pld-tbody .no-data {
+  text-align: center;
+  padding-top: 3%;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.release-share .unpledge-table .content-row {
+  text-align: center;
+  display: table;
+  width: 100%;
+  border-bottom: none;
+  table-layout: fixed;
+}
+
+.release-share .unpledge-table .content-row .content-column {
+  width: 15%;
+
+  /* text-align: center; */
+
+  text-align: right;
+
+  /* padding-right: 4%; */
+}
+
+.release-share .unpledge-table .content-row .content-column.firstChild {
+  width: 25%;
+  padding-left: 0;
+}
+
+.release-share .unpledge-table .content-row .content-column.unpledge-no {
+  width: 17%;
+  padding-right: 1%;
+}
+
+.release-share .unpledge-table .content-row .content-column.unpledge-value {
+  padding-right: 5%;
+}
+
+.release-share .unpledge-table .content-row .content-column.unpledge-input {
+  padding-right: 1%;
+}
+
+.release-share .unpledge-table .content-row .content-column.unpledge-pldValue {
+  padding-right: 2%;
+}
+
+.release-share .unpledge-table .content-row .content-column.unpledge-LnValue {
+  padding-right: 4%;
+}
+
+.release-share .unpledge-table .content-row .content-column .symbol-div {
+  display: flex;
+  align-items: center;
+}
+
+.release-share .unpledge-table .content-row .content-column .symbol-div .share-details-symbol {
+  width: max-content;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  text-align: left;
+  padding-left: 5px;
+}
+
+.release-share .unpledge-table .content-row .content-column .input-unpledge {
+  border: 1px solid var(--input_border);
+  width: 112px;
+  text-align: center;
+  appearance: none;
+  background: none;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.release-share .unpledge-table .content-row .content-column .input-unpledge::placeholder {
+  color: rgb(0, 2, 128);
+  opacity: 1;
+  font-weight: bold;
+}
+
+.release-share .unpledge-table .content-row .content-column .share-details {
+  margin-left: 5%;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.release-share-base .unpledge-share {
+  color: var(--textcolor14);
+
+  /* border-bottom: 1px solid var(--input_border); */
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+  justify-content: space-between;
+}
+
+.release-share-base .unpledge-share .searching {
+  display: flex;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.release-share-base .unpledge-share .searching .search-icon {
+  font-size: 30px;
+  color: var(--theme_color_4);
+}
+
+.release-share-base .unpledge-share .searching .close-data {
+  font-size: 20px;
+}
+
+.release-share-base .unpledge-share .searching .search-data {
+  border: none;
+  margin-bottom: 6%;
+  color: var(--txtcolor_secondary);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+  background: none;
+}
+
+.release-share-base .share-points {
+  color: var(--txtcolor_6);
+  text-align: left;
+  margin-left: -20px;
+}
+
+.release-share-base .unpledge-footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  padding-left: 1%;
+  border-bottom: 1px solid var(--input_border);
+}
+
+.release-share-base .unpledge-footer .share-release-div {
+  display: flex;
+  width: 72%;
+  justify-content: right;
+  align-items: center;
+}
+
+.release-share-base .unpledge-footer .value-share-release {
+  padding-left: 38%;
+  color: var(--textcolor9);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.release-share-base .unpledge-footer .total-share {
+  color: var(--textcolor14);
+  padding-left: 1%;
+  font-size: var(--font_l2);
+  font-family: "OpenSans-Bold";
+}
+
+/* ==================== css for Additional Pledge screen  starts here========================== */
+.additional-Pledge-Base {
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 3%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.additional-Pledge-Base .epledge-heading {
+  color: var(--las_service_txt_2);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l2);
+  text-align: left;
+  padding-bottom: 1%;
+}
+
+.additional-Pledge-Base .errorRow {
+  text-align: center;
+  padding-top: 10%;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.additional-Pledge-Base .e-pledgeContent {
+  color: var(--txtcolor_23);
+  font-family: "OpenSans-Regular";
+  text-align: left;
+  line-height: 1.6;
+  font-size: var(--font_m5);
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data {
+  height: 100px;
+
+  /* flex: 35 1; */
+  display: flex;
+
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px 40px 10px 40px;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .val {
+  display: flex;
+  flex-direction: column;
+
+  /* padding-left: 5%;
+  padding-right: 5%;
+  text-align: center; */
+  text-align: center;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .val .label {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--textcolor14);
+  padding-left: 80px;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .val .value {
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 13px;
+  color: var(--textcolor11);
+  white-space: nowrap;
+  align-items: center;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .val.icon-div-pld {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .val .right-icon {
+  color: var(--textcolor14);
+  font-size: var(--font_xl5);
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .val .labelpledg {
+  color: var(--textcolor14);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m1);
+  margin-top: -17px;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .val .value .line-seperate {
+  height: 30px;
+  border-right: 1px solid var(--input_border);
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .row {
+  color: var(--textcolor11);
+  font-family: 'OpenSans-Regular';
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .row .row-label {
+  font-size: var(--font_m2);
+}
+
+.additional-Pledge-Base .e-pledge-cdsl-content .epledge-data .row .client-no {
+  font-size: var(--font_m4);
+}
+
+.additional-Pledge-Base .epledge-share {
+  color: var(--textcolor15);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  text-align: left;
+}
+
+.additional-Pledge-Base .epledge-table {
+  height: calc(100% - 300px);
+  display: flex;
+  flex-flow: column;
+
+  /* height: 100%; */
+  width: 100%;
+
+  /* padding-top: 10px; */
+  padding-top: 1%;
+}
+
+.additional-Pledge-Base .epledge-table .epledge-thead {
+  /* padding-bottom: 10px;
+  height: 40px; */
+  border-bottom: 1px solid var(--input_border);
+  border-top: 1px solid var(--input_border);
+  padding-bottom: 10px;
+  height: 40px;
+  flex: 0 0 auto;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  padding-top: 8px;
+}
+
+.additional-Pledge-Base .epledge-table .epledge-thead .firstChild {
+  padding-left: 0;
+}
+
+.additional-Pledge-Base .epledge-table .epledge-thead .head-label {
+  /* border-bottom: 1px solid var(--input_border);
+  border-top: 1px solid var(--input_border); */
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  width: 25%;
+}
+
+.additional-Pledge-Base .epledge-table .epledge-thead .symbol-head {
+  display: flex;
+  align-items: center;
+}
+
+.additional-Pledge-Base .epledge-table .epledge-thead .symbol-head .head-label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.additional-Pledge-Base .epledge-table .epledge-thead .symbol-head .head-label .isin {
+  font-size: var(--font_s1);
+  padding-top: 2%;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers {
+  /* height: calc(100% - 40px); */
+  display: block;
+  height: 183px;
+  overflow: auto;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .error-msg {
+  text-align: center;
+  padding-top: 5%;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers::-webkit-scrollbar {
+  display: none;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .content-main-row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-bottom: none;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .content-main-row .firstChild {
+  padding-left: 0;
+}
+
+/* .additional-Pledge-Base .epledge-table .tbody-scrollers td .pledgeQtys {
+  display: flex;
+  align-items: center;
+} */
+.additional-Pledge-Base .epledge-table .tbody-scrollers .maxValue {
+  padding: 0;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .pldQnty {
+  padding: 0;
+
+  /* width: 28%; */
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .pldQnty .pledgeQtys .input-qtys {
+  text-align: center;
+  border: none;
+  width: 20%;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .pldQnty .border {
+  border: 1px solid var(--input_border_1);
+  width: 50%;
+
+  /* width: 37%; */
+  display: inline-flex;
+  margin-right: 2%;
+  align-items: center;
+
+  /* margin-left: 145px; */
+  justify-content: space-evenly;
+  color: var(--textcolor14);
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .symName-columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .symName-columns .row-datas {
+  margin-left: 10px;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers td span.border-qtys {
+  display: inline-flex;
+  border: 1px solid var(--input_border_1);
+  width: 33%;
+  text-align: left;
+  padding-right: 2%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers span.baseSym.text-nowraps.isinn {
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_s3);
+}
+
+.additional-Pledge-Base .epledge-table .tbody-scrollers .pldQnty .pledgeQtys .qty {
+  color: var(--textcolor3);
+  font-size: var(--font_m1);
+  font-family: 'OpenSans-Regular';
+
+  /* margin-right: 10px; */
+  display: inline-block;
+  width: 13%;
+  text-align: right;
+}
+
+.additional-Pledge-Base .epledge-share-reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.additional-Pledge-Base .epledge-share-reset .reset-div {
+  color: var(--password_eye_icon);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* .additional-Pledge-Base .epledge-share-reset .reset-div .refrshicon {
+
+} */
+
+.additional-Pledge-Base .pledge-footer {
+  /* padding-top: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--input_border_1);
+
+  /* border-bottom: 1px solid var(--input_border_1); */
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.additional-Pledge-Base .pledge-footer .las-negativeBtn.recheck-btn.addPledge {
+  width: 200px;
+  font-size: var(--font_m3);
+  border: 1px solid var(--las_service_border_1);
+  color: var(--las_service_txt_3);
+}
+
+.additional-Pledge-Base .pledge-footer .las-negativeBtn.active {
+  color: var(--password_eye_icon);
+  border: 1px solid var(--password_eye_icon);
+}
+
+.additional-Pledge-Base .pledge-footer .las-negativeBtn.getloan-btn {
+  width: 200px;
+  font-size: var(--font_m4);
+}
+
+.additional-Pledge-Base .pledge-footer .las-negativeBtn.epledge-btn {
+  width: 200px;
+  font-size: var(--font_m4);
+}
+
+.additional-Pledge-Base .pledge-footer .label {
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+  color: var(--textcolor9);
+  margin-left: 15px;
+}
+
+.additional-Pledge-Base .pledge-footer .value {
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-Bold';
+  color: var(--textcolor14);
+  margin-left: 10px;
+}
+
+/* ==================== css for Additional Pledge screen ends here========================== */
+
+/* ==================== css for Statement screen starts here========================== */
+.statement-base {
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.statement-base .statement-head {
+  padding-bottom: 1%;
+  color: var(--textcolor14);
+  font-family: 'OpenSans-SemiBold';
+  text-align: left;
+  letter-spacing: 0;
+  font-size: var(--font_l2);
+}
+
+.statement-base .find-document {
+  padding-bottom: 2%;
+  border-bottom: 1px solid var(--input_border);
+  font-family: 'OpenSans-Regular';
+  color: var(--txtcolor_23);
+  font-size: var(--font_m2);
+  text-align: left;
+}
+
+.statement-base .boxes {
+  margin-left: 20%;
+}
+
+.statement-base .boxes .show-error {
+  text-align: center;
+  padding-top: 20%;
+  padding-right: 30%;
+  color: var(--input_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.statement-base .boxes .interim-valuation-main {
+  /* border: 1px solid var(--input_border); */
+  border: 1px solid var(--las_holding_background);
+  background-color: var(--bgcolor_22);
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  width: 60%;
+  height: fit-content;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  /* background-color: var(--bgcolor_5); */
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.statement-base .boxes .interim-valuation-main .interim-valuation {
+  color: var(--las_service_txt_2);
+  font-size: 22px;
+  font-family: 'OpenSans-Bold';
+  padding-left: 6%;
+  width: 70%;
+}
+
+.statement-base .boxes .interim-valuation-main .statement-icon {
+  display: flex;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--las_holding_background);
+  color: var(--las_service_txt_2);
+
+  /* width: 10%; */
+}
+
+.statement-base .boxes .interim-valuation-main .icon-class {
+  display: flex;
+  font-size: 40px;
+
+  /* margin-left: 21%; */
+  color: var(--icon_color10);
+  width: 20%;
+}
+
+.statement-base .boxes .interim-valuation-main .icon-class .share-icon {
+  border-right: 1px solid var(--las_holding_background);
+  padding-right: 8%;
+  cursor: pointer;
+}
+
+.statement-base .boxes .interim-valuation-main .icon-class .share-icon a {
+  color: var(--las_service_icon_clr_1);
+}
+
+.statement-base .boxes .interim-valuation-main .icon-class .download-icon {
+  padding-left: 16%;
+  cursor: pointer;
+  color: var(--las_service_icon_clr_1);
+}
+
+.statement-base .boxes .statement-main .statement-icon {
+  /* padding-right: 5%;
+  padding-left: 5%; */
+  display: flex;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--input_border);
+  color: var(--las_service_txt_2);
+
+  /* width: 10%; */
+}
+
+.statement-base .boxes .statement-main .icon-class {
+  display: flex;
+  font-size: 40px;
+
+  /* padding-left: 17%; */
+  color: var(--icon_color10);
+  width: 20%;
+}
+
+.statement-base .boxes .statement-main .icon-class .share-icon {
+  border-right: 1px solid var(--input_border);
+  padding-right: 8%;
+  cursor: pointer;
+}
+
+.statement-base .boxes .statement-main .icon-class .share-icon a {
+  color: var(--las_service_icon_clr_1);
+}
+
+.statement-base .boxes .statement-main .icon-class .download-icon {
+  padding-left: 12%;
+  cursor: pointer;
+  color: var(--las_service_icon_clr_1);
+}
+
+.statement-base .boxes .statement-main {
+  border: 1px solid var(--input_border);
+  display: flex;
+  margin-bottom: 4%;
+  width: 60%;
+  height: fit-content;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: var(--bgcolor_5);
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.statement-base .boxes .statement-main .statement-account {
+  color: var(--las_service_txt_2);
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-Bold';
+  padding-left: 6%;
+  width: 70%;
+}
+
+.statement-base .boxes .statement-main .statement-account .loan-account {
+  color: var(--txtcolor_11);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  width: max-content;
+}
+
+.statement-base .boxes .statement-main .statement-account .loan-account .loan-amt {
+  padding-right: 2px;
+}
+
+.statement-base .boxes .statement-main .statement-account .loan-account .loan-account-value {
+  padding-left: 2px;
+}
+
+.statement-base .boxes .foreclosure-main {
+  border: 1px solid var(--input_border);
+  display: flex;
+
+  /* margin-bottom: 9%;
+  margin-top: 6%; */
+  width: 60%;
+  height: fit-content;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: var(--bgcolor_5);
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.statement-base .boxes .foreclosure-main .foreclosure-letter {
+  color: var(--las_service_txt_2);
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-Bold';
+  padding-left: 6%;
+  width: 70%;
+}
+
+.statement-base .boxes .foreclosure-main .foreclosure-letter .loan-amt {
+  color: var(--txtcolor_11);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  width: max-content;
+}
+
+.statement-base .boxes .foreclosure-main .foreclosure-letter .loan-amt .loan-account {
+  padding-right: 2px;
+}
+
+.boxes .foreclosure-main .foreclosure-letter .loan-amt .loan-account-value {
+  padding-left: 2px;
+}
+
+.statement-base .boxes .foreclosure-main .statement-icon {
+  display: flex;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--input_border);
+  color: var(--las_service_txt_2);
+
+  /* width: 10%; */
+}
+
+.statement-base .boxes .foreclosure-main .icon-class {
+  display: flex;
+  font-size: 40px;
+
+  /* margin-left: 16%; */
+  color: var(--icon_color10);
+  width: 20%;
+}
+
+.statement-base .boxes .foreclosure-main .icon-class .share-icon {
+  border-right: 1px solid var(--input_border);
+  padding-right: 8%;
+  cursor: pointer;
+}
+
+.statement-base .boxes .foreclosure-main .icon-class .share-icon a {
+  color: var(--las_service_icon_clr_1);
+}
+
+.statement-base .boxes .foreclosure-main .icon-class .download-icon {
+  padding-left: 18%;
+  cursor: pointer;
+  color: var(--las_service_icon_clr_1);
+}
+
+/* ==================== css for Statement screen ends here========================== */
+
+/* ==================== css for FAQ screen starts here========================== */
+
+/* .faq-base {
+  background-color: var(--app_dialog_bg2);
+  margin-top: 3%;
+  border-radius: 1%;
+  height: calc(100% - 40px);
+}
+
+.faq-base .faq-body {
+  padding: 5%;
+} */
+
+/* .faq-base .faq-body .faq-head {
+  color: var(--bgcolor_26);
+  font-family: 'OpenSans-SemiBold';
+  text-align: left;
+  font-size: var(--font_l1);
+}
+
+.faq-base .faq-body .faq-content {
+  padding-top: 2%;
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m2);
+  text-align: left;
+  padding-bottom: 4%;
+  border-bottom: 1px solid var(--txtcolor_11); */
+.las-help-faq-iframe-base {
+  height: 90%;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 100%;
+
+  /* border: 1px solid var(--border_7);
+  background-color: var(--app_dialog_bg2); */
+}
+
+.las-help-faq-iframe-base iframe {
+  border: none;
+  height: 100%;
+}
+
+/* ==================== css for Dialog box starts here========================== */
+
+/* ==================== css for AgreeDialog box starts here========================== */
+.terms-agree-dialog {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.agree-dialog .window {
+  background-color: var(--bgcolor_primary);
+  border-radius: 0;
+  box-shadow: 0 0 5px var(--box-shadow);
+}
+
+.terms-agree-dialog .window.agree-base {
+  height: 52%;
+  min-height: 384px;
+  width: 35%;
+  min-width: 550px;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+  border: 1px solid var(--input_border);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.terms-agree-dialog .window .agree-base .agree-content {
+  height: 100%;
+  display: flex;
+
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 45px 30px 45px; */
+}
+
+.agree-content .withdraw-info {
+  padding-top: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 6%;
+  color: var(--txtcolor_11);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  line-height: 1.6;
+}
+
+.agree-content .condition-agree {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 7%;
+  padding-left: 6%;
+}
+
+.agree-content .condition-agree .condition-data {
+  text-align: left;
+  color: var(--txtcolor_11);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-regular';
+  margin-left: 5px;
+  line-height: 1.5;
+}
+
+.terms-agree-dialog .window.agree-base .agree-footer {
+  border-top: 1px solid var(--input_border);
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+/* ==================== css for AgreeDialog box ends here========================== */
+
+/* ==================== css for WithdrawAmountDialog box starts here========================== */
+.withdrawal-amount-dialog {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.withdrawal-amount-dialog .window.witdrawal-base {
+  height: 55%;
+  min-height: 400px;
+  width: 40%;
+  min-width: 500px;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+  border: 1px solid var(--input_border);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 30px;
+  background-color: var(--las_service_bg_2);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.withdrawal-amount-dialog .window.witdrawal-base .withdrawal-amount-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.withdrawal-amount-header .withdraw_amount {
+  /* border-bottom: 1px solid var(--input_border); */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.withdrawal-amount-header .withdraw_amount .value-field {
+  font-size: var(--font_l4);
+  color: var(--las_service_input_1);
+}
+
+.withdrawal-amount-header .withdraw_amount .withdraw-label {
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.withdrawal-amount-header .withdraw_amount .withdraw-value {
+  border: none;
+  color: var(--txtcolor_primary);
+  font-size: var(--font_l4);
+  font-family: 'OpenSans-SemiBold';
+  padding-left: 5px;
+  background: none;
+  border-bottom: 1px solid var(--input_border);
+}
+
+.withdrawal-amount-header .avail-disbursement {
+  color: var(--txtcolor_11);
+  padding-top: 4%;
+  font-family: 'OpenSans-regular';
+  font-size: var(--font_s5);
+  padding-bottom: 3%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.withdrawal-amount-header .avail-disbursement .AvalDrwAmt {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Bold';
+}
+
+.withdrawal-amount-header .avail-disbursement .avail-disburse-content {
+  padding-right: 5px;
+}
+
+.withdrawal-amount-header .bank-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--las_service_bg_1);
+}
+
+.withdrawal-amount-header .default-bank {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid var(--input_border);
+  color: var(--las_service_txt_2);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.withdrawal-amount-header .bank-details {
+  padding-bottom: 6%;
+  padding-top: 6%;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.withdrawal-amount-header .withdrawal-amount-footer {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+
+  /* padding-top: 10%;
+  padding-left: 2%; */
+}
+
+.withdrawal-amount-header .withdrawal-amount-footer .negative-btn {
+  color: var(--settings_neg_btn_color);
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  padding: 15px;
+  width: 190px;
+  border-radius: 5px;
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.withdrawal-amount-header .withdrawal-amount-footer .positive_btn {
+  color: var(--btn_text_primary);
+  background-color: var(--greenColor);
+  padding: 15px;
+  margin-left: 45px;
+  border-radius: 5px;
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  width: 190px;
+}
+
+.withdrawal-amount-header .bank-div {
+  display: flex;
+  border-bottom: 1px solid var(--input_border);
+  padding: 15px 0 15px 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  overflow-x: auto;
+  height: 100px;
+  position: relative;
+}
+
+.withdrawal-amount-header .bank-div .bankAddress {
+  font-family: "OpenSans-Regular";
+  font-size: var(--font_m1);
+  color: var(--txtcolor_23);
+  margin-left: 30px;
+  padding-top: 2%;
+}
+
+.withdrawal-amount-header .bank-div .cursor.radioField.data {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.withdrawal-amount-header .bank-div .radioField .value {
+  margin-left: 30px;
+  font-family: "OpenSans-SemiBold";
+  color: var(--recent-withdrawals_successMsg);
+  font-size: var(--font_m1);
+}
+
+.withdrawal-amount-header .bank-div .radioField input[type=radio] {
+  display: none;
+}
+
+.withdrawal-amount-header .bank-div .radioField input {
+  padding: 0;
+  margin: 0;
+}
+
+.withdrawal-amount-header .bank-div .radioField .checkmark {
+  position: absolute;
+  padding-right: 7px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent !important;
+  border-radius: 50%;
+  border: 2px solid var(--input_border);
+}
+
+.withdrawal-amount-header .bank-div .radioField input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.withdrawal-amount-header .bank-div .radioField .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--selected);
+}
+
+.withdrawal-amount-header .bank-div .radioField input:checked ~ .checkmark {
+  display: block;
+  border: 2px solid var(--selected);
+}
+
+.withdrawal-amount-header .primaryAcc {
+  padding: 0 8px;
+  background-color: var(--profile_primary_account_bg);
+  border: 1px solid var(--input_border);
+  margin-left: 5px;
+  border-radius: 5px;
+  color: var(--profile_primary_account_txtclr);
+}
+
+.withdrawal-amount-header .value.primary {
+  color: var(--textcolor2);
+}
+
+/* ==================== css for WithdrawAmountDialog box ends here========================== */
+
+/* ==================== css for OTPVerificationDialogComponent box starts here========================== */
+.get-otp-verification {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.get-otp-verification .window.get-otp-screen {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  padding: 20px;
+  min-height: 450px;
+  width: 650px;
+  min-width: 600px;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+
+  /* border: 1px solid var(--border_11); */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .window.get-otp-screen .get-otp-header {
+  padding-left: 5%;
+  padding-top: 8%;
+  margin-bottom: 2%;
+  height: 353px;
+} */
+
+.window.get-otp-screen .get-otp-header .otp-head {
+  text-align: center;
+  padding-bottom: 2%;
+  color: var(--las_service_txt_2);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l3);
+}
+
+.window.get-otp-screen .get-otp-header .Otp-info-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.window.get-otp-screen .get-otp-header .Otp-info-div .number {
+  color: var(--txtcolor_6);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.window.get-otp-screen .get-otp-header .otp-info {
+  color: var(--txtcolor_6);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.window.get-otp-screen .resend-block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4%;
+}
+
+.window.get-otp-screen .resend-block .resend-with-time {
+  display: contents;
+}
+
+.window.get-otp-screen .resend-block .resend-with-time .resend-otp-div {
+  color: var(--info_msg_color);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  padding-left: 7px;
+}
+
+.window.get-otp-screen .resend-block .resend-with-time .otp-span-time {
+  color: var(--txtcolor_secondary);
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-SemiBold';
+  padding-left: 4px;
+  padding-right: 4px;
+  letter-spacing: 3px;
+}
+
+.window.get-otp-screen .resend-block .resend-with-time .seconds-div {
+  color: var(--info_msg_color);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.window.get-otp-screen .get-otp-header .otp-box {
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.window.get-otp-screen .resend-otp.send-otp {
+  padding-left: 7px;
+  color: var(--theme_btn_bg);
+  cursor: pointer;
+}
+
+.window.get-otp-screen .get-otp-footer {
+  padding-top: 0%;
+  padding-left: 10%;
+}
+
+.window.get-otp-screen .get-otp {
+  /* padding-right: 30%; */
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.window.get-otp-screen .get-otp .not_recieve_otp {
+  color: var(--info_msg_color);
+}
+
+.window.get-otp-screen .get-otp .resend_otp {
+  color: var(--theme_color_4);
+}
+
+/* ==================== css for OTPVerificationDialogComponent box ends here========================== */
+
+/* ==================== css for RequestRecievedDialogrequest-success-base{
+   box starts here========================== */
+.request-recieved-dialog {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.request-recieved-dialog .window.request-recieve-screen {
+  height: 40%;
+  min-height: 660px;
+  width: 35%;
+  min-width: 550px;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+
+  /* border: 1px solid var(--border_11); */
+}
+
+.request-recieved-dialog .window.request-recieve-screen.small {
+  height: 65%;
+  min-height: 400px;
+}
+
+.request-recieved-dialog .window.request-recieve-screen .request-recieve-header {
+  padding-top: 3%;
+}
+
+.window.request-recieve-screen .request-recieve-header .request-sucess-content {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  text-align: center;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  color: var(--txtcolor_6);
+  padding-left: 3%;
+  padding-right: 3%;
+  line-height: 30px;
+}
+
+.window.request-recieve-screen .recieve-caption {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+
+  /* border-bottom: 1px solid var(--border_11); */
+}
+
+.window.request-recieve-screen .request-head {
+  padding-top: 4%;
+  font-family: 'OpenSans-SemiBold';
+  color: var(--greenColor);
+  font-size: var(--font_l2);
+  padding-bottom: 3%;
+}
+
+.window.request-recieve-screen .request-id {
+  padding-left: 2%;
+  color: var(--recent-withdrawals_successMsg);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.request-recieve-header .list-content {
+  color: var(--txtcolor_11);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+  text-align: left;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.request-recieve-header .list-content .list-item {
+  padding-bottom: 5%;
+}
+
+.request-recieve-header .list-content .list-item .loan-amt {
+  padding-left: 1%;
+  padding-right: 1%;
+  color: var(--input_color);
+}
+
+.window.request-recieve-screen .done-button {
+  /* border: 1px solid var(--positive_btn_color);
+  color: var(--positive_btn_color);
+  background-color: var(--txtcolor_9); */
+  color: var(--selected);
+  border: 1px solid var(--selected);
+  background-color: var(--bgcolor_18);
+  padding: 20px;
+  width: 160px;
+  border-radius: 5px;
+  font-size: var(--font_l1);
+  font-family: 'OpenSans-SemiBold';
+}
+
+/* ==================== css for FailureDialog box starts here========================== */
+.request-failure-dialog {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.request-failure-dialog .window.request-failure-screen {
+  /* height: 40%;
+  min-height: 400px;
+  width: 35%;
+  min-width: 557px;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+  border: 1px solid var(--border_11); */
+  height: 40%;
+  min-height: 400px;
+  width: 35%;
+  min-width: 557px;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+
+  /* border: 1px solid var(--border_11); */
+}
+
+.window.request-failure-screen .request-failure-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 40px 30px 40px;
+}
+
+.window.request-failure-screen .request-failure-header .failure-caption {
+  display: flex;
+  flex-direction: column;
+  color: var(--redColor);
+}
+
+/* .window.request-failure-screen .request-failure-header .failure-caption .failure-content {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l3);
+  padding-bottom: 2%;
+} */
+
+.request-failure-dialog .window.request-failure-screen .bfsl-font-2.sorryicon.failure {
+  font-size: var(--font_b2);
+}
+
+.window.request-failure-screen .request-failure-header .Unable-proceed {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_l3);
+  color: var(--redColor);
+}
+
+.window.request-failure-screen .request-failure-header .failure-content {
+  text-align: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.request-failure-dialog .window.request-failure-screen .failure-footer {
+  /* padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 13%; */
+  align-items: center;
+  height: 30%;
+  padding-top: 50px;
+}
+
+.request-failure-dialog .window.request-failure-screen .failure-footer .cancel-btn {
+  color: var(--settings_neg_btn_color);
+  border: 1px solid var(--border_secondary);
+  padding: 15px;
+  width: 185px;
+  border-radius: 5px;
+  font-size: var(--font_m4);
+}
+
+.request-failure-dialog .window.request-failure-screen .failure-footer .proceed-btn {
+  /* color: var(--btn_text_primary);
+  background-color: var(--greenColor);
+  margin-left: 45px;
+  border-radius: 5px;
+  width: 185px;
+  font-size: var(--font_m4);
+  padding-top: 15px;
+  padding-bottom: 15px; */
+
+  color: var(--selected);
+  border: 1px solid var(--selected);
+  background-color: var(--bgcolor_18);
+  padding: 20px;
+  width: 160px;
+  border-radius: 5px;
+  font-size: var(--font_m2);
+}
+
+/* ==================== css for FailureDialog ends  here========================== */
+
+/* ==================== css for LoanDetailsDialog box starts here========================== */
+.terms-loanDetails-dialog {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.loanDetails-dialog .window {
+  background-color: var(--bgcolor_primary);
+  border-radius: 0;
+  box-shadow: 0 0 5px var(--box-shadow);
+}
+
+.terms-loanDetails-dialog .window.loanDetails-base {
+  /* height: 50%;
+  min-height: 450px;
+  width: 42%;
+  min-width: 500px; */
+  height: 65%;
+  min-height: 450px;
+  width: 40%;
+  min-width: 500px;
+  border-radius: 0%;
+  box-shadow: 0 0 5px var(--box-shadow);
+
+  /* border: 1px solid var(--border_11); */
+}
+
+.terms-loanDetails-dialog .window.loanDetails-base .e-agreement-text {
+  color: var(--label_color5);
+}
+
+.terms-loanDetails-dialog .window.loanDetails-base .loandetails-footer {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-top: 1px solid var(--las_holding_background);
+}
+
+.window.loanDetails-base .loan-Details-content {
+  margin-left: 5%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
+.window.loanDetails-base .loan-Details-content .loan-amount-head {
+  text-align: left;
+  color: var(--app_dialog_header_txt);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l3);
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.window.loanDetails-base .loan-Details-content .loan-amount-content {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* .window.loanDetails-base .loan-Details-content .loan-amount-content .loan-details {
+  flex: 35 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+} */
+
+.loan-Details-content .loan-amount-content .loan-details .label {
+  display: flex;
+  justify-content: space-between;
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m2);
+  padding-bottom: 2%;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .label .processfee-title {
+  width: 36%;
+  text-align: right;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .label .process-fee {
+  padding-left: 3%;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .value {
+  display: flex;
+  justify-content: space-between;
+  color: var(--input_color);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m4);
+  padding-bottom: 10%;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .value .roi {
+  padding-right: 5%;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .label-two {
+  width: 59%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m2);
+  padding-bottom: 2%;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .value-two {
+  width: 59%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--input_color);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m4);
+  padding-bottom: 8%;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .value-two .process-charge {
+  padding-right: 3%;
+}
+
+.loan-Details-content .loan-amount-content .loan-details .value .processfee-val {
+  width: 20%;
+  text-align: right;
+}
+
+.loan-amount-content .row {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+/* ==================== css for Otp epldgeDialog box starts here========================== */
+.otp-dialog.service-journey .window.otp-base .content .otp-box {
+  /*  padding-left: 20%; */
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .otp-whole-div {
+  width: 70%;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .otp-whole-div .otp_input {
+  padding: 5% 10%;
+  width: 100%;
+  padding-left: 2%;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .otpInput-base {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .otpInput-base input {
+  width: 70px;
+  padding: 14px;
+  margin-right: 20px !important;
+  margin-top: 10px;
+  font-size: var(--font_m4);
+  border: 1px solid var(--input_border_appDialog);
+}
+
+.otp-dialog.service-journey .window.otp-base .content .otp-whole-div .row {
+  padding-left: 2%;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .resend-block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4%;
+}
+
+/* .otp-dialog.service-journey .window.otp-base .content .get-otp {
+  padding-right: 30%;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+} */
+
+.otp-dialog.service-journey .window.otp-base .content .resend-with-time {
+  display: contents;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .resend-with-time .resend-otp-div {
+  color: var(--info_msg_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+  padding-left: 7px;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .resend-with-time .otp-span-times {
+  color: var(--txtcolor_secondary);
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  padding-left: 2px;
+  padding-right: 2px;
+  letter-spacing: 2px;
+}
+
+.otp-dialog.service-journey .window.otp-base .content .not_recieve_otp {
+  color: var(--info_msg_color);
+}
+
+.otp-dialog.service-journey .window.otp-base .content .resend-otp.send-otp {
+  color: var(--theme_btn_bg);
+}

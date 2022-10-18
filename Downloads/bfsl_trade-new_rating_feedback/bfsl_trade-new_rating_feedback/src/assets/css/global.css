@@ -1,0 +1,811 @@
+@import "appDialog.css";
+@import "loader.css";
+@import "login.css";
+@import "loginDialogs.css";
+@import "header.css";
+@import "dashboard.css";
+@import "homePage.css";
+@import "watchList.css";
+@import "selectInput.css";
+@import "symbolSearch.css";
+@import "themeBasedSettings.css";
+@import "fontBasedSettings.css";
+@import "dashboardOrders.css";
+@import "streamingClass.css";
+@import "table.css";
+@import "marketDepth.css";
+@import "watchListDialog.css";
+@import "dashboardBanner.css";
+@import "fontSizeMapping.css";
+@import "quote.css";
+@import "chartWidget.css";
+@import "orderDialog.css";
+@import "datePicker.css";
+@import "gaugeGraph.css";
+@import "orderPadDialog.css";
+@import "quoteDialogs.css";
+@import "funds.css";
+@import "indices.css";
+@import "ipo.css";
+@import "ipoDialogs.css";
+@import "marketMovers.css";
+@import "menuDialog.css";
+@import "boReports.css";
+@import "alert.css";
+@import "taxDeclaration.css";
+@import "scanners.css";
+@import "las.css";
+@import "sliderInput.css";
+@import "availLoan.css";
+@import "demoTour.css";
+@import "ofs.css";
+@import "ofsDialogs.css";
+@import "news.css";
+@import "ideas.css";
+@import "holdingstable.css";
+@import "ncd.css";
+@import "ncddialogs.css";
+@import "marketsmith.css";
+@import "mtf.css";
+@import "languageSettings.css";
+@import "preferenceDisplayDialog.css";
+@import "orderHelpText.css";
+@import "holdingsModal.css";
+
+/* @import "widget.css";
+@import "orders.css";
+@import "orderPad.css";
+@import "holdings.css";
+@import "settings.css";
+@import "quoteDialogs.css";
+
+@import "fundTransfer.css";
+ */
+
+.releaseNotesBtn {
+  margin-right: 5px;
+  font-family: "OpenSans-SemiBold";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100%;
+}
+
+.preLogin-page {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+}
+
+.theme-btn {
+  color: var(--app_dialog_bg);
+  background-image: linear-gradient(to right, var(--theme_btn_bg), var(--theme_btn_bg_gr));
+  border: 1px solid var(--theme_btn_bg) !important;
+  border-radius: 10px;
+}
+
+.theme-btn:hover {
+  background-color: var(--blue_btn_hover) !important;
+}
+
+.theme-btn2 {
+  color: var(--theme_color_4);
+  background-color: var(--app_dialog_bg2);
+  border: 1px solid var(--theme_color_4) !important;
+  border-radius: 5px;
+  font-size: var(--font_s2);
+  padding: 5px 15px;
+}
+
+.trans-btn {
+  background-color: transparent;
+  color: var(--txtcolor_tertiary);
+  border: 1px solid var(--separator_line);
+  border-radius: 10px;
+}
+
+.input-ele {
+  background-color: transparent;
+  color: var(--input_color);
+  border: 1px solid var(--input_border);
+  padding: 5px;
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.input-div .addOnIcon {
+  padding: 5px;
+  border: 1px solid var(--input_border);
+  border-right: none;
+  color: var(--txtcolor_primary);
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-div .addOnIcon.right {
+  border: 1px solid var(--input_border) !important;
+  border-left: none !important;
+  height: 100%;
+}
+
+.select-input {
+  color: var(--txtcolor_secondary);
+  outline: none;
+}
+
+.show {
+  display: block;
+  -webkit-animation: fadein 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.bold {
+  font-family: "OpenSans-Bold";
+}
+
+.semiBold {
+  font-family: "OpenSans-SemiBold";
+}
+
+.hiddenCheckbox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+button.disabled,
+button:disabled {
+  cursor: default !important;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+}
+
+input:disabled {
+  color: var(--txtcolor_secondary) !important;
+}
+
+.disble-select {
+  user-select: none;
+
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+
+  /* Safari */
+  -moz-user-select: none;
+
+  /* Firefox */
+  -ms-user-select: none;
+
+  /* Internet Explorer/Edge */
+}
+
+.disabled {
+  opacity: 0.3;
+  user-select: none;
+  cursor: default !important;
+}
+
+.exc-span {
+  padding: 2px 4px;
+  background-color: var(--bgcolor_tertiary);
+}
+
+.alignLeft {
+  text-align: left !important;
+}
+
+.alignRight {
+  text-align: right !important;
+}
+
+.alignCenter {
+  text-align: center !important;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.buy-clr {
+  color: var(--greenColor) !important;
+}
+
+.sell-clr {
+  color: var(--redColor) !important;
+}
+
+/* =====    input errors css ===== */
+
+.errorInput input,
+.errorInput .addOnIcon,
+.errorInput .keyIcon {
+  border: 1px solid var(--error_input_border) !important;
+}
+
+.errorDiv .error,
+.commonErrorDiv .error {
+  color: var(--error_input_color) !important;
+  font-size: var(--font_m1);
+}
+
+.errorInput.hasAddOn input {
+  border-left: none !important;
+}
+
+.errorInput.hasAddOn .addOnIcon {
+  border-right: 1px solid var(--input_border) !important;
+}
+
+.hasInnerAddOn {
+  position: relative;
+}
+
+.hasInnerAddOn .addOnInnerIcon {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hasInnerAddOn .addOnInnerIcon.floatRight {
+  right: 0;
+  margin-right: 10px;
+}
+
+.calender-Icon {
+  padding: 10px;
+  border: 1px solid var(--input_border);
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_l3);
+  cursor: pointer;
+  color: var(--password_eye_icon);
+  border-left: none;
+}
+
+.addOn-icon {
+  position: absolute;
+}
+
+.addOn-icon.left {
+  left: 0;
+}
+
+/* ==== Loading dots css === */
+
+@keyframes blink { 50% { color: transparent; } }
+
+.dotLoading {
+  font-size: var(--font_l1) !important;
+}
+
+.dotLoading .loader__dot { animation: 1.3s blink infinite; }
+.dotLoading .loader__dot:nth-child(2) { animation-delay: 250ms; }
+.dotLoading .loader__dot:nth-child(3) { animation-delay: 500ms; }
+
+/* ==== Loading dots css === */
+
+/* =====    input errors css ===== */
+
+::placeholder {
+  color: var(--place_holder) !important;
+  font-family: "OpenSans-Regular";
+  opacity: 1;
+
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--place_holder) !important;
+  font-family: "OpenSans-Regular";
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--place_holder) !important;
+  font-family: "OpenSans-Regular";
+}
+
+/* =========   tooltip styles starts here   ========= */
+
+.tooltip-div {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tooltip-container {
+  position: absolute;
+  z-index: 1000;
+  background-color: var(--tooltip_bg);
+  border: 1px solid var(--tooltip_border);
+  border-radius: 5px;
+  padding: 5px 12px;
+  left: -15px;
+  font-size: var(--font_s2);
+  font-family: 'OpenSans-Regular';
+  width: 300px;
+  color: var(--tooltip_color);
+  box-shadow: 7px 7px 7px var(--tooltip_shadow);
+}
+
+.tooltip-container.topRight {
+  right: -29px !important;
+  left: unset !important;
+}
+
+.tooltip-container.topRight .triangle {
+  left: unset !important;
+  right: 33px;
+}
+
+/* .show {
+  -webkit-animation: fadein 0.5s;
+  animation: fadeIn 0.5s;
+} */
+
+.tooltip-container.top {
+  margin-top: -50px;
+}
+
+/* .tooltip-container.top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 26px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: var(--tooltip_bg) transparent transparent transparent;
+} */
+
+.tooltip-container.top .triangle {
+  display: block;
+  height: 13px;
+  width: 13px;
+  background-color: inherit;
+  border: inherit;
+  position: absolute;
+  top: 34px;
+
+  /* left: calc(85% - 0px); */
+  left: 28px;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  transform: rotate(-45deg);
+  border-radius: 0 0 0 0.25em;
+}
+
+.tooltip-container.bottom {
+  margin-top: 27px;
+}
+
+.tooltip-container.bottom.left {
+  left: unset;
+  right: 10px;
+}
+
+.tooltip-container.bottom.left .triangle {
+  left: unset;
+  right: 22px;
+}
+
+/* .tooltip-container.bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent var(--tooltip_bg) transparent;
+} */
+
+.tooltip-container.bottom .triangle {
+  display: block;
+  height: 13px;
+  width: 13px;
+  background-color: inherit;
+  border: inherit;
+  position: absolute;
+  top: -6px;
+
+  /* left: calc(85% - 0px); */
+  left: 22px;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  transform: rotate(135deg);
+  border-radius: 0 0 0 0.25em;
+}
+
+.tooltip-container.bottom-right .triangle {
+  left: unset;
+  right: 70px;
+}
+
+/* .tooltip-container {
+  width: 300px;
+  color: var(--tooltip_color);
+  box-shadow: 7px 7px 7px var(--tooltip_shadow);
+} */
+
+.orderPad-dialog .tooltip-container {
+  width: 200px;
+}
+
+.buy-btn {
+  font-size: var(--font_m1);
+  color: var(--greenColor);
+  border: 2px solid var(--greenColor);
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  background-color: unset;
+  margin-left: 10px;
+}
+
+.sell-btn {
+  font-size: var(--font_m1);
+  color: var(--redColor);
+  border: 2px solid var(--redColor);
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  background-color: unset;
+}
+
+.buy-btn2 {
+  font-size: var(--font_m1);
+  color: var(--txtcolor_9);
+  border: 2px solid var(--buyBtn-border);
+  height: 35px;
+  width: 60px;
+  background-color: var(--greenColor);
+  margin-left: 10px;
+  border-radius: 10%;
+}
+
+.sell-btn2 {
+  font-size: var(--font_m1);
+  color: var(--txtcolor_9);
+  border: 2px solid var(--sellbtn-border);
+  height: 35px;
+  width: 60px;
+  background-color: var(--redColor);
+  border-radius: 10%;
+}
+
+.stock_report_btn {
+  color: #fff;
+  background-color: var(--theme_btn_bg);
+  min-width: 135px;
+}
+
+.stock_report_btn:hover {
+  background-color: var(--blue_btn_hover);
+}
+
+.negativeColor {
+  color: var(--redColor) !important;
+}
+
+.positiveColor {
+  color: var(--greenColor) !important;
+}
+
+.whiteColor {
+  color: white;
+}
+
+#lightTheme .whiteColor {
+  color: var(--txtcolor_tertiary) !important;
+}
+
+.text-nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* =========   tooltip styles ends here   ========= */
+
+/* Label input css starts here */
+
+.labelInput {
+  position: relative;
+  border: 1px solid var(--border_7);
+  border-radius: 5px;
+}
+
+.labelInput .label {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  background-color: var(--bgcolor_primary);
+  padding: 0 5px;
+  font-size: var(--font_s4);
+}
+
+.labelInput input {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Label input css ends here */
+
+/* =========   toggle component starts here   ========= */
+
+.doggleBase-div {
+  display: flex;
+  align-items: center;
+  font-size: var(--font_s3);
+  background-color: var(--bgcolor_15);
+  padding: 6px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px var(--box-shadow);
+}
+
+.doggleBase-div.disableToggle {
+  box-shadow: none !important;
+}
+
+.doggleBase-div.disableToggle span.active {
+  box-shadow: none !important;
+}
+
+.doggleBase-div span {
+  padding: 1px 5px;
+  flex: 1;
+  height: 100%;
+  border-radius: 5px;
+  color: var(--toggle_inactive_button_clr);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_s5);
+}
+
+.doggleBase-div span.active {
+  background-color: var(--bgcolor_tertiary);
+  box-shadow: 0 1px 2px rgb(190 190 190);
+}
+
+.doggleBase-div.orderAction {
+  width: 180px;
+  height: 100%;
+}
+
+.doggleBase-div.orderAction span.active:nth-child(1) {
+  background-color: var(--greenColor);
+  color: var(--tooltip_color2);
+  font-family: "OpenSans-Bold";
+}
+
+.doggleBase-div.orderAction span.active:nth-child(2) {
+  background-color: var(--marketDepth_sell_Btn);
+  color: var(--tooltip_color2);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_s5);
+}
+
+.quote-click:hover,
+.indices-click:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hiddenInput_serach {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: none;
+  top: -30px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  top: calc(50% - 7px);
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bgcolor_16);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 12px;
+  left: 3px;
+  bottom: 0.17rem;
+  background-color: var(--icon_color8);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--icon_color9);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--icon_color3);
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+/* =========   toggle component ends here   ========= */
+
+.blink {
+  animation: blinker 1s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* =========== scroll bar css starts here =========== */
+
+.scrollArea {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.scrollArea-x {
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-color: var(--scroll_thumb) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: rgba(255, 255, 255, 0.9); */
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: #888;  */
+  background: var(--scroll_thumb);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* background: #555;  */
+  background: var(--scroll_thumb_hover);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* =========== scroll bar css starts here =========== */
+
+#chart_iframe {
+  border: none;
+}
+
+/* ----------- FireFox starts ----------------- */
+
+.scroller_firefox {
+  scrollbar-color: var(--scroll_thumb) transparent; /* thumb and track color */
+  scrollbar-width: thin;
+}
+
+/* ----------- FireFox ends --------------------- */
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #f1f3f3;
+  stroke: #6f257f;
+  stroke-width: 5px;
+}
+
+.rectborder {
+  stroke: #e5e5e5;
+  stroke-width: 0.1em;
+  fill: #fff;
+  width: 100px;
+  padding: 2px 6px;
+}
+
+.preload-image {
+  /* visibility: hidden; */
+  width: 0;
+  height: 0;
+  display: none;
+}
