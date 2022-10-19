@@ -1,0 +1,722 @@
+.newsBase {
+  height: 100%;
+  padding: 18px 18px 15px 18px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* margin: 15px; */
+  border: 1px solid var(--border_primary);
+  background-color: var(--bgcolor_3);
+}
+
+.newsBase .newsBase-header {
+  height: 110px;
+  border: 1px solid var(--bgcolor_4);
+  border-bottom: none;
+}
+
+.newsBase > .widget-loader-div {
+  height: calc(100% - 110px);
+  position: relative;
+
+  /* border: 1px solid var(--bgcolor_4); */
+}
+
+.newsBase .newsBase-header .headerBase {
+  padding: 0 20px;
+  height: 55px;
+  font-size: var(--font_s5);
+  background-color: var(--bgcolor_primary);
+  margin: 0 !important;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsBase .newsBase-header .headerBase .head-name {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--selected);
+  height: 40px;
+  padding-top: 5px;
+
+  /* padding: 0 2%;  */
+}
+
+.newsBase .newsBase-header .close-button {
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.newsBase .newsBase-header .menuArray {
+  height: 55px;
+  background-color: rgb(245, 245, 245);
+}
+
+.newsBase .newsBase-header .newsMenu-div {
+  position: relative;
+  display: flex;
+  height: 55px;
+  background-color: var(--bgcolor_5);
+  border-top: 1px solid var(--vr_line);
+  border-bottom: 1px solid var(--vr_line);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.news-header-values::-webkit-scrollbar {
+  display: none;
+}
+
+.newsBase .newsBase-header .newsMenu-div .news-header-values {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.newsBase .newsBase-header .newsMenu-div .moveScroll-btn {
+  color: var(--icon_color4);
+}
+
+.newsBase .newsBase-header .newsMenu-div .moveScroll-btn.active {
+  color: var(--scroller-arrow-active);
+  cursor: pointer;
+}
+
+.newsBase .newsBase-header .newsMenu-div .moveScroll-btn.left {
+  padding-top: 10px;
+  font-size: var(--font_l4);
+
+  /* color: var(--icon_color4); */
+}
+
+.newsBase .newsBase-header .newsMenu-div .moveScroll-btn.right {
+  padding-top: 10px;
+  font-size: var(--font_l4);
+
+  /* color: var(--icon_color4); */
+}
+
+.newsBase .newsMenu-div .news-header-values .menusTab.selectedMenu {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+}
+
+.newsBase .newsMenu-div .news-header-values .menusTab {
+  color: var(--markets_menu);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+  border-right: 1px solid var(--border_13);
+  padding: 0 20px;
+  white-space: nowrap;
+  min-width: 15%
+
+  /* width: 30%; */
+}
+
+.newsBase .newsMenu-div .news-header-values .menusTab.selectedMenu .menuName {
+  border-bottom: 2px solid var(--theme_color);
+}
+
+.newsBase .newsMenu-div .news-header-values .menusTab .menuName {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsBase .newsTable-base {
+  height: 100%;
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--bgcolor_4);
+}
+
+.newsBase .newsTable-base .e-voting-row {
+  display: flex;
+  background-color: var(--bgcolor_3);
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 30px;
+  height: 50px;
+  align-items: center;
+}
+
+.newsBase .newsTable-base .e-voting-row .text {
+  display: flex;
+  color: var(--markets_menu);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.newsBase .newsTable-base .e-voting-row .e-vote-button {
+  color: var(--positive_btn_color);
+  border: 2px solid var(--theme_color);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 100px;
+  margin-right: -5px;
+  font-family: 'OpenSans-SemiBold';
+
+  /* padding-left: ; */
+}
+
+.newsBase .newsTable-base .e-voting-row .e-vote-button.long {
+  width: 120px;
+}
+
+.newsBase .newsTable-base .newsTable {
+  height: calc(100% - 40px);
+  overflow-y: scroll;
+}
+
+.newsBase .newsTable-base .news-filter {
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.newsBase .trade-date .trade-book.date {
+  position: absolute;
+  z-index: 100;
+  top: 170px;
+  right: 120px;
+  width: 320px;
+}
+
+.newsBase .newsTable-base .news-filter .select-input {
+  border: none;
+  background-color: transparent;
+  color: var(--dropdown_options_color);
+  font-family: "OpenSans-SemiBold";
+  font-size: 16px;
+  margin-right: 20px;
+  justify-content: flex-end;
+  padding: d;
+  padding: 1px;
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .selected {
+  color: var(--theme_color_4);
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .select-value {
+  padding-left: 5px;
+  color: var(--theme_color_4);
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .select-input .select-value {
+  padding-right: 15px;
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .options-div-base {
+  right: 25px;
+  left: unset;
+  background-color: var(--bgcolor_10);
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .options-div.showOption {
+  max-height: 215px;
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .options-div {
+  background-color: var(--bgcolor_10);
+  box-shadow: none;
+  border: 1px solid var(--border_22);
+  width: 100%;
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .options-div .option:hover {
+  background-color: var(--select_option_hover);
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .options-div .option {
+  border-bottom: 1px solid var(--border_8) !important;
+  padding: 15px 20px;
+  font-family: "OpenSans-SemiBold";
+}
+
+.newsBase .newsTable-base .news-filter .select-input-div .options-div .option .custom-date .date-icon-bo {
+  font-size: var(--font_l5);
+  padding-left: 5px;
+  color: var(--label_color3);
+}
+
+.newsBase .newsTable-base .news-filter .date {
+  padding-top: 3px;
+  padding-right: 35px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font_m2);
+  color: var(--icon_color3);
+  justify-content: flex-end;
+  font-family: "OpenSans-Semibold" !important;
+  cursor: pointer;
+}
+
+.newsBase .newsTable-base .news-filter .trade-date .trade-book-date {
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  right: 12%;
+  width: 320px;
+}
+
+.newsBase .newsTable-base .news-filter .date .date-icon {
+  font-size: var(--font_l2);
+  margin-right: 4px;
+  cursor: pointer;
+  color: var(--icon_color3);
+}
+
+.newsBase .newsTable .newsRow {
+  display: flex;
+  border-bottom: 1px solid var(--border_8);
+}
+
+.newsBase .newsTable .newsRow:hover {
+  background-color: var(--bgcolor_5);
+}
+
+.newsBase .newsTable .newsblock {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 80%;
+
+  /* border-bottom: 1px solid var(--border_8); */
+  padding-left: 4%;
+}
+
+.newsBase .newsTable .newsblock span.newssymbol {
+  color: var(--news-sym);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  padding-bottom: 10px;
+
+  /* width: fit-content; */
+}
+
+/* .newsBase .newsTable .newsblock span.newssymbol:hover {
+  text-decoration: underline;
+} */
+
+.newsBase .newsTable .newsblock .newsdate {
+  font-size: var(--font_s4);
+  font-family: "OpenSans-SemiBold";
+  color: var(--news-date);
+  padding-bottom: 10px;
+  margin-top: 20px;
+
+  /* for bullet below */
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.newsBase .newsTable .newsblock .newsdate::marker {
+  color: var(--news_bullet_color);
+  font-size: var(--font_l1);
+}
+
+.newsBase .newsTable .newsblock .newsdate .categoryname {
+  margin-left: 20px;
+  background-color: var(--bgcolor_6);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  height: 25px;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  width: 130px;
+  white-space: nowrap;
+}
+
+.newsBase .newsTable .newsblock .date-and-action {
+  display: flex;
+}
+
+.newsBase .newsTable .newsblock .date-and-action .corpactioncategory {
+  padding-bottom: 10px;
+  margin-left: 2%;
+  margin-top: 22px;
+  background-color: var(--news-category-bg);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  height: 28px;
+  text-align: center;
+  padding-top: 2px;
+
+  /* padding-bottom: 13px; */
+  width: 100px;
+  white-space: nowrap;
+}
+
+.newsBase .newsTable .newsblock span.newstext {
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--news-data);
+  padding-bottom: 10px;
+}
+
+.newsBase .newsTable .newsRow .buttonsdiv {
+  display: flex;
+  align-items: center;
+}
+
+.newsBase .newsTable .newsRow .buttonsdiv .news-buybtn {
+  font-size: var(--font_m1);
+  color: var(--txtcolor_9);
+  border: 2px solid var(--buyBtn-border);
+  height: 40px;
+  width: 70px;
+  background-color: var(--greenColor);
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.newsBase .newsTable .newsRow .buttonsdiv .news-sellbtn {
+  font-size: var(--font_m1);
+  color: var(--txtcolor_9);
+  border: 2px solid var(--sellbtn-border);
+  height: 40px;
+  width: 70px;
+  background-color: var(--redColor);
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.newsBase .newsTable .news-errordiv {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_tertiary);
+  font-family: "OpenSans-SemiBold";
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-background {
+  /* height: 600px;
+  width: 1200px; */
+}
+
+/* Corporate acton buy-sell popup */
+
+.newsDetails-dialog {
+  align-items: flex-end;
+  background: var(--coverBG2);
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell {
+  /* height: 100%; */
+
+  height: auto;
+
+  /* position: relative; */
+
+  /* top: 50%; */
+  width: 600px;
+  position: fixed;
+  left: 40%;
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--border_22);
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main {
+  position: relative;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .border {
+  border-bottom: 1px solid var(--border_8);
+  position: absolute;
+  top: 400px;
+  width: 100%;
+
+  /* display: none; */
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .border.hide {
+  display: none;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.showmore {
+  height: 700px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.smallest-popup {
+  height: 150px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.small-popup {
+  height: 230px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.showmore.tallpopup {
+  height: 800px;
+  top: 30%;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content .dividend,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content .bonus,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content .split,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content .rights {
+  padding: 30px 30px 30px 40px;
+  position: relative;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .buttonrow {
+  display: flex;
+
+  /* padding-top: 50px; */
+  padding-left: 100px;
+  padding-right: 100px;
+
+  /* position: absolute; */
+  width: 100%;
+
+  /* top: 420px; */
+  height: 90px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.small-popup .buttonrow {
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "OpenSans-Bold";
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .buttonrow.more-selected {
+  /* top: 42%; */
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .buttonrow.maxdate-selected {
+  top: 55%;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .buttonrow .buybtn {
+  font-size: var(--font_l1);
+  color: var(--txtcolor_9);
+  border: 2px solid var(--buyBtn-border);
+  height: 60px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: var(--greenColor);
+  margin-left: 10%;
+
+  /* text-align: center; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .buttonrow .sellbtn {
+  font-size: var(--font_l1);
+  color: var(--txtcolor_9);
+  border: 2px solid var(--sellbtn-border);
+  height: 60px;
+  width: 150px;
+  background-color: var(--redColor);
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .top-row {
+  display: flex;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .top-row .sym {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .top-row .sym .date {
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-Regular';
+  color: var(--news-popup-date);
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .top-row .sym .basesym {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--news-popup-sym);
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .top-row .sym .companyname {
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-Regular';
+  color: var(--news-popup-date);
+  white-space: nowrap;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .top-row .corpaction {
+  margin-left: 70%;
+  position: absolute;
+  margin-top: 8px;
+  background-color: var(--news-category-bg);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  height: 28px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  width: 100px;
+  white-space: nowrap;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .value {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Regular';
+  color: var(--txtcolor_6);
+  margin-top: 40px;
+  height: 250px;
+  text-align: justify;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .value.enable-scroll {
+  overflow-y: scroll;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .value .moreless-text {
+  color: var(--icon_color3);
+  cursor: pointer;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .value .moreless-text.hide {
+  display: none;
+}
+
+/* === Dividend-buysellpopup starts here === */
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .first-row {
+  display: flex;
+  padding-top: 50px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .second-row {
+  display: flex;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .first-row .item1,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .first-row .item2,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .first-row .item3,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .second-row .item1,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .second-row .item2 {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  text-align: left;
+
+  /* padding-left: 50px; */
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .first-row .item2.middle {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .second-row .item2.middle {
+  padding-left: 130px;
+  text-align: center;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .first-row .title,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .second-row .title {
+  color: var(--txtcolor_11);
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m2);
+  padding-top: 30px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .first-row .val,
+.app-modalDialog2.newsDetails-dialog .window.news-buysell .content-main .content .second-row .val {
+  color: var(--txtcolor_primary);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-Bold';
+}
+
+.app-modalDialog2 .newsDetails-dialog {
+  align-items: flex-end;
+  background: var(--coverBG3);
+}
+
+.newsDetails-dialog .window {
+  width: 55%;
+  min-width: 70px;
+  height: 60%;
+
+  /* min-height: 500px; */
+  background-color: var(--bgcolor_primary);
+  border-radius: 0;
+  box-shadow: 0 0 5px var(--box-shadow);
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.rights-bonus {
+  height: 350px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.rights-bonus .buttonrow {
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: 'OpenSans-Bold';
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.dividend {
+  height: 400px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.dividend .buttonrow {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'OpenSans-Bold';
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.showmore .buttonrow {
+  top: 600px;
+  font-family: 'OpenSans-Bold';
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.smallest-popup .buttonrow {
+  top: 120px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.small-popup .border {
+  top: 130px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.dividend .border {
+  top: 300px;
+}
+
+.app-modalDialog2.newsDetails-dialog .window.news-buysell.rights-bonus .border {
+  top: 250px;
+}

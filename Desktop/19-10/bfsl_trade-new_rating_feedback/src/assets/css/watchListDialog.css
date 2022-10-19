@@ -1,0 +1,713 @@
+/* ==============   add watchgroup dialog css starts here ============= */
+
+.watchlist-header .addWatchlistDialog {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 56px;
+  background-color: var(--bgcolor_13);
+  border: 1px solid var(--dlgbox_border);
+  box-shadow: 0 0 5px 2px var(--box-shadow3);
+}
+
+.addGroupDiv .addWatchlistDialog {
+  position: absolute;
+  z-index: 10;
+  right: -85%;
+  top: 50px;
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--dlgbox_border);
+  box-shadow: 0 0 5px 2px var(--box-shadow3);
+}
+
+.addWatchlistDialog .content {
+  margin: 14px;
+  height: auto;
+  width: 330px;
+}
+
+.addWatchlistDialog .content .addGroupInfoMsg {
+  color: var(--order_date_text_color);
+  font-size: var(--font_s5);
+  padding: 5px 0;
+}
+
+.addWatchlistDialog .watchList-name-input {
+  background-color: var(--border_primary);
+  border: none;
+  border-bottom: 1px solid var(--border_5);
+  width: 100%;
+  height: 50px;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m4);
+}
+
+input.input-ele.inputVal.watchList-name-input {
+  color: var(--textcolor2);
+}
+
+.addWatchlistDialog .infoMsg {
+  color: var(--order_date_text_color);
+  font-size: var(--font_s5);
+  margin-top: 8px;
+}
+
+.addWatchlistDialog .footer {
+  height: 50px;
+  display: flex;
+  border-top: 1px solid var(--separator_line);
+}
+
+.addWatchlistDialog .footer button {
+  flex: 1;
+  font-size: var(--font_m4);
+}
+
+.addWatchlistDialog .footer .negativeBtn {
+  color: var(--txtcolor_21);
+  font-family: "OpenSans-Regular";
+  background-color: unset;
+  text-transform: capitalize;
+}
+
+.addWatchlistDialog .footer .positiveBtn {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+  background-color: var(--bgcolor_secondary);
+}
+
+/* ==============   add watchgroup dialog css ends here ============= */
+
+/* ==============   delete watchgroup dialog css starts here ============= */
+
+.deleteWatchlistDropdown {
+  position: absolute;
+  max-height: 375px;
+  width: 375px;
+  z-index: 10;
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--border-color_2);
+  box-shadow: 0 0 5px 2px var(--box-shadow3);
+  top: 55px;
+}
+
+.deleteWatchlistDropdown .row {
+  position: relative;
+}
+
+.deleteWatchlistDropdown .row .deleteInfoDiv {
+  display: none;
+}
+
+.deleteWatchlistDropdown .row.selected .deleteInfoDiv {
+  display: block;
+}
+
+.deleteWatchlistDropdown .row.selected .dataRow {
+  border-bottom: none !important;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.deleteWatchlistDropdown .dataRow {
+  height: 60px;
+  border-bottom: 1px solid var(--separator_line);
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteWatchlistDropdown .row.last .dataRow {
+  border-bottom: none;
+}
+
+.deleteWatchlistDropdown .dataRow .groupName {
+  color: var(--txtcolor_primary);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.deleteWatchlistDropdown .dataRow .deleteIcon {
+  font-size: var(--font_xl3);
+  color: var(--redColor_2);
+  cursor: pointer;
+}
+
+.deleteWatchlistDropdown .deleteInfoDiv .infoMsg {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 30px 10px;
+  font-size: var(--font_m2);
+  color: var(--info_msg_color2);
+}
+
+.deleteWatchlistDropdown .deleteInfoDiv .deletewNamwe {
+  color: var(--redColor);
+  font-family: "OpenSans-SemiBold";
+  padding-left: 5px;
+}
+
+.deleteWatchlistDropdown .btnDiv {
+  height: 45px;
+  display: flex;
+  border-bottom: 1px solid var(--separator_line);
+  font-size: var(--font_m4);
+}
+
+.deleteWatchlistDropdown .btnDiv button {
+  flex: 1;
+  text-transform: capitalize;
+  font-size: var(--font_m4);
+}
+
+.deleteWatchlistDropdown .btnDiv .deleteBtn {
+  background-color: var(--bg_redColor);
+  font-family: "OpenSans-SemiBold";
+  color: var(--redColor_3);
+}
+
+.deleteWatchlistDropdown .btnDiv .cancelBtn {
+  border-top: 1px solid var(--separator_line);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+  font-family: "OpenSans-Regular";
+}
+
+.deleteWatchlistDropdown .row .coverDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: var(--coverBG);
+}
+
+.deleteWatchlistDropdown .row.selected .coverDiv {
+  display: none !important;
+}
+
+/* ==============   delete watchgroup dialog css ends here ============= */
+
+/* ==============   delete symbols dialog css starts here ============= */
+
+.deleteSym-dialog .window {
+  width: 40%;
+  min-width: 550px;
+  max-width: 550px;
+}
+
+.deleteSym-dialog .window .content {
+  padding: 60px 40px;
+  font-size: var(--font_m4);
+}
+
+.deleteSym-dialog .window .content img {
+  height: 80px;
+}
+
+/* ==============   delete symbols dialog css ends here ============= */
+
+/* ==============   delete symbols dialog css ends here ============= */
+
+.contractInfo-dialog .window {
+  width: 60%;
+  min-width: 700px;
+  max-width: 700px;
+}
+
+.contractInfo-dialog .window .content {
+  padding: 15px 40px;
+  font-size: var(--font_s5);
+  height: 400px;
+  min-height: 300px;
+}
+
+.contractInfo-dialog .content .errorDiv {
+  height: 100%;
+  padding: 0;
+}
+
+.contractInfo-dialog .content .details-row {
+  display: flex;
+  padding: 10px 0;
+}
+
+.contractInfo-dialog .content .details-row.bold {
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Bold';
+}
+
+.contractInfo-dialog .content .details-row .key {
+  flex: 5;
+  text-align: left;
+}
+
+.contractInfo-dialog .content .details-row .separator {
+  flex: 1;
+  text-align: left;
+}
+
+.contractInfo-dialog .content .details-row .value {
+  flex: 4;
+  text-align: left;
+}
+
+/* ==============   delete symbols dialog css ends here ============= */
+
+/* ==============   symbol search dialog css starts here ============= */
+
+.symbolSearch-dialog .window {
+  width: 40%;
+  min-width: 450px;
+  max-width: 450px;
+}
+
+.symbolSearch-dialog .window .content {
+  padding: 40px;
+  font-size: var(--font_s5);
+  position: relative;
+}
+
+/* ==============   symbol search dialog css ends here ============= */
+
+/* ==============   organise columns dialog css starts here ============= */
+
+.organise-columns-dialog .window {
+  width: 40%;
+  min-width: 450px;
+  max-width: 450px;
+}
+
+.organise-columns-dialog .window .content {
+  font-size: var(--font_s5);
+  padding: 0 !important;
+  height: 400px;
+}
+
+.organise-columns-dialog .window .content .row {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border_secondary);
+  text-align: left;
+  color: var(--txtcolor_secondary);
+  position: relative;
+}
+
+.organise-columns-dialog .title .bfsl-font {
+  font-size: var(--font_l2);
+}
+
+.organise-columns-dialog .title .hiddenCheckbox {
+  height: 40px;
+  width: 40px;
+  left: 0;
+}
+
+.organise-columns-dialog .window .content .row .bfsl-font {
+  flex: 1;
+  height: 100%;
+  font-size: var(--font_l2);
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-left: 10px;
+}
+
+.organise-columns-dialog .window .content .row .column {
+  flex: 9;
+}
+
+.organise-columns-dialog .window .content .checkboxIcon {
+  color: var(--organise_col_checkBox);
+}
+
+/* ==============   organise columns dialog css ends here ============= */
+
+/* ==============   context menu dialog css starts here ============= */
+
+.context-menu-base {
+  position: fixed;
+  background-color: var(--preLogin_app_dialog_body_bg);
+  border: 1px solid var(--app_dialog_border);
+  font-size: var(--font_s3);
+  color: var(--contextMenu_color);
+  box-shadow: 0 4px 4px #00000029;
+  z-index: 100;
+}
+
+.context-menu-base .menus {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.context-menu-base .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  border-bottom: 1px solid var(--border_gray);
+  padding: 0 10px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.context-menu-base .row:hover {
+  background-color: var(--bgcolor_gray);
+}
+
+.context-menu-base .menus::-webkit-scrollbar-thumb {
+  background: var(--scroll_thumb_gray);
+}
+
+.context-menu-base .menus::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.context-menu-base .menus::-webkit-scrollbar-thumb:hover {
+  /* background: #555;  */
+  background: var(--scroll_thumb_gray_hover);
+}
+
+/* ==============   context menu dialog css ends here ============= */
+
+/* ============== Market depth dialog css starts here ============= */
+
+.marketDepth-dialog .window {
+  width: 60%;
+  min-width: 840px;
+  max-width: 840px;
+}
+
+.marketDepth-dialog .window .content {
+  height: 400px;
+}
+
+.marketDepth-dialog .window .content .marketDepth-div {
+  height: calc(100% - 50px);
+}
+
+.marketDepth-dialog .content .symData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+}
+
+.marketDepth-dialog .content .symData .primary-symName {
+  color: var(--txtcolor_primary);
+}
+
+.marketDepth-dialog .content .symData .exc {
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+  padding-left: 10px;
+}
+
+.sortWatchlistDropdown {
+  position: absolute;
+  max-height: 375px;
+  width: 80%;
+  min-width: 375px;
+  z-index: 10;
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--border-color_2);
+  box-shadow: 0 0 5px 2px var(--box-shadow3);
+  top: 55px;
+  right: 0;
+}
+
+.sortWatchlistDropdown .sorting-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5%;
+}
+
+.sortWatchlistDropdown .sortBtn {
+  font-size: var(--font_m4);
+  background-color: var(--bgcolor_10);
+  border: none;
+  padding-left: 25px;
+  color: var(--can_btn_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sortWatchlistDropdown .sorting-div .head-div {
+  font-size: var(--font_l1);
+  border-bottom: 1px solid var(--border_13);
+  font-family: 'OpenSans-SemiBold';
+  height: 50px;
+  padding: 2% 2% 2% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--textcolor14);
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body {
+  padding: 2% 2% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-size: var(--font_m2);
+
+  /* border-bottom: 1px solid var(--border_13); */
+  font-family: 'OpenSans-Regular';
+  color: var(--table_thead_color);
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filter-div {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filter-div .filter-Body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filter-div .for-rest {
+  display: flex;
+
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filter-div .for-rest .reset-btn {
+  background-color: var(--bgcolor_primary);
+  color: var(--textcolor14);
+  font-size: var(--font_m4);
+  cursor: pointer;
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filter-head {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_primary);
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filterBtn {
+  /* padding-top: 10px; */
+  display: flex;
+
+  /* align-items: center;
+  align-content: center; */
+  flex-direction: row;
+  color: var(--txtcolor_primary);
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filterBtn .filtr-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_m3);
+  padding-right: 20px;
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filterBtn .filtr-body .hilighted {
+  color: var(--selected);
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filterBtn .filtr-body .checkboxIcon.checked {
+  color: var(--selected);
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .filterBtn .filBtn {
+  font-size: var(--font_m1);
+
+  /* color: var(--txtcolor_9); */
+
+  /* border: 2px solid var(--buyBtn-border); */
+  height: 35px;
+  width: 60px;
+
+  /* background-color: var(--greenColor); */
+  background-color: var(--bgcolor_6);
+  margin-left: 10px;
+  border-radius: 10%;
+  color: var(--textcolor2) !important;
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .sort-div {
+  width: 100%;
+}
+
+.sortWatchlistDropdown .sorting-div .sort-body .sort-div .sortlist {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-Regular';
+}
+
+.sortWatchlistDropdown .sorting-div .row-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+}
+
+.sortWatchlistDropdown .sorting-div .row-div .label {
+  padding-bottom: 15px;
+  width: 200px;
+}
+
+.sortWatchlistDropdown .sorting-div .row-div span.sorticon {
+  padding-right: 20px;
+  color: var(--sort_icon);
+  font-size: var(--font_m3);
+}
+
+.sortWatchlistDropdown .sorting-div .row-div span.sorticon.active {
+  color: var(--selected);
+}
+
+/* ============== Market depth dialog css ends here ============= */
+
+/* ============== Future Option dialog css starts here ============= */
+
+.futureOption-dialog .window {
+  width: 60%;
+  min-width: 900px;
+  max-width: 900px;
+}
+
+.futureOption-dialog .window .title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+}
+
+.futureOption-dialog .window .title .menuBase {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.futureOption-dialog .window .title .menuBase > span {
+  padding-left: 40px;
+  font-size: var(--font_s4);
+}
+
+.futureOption-dialog .window .menu-div {
+  margin: 0 !important;
+}
+
+.futureOption-dialog .window .content {
+  height: 500px;
+  padding: 10px;
+}
+
+.futureOption-dialog .optionChain-base,
+.futureOption-dialog .futureChain-base {
+  border: 1px solid var(--border_widget);
+}
+
+.futureOption-dialog .optionChain-base .thead-scroller.thead1 {
+  padding-right: 12px !important;
+}
+
+.futureOption-dialog .optionChain-base .thead-scroller.thead2 {
+  padding-right: 10px !important;
+}
+
+.futureOption-dialog .optionChain-base.hasExpiry table tbody {
+  height: 355px;
+}
+
+.futureOption-dialog .optionChain-base table tbody {
+  height: 398px;
+}
+
+.futureOption-dialog .futureChain-base table tbody {
+  height: 442px;
+}
+
+.futureOption-dialog .futureChain-base table tbody tr {
+  height: 45px;
+  border-bottom: 1px solid var(--table_tr_border);
+}
+
+.futureChain-base .moreDetails button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--border_14);
+  color: var(--textcolor2);
+  font-family: "OpenSans-Regular" !important;
+  font-size: var(--font_s5);
+
+  /* width: 110px; */
+  height: 29px;
+  padding: 3px 3px;
+  text-transform: capitalize;
+  flex: 1;
+  margin: 0 3.3%;
+}
+
+.futureChain-base .moreDetails button.addWatchlist {
+  width: 140px;
+}
+
+.futureChain-base .moreDetails button img {
+  height: 16px;
+  margin-right: 10px;
+}
+
+.futureChain-base .moreDetails button.tradeBtn img {
+  height: 20px;
+}
+
+.futureChain-base .moreDetails {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 10px;
+  border-bottom: 1px solid var(--border-color_1);
+}
+
+.optionChain-base .sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.optionChain-base .dateItem {
+  margin-right: 5px;
+  border: 1px solid var(--txtcolor_24);
+  border-radius: 25px;
+  margin-left: 5px;
+  font-size: var(--font_s5);
+  padding: 5px;
+  color: var(--txtcolor_24);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.optionChain-base .dateLabel {
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: var(--font_s4);
+  font-family: 'OpenSans-Regular';
+  color: var(--txtcolor_24);
+}
+
+.optionChain-base .dateItem.selected {
+  color: var(--selected);
+  border: 1px solid var(--selected);
+}
+
+/* ============== Future Option dialog css ends here ============= */

@@ -1,0 +1,99 @@
+.language-setting-base {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.language-setting-base .language-setting-header {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 30px 8px;
+  overflow: scroll;
+}
+
+.language-setting-base .language-setting-header .list-language {
+  position: relative;
+  height: 56px;
+  color: var(--txtcolor_24);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* margin-right: 15px; */
+  cursor: pointer;
+  text-align: center;
+}
+
+.language-setting-base .language-setting-header .list-language .languageValue {
+  color: var(--textcolor2);
+}
+
+.language-setting-base .language-setting-header .list-language .label-text {
+  padding: 15px;
+}
+
+.language-setting-base input[type=radio] {
+  display: none;
+}
+
+.language-setting-base .language-setting-header .list-language .checkmark {
+  padding-right: 7px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--border_7);
+  position: relative;
+}
+
+.language-setting-base .language-setting-header .list-language input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.language-setting-base .language-setting-header .list-language input:checked ~ .checkmark {
+  display: block;
+  border: 2px solid var(--selected);
+}
+
+.language-setting-base .language-setting-header .list-language .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--selected);
+}
+
+.language-setting-base .language-setting-footer {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 16px 48px 8px;
+}
+
+.language-setting-base .language-setting-footer button {
+  flex: 1 1;
+  background-color: transparent;
+  height: 90%;
+  font-size: 14px;
+  margin-right: 5%;
+  border-radius: 8px;
+}
+
+.language-setting-base .language-setting-footer .negativeBtn {
+  color: var(--settings_neg_btn_color);
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+}
+
+.language-setting-base .language-setting-footer .positiveBtn {
+  color: white;
+  background-color: var(--greenColor);
+}

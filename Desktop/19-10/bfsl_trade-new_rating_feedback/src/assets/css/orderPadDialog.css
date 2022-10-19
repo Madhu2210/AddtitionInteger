@@ -1,0 +1,1613 @@
+/* =========== Orderpad dialog css starts here =========== */
+.orderPadDialogBase {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--coverBG);
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tradeBase {
+  height: calc(100% - 45px);
+  margin-top: 15px;
+  margin-bottom: 1px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.tradeBase .trade-content {
+  flex: 65;
+  width: 65%;
+  position: relative;
+}
+
+.tradeBase .market-depth-base {
+  flex: 35;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tradeBase .market-depth-base .mdContent {
+  flex: 77;
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  background-color: var(--bgcolor_primary);
+}
+
+.tradeBase .market-depth-base .widget-loader-div {
+  flex: 53;
+}
+
+.tradeBase .market-depth-base .quoteDetails-div {
+  flex: 47;
+  border: 1px solid var(--thead-border);
+  padding: 2px 10px;
+}
+
+.tradeBase .market-depth-base .mdContent .marketDepth-div .marketDepth-table-div .table-head {
+  height: 50px;
+  background-color: unset;
+  border-bottom: 1px solid var(--border_8);
+}
+
+.tradeBase .market-depth-base .mdContent .marketDepth-div .marketDepth-table-div .table-head .valRow > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.tradeBase .market-depth-base .mdContent .marketDepth-div .marketDepth-table-div .scrollArea {
+  height: calc(100% - 50px);
+  border: 1px solid var(--thead-border);
+}
+
+.tradeBase .marketDepth-div .footer .totalData .label {
+  font-family: "OpenSans-SemiBold";
+}
+
+.tradeBase .quoteDetails-div .quoteDetails-header {
+  flex: 12 !important;
+}
+
+.tradeBase .quoteDetails-div .data-row span.data,
+.tradeBase .quoteDetails-div .data-row span.label {
+  font-family: "OpenSans-SemiBold";
+}
+
+.orderPadBase {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderPadBase .header,
+.tradeBase .market-depth-base .mdHeader {
+  height: 80px;
+  background-color: var(--buysell_header_bg);
+  display: flex;
+  padding: 10px;
+  color: var(--txtcolor_8);
+}
+
+.tradeBase .market-depth-base .mdHeader {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--icon_color9);
+}
+
+.orderPadBase .header.quoteDetails {
+  background-color: none;
+}
+
+.orderPadBase .marketDepth-div .marketDepth-table-div .valRow > span {
+  padding-top: 1%;
+}
+
+.orderPadBase .body {
+  flex: 1;
+  height: calc(100% - 170px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--border_primary);
+}
+
+.orderPadBase .footer,
+.tradeBase .market-depth-base .mdFooter,
+.orderConfirmSuccess .footer-div,
+.series-dialog-modal .footer-div {
+  height: 90px;
+  background-color: var(--bgcolor_17);
+  border: 1px solid var(--border-color_2);
+  display: flex;
+  padding-left: 20px;
+}
+
+.orderPadBase .footer {
+  border-right: none !important;
+}
+
+.tradeBase .market-depth-base .mdFooter {
+  border-left: none !important;
+}
+
+.orderPadBase .header .content {
+  flex: 2;
+  display: flex;
+}
+
+.orderPadBase .header .valueDiv {
+  flex: 71;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 50px 0 15px;
+  border-right: 1px solid var(--border_16);
+  font-size: 13px;
+}
+
+.orderPadBase .header .valueDiv > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderPadBase .header .valueDiv .symName {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+}
+
+.orderPadBase .header .valueDiv .name {
+  display: flex;
+  align-items: center;
+}
+
+.orderPadBase .header .valueDiv .name .doggleBase-div {
+  margin-left: 10px;
+  box-shadow: none;
+}
+
+.orderPadBase .header .valueDiv .name .doggleBase-div span.active {
+  background-color: inherit;
+  border: 1px solid var(--theme_color) !important;
+  color: var(--theme_btn_bg);
+}
+
+.orderPadBase .header .valueDiv .name .doggleBase-div.orderAction {
+  width: 80px;
+  margin: 0 15px;
+  background-color: inherit;
+}
+
+.orderPadBase .header .valueDiv .name .doggleBase-div span {
+  background-color: inherit;
+  color: var(--toggle-button-border);
+  font-family: 'OpenSans-SemiBold';
+  border: none;
+  font-size: var(--font_s5);
+}
+
+/* .orderPadBase .header .valueDiv .name .doggleBase-div span.active {
+  background-color: inherit;
+  border: 1px solid var(--theme_color) !important;
+  color: var(--theme_btn_bg);
+} */
+
+.orderPadBase .header .valueDiv .ltpVal {
+  font-size: var(--font_l3);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+  padding: 0;
+}
+
+.orderPadBase .header .valueDiv .ltpVal > span {
+  padding: 0;
+}
+
+.orderPadBase .header .valueDiv .exc {
+  padding-left: 10px;
+  color: var(--label_color6);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_s5);
+}
+
+.orderPadBase .header .valueDiv .lttVal {
+  font-family: "OpenSans-Regular";
+  color: var(--info_msg3);
+  font-size: var(--font_s5);
+}
+
+.orderPadBase .header .valueDiv .changeVal {
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m3);
+}
+
+.orderPadBase .header .actionDiv {
+  flex: 29;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 30px;
+}
+
+.orderPadBase .header .actionDiv .doggleBase-div.orderAction {
+  height: 90%;
+}
+
+.orderPadBase .doggleBase-div.orderAction span.active {
+  box-shadow: none;
+}
+
+.orderPadBase .body .content {
+  flex: 2;
+  background-color: var(--bgcolor_primary);
+}
+
+.orderPadBase .body .productHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  border-bottom: 1px solid var(--border_7);
+  height: 50px;
+  font-family: "OpenSans-SemiBold";
+}
+
+.orderPadBase .body .productHeader .prdTypeDiv {
+  height: 100%;
+  position: relative;
+  flex: 8;
+  display: flex;
+}
+
+.orderPadBase .body .productHeader .prdTypeDiv .productType {
+  height: 100%;
+  margin-left: 13%;
+  cursor: pointer;
+}
+
+.orderPadBase .body .productHeader .prdTypeDiv span.productType {
+  font-family: 'OpenSans-SemiBold';
+  color: var(--date_icon_color);
+  font-size: var(--font_m4);
+}
+
+.orderPadBase .body .productHeader .prdTypeDiv .productType.selected {
+  font-family: 'OpenSans-Bold';
+  color: var(--selected);
+  border-bottom: 2px solid var(--selected);
+}
+
+.orderPadBase .body .productHeader .prdTypeDiv .productType.disabled {
+  pointer-events: none;
+}
+
+.orderPadBase .body .productHeader .prdTypeDiv .productType:first-child {
+  margin-left: 0;
+}
+
+.orderPadBase .body .productHeader .marketDepthDiv {
+  color: rgb(0, 74, 211);
+  cursor: pointer;
+  flex: 2;
+  text-align: right;
+}
+
+.orderPadBase .body .mtf-trade-enable {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.orderPadBase .body .mtf-trade-enable .checkspan {
+  font-size: var(--font_xl3);
+  margin-right: 10px;
+  color: var(--theme_color_4);
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.orderPadBase .body .mtf-trade-enable .checkspan.inactive {
+  pointer-events: none;
+}
+
+.orderPadBase .body .mtf-trade-enable .checkspan.inactive2 {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.orderPadBase .body .mtf-trade-enable .info-text {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--mtf-knowmore-text);
+}
+
+.orderPadBase .body .mtf-trade-enable .mtfknowmore {
+  font-family: 'OpenSans-Bold';
+  color: var(--theme_color);
+  text-decoration: underline;
+  padding-left: 10px;
+}
+
+.orderPadBase .fieldBody {
+  height: calc(100% - 50px);
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+
+.orderPadBase .fieldRow {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 20px 0 25px;
+}
+
+.orderPadBase .fieldRow.validityField {
+  padding-top: 3%;
+}
+
+.orderPadBase .fieldRow .selectedLabel {
+  color: var(--textcolor5);
+  margin-left: 3px;
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.orderPadBase .fieldRow:first-child {
+  padding: 4.5% 20px 0 25px;
+}
+
+.orderPadBase .fieldRow .priceField input {
+  padding-right: 45%;
+  padding-left: 10px;
+}
+
+.orderPadBase .fieldRow .priceField.noToggle input {
+  padding-right: 20px !important;
+}
+
+.orderPadBase .fieldRow input {
+  padding: 10px 20px;
+  font-size: var(--font_l2);
+  color: var(--marketDepth_input_clr);
+  font-family: 'OpenSans-SemiBold';
+  background-color: inherit;
+}
+
+.orderPadBase .fieldRow input::placeholder {
+  font-size: var(--font_m4);
+}
+
+.orderPadBase .fieldRow .row {
+  display: flex;
+}
+
+.orderPadBase .fieldRow .oTypeDiv {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  position: relative;
+}
+
+.orderPadBase .fieldRow .oTypeDiv .radioField.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.orderPadBase .fieldRow .oTypeDiv .radioField.show {
+  pointer-events: all;
+
+  /* opacity: 0.3; */
+}
+
+.orderPadBase .fieldRow .validityDiv {
+  width: 55%;
+  display: flex;
+  position: relative;
+}
+
+.orderPadBase .fieldRow .field {
+  width: 28%;
+  margin-right: 5.3%;
+  min-height: 70px;
+  position: relative;
+}
+
+.orderPadBase .fieldRow.qty_price .field {
+  margin-right: 3%;
+  width: 30%;
+}
+
+.orderPadBase .fieldRow .field.priceField {
+  opacity: 1 !important;
+}
+
+.orderPadBase .fieldRow .field .addOn {
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  font-family: "OpenSans-SemiBold";
+  color: var(--marketDepth_input_clr);
+}
+
+.orderPadBase .fieldRow .field .addOn.mkprotection {
+  position: absolute;
+  top: 27%;
+
+  /* right: 10px; */
+  left: 50px;
+  font-family: "OpenSans-SemiBold";
+  color: var(--marketDepth_input_clr);
+}
+
+.orderPadBase .fieldRow .field.noMargin {
+  margin-right: 0 !important;
+}
+
+.orderPadBase .fieldRow .disableLot .lotChange {
+  display: none !important;
+}
+
+.orderPadBase .fieldRow .field .lotChange {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  top: calc(50% - 15px);
+  right: 2px;
+}
+
+.orderPadBase .fieldRow .field .lotChange button {
+  font-size: 40px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--selected);
+  background-color: var(--bgcolor_primary);
+  margin-right: 10px;
+}
+
+.orderPadBase .fieldRow .lotDiv,
+.orderPadBase .fieldRow .range {
+  height: 20px;
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-Regular';
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 7px;
+  color: var(--orderbook-pending-cancel-col);
+  letter-spacing: 0.5px;
+}
+
+.orderPadBase .fieldRow .errorMsg-div {
+  height: 20px;
+  font-size: var(--font_s3);
+  overflow: visible !important;
+  white-space: break-spaces !important;
+}
+
+.orderPadBase .fieldRow .errorInputDiv .label,
+.orderPadBase .fieldRow .errorMsg-div {
+  color: var(--error_input_color) !important;
+}
+
+.orderPadBase .fieldRow .errorInputDiv .labelInput {
+  border: 1px solid var(--error_input_color) !important;
+}
+
+.orderPadBase .fieldRow .lotDiv.disableLot {
+  visibility: hidden;
+}
+
+.orderPadBase .fieldRow .field.orderField {
+  width: 100%;
+  display: flex;
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 13%;
+  margin-top: 3%;
+  position: relative;
+}
+
+.orderPadBase .fieldRow.validityField .field.orderField .radioField {
+  margin-top: 5%;
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField .value {
+  margin-left: 30px;
+  font-family: "OpenSans-SemiBold";
+  color: var(--table_tbody_td_color);
+  font-size: var(--font_m4);
+  display: flex;
+  align-items: center;
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField input[type=radio] {
+  display: none;
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField input:checked ~ .checkmark {
+  display: block;
+  border: 2px solid var(--selected);
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField .checkmark {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--border_7);
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--selected);
+}
+
+.orderPadBase .fieldRow .field.orderField .radioField input {
+  padding: 0;
+  margin: 0;
+}
+
+.orderPadBase .fieldRow .label {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.orderPadBase .fieldRow .field .labelInput {
+  border: 1px solid var(--marketDepth_lbl_brder);
+}
+
+.orderPadBase .fieldRow .field .label {
+  color: var(--market_depth_label_inp_clr);
+  text-transform: capitalize;
+  font-size: var(--font_s5);
+  font-family: 'OpenSans-Regular';
+}
+
+.orderPadBase .fieldRow.moreOptDiv {
+  color: var(--icon_color9);
+  font-family: "OpenSans-Bold";
+  flex-direction: row;
+  font-size: var(--font_m2);
+  align-items: center;
+}
+
+.orderPadBase .fieldRow.moreOptDiv .moreOptions {
+  display: flex;
+  align-items: center;
+}
+
+.orderPadBase .fieldRow.moreOptDiv .moreOptBtn {
+  margin-right: 5px;
+}
+
+.orderPadBase .fieldRow.moreOptDiv .showMore,
+.orderPadBase .fieldRow.moreOptDiv .showLess {
+  font-size: var(--font_l5);
+}
+
+.orderPadBase .fieldRow .field input:disabled {
+  background-color: var(--marketDepth_inactive_bg);
+  color: var(--marketDepth_inactive_clr) !important;
+}
+
+.orderPadBase .fieldRow .field.AMO {
+  align-items: flex-start;
+}
+
+.orderPadBase .fieldRow .field.gtd_field .addOn {
+  font-size: var(--font_xl4);
+  color: var(--selected);
+  top: 4px;
+}
+
+.orderPadBase .fieldRow .field.gtd_field .label {
+  z-index: 2;
+}
+
+.orderPadBase .fieldRow .field.gtd_field .p-datepicker {
+  width: 130% !important;
+  min-width: 330px;
+}
+
+body .p-inputtext:enabled:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.orderPadBase .fieldRow .AMOcheckboxDiv {
+  position: relative !important;
+  display: flex;
+  align-items: center !important;
+  margin-right: 10% !important;
+  margin-top: 1.5% !important;
+}
+
+.orderPadBase .fieldRow .AMOcheckboxDiv .amoText {
+  margin-left: 8px !important;
+}
+
+.orderPadBase .fieldRow .AMOcheckboxDiv .checkboxIcon {
+  font-size: var(--font_xl1);
+}
+
+.orderPadBase .fieldRow .AMOcheckboxDiv .checkboxIcon.checked {
+  color: var(--selected);
+}
+
+.orderPadBase .fieldRow .AMOcheckboxDiv .checkboxIcon.unChecked {
+  color: var(--border_7);
+}
+
+.orderPadBase .fieldRow .toggleOrderTypeName {
+  font-family: "OpenSans-SemiBold";
+  position: absolute;
+  right: 43px;
+  top: calc(50% - 8px);
+  z-index: 10;
+  color: var(--info_msg3);
+  font-size: var(--font_s3);
+}
+
+.orderPadBase .fieldRow .priceField .switch {
+  right: 8px;
+  z-index: 10;
+}
+
+.orderPadBase .hidingDiv {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.orderPadBase .modifyOrder .disabled .hidingDiv,
+.orderPadBase .squareOff-order .disabled .hidingDiv {
+  display: block;
+}
+
+.orderPadBase .footer .content {
+  flex: 2;
+  display: flex;
+}
+
+.orderPadBase .footer .mdDiv {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.orderPadBase .footer .marginDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.orderPadBase .footer .marginDiv .reqMargin,
+.orderPadBase .footer .marginDiv .availMargin {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.orderPadBase .footer .marginDiv .label {
+  color: var(--textcolor6);
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+}
+
+.orderPadBase .footer .marginDiv .value {
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  padding-left: 10px;
+  color: var(--orderbook-pending-cancel-col);
+}
+
+.orderPadBase .footer .marginDiv .value.reqMargin {
+  font-family: "OpenSans-Bold";
+  color: var(--icon_color2);
+}
+
+.orderPadBase .footer .marginDiv .value.reqMargin.lg {
+  font-size: var(--font_m2);
+}
+
+.orderPadBase .footer .marginDiv .value.reqMargin.md {
+  font-size: var(--font_l2);
+}
+
+.orderPadBase .footer .marginDiv .refreshBtn {
+  font-size: var(--font_xl4);
+  color: var(--selected);
+  background-color: unset;
+}
+
+.orderPadBase .footer .actionDiv {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.orderPadBase .footer .actionDiv button {
+  flex: 1;
+  height: 65%;
+  font-size: var(--font_m1);
+  border-radius: 7px;
+  margin: 0;
+}
+
+.orderPadBase .footer button.positiveBtn.sell-btn2 {
+  background-color: var(--marketDepth_sell_Btn);
+  color: var(--tooltip_color2);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  border: 1px solid var(--sell_btn-brder);
+}
+
+.orderPadBase .footer .actionDiv .negativeBtn {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+  margin-right: 30px;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+}
+
+.orderPadBase .footer .actionDiv button.positiveBtn.buy-btn2 {
+  color: var(--login_bg);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+}
+
+.orderPadBase .footer .actionDiv .tickSize {
+  opacity: 0;
+}
+
+.tradeBase .quoteDetails-div .data-row .coloum1 {
+  border-right: 1px solid var(--border_8);
+  padding: 0 20px 0 0;
+}
+
+.tradeBase .quoteDetails-div .data-row .coloum2 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.tradeBase .quoteDetails-div .data-row .row > span.data {
+  text-align: right;
+}
+
+/* =========== Orderpad dialog css ends here =========== */
+
+/* =========== Order confirm dialog css starts here =========== */
+
+.orderDialogConfirm,
+.series-dialog-modal {
+  /* height: 380px !important; */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--bgcolor_primary);
+}
+
+.orderDialogConfirm .dialogConfirmHeader {
+  height: 75px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.orderDialogConfirm .dialogConfirmHeader.buyOrder {
+  background-color: var(--greenBorder);
+}
+
+.orderDialogConfirm .dialogConfirmHeader.sellOrder {
+  background-color: var(--marketDepth_sell_confirm_clr);
+}
+
+.orderDialogConfirm .dialogConfirmBody .symbol-details,
+.orderDialogConfirm .dialogConfirmBody .company-name,
+.orderDialogConfirm .dialogConfirmBody .dialogConfirmDetails {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.orderDialogConfirm .dialogConfirmBody .symbol-details {
+  padding-top: 20px;
+}
+
+.orderDialogConfirm .action-confirm {
+  padding-left: 15px;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+}
+
+.orderDialogConfirm .arrow-icon {
+  height: 55%;
+  font-size: var(--font_xl2);
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--border_18);
+  color: var(--textcolor2);
+}
+
+/* .orderDialogConfirm .action-confirm {
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+} */
+
+.dialogConfirmHeader.buyOrder .action-confirm {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_l1);
+  color: var(--greenColor);
+}
+
+.dialogConfirmHeader.sellOrder .action-confirm {
+  color: var(--marketDepth_sell_Btn);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_l1);
+}
+
+.orderDialogConfirm .symbol-name {
+  font-size: var(--font_l1);
+  font-family: "OpenSans-Bold";
+  color: var(--textcolor2);
+}
+
+.orderDialogConfirm .exc {
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_4);
+}
+
+.orderDialogConfirm .company-name {
+  padding-top: 5px;
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+  color: var(--textcolor8);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--search_input_border);
+}
+
+.orderDialogConfirm .dialogConfirmDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .dataRow {
+  display: flex;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .dataRow.all {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .dataRow.all .details {
+  flex: unset;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .dataRow.padTop {
+  padding-top: 40px;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .details {
+  display: flex;
+  flex-direction: column;
+  color: var(--orderbook-dialog-exc-color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_s5);
+  flex: 1;
+  text-align: center;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .dataRow .details:first-child {
+  text-align: left;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .dataRow .details:last-child {
+  text-align: right;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .details .label {
+  text-transform: capitalize;
+  color: var(--txtcolor_23);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  white-space: nowrap;
+}
+
+.orderDialogConfirm .dialogConfirmDetails .value {
+  margin-top: 10px;
+  color: var(--marketDepth_confirm_dlg_clr);
+  font-size: var(--font_l1);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.orderDialogConfirm .dialogConfirmFooter {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bgcolor_17);
+  border: 1px solid var(--border-color_2);
+  height: 90px;
+  border-right: none;
+}
+
+.orderDialogConfirm .dialogConfirmFooter .result-data-ref {
+  display: flex;
+  flex-direction: row;
+}
+
+.orderDialogConfirm .result-data-ref .refresh-icon {
+  padding: 7px 0 0 7px;
+}
+
+.orderDialogConfirm .dialogConfirmFooter .result-data {
+  display: flex;
+  flex-direction: column;
+  color: var(--orderbook-dialog-exc-color);
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_s5);
+  flex: 1;
+  padding-top: 5px;
+  justify-content: space-around;
+}
+
+.orderDialogConfirm .dialogConfirmFooter .marginDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.orderDialogConfirm .dialogConfirmFooter .action-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.orderDialogConfirm .result-data .value {
+  padding-left: 5px;
+}
+
+/* .orderDialogConfirm .dialogConfirmFooter .marginDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.orderDialogConfirm .dialogConfirmFooter .marginDiv .reqMargin,
+.orderDialogConfirm .dialogConfirmFooter .marginDiv .availMargin {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.orderDialogConfirm .dialogConfirmFooter .marginDiv .label {
+  color: var(--txtcolor_tertiary);
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+}
+
+.orderDialogConfirm .dialogConfirmFooter .marginDiv .value {
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  padding-left: 10px;
+  color: var(--orderbook-pending-cancel-col);
+}
+
+.orderDialogConfirm .dialogConfirmFooter .marginDiv .value.reqMargin {
+  font-family: "OpenSans-Bold";
+  color: var(--icon_color2);
+  font-size: var(--font_l2);
+}
+
+.orderDialogConfirm .dialogConfirmFooter .marginDiv .refreshBtn {
+  font-size: var(--font_xl4);
+  color: var(--selected);
+  background-color: unset;
+}
+
+.orderDialogConfirm .dialogConfirmFooter .errorDiv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: var(--font_s5);
+  color: var(--error_input_color);
+  max-width: 45%;
+}
+
+.orderDialogConfirm .dialogConfirmFooter .action-button button {
+  padding: 12px;
+  height: 65%;
+  flex: 1;
+}
+
+.orderDialogConfirm .action-button .confirm-order {
+  background-color: var(--greenColor);
+  color: var(--app_dialog_bg);
+  color: white;
+  font-size: var(--font_m4);
+  border-radius: 7px;
+}
+
+.orderDialogConfirm .action-button .confirm-order.sellOrder {
+  background-color: var(--order_sell_confirm);
+}
+
+.orderDialogConfirm .action-button .modify {
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--border_secondary);
+  color: var(--secondaryName_color);
+  font-size: var(--font_m4);
+  border-radius: 7px;
+  margin-right: 30px;
+}
+
+/* =========== Order confirm dialog css starts here =========== */
+
+.orderDialogBase .marketdepth-dialog {
+  border: 1px solid var(--border_4) !important;
+}
+
+/* Confirm Order Dialog css starts here */
+
+.orderConfirmSuccess {
+  height: 65%;
+  min-height: 450px;
+  width: 100%;
+  background-color: var(--bgcolor_primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-width: thin;
+  border: 1px solid var(--border_17);
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.orderConfirmSuccess.large {
+  height: 75%;
+  min-height: 650px;
+}
+
+.orderConfirmSuccess.large .success-button img {
+  height: 100px;
+}
+
+.orderConfirmSuccess.medium {
+  height: 70%;
+}
+
+.orderConfirmSuccess.medium .shortfall-row {
+  margin-bottom: 10px;
+}
+
+.orderConfirmSuccess.large .margin-block {
+  padding-top: 10px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border_13);
+  background-color: var(--bgcolor_5);
+}
+
+.orderConfirmSuccess .footer-div,
+.series-dialog-modal .footer-div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  border-right: none;
+}
+
+.orderConfirmSuccess .symbl-qty {
+  padding-top: 2%;
+  color: var(--date_icon_color);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.orderConfirmSuccess .success-msg {
+  padding-top: 2px;
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m2);
+  color: var(--table_tbody_td_color);
+}
+
+.orderConfirmSuccess .rejectedReason {
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m1);
+  color: var(--textcolor1) !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.orderConfirmSuccess .orderid {
+  color: var(--table_tbody_td_color);
+}
+
+.orderConfirmSuccess .status {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m2);
+  text-transform: capitalize;
+}
+
+.orderConfirmSuccess .status.success {
+  color: var(--greenColor);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_l2);
+}
+
+.orderConfirmSuccess .status.fail {
+  color: var(--marketDepth_failed_clr);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_l2);
+  margin-top: -10px;
+}
+
+.orderConfirmSuccess .result-btns {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.orderConfirmSuccess .shortfall-row .label {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  color: var(--textcolor1);
+}
+
+.orderConfirmSuccess .shortfall-row .value {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m5);
+  color: var(--redColor);
+  margin-left: 5px;
+}
+
+.orderConfirmSuccess .margin-row {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.orderConfirmSuccess .margin-row .text1 {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+
+  /* padding-top: 10px; */
+}
+
+.orderConfirmSuccess .margin-row .text1 .textVal {
+  color: var(--textcolor1);
+}
+
+.orderConfirmSuccess .margin-row .text1 .increase-margin-val {
+  color: var(--greenColor);
+  font-size: var(--font_l1_1);
+}
+
+.orderConfirmSuccess .margin-row .text2 {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+  color: var(--textcolor1) !important;
+  padding-bottom: 10px;
+}
+
+.orderConfirmSuccess .margin-action-row {
+  height: 50%;
+  padding-top: 10px;
+}
+
+.orderConfirmSuccess .margin-action-row .cancel-btn {
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+  color: var(--secondaryName_color);
+  margin-right: 30px;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  flex: 1 1;
+  height: 60px;
+  border-radius: 7px;
+  width: 200px;
+}
+
+.orderConfirmSuccess .margin-action-row .margin-btn {
+  height: 60px;
+  width: 200px;
+  font-size: var(--font_m4);
+}
+
+.orderConfirmSuccess .result-addFunds {
+  /* background-color: var(--greenColor); */
+  color: var(--tooltip_color2);
+  font-family: "OpenSans-Bold";
+}
+
+.orderConfirmSuccess .result-donebtn {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.orderConfirmSuccess .add-funds {
+  /* border: 2px solid var(--theme_color_4); */
+  padding: 10px 20px;
+  font-family: 'OpenSans-SemiBold';
+  height: 60px;
+  width: 230px;
+  font-size: var(--font_l1);
+  background-color: var(--greenColor);
+  color: var(--tooltip_color2);
+  border-radius: 10px;
+
+  /* font-family: "OpenSans-Bold"; */
+}
+
+.orderConfirmSuccess .okay-btn {
+  border: 2px solid var(--theme_color_4);
+  padding: 10px 20px;
+  font-family: 'OpenSans-SemiBold';
+  color: var(--theme_color_4);
+  background-color: var(--bgcolor_primary);
+  height: 60px;
+  width: 230px;
+  font-size: var(--font_l1);
+
+  /* font-family: "OpenSans-Bold"; */
+}
+
+.orderConfirmSuccess .okay-btn.with-addfunds {
+  border-radius: 10px;
+}
+
+/* .orderConfirmSuccess .result-btns .result-addFunds button.add-funds {
+  background-color: var(--greenColor);
+} */
+
+/* .orderConfirmSuccess .result-btns .result-addFunds > button {
+  width: 35%;
+  font-family: "OpenSans-SemiBold";
+  border-radius: 8px;
+  height: 55px;
+  color: var(--app_dialog_bg);
+  font-size: var(--font_m4);
+} */
+
+.orderConfirmSuccess .orderConfirmSuccess {
+  color: var(--textcolor2);
+}
+
+.okay-btn button {
+  color: var(--positive_btn_color);
+}
+
+/* Confirm Order Dialog css finish here */
+
+.tradeBase .orderDialogBase.taxDelare-dialog {
+  height: calc(100% - 90px);
+}
+
+.declaration-alert-window {
+  height: 60%;
+  min-height: 400px;
+  width: 100%;
+  border: 1px solid var(--border_17);
+  background-color: var(--bgcolor_primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.declaration-alert-window .header {
+  color: var(--textcolor15);
+  font-size: var(--font_l3);
+  font-family: "Opensans-Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.declaration-alert-window .header img {
+  height: 100px;
+}
+
+.declaration-alert-window .header .accBlockedIcon {
+  font-size: var(--font_b2);
+}
+
+.declaration-alert-window .header .statusDiv {
+  padding-top: 20px;
+}
+
+.declaration-alert-window .header .status {
+  font-size: var(--font_l2);
+}
+
+.declaration-alert-window .header .status.successStatus {
+  color: var(--greenColor);
+}
+
+.declaration-alert-window .header .status.errorStatus {
+  color: var(--redColor);
+}
+
+.declaration-alert-window .msg-content {
+  width: 85%;
+  text-align: center;
+  color: var(--info_msg4);
+  font-size: var(--font_m4);
+  font-family: "Opensans-Semibold";
+}
+
+.declaration-alert-window .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.declaration-alert-window .footer button {
+  padding: 15px;
+  width: 250px;
+  font-size: var(--font_m4);
+  font-family: "Opensans-Semibold";
+  border-radius: 8px;
+}
+
+.declaration-alert-window .footer .laterBtn {
+  border: 1px solid var(--border_17);
+  background-color: var(--bgcolor_primary);
+  color: var(--textcolor6);
+}
+
+.declaration-alert-window.darkTheme .footer .laterBtn {
+  background-color: #292d36;
+  border: 1px solid #3a3e48;
+}
+
+.declaration-alert-window .footer .updateBtn {
+  margin-left: 40px;
+  background-color: var(--positive_btn_color);
+  color: var(--txtcolor_9);
+}
+
+.declaration-alert-window .okBtn {
+  background-color: var(--button-bg-color);
+  color: var(--theme_color_4);
+  border: 2px solid var(--theme_color_4);
+  width: 200px !important;
+}
+
+/******* orderpad dialog series modal css starts here *****/
+.series-dialog-modal {
+  height: 15%;
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--bgcolor_primary);
+}
+
+.series-dialog-modal .header {
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--bgcolor_17);
+}
+
+.series-dialog-modal .header .close-button {
+  padding-right: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.series-dialog-modal .content-footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 6%;
+}
+
+.series-dialog-modal .content {
+  /* height: 60px; */
+  color: var(--textcolor1) !important;
+  font-family: 'Opensans-Semibold';
+  font-size: var(--font_m4);
+  flex: 3;
+}
+
+.series-dialog-modal .footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  flex: 7;
+}
+
+.series-dialog-modal .footer > button {
+  height: 40px;
+  width: 15%;
+  border: 1px solid var(--border_6);
+  border-radius: 8px;
+  font-size: var(--font_s5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgcolor_10);
+  color: var(--withdrawfunds-button-clr);
+  font-family: 'OpenSans-SemiBold';
+  margin-right: 7px;
+}
+
+.series-dialog-modal .footer .theme-button {
+  color: var(--theme_color_4);
+  border: 1px solid var(--theme_color_4);
+}
+
+.recent-trans-base .trans-content .confirmCancelRequest .button .action-button.confirmCancel {
+  color: var(--theme_color_4);
+  border: 1px solid var(--theme_color_4);
+}
+
+/******* orderpad dialog series modal css ends here *****/
+
+/******* orderpad guest-block  css starts here *****/
+.tradeBase .orderDialogBase.guest-fno-dialog {
+  height: calc(100% - 90px);
+}
+
+.guest-fno-window {
+  height: 30%;
+  min-height: 300px;
+  width: 100%;
+  border: 1px solid var(--border_17);
+  background-color: var(--bgcolor_primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.guest-fno-window span.bfsl-font.accBlockedIcon.undefined {
+  font-size: var(--font_b2);
+  color: var(--textcolor15);
+}
+
+.guest-fno-window .msg-content {
+  width: 85%;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  color: var(--textcolor1) !important;
+  font-size: var(--font_l2);
+  font-family: "Opensans-Semibold";
+}
+
+.guest-fno-window .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guest-fno-window .footer .laterBtn {
+  border: 1px solid var(--border_17);
+  background-color: var(--bgcolor_primary);
+  color: var(--textcolor6);
+}
+
+.guest-fno-window.footer button {
+  padding: 15px;
+  width: 250px;
+  font-size: var(--font_m4);
+  font-family: "Opensans-Semibold";
+  border-radius: 8px;
+}
+
+.guest-fno-window .footer .updateBtn {
+  margin-left: 40px;
+  background-color: var(--positive_btn_color);
+  color: var(--txtcolor_9);
+}
+
+.guest-fno-window .footer button {
+  padding: 15px;
+  width: 250px;
+  font-size: var(--font_m4);
+  font-family: "Opensans-Semibold";
+  border-radius: 8px;
+}
+
+.orderDialogBase.guest-fno-dialog .footer .user-info-btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 100%;
+  padding-top: 2%;
+}
+
+.orderDialogBase.guest-fno-dialog .footer .user-info-btnDiv .fno-btn {
+  width: 40%;
+  padding-right: 10%;
+}
+
+.orderDialogBase.guest-fno-dialog .footer .user-info-btnDiv .continue-btn {
+  font-size: var(--font_m1);
+  width: 120%;
+  padding: 15px;
+  color: var(--app_dialog_bg);
+  background-image: linear-gradient(to right, var(--theme_btn_bg), var(--theme_btn_bg_gr));
+  border: 1px solid var(--theme_btn_bg) !important;
+  border-radius: 10px;
+  margin-right: 14px;
+}
+
+.orderDialogBase.guest-fno-dialog .footer .user-info-btnDiv .open-account-btn {
+  font-size: var(--font_m1);
+  color: var(--theme_color_secondary);
+  background-color: unset;
+  border: 1px solid var(--theme_color_4);
+  border-radius: 10px;
+  font-family: "OpenSans-Bold";
+  padding: 15px 15px;
+  width: 120%;
+}
+
+/******* orderpad guest-block  css ends here *****/
+
+.orderConfirmSuccess.medium .rejectedReason,
+.orderConfirmSuccess.large .rejectedReason {
+  white-space: break-spaces;
+  overflow: visible;
+  width: 60%;
+}

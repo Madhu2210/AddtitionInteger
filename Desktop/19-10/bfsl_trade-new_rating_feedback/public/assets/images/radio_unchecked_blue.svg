@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="radio_unchecked_blue" transform="translate(-113 -160)">
+    <g id="Group_10885" data-name="Group 10885" transform="translate(-222 22)">
+      <g id="Group_8112" data-name="Group 8112" transform="translate(1723 15376)">
+        <path id="Path_28551" data-name="Path 28551" d="M9,0A9,9,0,1,1,0,9,9,9,0,0,1,9,0Z" transform="translate(-1388 -15238)" fill="#ff6700"/>
+      </g>
+      <g id="Group_8113" data-name="Group 8113" transform="translate(1724.001 15377)">
+        <path id="Path_28551-2" data-name="Path 28551" d="M8,0A8,8,0,1,1,0,8,8,8,0,0,1,8,0Z" transform="translate(-1388 -15238)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Path_28560" data-name="Path 28560" d="M5.063,0A5.063,5.063,0,1,1,0,5.063,5.063,5.063,0,0,1,5.063,0Z" transform="translate(117 164)" fill="#ff6700"/>
+  </g>
+</svg>

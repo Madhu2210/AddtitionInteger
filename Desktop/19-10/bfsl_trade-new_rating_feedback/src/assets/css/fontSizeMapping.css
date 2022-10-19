@@ -1,0 +1,161 @@
+
+/* @media screen and (min-width: 1px) {
+    :root {
+        --font_x1:7px;
+        --font_x2:7px;
+        --font_s1:7px;
+        --font_s2:8px;
+        --font_s3:8px;
+        --font_s4:10px;
+        --font_s5:10px;
+        --font_m1:11px;
+        --font_m2:11px;
+        --font_m3:12px;
+        --font_m4:13px;
+        --font_m5:13px;
+        --font_l1:14px;
+        --font_l1_1:17px;
+        --font_l2:18px;
+        --font_l3:18px;
+        --font_l3_1:20px;
+        --font_l4:20px;
+        --font_l5:23px;
+        --font_xl1:24px;
+        --font_xl2:25px;
+        --font_xl3:26px;
+
+        --font_b1:90px;
+        --font_b2:80px;
+        --font_b3:43px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    :root {
+
+        --font_x1:8px;
+        --font_x2:8px;
+        --font_s1:8px;
+        --font_s2:9px;
+        --font_s3:10px;
+        --font_s4:10px;
+        --font_s5:12px;
+        --font_m1:12px;
+        --font_m2:14px;
+        --font_m3:14px;
+        --font_m4:16px;
+        --font_m5:17px;
+        --font_l1:17px;
+        --font_l1_1:18px;
+        --font_l2:18px;
+        --font_l3:21px;
+        --font_l3_1:22px;
+        --font_l4:23px;
+        --font_l5:24px;
+        --font_xl1:25px;
+        --font_xl2:26px;
+        --font_xl3:27px;
+
+        --font_b1:90px;
+        --font_b2:80px;
+        --font_b3:43px;
+
+    }
+} */
+
+/*
+@media screen and (min-width: 1600px) {
+    :root {
+        --font_x1:8px;
+        --font_x2:9px;
+        --font_s1:10px;
+        --font_s2:11px;
+        --font_s3:12px;
+        --font_s4:13px;
+        --font_s5:14px;
+        --font_m1:15px;
+        --font_m2:16px;
+        --font_m3:17px;
+        --font_m4:18px;
+        --font_m5:19px;
+        --font_l1:20px;
+        --font_l1_1:21px;
+        --font_l2:22px;
+        --font_l3:24px;
+        --font_l3_1:25px;
+        --font_l4:26px;
+        --font_l5:27px;
+        --font_xl1:28px;
+        --font_xl2:29px;
+        --font_xl3:30px;
+
+        --font_b1:90px;
+        --font_b2:80px;
+        --font_b3:43px;
+    }
+} */
+
+@media screen and (min-width: 1px) {
+  :root {
+    --font_x1: 8px;
+    --font_x2: 9px;
+    --font_s1: 10px;
+    --font_s2: 11px;
+    --font_s3: 12px;
+    --font_s4: 13px;
+    --font_s5: 14px;
+    --font_m1: 15px;
+    --font_m2: 16px;
+    --font_m3: 17px;
+    --font_m4: 18px;
+    --font_m5: 19px;
+    --font_l1: 20px;
+    --font_l1_1: 21px;
+    --font_l2: 22px;
+    --font_l3: 24px;
+    --font_l3_1: 25px;
+    --font_l4: 26px;
+    --font_l5: 27px;
+    --font_xl1: 28px;
+    --font_xl2: 29px;
+    --font_xl3: 30px;
+    --font_xl3_1: 32px;
+    --font_xl4: 35px;
+    --font_xl5: 40px;
+    --font_b1: 90px;
+    --font_b2: 80px;
+    --font_b3: 43px;
+    --font_b4: 100px;
+    --font_b5: 50px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  body {
+    zoom: 1 !important;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1899px) {
+  body {
+    zoom: 0.9 !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  body {
+    zoom: 0.85 !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  body {
+    zoom: 0.75 !important;
+  }
+}
+
+@media only screen and (min-width: 10px) and (max-width: 1199px) {
+  body {
+    zoom: 0.65 !important;
+  }
+}

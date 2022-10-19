@@ -1,0 +1,257 @@
+.quote-view {
+  height: 10%;
+  min-height: 90px;
+  background-color: var(--bgcolor_primary);
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid var(--border_21);
+  border-bottom: none;
+  position: relative;
+  z-index: 1;
+}
+
+.quote-view .detailsDiv {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 12px;
+}
+
+.quote-view .detailsDiv .details {
+  display: flex;
+  align-items: flex-end;
+}
+
+.quote-view .detailsDiv .details .exc {
+  margin-left: 15px;
+  padding-bottom: 3px;
+  color: var(--toggle-button-border);
+}
+
+.quote-view .detailsDiv .details .lotSize {
+  font-size: var(--font_m1);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor2);
+  padding: 2px 7px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--watchlist_header_border);
+}
+
+.quote-view .detailsDiv .details .doggleBase-div {
+  margin-left: 10px;
+  box-shadow: none;
+}
+
+.quote-view .detailsDiv .details .doggleBase-div span.active {
+  box-shadow: none;
+  background-color: inherit;
+  border: 1px solid var(--theme_color) !important;
+  color: var(--theme_btn_bg);
+}
+
+.quote-view .detailsDiv .details .doggleBase-div.orderAction {
+  width: 80px;
+  margin: 0 15px;
+  background-color: inherit;
+}
+
+.quote-view .detailsDiv .details .doggleBase-div span {
+  background-color: inherit;
+  color: var(--toggle-button-border);
+  font-family: 'OpenSans-SemiBold';
+  border: none;
+  font-size: var(--font_s5);
+}
+
+/* .quote-view .detailsDiv .details .doggleBase-div span.active {
+  background-color: inherit;
+  border: 1px solid var(--theme_color) !important;
+  color: var(--theme_btn_bg);
+} */
+
+/* .quote-view .detailsDiv .compName {
+    padding-top: 10px;;
+} */
+
+.quote-view .detailsDiv .symName {
+  font-size: var(--font_l3);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor2);
+}
+
+.quote-view .detailsDiv .symName .exc {
+  font-size: var(--font_m1);
+  font-family: "OpenSans-SemiBold";
+  color: var(--selected);
+}
+
+.quote-view .detailsDiv .compName {
+  color: var(--txtcolor_6);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.quote-view .detailsDiv .lttVal {
+  color: var(--label_color);
+  font-size: var(--font_s3);
+  font-family: "OpenSans-Regular";
+}
+
+.quote-view .actionDiv {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.quote-view .ltpValDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.quote-view .ltpValDiv .ltp {
+  font-size: var(--font_l3);
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor2);
+}
+
+.quote-view .ltpValDiv .chngVal {
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.quote-view .ltpValDiv span {
+  flex: 1;
+}
+
+.quote-view .actionDiv .btn-div {
+  margin-right: 30px;
+}
+
+.quote-view .actionDiv button {
+  margin-left: 20px;
+  width: 80px;
+}
+
+.quote-view .actionDiv .alert-div {
+  font-size: var(--font_xl5);
+  color: var(--selected);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.quote-view .actionDiv .close-button {
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.quote-view .actionDiv .closeIcon-div {
+  margin-left: 22px;
+  background-color: var(--bgcolor_6);
+
+  /* border-radius: 50%; */
+  font-size: var(--font_l2);
+  color: var(--txtcolor_4);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quote-details-body {
+  display: flex;
+}
+
+.quoteDetails-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.quoteDetails-div .quoteDetails-header {
+  flex: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7px;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.quoteDetails-div .weeksHeader {
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_s4);
+  color: var(--txtcolor_8);
+}
+
+.quoteDetails-div .mid-gradient {
+  flex: 20;
+}
+
+.quoteDetails-div .data-row {
+  flex: 65;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quoteDetails-div .data-row .coloum1 .row,
+.quoteDetails-div .data-row .coloum2 .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.quoteDetails-div .data-row span.label {
+  padding-left: 8px;
+  color: var(--txtcolor_8);
+  font-size: var(--font_s3);
+}
+
+.quoteDetails-div .data-row span.data {
+  color: var(--icon_color2);
+  font-size: var(--font_s5);
+  font-family: "OpenSans-SemiBold";
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quoteDetails-div .data-row .row > span {
+  flex: 1;
+  padding-top: 4px;
+  padding-right: 10px;
+}
+
+.quoteDetails-div .gradient {
+  height: 8px;
+  border-radius: 10px;
+  margin: 10px;
+  background-image:
+    linear-gradient(
+      to right,
+      var(--gradient_1),
+      var(--gradient_2)
+    );
+}
+
+.quote-detai-gradient .values {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_s5);
+  color: var(--icon_color2);
+}
+
+.quoteDetails-div .data-row .coloum1,
+.quoteDetails-div .data-row .coloum2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

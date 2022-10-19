@@ -1,0 +1,66 @@
+<!--
+This is an example html file which loads a webpack bundle of functionality similar to sample-template-advanced.html.
+-->
+
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script>
+
+        let stxx;
+        let chartData;
+
+        function setChartData(data) {
+            chartData = data;
+            callCreateChart();
+        }
+
+        function callCreateChart() {
+            const config = getConfig({
+                // markerSample: marker.MarkersSample,
+                scrollStyle: PerfectScrollbar,
+                quoteFeed: quoteFeedSimulator,
+                // forecastQuoteFeed: forecastfeed
+            });
+            stxx = config.createChart();
+        }
+
+        window.onload = function () {
+            if (window.location.search) {
+                setChartData(window.location.search)
+            }
+        }
+
+        window.setChartData = setChartData;
+        window.stxx = stxx;
+        window.chartData = chartData;
+
+
+    </script>
+
+    <cq-context id="chart0">
+    </cq-context>
+
+<div class="modal multi-modal">
+    <div class="modal-content">
+        <span class="close multi-charts-close">&times;</span>
+        <div class="form-elements">
+        </div>
+        <div class="btn-submit">Submit</div>   
+        <div class="err-msg"></div>    
+    </div>
+</div>
+</body>
+
+</html>

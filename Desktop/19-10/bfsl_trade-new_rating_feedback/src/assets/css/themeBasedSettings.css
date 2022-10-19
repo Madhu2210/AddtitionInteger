@@ -1,0 +1,336 @@
+/*
+#lightTheme .membership-dialog hr {
+    display: none;
+}
+
+#lightTheme .membership-dialog .row  {
+    padding-bottom: 20px;
+}
+
+#lightTheme .membership-dialog .value {
+    color: var(--txtcolor_tertiary) !important;
+}
+
+#lightTheme .membership-dialog .label {
+    color: var(--label_color) !important;
+}
+
+#lightTheme .symSearch-base input {
+    border: none;
+}
+
+#lightTheme .maximizeIcon,
+#lightTheme .minimizeIcon {
+    background-color: #EFEFEF;
+    border: 1px solid #E4E5E6;
+    color: rgb(172, 172, 172);
+}
+
+#lightTheme .headerBase-div .logo-div img {
+    height: 95px;
+    width: 100px;
+}
+
+#lightTheme .headerBase-div .indicesLtp {
+    color: var(--txtcolor_tertiary);
+}
+
+#lightTheme .menuBase-div .menu-div a span {
+    color: var(--txtcolor_tertiary) !important;
+}
+
+#lightTheme .menuBase-div .menu-div a.active>span {
+    color: var(--selected) !important;
+}
+
+#lightTheme .app-modalDialog2>.window>.title {
+    border: none !important;
+}
+
+#lightTheme .watchlist-tableBase table .checkboxIcon {
+    color: var(--selected) !important;
+}
+
+#lightTheme .organise-columns-dialog .window .content .row {
+    color: var(--txtcolor_tertiary) !important;
+    border-bottom: 1px solid #efecec;
+}
+
+#lightTheme .app-modalDialog2>.window>.footer {
+    border-top: 1px solid #E4E5E6 !important;
+}
+
+#lightTheme .app-modalDialog2>.window>.footer button.left-btn {
+    border-left: 1px solid #E4E5E6 !important;
+}
+
+#lightTheme .userInfo-div .userInfo-base .userIcon-div {
+    background-color: var(--txtcolor_primary) !important;
+}
+
+#lightTheme .userInfo-div .userInfo-base .userIcon {
+    color: #ABABAD !important;
+}
+
+#lightTheme table tbody tr td {
+    color:#353F4A;
+}
+
+#lightTheme table tbody tr td .exc {
+    color:#AEB2B7;
+}
+
+#lightTheme table tbody tr td .symName {
+    color:#717880;
+}
+
+#lightTheme .watchlist-table tbody tr.selected {
+    background-color: var(--watchlist_selected) !important;
+}
+
+#lightTheme .watchlist-tableBase table tbody tr:hover,
+#lightTheme .quoteBase-div .trendingNews .contentDiv .row:hover {
+    background-color: var(--bgcolor_tertiary);
+}
+
+#lightTheme .withBorder,
+#lightTheme .widgetBorder {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E4E5E6 !important;
+}
+
+#lightTheme .small-widget hr {
+    border-top: 1px solid #F4F5F5;
+}
+
+#lightTheme .watchlist-table tbody tr {
+    border-bottom: 1px solid #E4E5E6;
+}
+
+#lightTheme .futureChain-base table tr,
+#lightTheme .optionChain-base table tr,
+#lightTheme .optionChain-base .sub-header {
+    border-bottom: 1px solid #ececec;
+}
+
+#lightTheme .whiteColor {
+    color: var(--txtcolor_primary) !important;
+}
+
+#lightTheme .widgetBorder.large-widget {
+    background-color: transparent !important;
+}
+
+#lightTheme .select-input-div .options-div .option {
+    border-bottom: 1px solid rgb(221, 221, 221) !important;
+}
+
+#lightTheme .options-div .option:hover,
+#lightTheme .select-input-div .options-div .option.active-option,
+#lightTheme .select-input-div .options-div .option.selected {
+    background-color: rgb(221, 221, 221) !important;
+}
+
+#lightTheme .symSearch-base .recent-search-title,
+#lightTheme .symSearch-base .dropdown-div .header {
+    background-color: #F8F8F8 !important;
+}
+
+#lightTheme .symSearch-base .dropdown-div .footer {
+    background-color: #E4E5E6 !important;
+}
+
+#lightTheme .symSearch-base .searchResutDiv .symbolRow-div {
+    border-bottom: 1px solid #F4F5F5 !important;
+}
+
+#lightTheme .context-menu-base {
+    border: 1px solid #E4E5E6;
+}
+
+#lightTheme .orderPad-dialog>.window>.title,
+#lightTheme .orderPad-dialog>.window> .footer {
+    background-color: #F8F8F8;
+    border: 1px solid #E4E5E6 !important;
+}
+
+#lightTheme .orderPad-dialog .tradeFields {
+    background-color: #FFFFFF;
+    border-left: 2px solid #E4E5E6;
+}
+
+#lightTheme .orderPad-dialog .symDetails-div .sym-details {
+    border-bottom: 1px solid #E4E5E6;
+    background-color: #FFFFFF;
+}
+
+#lightTheme .orderPad-dialog .symDetails-div,
+#lightTheme .orderPad-marketDepth .marketDepth-div .marketDepth-table-div {
+    background-color: #F8F8F8;
+}
+
+#lightTheme .marketDepth-div .header, #lightTheme .marketDepth-div .footer {
+    background-color: #F8F8F8;
+}
+
+#lightTheme .excBlock,
+#lightTheme .exc-span {
+    color: var(--selected);
+    background-color: #D7E4F9 !important;
+}
+
+#lightTheme .orderPad-dialog .tooltip-container {
+    border: 1px solid #dfdfdf;
+}
+
+#lightTheme .orderPad-dialog .doggleBase-div span.BUY.active{
+    background-color: #D6F6E4;
+}
+
+#lightTheme .orderPad-dialog .doggleBase-div span.SELL.active{
+    background-color: #FFDEDD;
+}
+
+#lightTheme .orderPad-dialog .quote-details .label {
+    color: #ABADB6;
+}
+
+#lightTheme .orderConfirm-dialog .content .row .label {
+    color: #AEB2B7;
+    font-family: 'OpenSans-Bold';
+}
+
+#lightTheme .orderPad-dialog .footer .orderValue .value {
+    color: #353F4A;
+    font-family: 'OpenSans-Bold';
+}
+
+#lightTheme .orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow.selected .dispSym {
+    color: #3977DE;
+}
+
+#lightTheme .marketDepth-div .footer .totalData .label {
+    color: #747474;
+}
+
+#lightTheme .orderPad-dialog .quote-details .value,
+#lightTheme .marketDepth-div .footer .totalData .value,
+#lightTheme .orderConfirm-dialog .content .row .value {
+    color: #353F4A;
+}
+
+#lightTheme .orderPad-dialog .row.focusInputDiv .label {
+    color: var(--selected) !important;
+}
+
+#lightTheme .orderPad-dialog .row.focusInputDiv .input-ele,
+#lightTheme .orderPad-dialog .row.focusInputDiv .p-inputtext {
+    border-bottom: 1px solid var(--selected) !important;
+}
+
+#lightTheme .orderConfirm-dialog .content .row {
+    border-bottom: 1px solid #F4F5F5;
+}
+
+#lightTheme .orderConfirm-dialog .footer {
+    border-bottom: 1px solid #F4F5F5 !important;
+}
+
+#lightTheme .p-datepicker table td > span.p-highlight {
+    color: #FFFFFF !important;
+}
+
+#lightTheme .date-picker .p-datepicker table .p-datepicker-today span {
+    color: #FFFFFF !important;
+}
+
+#lightTheme .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover {
+    color: #FFFFFF !important;
+}
+
+#lightTheme .date-picker .p-datepicker table .p-datepicker-today span:hover {
+    background-color: var(--theme_btn_bg) !important;
+}
+
+#lightTheme .p-datepicker .p-datepicker-prev,
+#lightTheme .p-datepicker .p-datepicker-next {
+    background-color: #EEEEEE !important;
+}
+
+#lightTheme .searchResutDiv .symbolRow-div .symId {
+    color: #353F4A !important;
+}
+
+#lightTheme .searchResutDiv .symbolRow-div .symName {
+    color: var(--txtcolor_primary) !important;
+}
+
+#lightTheme .searchResutDiv .symbolRow-div .symId .exc {
+    color: #AEB2B7 !important;
+}
+
+#lightTheme .addWatchGroup-dialog .watchList-name-input {
+    border-bottom: 1px solid #E4E5E6 !important;
+}
+
+#lightTheme .addWatchGroup-dialog .watchList-name-div .infoMsg {
+    color: #AEB2B7 !important;
+}
+
+#lightTheme .orderPad-dialog .symDetails-div .data .comDate-div .dropdownDiv .dateRow:hover {
+    background-color: var(--bgcolor_tertiary) !important;
+}
+
+#lightTheme .symSearch-base .dropdown-div .footer .select-input .options-div {
+    background-color: var(--bgcolor_secondary) !important;
+}
+
+#lightTheme .orderPad-dialog .marketDepth-div .marketDepth-table-div .valRow > span.middle,
+#lightTheme .orderPad-dialog .marketDepth-div .header > span:nth-child(1),
+#lightTheme .orderPad-dialog .marketDepth-div .footer .totalData:nth-child(1) {
+    border-right: 1px solid #E4E5E6;
+}
+
+#lightTheme .orderPad-dialog .marketDepth-div .header > span:nth-child(1),
+#lightTheme .orderPad-dialog .marketDepth-div .footer .totalData:nth-child(1) {
+    padding-left: 1px;
+}
+
+#lightTheme .loaderError-msg {
+    color: #272727 !important;
+    font-family: "OpenSans-Bold";
+}
+
+#lightTheme .orderConfirm-dialog .content .left .row {
+    border-right: 1px solid #F4F5F5;
+}
+
+#lightTheme .select-input-div.non-symbolSearch .options-div {
+    box-shadow: 0px 2px 4px 1px rgba(128, 128, 128, 0.602);
+}
+
+#lightTheme .select-input-div.symbolSearch .options-div {
+    box-shadow: 0px 0px 8px 0px rgba(128, 128, 128, 0.602);
+}
+
+#lightTheme .headerBase-div .select-input-div.non-symbolSearch .options-div {
+    box-shadow: 0px 4px 4px 0px rgba(128, 128, 128, 0.602);
+}
+
+#lightTheme .newsList_div .newsRow:hover {
+    background-color: var(--bgcolor_tertiary)
+}
+
+#lightTheme .menu-div .submenu a:hover {
+    background-color: rgb(221, 221, 221) !important;
+}
+
+#lightTheme .menu-div .submenu .sub-menu-active span {
+    color: var(--selected) !important;
+}
+
+#lightTheme .menu-div .submenu{
+    box-shadow: 0px 4px 4px 0px rgba(128, 128, 128, 0.602);
+}
+
+*/

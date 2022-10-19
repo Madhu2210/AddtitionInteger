@@ -1,0 +1,77 @@
+{
+  "name": "bfsl.frontend-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@msf/msf-reactjs-weblib-base": "^0.1.4",
+    "@msf/shieldmessaging": "^1.0.4",
+    "babel-polyfill": "^6.26.0",
+    "classnames": "^2.2.6",
+    "d3": "^5.16.0",
+    "env-cmd": "^8.0.2",
+    "lodash": "^4.17.21",
+    "primeicons": "^3.0.0-rc.1",
+    "primereact": "^4.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5"
+  },
+  "scripts": {
+    "start": "env-cmd .env.development npm run chart_build && env-cmd .env.development npm run meta_file_generator && env-cmd .env.development react-scripts start",
+    "start:multi-charts": "env-cmd .env.multiCharts npm run chart_build && env-cmd .env.multiCharts npm run meta_file_generator && env-cmd .env.multiCharts react-scripts start",
+    "start:prod-local": "env-cmd .env.prod.local npm run meta_file_generator && env-cmd .env.prod.local react-scripts start",
+    "start-nochart": " env-cmd .env.development npm run meta_file_generator && env-cmd .env.development react-scripts start",
+    "build": "env-cmd .env.production npm run chart_build && env-cmd .env.production npm run meta_file_generator && env-cmd .env.production react-scripts build",
+    "build:pilot": "env-cmd .env.pilot npm run chart_build && env-cmd .env.pilot npm run meta_file_generator && env-cmd .env.pilot react-scripts build",
+    "build:dev": "env-cmd .env.dev npm run chart_build && env-cmd .env.dev npm run meta_file_generator && env-cmd .env.dev react-scripts build",
+    "build:uat": "env-cmd .env.uat npm run chart_build && env-cmd .env.uat npm run meta_file_generator && env-cmd .env.uat react-scripts build",
+    "build:qa": "env-cmd .env.qa npm run chart_build && env-cmd .env.qa npm run meta_file_generator && env-cmd .env.qa react-scripts build",
+    "build:preprod": "env-cmd .env.preprod npm run chart_build && env-cmd .env.preprod npm run meta_file_generator && env-cmd .env.preprod react-scripts build",
+    "build:excMock": "env-cmd .env.excMock npm run chart_build && env-cmd .env.excMock npm run meta_file_generator && env-cmd .env.excMock react-scripts build",
+    "build:multi-charts": "env-cmd .env.multiCharts npm run chart_build && env-cmd .env.multiCharts npm run meta_file_generator && env-cmd .env.multiCharts react-scripts build",
+    "test": "react-scripts test",
+    "test:jest": "jest",
+    "eject": "react-scripts eject",
+    "install_testing_packages": "npm install cypress@8.7.0 cypress-image-snapshot babel-preset-react enzyme enzyme-adapter-react-16 redux-mock-store mocha mochawesome mochawesome-merge mochawesome-report-generator eslint-plugin-react --no-save",
+    "meta_file_generator": "node node_modules/@msf/msf-reactjs-weblib-base/build/application_manager/metaFileGenerator",
+    "chart_build": "cd chartiq-js-src && npm install && npm run build && cd ..",
+    "test:open": "cypress open --project __test__ --env configFile=dev",
+    "test:run:dev": "cypress run --headless --project __test__ --env configFile=dev",
+    "test:run:qa": "cypress run --headless --project __test__ --env configFile=qa",
+    "test:run:uat": "cypress run --headless --project __test__ --env configFile=uat",
+    "test:clean:reports": "rm -rf mochawesome-report/",
+    "test:merge:reports": "mochawesome-merge __test__/testOutput/mochawesome-report/*.json > cypress-tests-report.json",
+    "test:create:html:report": "marge --reportDir __test__/testOutput/TestReport cypress-tests-report.json",
+    "test:generate:report": "npm run test:merge:reports && npm run test:create:html:report",
+    "test:dev:generate_cypress_report": "(npm run test:run:dev && npm run test:generate:report) || npm run test:generate:report",
+    "test:qa:generate_cypress_report": "(npm run test:run:qa && npm run test:generate:report) || npm run test:generate:report",
+    "test:uat:generate_cypress_report": "(npm run test:run:uat && npm run test:generate:report) || npm run test:generate:report",
+    "test:eslint": "eslint src/**/*.js src/**/*.jsx",
+    "test:stylelint": "npx stylelint src/**/*.css"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}

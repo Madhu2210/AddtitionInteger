@@ -1,0 +1,109 @@
+.preference-display-dialog .window {
+  width: 35%;
+  min-width: 530px;
+  max-width: 530px;
+  height: 35%;
+
+  /* min-height: 530px;
+  max-height: 530px; */
+}
+
+.preference-display-dialog .window .header {
+  text-align: left;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  padding: 0 35px;
+  border-bottom: 1px solid var(--border_8);
+  padding-left: 19px;
+}
+
+.preference-display-dialog .window .header .text {
+  font-size: var(--font_l3);
+  color: var(--txtcolor_secondary);
+  font-family: 'OpenSans-Bold';
+}
+
+.preference-display-dialog .window .sorting-display .filter-list {
+  width: 100%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.preference-display-dialog .window .sorting-display .filter-list .filter-heading {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_primary);
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: 19px;
+}
+
+.preference-display-dialog .window .sorting-display .filter-list .exc-list {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  color: var(--txtcolor_primary);
+}
+
+.preference-display-dialog .window .sorting-display .filter-list .exc-list .exc-list-item {
+  background-color: inherit;
+  border: 1px solid var(--input_border_orderPad);
+  color: var(--textcolor9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.preference-display-dialog .window .sorting-display .filter-list .exc-list .exc-list-item.active {
+  border: 1px solid var(--selected);
+  color: var(--selected);
+}
+
+.preference-display-dialog .window .sorting-display .sorting-div {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.preference-display-dialog .window .sorting-display .sorting-div .watchsort-head {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_primary);
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: 19px;
+}
+
+.preference-display-dialog .window .sorting-display .sorting-div .sortlisting {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-Regular';
+}
+
+.preference-display-dialog .window .sorting-display .sorting-div .sortlisting .row-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "OpenSans-SemiBold";
+  color: var(--textcolor1) !important;
+  padding-left: 19px;
+  padding-right: 40px;
+}
+
+.preference-display-dialog .window .sorting-display .sorting-div .sortlisting .row-div .span.sorticon {
+  padding-right: 20px;
+}
+
+.preference-display-dialog .window .sorting-display .sorting-div .sortlisting .row-div .sorticon.active {
+  color: var(--selected);
+}
+
+.preference-display-dialog .window .sorting-display .sorting-div .sortlisting .row-div .label {
+  padding-bottom: 15px;
+  width: 200px;
+  text-align: left;
+}

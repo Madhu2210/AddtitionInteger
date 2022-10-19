@@ -1,0 +1,806 @@
+
+/* ================== Forget password css starts here ================= */
+
+.forget-password-dialog .window {
+  width: 45%;
+  min-width: 630px;
+  max-width: 630px;
+}
+
+.forget-password-dialog .infoMsg {
+  color: var(--info_msg_color);
+  font-size: var(--font_m4);
+  padding-bottom: 5px;
+}
+
+/* ================== Froget password css ends here ================= */
+
+/* ================== Unblock user css starts here ================= */
+
+.unblock-user-dialog .window {
+  width: 45%;
+  min-width: 630px;
+  max-width: 630px;
+}
+
+.unblock-user-dialog .infoMsg {
+  color: var(--info_msg_color);
+  font-size: var(--font_m4);
+  padding-bottom: 5px;
+}
+
+/* ================== Unblock user css ends here ================= */
+
+/* ================== Reset Password css starts here ================= */
+
+.reset-password-dialog .window {
+  width: 45%;
+  min-width: 630px;
+  max-width: 630px;
+}
+
+.reset-password-dialog .window .content {
+  padding: 1px 45px 12px 45px !important;
+}
+
+.reset-password-dialog .infoMsg {
+  color: var(--info_msg_color);
+  font-size: var(--font_m4);
+}
+
+.reset-password-dialog .eyeOpenIcon,
+.reset-password-dialog .eyeCloseIcon {
+  font-size: var(--font_l5);
+  cursor: pointer;
+  color: var(--password_eye_icon);
+}
+
+/* ================== Reset Password css ends here ================= */
+
+/* ================== Mobile verification css starts here ================= */
+
+.mobile-verification-dialog .window {
+  width: 45%;
+  min-width: 630px;
+  max-width: 630px;
+}
+
+.mobile-verification-dialog .infoMsg {
+  color: var(--info_msg_color);
+  font-size: var(--font_m4);
+  padding-bottom: 5px;
+}
+
+.mobile-verification-dialog .openAcc-row {
+  font-size: var(--font_s3);
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+
+.mobile-verification-dialog .openAcc-row span,
+.mobile-verification-dialog .openAcc-row u {
+  color: var(--h_link_color) !important;
+}
+
+.mobile-verification-dialog .guest-agree-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mobile-verification-dialog .guest-agree-row .checkboxIcon {
+  font-size: var(--font_l5);
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.mobile-verification-dialog .guest-agree-row .guest-agree {
+  color: var(--info_msg_color);
+  font-size: var(--font_m2);
+  padding-bottom: 5px;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.mobile-verification-dialog .guest-agree-row .seperate {
+  color: var(--info_msg_color);
+  font-size: var(--font_m2);
+  padding-bottom: 5px;
+  margin: 5px;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.mobile-verification-dialog .guest-agree-row .guest-terms a {
+  color: var(--theme_btn_bg);
+  font-size: var(--font_m2);
+  padding-bottom: 5px;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.mobile-verification-dialog .guest-footer-btn .guest-verify-btn {
+  display: flex;
+}
+
+.mobile-verification-dialog .guest-footer-btn .guest-send-btn {
+  font-size: var(--font_l1);
+  font-family: 'OpenSans-Bold';
+}
+
+.mobile-verification-dialog .guest-footer-btn .guest-verify-btn .guest-cancel-btn {
+  font-size: var(--font_l1);
+  font-family: 'OpenSans-Bold';
+  color: var(--negative_btn_color);
+  border-right: 1px solid var(--app_dialog_title_border);
+}
+
+.mobile-verification-dialog .send-otp-btn,
+.mobile-verification-dialog .verify-otp-btn {
+  width: 100%;
+  padding: 10px;
+}
+
+.mobile-verification-dialog .padding-row {
+  padding-bottom: 12px;
+}
+
+.mobile-verification-dialog .resendOtp-div {
+  display: flex;
+  align-items: center;
+  color: var(--info_msg_color);
+
+  /* justify-content: space-between; */
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.mobile-verification-dialog .resendOtp-link {
+  color: var(--theme_color_4);
+  padding-left: 10px;
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.mobile-verification-dialog .resendOtp-div.isDisabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* ================== Mobile verification css ends here ================= */
+
+/* ================== Account blocked css starts here ================= */
+
+.account-blocked-dialog .window {
+  width: 45%;
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.account-blocked-dialog .app-modalDialog > .window {
+  background-color: var(--app_dialog_bg3) !important;
+}
+
+.account-blocked-dialog .window .accBlockedIcon {
+  font-size: var(--font_b4);
+  color: var(--error_input_color);
+}
+
+.account-blocked-dialog .content .errorMsg {
+  color: var(--error_input_color);
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m3);
+}
+
+.account-blocked-dialog .content .message {
+  color: var(--info_msg_color2);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m3);
+}
+
+.account-blocked-dialog .content {
+  padding: 40px 40px !important;
+}
+
+.account-blocked-dialog .content div {
+  padding-bottom: 20px;
+}
+
+/* ================== Account blocked css ends here ================= */
+
+/* ================== Membership details css starts here ================= */
+
+.membership-dialog .window {
+  width: 45%;
+  min-width: 750px;
+}
+
+.membership-dialog .window .title {
+  padding: 23px 40px;
+}
+
+.membership-dialog .window .content {
+  text-align: left;
+  padding: 0;
+}
+
+.membership-dialog .window .content .data_row {
+  display: flex;
+  font-size: var(--font_m4);
+}
+
+.membership-dialog .window .content .data_row .data-span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  border-right: 1px solid var(--app_dialog_title_border);
+}
+
+.membership-dialog .window .content .data_row .data-span.leftAlign {
+  align-items: flex-start;
+}
+
+.membership-dialog .window .content .data_row .data-span.centerAlign {
+  align-items: center;
+}
+
+.membership-dialog .window .content .data_row .data-span.rightAlign {
+  align-items: flex-end;
+}
+
+.membership-dialog .window .content .data_row .data {
+  color: var(--app_dialog_header_txt);
+  font-family: 'OpenSans-Bold';
+  padding-top: 5px;
+}
+
+.membership-dialog .window .content .data_row .label {
+  color: var(--label_color5);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.membership-dialog .window .content .data_row:nth-child(1) {
+  border-bottom: 1px solid var(--app_dialog_title_border);
+}
+
+/* .membership-dialog .window .content .data_row .data-span {
+  border-right: 1px solid var(--app_dialog_title_border);
+} */
+
+.membership-dialog .window .content .data_row .data-span:last-child {
+  border: none;
+}
+
+/* ================== Membership details css ends here ================= */
+
+/* ================== Password expired css starts here ================= */
+
+.password-expired-dialog .window {
+  width: 45%;
+  min-width: 630px;
+  max-width: 630px;
+}
+
+.password-expired-dialog .window .passwordExpired {
+  font-size: var(--font_b4);
+  color: var(--error_input_color);
+}
+
+.password-expired-dialog .content .message {
+  color: var(--info_msg_color2);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l3);
+}
+
+.password-expired-dialog .content {
+  padding: 50px 50px !important;
+}
+
+.password-expired-dialog .content div {
+  padding-bottom: 20px;
+}
+
+/* ================== Password expired css ends here ================= */
+
+.help-and-support {
+  position: fixed;
+  z-index: 10;
+  margin: 6%;
+
+  /* padding-top: 10%; */
+  left: 57%;
+  top: 0;
+  width: 25%;
+
+  /* height: 40%; */
+  background-color: var(--bgcolor_primary);
+  border: 1px solid var(--border_primary);
+}
+
+/* .help-and-support::after {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid var(--border_primary);
+} */
+
+.help-and-support.near-menu {
+  background-color: var(--bgcolor_primary);
+  top: 25%;
+  left: 32%;
+  width: 28%;
+
+  /* height: 35%; */
+  box-shadow: 0 0 5px 0 var(--box-shadow);
+  border: 2px solid var(--border_primary);
+}
+
+.help-and-support.near-menu.guest {
+  top: 25%;
+}
+
+/*
+.help-and-support .help-data-value-container,
+.tooltip-content .help-data-value-container {
+  margin-top: 3%;
+
+  margin-left: 20%;
+} */
+
+.help-and-support .help-data-value-container .data,
+.tooltip-content .help-data-value-container .data {
+  display: flex;
+
+  /* padding-left: 7%; */
+  padding-top: 3%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid var(--border_primary);
+  padding-left: 6%;
+}
+
+.help-and-support .help-data-value-container .data-lastchild,
+.tooltip-content .help-data-value-container .data-lastchild {
+  display: flex;
+
+  /* padding-left: 7%; */
+  padding-top: 3%;
+  padding-bottom: 2%;
+
+  /* border-bottom: 1px solid var(--border_primary); */
+  padding-left: 6%;
+}
+
+.help-and-support .help-data-value-container .data .icon,
+.tooltip-content .help-data-value-container .data .icon {
+  color: var(--theme_color_4);
+  font-size: var(--font_xl3);
+  padding-right: 2%;
+  background-color: var(--btn_bg2);
+  border-radius: 50%;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.help-and-support .help-data-value-container .data-lastchild .icon,
+.tooltip-content .help-data-value-container .data-lastchild .icon {
+  color: var(--theme_color_4);
+  font-size: var(--font_xl3);
+  padding-right: 2%;
+  background-color: var(--btn_bg2);
+  border-radius: 50%;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.help-and-support .data .data-text,
+.tooltip-content .data .data-text {
+  padding-left: 6%;
+  width: 100%;
+}
+
+.help-and-support .data-lastchild .data-text,
+.tooltip-content .data-lastchild .data-text {
+  padding-left: 6%;
+  width: 100%;
+}
+
+.help-and-support .data .field-name,
+.tooltip-content .data .field-name {
+  color: var(--helpandsupporttext);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.help-and-support .data .field-value-number {
+  color: var(--helpandsupportvalue);
+}
+
+.help-and-support .data-lastchild .field-name,
+.tooltip-content .data-lastchild .field-name {
+  color: var(--helpandsupporttext);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.help-and-support .data .field-value,
+.help-and-support .data .data-text .website-link,
+.tooltip-content .data .field-value,
+.tooltip-content .data .data-text .website-link {
+  color: var(--helpandsupportvalue);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+  cursor: pointer;
+}
+
+.help-and-support .data-lastchild .field-value-number,
+.tooltip-content .data-lastchild .field-value-number {
+  color: var(--helpandsupportvalue);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.tooltip-content .data-lastchild .field-value-number {
+  color: var(--helpandsupportvalue);
+}
+
+.help-and-support .help-data-value-container .data-lastchild.demoTour .data-text {
+  display: flex;
+  align-items: center;
+}
+
+/* ================== Help and support css ends here ================= */
+
+/* ================== User info starts here ================= */
+.user-info-dialog {
+  padding-top: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background-color: var(--coverBG);
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1002;
+}
+
+.user-info-dialog .window .title-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--app_dialog_header_txt);
+  font-size: var(--font_l3);
+  padding: 15px 10px;
+  font-family: 'OpenSans-Bold';
+  text-align: left;
+}
+
+.user-info-dialog .title-user .title-name {
+  color: var(--theme_color);
+}
+
+.user-info-dialog .window {
+  width: 45%;
+
+  /* height: 100%; */
+  min-width: 630px;
+  padding: 1% 1% 1% 2%;
+  border-radius: 3px;
+  box-shadow: 0 0 5px var(--box-shadow);
+
+  /* max-width: 630px; */
+}
+
+.user-info-dialog .user-info-header,
+.user-info-dialog .user-info-footer {
+  text-align: left;
+
+  /* height: 100px; */
+
+  /* padding-top: 10px; */
+}
+
+.user-info-dialog .user-info-header .user-list-head li,
+.user-info-dialog .user-info-footer .user-list-foot li {
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+.user-info-dialog .user-info-infoMsg {
+  height: 18px;
+  color: var(--txtcolor_14);
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  padding-left: 25px;
+}
+
+.user-info-dialog .user-info-content {
+  padding: 0 3% 0 1%;
+  display: flex;
+  margin-top: 0%;
+
+  /* height: 50%; */
+  justify-content: space-between;
+}
+
+.user-info-dialog .infoMsg {
+  color: var(--info_msg_color);
+  font-size: var(--font_m4);
+  padding-bottom: 5px;
+}
+
+.user-info-dialog .user-info-header .user-list-head {
+  list-style-type: none;
+  color: var(--txtcolor_14);
+  font-size: var(--font_l1);
+  padding-left: 10px;
+  font-family: "OpenSans-SemiBold";
+  margin-top: 0%;
+}
+
+.user-info-dialog .user-info-footer .user-list-foot {
+  list-style-type: none;
+  color: var(--txtcolor_14);
+  font-size: var(--font_l1);
+  padding-left: 10px;
+  font-family: "OpenSans-SemiBold";
+  margin-top: 0%;
+}
+
+.user-info-dialog .user-list {
+  color: var(--txtcolor_14);
+  font-size: var(--font_l1);
+  font-family: "OpenSans-SemiBold";
+  text-align: left;
+  margin-top: 0%;
+}
+
+.user-info-dialog .user-list li {
+  padding-top: 1%;
+  margin-top: 0%;
+}
+
+.user-info-dialog .user-info-btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  border-top: 1px solid var(--app_dialog_title_border);
+  padding-top: 2%;
+  padding-right: 5%;
+}
+
+.user-info-dialog .user-info-btnDiv .welcome-btn {
+  width: 30%;
+}
+
+.user-info-dialog .user-info-btnDiv .open-account-btn,
+.guest-user-info-dialog .guest-user-info-btnDiv .open-account-btn {
+  font-size: var(--font_m1);
+  color: var(--theme_color_secondary);
+  background-color: unset;
+  border: 1px solid var(--theme_color_4);
+  border-radius: 10px;
+  font-family: "OpenSans-Bold";
+  padding: 15px 15px;
+  width: 110%;
+}
+
+.user-info-dialog .user-info-btnDiv .continue-btn {
+  font-size: var(--font_m1);
+  width: 110%;
+  padding: 15px 40px;
+  color: var(--app_dialog_bg);
+  background-image: linear-gradient(to right, var(--theme_btn_bg), var(--theme_btn_bg_gr));
+  border: 1px solid var(--theme_btn_bg) !important;
+  border-radius: 10px;
+  margin-right: 14px;
+}
+
+.guest-user-info-dialog .guest-user-info-btnDiv .continue-btn {
+  font-size: var(--font_m1);
+  width: 120%;
+  padding: 15px;
+  color: var(--app_dialog_bg);
+  background-image: linear-gradient(to right, var(--theme_btn_bg), var(--theme_btn_bg_gr));
+  border: 1px solid var(--theme_btn_bg) !important;
+  border-radius: 10px;
+  margin-right: 14px;
+}
+
+/* ================== User info css ends here ================= */
+
+/* ================== Guest User menu starts here ================= */
+
+.guest-user-info-dialog .window {
+  width: 35%;
+
+  /* height: 45%; */
+  min-width: 350px;
+  padding: 1% 1% 2% 3%;
+  border-radius: 3px;
+  box-shadow: 0 0 5px var(--box-shadow);
+
+  /* max-width: 630px; */
+}
+
+.guest-user-info-dialog {
+  padding-top: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background-color: var(--coverBG);
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.guest-user-info-dialog .guest-user-info-header {
+  font-size: var(--font_l2);
+  padding: 16px 10px;
+  font-family: 'OpenSans-Bold';
+  text-align: left;
+}
+
+.guest-user-info-dialog .guest-user-info-header .guest-user-info-infoMsg-head {
+  color: var(--theme_color);
+}
+
+.guest-user-info-dialog .guest-user-info-content {
+  text-align: left;
+  color: var(--info_msg_color);
+  font-size: var(--font_l1);
+  padding-left: 10px;
+  padding-bottom: 5%;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.guest-user-info-dialog .guest-user-info-btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  padding-top: 5%;
+}
+
+.guest-user-info-dialog .guest-user-info-btnDiv .guest-login-btn {
+  width: 40%;
+  padding-right: 10%;
+}
+
+.guest-user-info-dialog .title-close {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--font_l3);
+  font-family: 'OpenSans-Bold';
+  color: var(--info_msg_color);
+}
+
+/* ================== Guest User menu info css ends here ================= */
+
+/* ================== Forgot userId css starts here =================== */
+.forget-userid-dialog .window {
+  width: 45%;
+  min-width: 630px;
+  max-width: 630px;
+}
+
+.forget-userid-dialog .infoMsg {
+  color: var(--info_msg_color);
+  font-size: var(--font_m4);
+  padding-bottom: 5px;
+}
+
+.forget-userid-dialog .window .phoneIcon {
+  font-size: 27px;
+}
+
+.forget-userid-dialog .window .emailIcon {
+  font-size: 27px;
+}
+
+/* ================== Forgot userId css ends here =================== */
+
+/* ================== Language settings css starts here =================== */
+
+.language-options-dialog .window {
+  width: 35%;
+  min-width: 530px;
+  max-width: 530px;
+}
+
+.language-options-dialog .window .header {
+  text-align: left;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  padding: 0 35px;
+  border-bottom: 1px solid var(--border_8);
+}
+
+.language-options-dialog .window .header .text {
+  font-size: var(--font_l3);
+  color: var(--txtcolor_secondary);
+  font-family: 'OpenSans-Bold';
+}
+
+.language-options-dialog .window .list-language {
+  text-align: left;
+
+  /* padding-left: 20px; */
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  justify-content: space-between;
+
+  /* width: 100%; */
+}
+
+.language-options-dialog .window .list-language .text-field {
+  font-size: var(--font_l1);
+  color: var(--txtcolor_11);
+  width: 50%;
+  display: inline-block;
+  max-width: 50%;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.language-options-dialog .window .list-language .text-field.selected {
+  color: var(--txtcolor_primary);
+}
+
+.language-options-dialog .window .list-language .text-field input {
+  width: 50%;
+  text-align: right;
+  height: 15px;
+}
+
+.language-options-dialog .window .list-language input[type=radio] {
+  display: none;
+}
+
+.language-options-dialog .window .list-language input:checked ~ .checkmark {
+  display: block;
+  border: 2px solid var(--selected);
+}
+
+.language-options-dialog .window .list-language input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.language-options-dialog .window .list-language .checkmark {
+  padding-right: 7px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--border_7);
+  position: relative;
+}
+
+.language-options-dialog .window .list-language .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--selected);
+}

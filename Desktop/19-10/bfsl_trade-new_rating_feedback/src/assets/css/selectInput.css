@@ -1,0 +1,186 @@
+.select-input-div {
+  position: relative;
+}
+
+.select-input-div .select-input {
+  width: 175px;
+  max-width: 175px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border_primary);
+  cursor: pointer;
+}
+
+.select-input-div .select-input .select-value {
+  padding-right: 15px;
+}
+
+.select-input-div .select-input .downArrowIcon.faceUp {
+  transform: rotate(180deg);
+  transition: transform 0.3s linear;
+  color: var(--theme_color_4);
+}
+
+.select-input-div .select-input .downArrowIcon.faceDown {
+  transform: rotate(0deg);
+  transition: transform 0.3s linear;
+  color: var(--theme_color_4);
+}
+
+.select-input-div.non-symbolSearch .options-div-base {
+  position: absolute;
+  width: 100%;
+  background-color: var(--bgcolor_10);
+  top: 37px;
+  left: 0;
+  z-index: 10;
+}
+
+.select-input-div.non-symbolSearch .options-div {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--select_input_dropdown_bg);
+  max-height: 0;
+  overflow-y: auto;
+
+  /* top: 37px; */
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px 1px rgba(15, 15, 15, 0.602);
+}
+
+.select-input-div.hiddenScroll .options-div {
+  overflow-y: overlay !important;
+}
+
+.select-input-div.hiddenScroll .options-div::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  visibility: hidden;
+}
+
+.select-input-div .options-div.showOption {
+  max-height: 200px;
+}
+
+.select-input-div .options-div .option {
+  padding: 5px;
+  border-bottom: 1px solid rgb(58, 58, 58);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-input-div .options-div .hasSubOption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: unset;
+}
+
+.select-input-div .options-div .hasSubOption .parentOption {
+  border-bottom: 1px solid rgb(58, 58, 58);
+  padding: 5px;
+}
+
+.select-input-div .options-div .hasSubOption .subOption {
+  padding-left: 60px !important;
+}
+
+.select-input-div .options-div .hasSubOption > span {
+  width: 100%;
+  text-align: left;
+}
+
+.options-div .option:hover {
+  background-color: var(--select_option_hover);
+}
+
+.options-div .option.action-option {
+  color: var(--selected) !important;
+  background-color: var(--bgcolor_primary) !important;
+}
+
+/* .options-div .option.action-option:hover {
+  background-color: rgb(28, 65, 54) !important;
+} */
+
+.options-div .option .innerAction-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: var(--font_m4);
+  color: rgb(194, 49, 49);
+}
+
+.options-div .option .innerAction-btn:hover {
+  color: red;
+
+  /* background-color: rgb(44, 21, 21); */
+}
+
+/* .select-input-div .options-div .option.active-option,
+.select-input-div .options-div .option.selected {
+  background-color: #424349;
+} */
+
+.options-div::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.select-input .options-div .search-option {
+  margin-bottom: 5px;
+}
+
+.select-input .options-div .option.last {
+  border-bottom: none !important;
+}
+
+.select-input .options-div .noData {
+  user-select: none;
+  padding: 10px;
+  cursor: default;
+}
+
+.options-div::-webkit-scrollbar-thumb {
+  background: var(--scroll_thumb_gray);
+}
+
+.options-div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.options-div::-webkit-scrollbar-thumb:hover {
+  /* background: #555;  */
+  background: var(--scroll_thumb_gray_hover);
+}
+
+/* ====== OTP input css starts here ===== */
+
+.otpInput-base {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.otpInput-base input {
+  width: 70px;
+  padding: 14px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: var(--font_m4);
+  border: 1px solid var(--input_border_appDialog);
+  text-align: center;
+}
+
+/* ====== OTP input css ends here ===== */

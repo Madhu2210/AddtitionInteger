@@ -1,0 +1,599 @@
+
+.dashboard-base .symSearch-base {
+  /* position: relative; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.symSearch-base .inputCover {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 7%;
+}
+
+.symSearch-base .input-addOn {
+  flex: 1;
+  width: 100%;
+}
+
+.symSearch-base .dropdown-div {
+  position: absolute;
+  top: 68px;
+  left: 3px;
+  width: calc(100% - 3px);
+  height: calc(100% - 70px);
+  min-height: 550px;
+
+  /* max-width: 400px; */
+  min-width: 350px;
+  background: var(--bgcolor_primary);
+
+  /* border: 1px solid var(--sym_search_border); */
+  opacity: 1;
+  z-index: 100;
+  box-shadow: 0 4px 4px 0 rgba(15, 15, 15, 0.602);
+}
+
+#lightTheme .symSearch-base .dropdown-div {
+  box-shadow: 0 3px 7px 1px rgba(128, 128, 128, 0.602);
+}
+
+#lightTheme .alertBase .scrip-head .alert-search .symSearch-base .dropdown-div {
+  box-shadow: 0 8px 4px 2px rgb(128 128 128 / 60%);
+}
+
+.symSearch-base .loader {
+  z-index: 100;
+}
+
+.symSearch-base .dropdown-div .loader {
+  position: absolute !important;
+}
+
+.symSearch-base .dropdown-div .header {
+  display: flex;
+  background-color: var(--postLogin_app_dialog_header_bg);
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.symSearch-base .dropdown-div .header .assetMenu {
+  font-size: var(--font_s3);
+  color: var(--sym_search_menu_color);
+  height: 100%;
+  flex-direction: column;
+}
+
+.symSearch-base .dropdown-div .header .assetMenu .menu {
+  flex: 1;
+}
+
+.symSearch-base .dropdown-div .header .assetMenu.selected {
+  color: var(--selected) !important;
+}
+
+.symSearch-base .dropdown-div .header .assetMenu hr {
+  color: var(--selected);
+  width: 20px;
+  padding: 0;
+  margin: 0 0 1px 0;
+}
+
+.symSearch-base .dropdown-div .body {
+  height: 100%;
+  opacity: 1;
+  min-height: 550px;
+  background-color: var(--bgcolor_11);
+}
+
+.symSearch-base .dropdown-div .body.reduceOp {
+  opacity: 0.4;
+}
+
+.symSearch-base .dropdown-div .body.nosymbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 40px);
+  color: var(--txtcolor_tertiary);
+}
+
+.symSearch-base .dropdown-div .nosymbol .infoMsg {
+  font-size: var(--font_s3);
+}
+
+.symSearch-base .body .segment-div {
+  height: 50px;
+  font-size: var(--font_s3);
+  color: var(--txtcolor_secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.segment-div .segment-option img {
+  margin-right: 10px;
+}
+
+.segment-div .segment-option.disable {
+  opacity: 0.3;
+  position: relative;
+  cursor: default;
+}
+
+.segment-div .segment-option .hidingDiv {
+  display: none;
+}
+
+.segment-div .segment-option.disable .hidingDiv {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.symSearch-base .searchResutDiv {
+  height: 100%;
+}
+
+.symSearch-base .searchResutDiv span.showOnHover {
+  display: none;
+}
+
+.symSearch-base .searchDiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.symSearch-base .searchDiv .Result-head {
+  height: 50px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-Bold';
+  color: var(--txtcolor_primary);
+}
+
+.symSearch-base .recent-search-title {
+  height: 40px;
+  font-size: var(--font_s5);
+  display: flex;
+  align-items: center;
+  color: var(--negative_btn_color);
+  padding: 0 20px 0 15px;
+  font-family: "OpenSans-SemiBold";
+  justify-content: space-between;
+}
+
+.symSearch-base .recent-search-title .clearAllBtn {
+  color: var(--theme_color_5);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.symSearch-base .searchResutDiv.recentSearch {
+  height: calc(100% - 45px) !important;
+  min-height: calc(300px - 80px);
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  border-bottom: 1px solid var(--input_border);
+  margin-left: 15px;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div:hover {
+  background-color: var(--bgcolor_5);
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div:hover .showOnHover {
+  display: table-cell;
+  width: 50%;
+
+  /* position: relative; */
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div .btn-div .btn-only {
+  margin-right: 50px;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div:hover .hideOnHover {
+  display: none;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div.error {
+  height: 100%;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div .infoMsg {
+  font-size: var(--font_s3);
+  color: var(--info_msg_color);
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div .symbol {
+  flex: 7;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div .btn-div {
+  height: 100%;
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div .btn-div.hide-sym {
+  justify-content: flex-end !important;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div .showOnHover > .btn-div > span {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.symSearch-base .searchResutDiv .symbolRow-div .showOnHover > .btn-div button {
+  font-size: var(--font_m1);
+  height: 36px;
+  width: 36px;
+  border-radius: none !important;
+}
+
+.searchResutDiv .symbolRow-div .addToWatchlist-btn {
+  color: var(--border_3);
+  height: 32px;
+  width: 32px;
+  border-radius: 10%;
+  border: 1px solid var(--border_3);
+  font-size: var(--font_s5) !important;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-left: 6px;
+  background-color: unset;
+}
+
+.searchResutDiv .symbolRow-div .addToWatchlist-btn .addSym-icon {
+  font-size: var(--font_l1);
+}
+
+.searchResutDiv .symbolRow-div .btn-div .removeToWatchlist-btn {
+  color: var(--theme_color_secondary);
+  font-size: var(--font_b5);
+  cursor: pointer;
+}
+
+.searchResutDiv .symbolRow-div .btn-div .selle-btn {
+  margin-left: 7px;
+  border: 2px solid var(--redColor);
+  height: 33px;
+  width: 33px;
+  background-color: var(--redColor);
+  border-radius: 10%;
+  color: var(--txtcolor_9);
+}
+
+.searchResutDiv .symbolRow-div .btn-div .buye-btn {
+  border: 2px  solid var(--greenColor);
+  height: 33px;
+  width: 33px;
+  background-color: var(--greenColor);
+  margin-left: 10px;
+  border-radius: 10%;
+  color: var(--txtcolor_9);
+}
+
+.searchResutDiv .symbolRow-div .symId {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_primary);
+  display: flex;
+  font-family: "OpenSans-SemiBold";
+}
+
+.searchResutDiv .symbolRow-div .exc {
+  color: var(--txtcolor_4);
+  padding-right: 8px;
+  font-size: var(--font_s3) !important;
+  font-family: "OpenSans-Regular";
+}
+
+.searchResutDiv .symbolRow-div .dispSym,
+.searchResutDiv .symbolRow-div .symName {
+  max-width: 250px;
+}
+
+.searchResutDiv .symbolRow-div .dispSym .weekly-option {
+  padding-left: 5px;
+}
+
+.searchResutDiv .symbolRow-div .dispSym button.weekly {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  background-color: var(--input_border);
+  color: var(--textcolor2);
+  font-size: var(--font_s3);
+  font-family: 'OpenSans-SemiBold';
+  cursor: unset;
+}
+
+.searchResutDiv .symbolRow-div .symName {
+  font-size: var(--font_s3);
+  color: var(--txtcolor_5);
+  margin-top: 2px;
+}
+
+.searchResutDiv .symbolRow-div .future-sym {
+  color: var(--txtcolor_4);
+  font-size: var(--font_s3) !important;
+  font-family: "OpenSans-Regular";
+}
+
+.searchResutDiv .symbolRow-div .symName .optionType {
+  color: var(--icon_color3);
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 0 5px;
+  background-color: var(--bgcolor_7);
+  font-size: var(--font_s5);
+
+  /* border: 1px solid var(--border_14); */
+}
+
+.searchResutDiv .symbolRow-div .symName .strike {
+  color: var(--icon_color3);
+  font-size: var(--font_s5);
+}
+
+.searchResutDiv .symbolRow-div .streamValues {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-family: "OpenSans-SemiBold";
+  font-size: var(--font_m2);
+  width: 50%;
+}
+
+.searchResutDiv .symbolRow-div .streamValues .ltpValue {
+  color: var(--txtcolor_primary);
+}
+
+.symSearch-base .dropdown-div .footer .options-div .option {
+  padding: 10px;
+  font-size: var(--font_m2);
+}
+
+.symSearch-base .dropdown-div .footer {
+  background-color: var(--bgcolor_14);
+  height: 45px;
+  padding: 0 20px 0 15px;
+  border: 1px solid var(--border_2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 20px var(--box-shadow);
+}
+
+.symSearch-base .dropdown-div .footer .select-input-div .select-input {
+  justify-content: flex-start;
+}
+
+.symSearch-base .dropdown-div .footer .newWatchlistName {
+  color: var(--selected);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.symSearch-base .dropdown-div .footer .addToText {
+  font-size: var(--font_s3);
+  margin-right: 10px;
+  color: var(--textcolor4);
+  font-family: "OpenSans-Regular";
+}
+
+.symSearch-base .dropdown-div .footer .action-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.symSearch-base .dropdown-div .footer .msg-div {
+  height: 100%;
+  font-size: var(--font_s3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.symSearch-base .dropdown-div .footer .msg-div .error {
+  color: var(--error_input_color);
+}
+
+.symSearch-base .dropdown-div .footer .msg-div .success {
+  color: var(--success_color);
+}
+
+.symSearch-base .dropdown-div .footer .select-input {
+  border: none;
+  background-color: transparent;
+  width: auto;
+  font-size: var(--font_s5);
+  padding: 0;
+  color: var(--txtcolor_10);
+}
+
+.symSearch-base .dropdown-div .footer .select-input .select-value,
+.symSearch-base .dropdown-div .footer .select-input .downArrowIcon {
+  color: var(--theme_color);
+  font-size: var(--font_m2);
+}
+
+.symSearch-base .dropdown-div .footer .select-input .select-value {
+  font-family: "OpenSans-SemiBold";
+}
+
+.symSearch-base .dropdown-div .footer .select-input .options-div {
+  visibility: hidden;
+  position: absolute;
+  left: -2px;
+  max-height: 0;
+  width: 140px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--chart_icon_bg);
+  box-shadow: 0 0 8px 0 var(--box-shadow2);
+}
+
+.symSearch-base .dropdown-div .footer .select-input .options-div.showOption {
+  max-height: 180px;
+
+  /* max-height: 300px; */
+  visibility: visible;
+  bottom: 40px;
+  transition: all 0.3s linear;
+}
+
+.symSearch-base .dropdown-div .footer .select-input .options-div .option {
+  border-bottom: 1px solid var(--border_8) !important;
+}
+
+.symSearch-base .dropdown-div .footer .select-input .options-div .option:hover {
+  background-color: var(--select_option_hover);
+  font-family: "OpenSans-SemiBold";
+}
+
+.symSearch-base .dropdown-div .footer .select-input .options-div .option.selected {
+  background-color: var(--select_option_hover);
+  font-family: "OpenSans-SemiBold";
+}
+
+.symSearch-base .dropdown-div .footer .selctedCount {
+  font-size: var(--font_s3);
+  margin-left: 5px;
+  color: var(--txtcolor_tertiary);
+}
+
+.symSearch-base .dropdown-div .footer .add-btn {
+  color: var(--positive_btn_color);
+  background-color: transparent;
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Bold";
+}
+
+.dashboard-base .symSearch-base .input-ele {
+  color: var(--txtcolor_22);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-Regular";
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 2px 40px;
+  outline: none;
+  border: none;
+}
+
+.dashboard-base .symSearch-base .input-addOn {
+  position: relative;
+
+  /* z-index: 100; */
+  height: 80%;
+}
+
+.dashboard-base .symSearch-base .symbol-length {
+  display: flex;
+  font-family: "OpenSans-Regular";
+  justify-content: center;
+  color: var(--txtcolor_10);
+  font-size: var(--font_m1);
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.dashboard-base .symSearch-base .input-addOn .searchIcon {
+  position: absolute;
+  color: var(--icon_color6);
+  left: 6px;
+  top: calc(50% - 10px);
+  font-size: var(--font_l3);
+}
+
+.dashboard-base .symSearch-base .input-addOn .closeIcon {
+  position: absolute;
+  color: var(--txtcolor_6);
+  top: calc(50% - 10px);
+  font-size: var(--font_l2);
+  border-radius: 10%;
+  border: 1px solid var(--border_3);
+}
+
+.dashboard-base .symSearch-base .input-ele::placeholder {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_4) !important;
+  opacity: 1;
+  letter-spacing: 0.5px;
+
+  /* Firefox */
+}
+
+.dashboard-base .symSearch-base .input-ele:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--txtcolor_4) !important;
+}
+
+.dashboard-base .symSearch-base .input-ele::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--txtcolor_4) !important;
+}
+
+.searchResutDiv .symbolRow-div .symInstrumentValue {
+  margin-left: 15px;
+  background-color: var(--bgcolor_6);
+  font-family: "OpenSans-Regular";
+  color: var(--textcolor1) !important;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  height: 25px;
+  text-align: center;
+  font-size: var(--font_s3);
+  padding-top: 3px;
+  padding-bottom: 5px;
+
+  /* width: 130px; */
+  white-space: nowrap;
+}
+
+.symSearch-base .menusTab.selectedMenu {
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-SemiBold";
+}
+
+.symSearch-base .menusTab.first {
+  margin-left: 0;
+}
+
+.symSearch-base .menusTab.selectedMenu .menuName {
+  border-bottom: 2px solid var(--theme_color);
+}

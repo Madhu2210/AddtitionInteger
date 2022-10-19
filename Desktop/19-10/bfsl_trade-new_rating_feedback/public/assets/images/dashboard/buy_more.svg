@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.5" height="21.5" viewBox="0 0 20.5 21.5">
+  <g id="buy_more" data-name="buy more" transform="translate(0.5 3)">
+    <path id="Path_34431" data-name="Path 34431" d="M67,57.5A9.5,9.5,0,1,1,57.5,48,9.5,9.5,0,0,1,67,57.5Zm0,0" transform="translate(-47.001 -51)" fill="#d1e3f6"/>
+    <path id="Path_34432" data-name="Path 34432" d="M9,18a9,9,0,1,1,9-9A9,9,0,0,1,9,18ZM9,.6A8.4,8.4,0,1,0,17.4,9,8.4,8.4,0,0,0,9,.6Zm0,0" fill="#1c74d0" stroke="#1c74d0" stroke-width="1"/>
+    <g id="Group_18572" data-name="Group 18572" transform="translate(4.5 4.5)">
+      <path id="Path_34433" data-name="Path 34433" d="M232.3,129a.3.3,0,0,1-.3-.3v-8.4a.3.3,0,1,1,.6,0v8.4A.3.3,0,0,1,232.3,129Zm0,0" transform="translate(-227.8 -120)" fill="#1c74d0" stroke="#1c74d0" stroke-width="1"/>
+      <path id="Path_34434" data-name="Path 34434" d="M128.7,232.6h-8.4a.3.3,0,1,1,0-.6h8.4a.3.3,0,1,1,0,.6Zm0,0" transform="translate(-120 -227.8)" fill="#1c74d0" stroke="#1c74d0" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

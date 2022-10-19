@@ -1,0 +1,1350 @@
+.ncdDialog-base {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.apply-ncd-dialog .window {
+  width: 33%;
+
+  /* height: 63%; */
+  height: 550px;
+
+  /* height: 730px; */
+  min-height: 550px;
+  min-width: 580px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.ncdDialog-base .window {
+  border: 1px solid var(--input_border);
+  box-shadow: 0 -1px 3px 0 var(--box-shadow);
+  background-color: var(--bgcolor_primary);
+  border-radius: 10px;
+}
+
+.apply-ncd-dialog .window .header {
+  height: 85px;
+  background-color: var(--bgcolor_7);
+  display: flex;
+
+  /* flex-direction: column; */
+  padding-left: 5%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px 10px 0 0;
+}
+
+.apply-ncd-dialog .window .header .company-info {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  justify-content: center;
+}
+
+.apply-ncd-dialog .window .header .close {
+  width: 4%;
+
+  /* margin-left: 50%; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--font_xl5);
+
+  /* margin-top: 10px; */
+  align-items: center;
+}
+
+.apply-ncd-dialog .window .header .close .closeIcon {
+  color: var(--textcolor15);
+  font-size: var(--font_xl3_1);
+}
+
+.apply-ncd-dialog .window .header .symName {
+  font-size: var(--font_m4);
+  color: var(--textcolor13);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.apply-ncd-dialog .window .header .dispSym {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+
+  /* white-space: nowrap; */
+}
+
+.apply-ncd-dialog .window .content {
+  flex: 1;
+  padding: 4% 5% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-ncd-dialog .window .row {
+  display: flex;
+  padding-top: 30px;
+}
+
+.apply-ncd-dialog .window .row.first {
+  padding-top: 0;
+}
+
+.apply-ncd-dialog .window .row.rating {
+  background-color: var(--bgcolor_5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 34px;
+  border-bottom: 1px solid var(--border_8);
+}
+
+.apply-ncd-dialog .window .row.rating .ratingdiv {
+  width: 50%;
+}
+
+.apply-ncd-dialog .window .row.rating .issue-price-div {
+  width: 50%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.apply-ncd-dialog .window .row.rating .label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+  font-family: 'OpenSans-Regular';
+}
+
+.apply-ncd-dialog .window .row.rating .issue-price-div .label {
+  font-size: var(--font_s5);
+  color: var(--data-label-popup);
+}
+
+.apply-ncd-dialog .window .row.rating .issue-price-div .value {
+  color: var(--data-value-popup);
+  font-family: OpenSans-Bold;
+  font-size: var(--font_m4);
+}
+
+.apply-ncd-dialog .window .row.rating .value {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  color: var(--data-value-popup);
+  padding-left: 5px;
+}
+
+.apply-ncd-dialog .window .content .row.extra-info {
+  color: var(--label_color2);
+  padding-top: 35px;
+  font-size: var(--font_m2);
+}
+
+.apply-ncd-dialog .window .content .row .column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.apply-ncd-dialog .window .content .row .column.center-align {
+  text-align: center;
+}
+
+.apply-ncd-dialog .window .content .row .column.right-align {
+  text-align: right;
+}
+
+.apply-ncd-dialog .window .content .column span.label {
+  font-size: var(--font_s5);
+  color: var(--data-label-popup);
+}
+
+.apply-ncd-dialog .window .content .column span.value {
+  color: var(--data-value-popup);
+  font-family: OpenSans-Bold;
+  font-size: var(--font_m4);
+  padding-top: 3px;
+}
+
+.apply-ncd-dialog .window .content .row.buttonRow {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.apply-ncd-dialog .window .content .row.buttonRow .continueBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+  height: 60px;
+
+  /* width: 92px; */
+  width: 95%;
+}
+
+.apply-ncd-dialog .window .content .row.buttonRow button {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+}
+
+/*  ====== Select NCD series dialog css starts here   ===== */
+
+.series-ncd-dialog .window {
+  /* width: 40%;
+  height: 67%;
+  min-height: 640px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative; */
+
+  width: 33%;
+  height: 550px;
+  min-height: 550px;
+  min-width: 580px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.series-ncd-dialog .window .header {
+  height: 85px;
+  background-color: var(--bgcolor_7);
+  display: flex;
+
+  /* flex-direction: column; */
+  padding-left: 5%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px 10px 0 0;
+}
+
+.series-ncd-dialog .window .header .company-info {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  justify-content: center;
+}
+
+.series-ncd-dialog .window .header .close {
+  width: 4%;
+
+  /* margin-left: 50%; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--font_xl5);
+
+  /* margin-top: 10px; */
+  align-items: center;
+}
+
+.series-ncd-dialog .window .header .close .closeIcon {
+  color: var(--textcolor15);
+  font-size: var(--font_xl3_1);
+}
+
+.series-ncd-dialog .window .header .symName {
+  font-size: var(--font_m4);
+  color: var(--textcolor13);
+}
+
+.series-ncd-dialog .window .header .dispSym {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+
+  /* white-space: nowrap; */
+}
+
+.series-ncd-dialog .window .content {
+  flex: 1;
+  padding: 4% 0 !important;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  /* height: fit-content; */
+  overflow-x: scroll;
+  border-bottom: 1px solid var(--border_8);
+}
+
+.series-ncd-dialog .window .content::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.series-ncd-dialog .window .content .row {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.series-ncd-dialog .window .row-series-title {
+  width: 100%;
+  padding-left: 5%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.series-ncd-dialog .window .row-series-title .select-series-title {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-Bold';
+  color: var(--data-value-popup);
+}
+
+.series-ncd-dialog .window .content .series-details .scode {
+  color: var(--series-title);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m4);
+}
+
+.series-ncd-dialog .window .content .series-details .tenor {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.series-ncd-dialog .window .content .series-details {
+  padding: 18px 5% 18px 5%;
+  border-bottom: 1px solid var(--bgcolor_20);
+}
+
+.series-ncd-dialog .window .content .series-details:first-child {
+  padding-top: 0 !important;
+}
+
+.series-ncd-dialog .window .content .series-details:last-child {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.series-ncd-dialog .window .content .series-details .details-row {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.series-ncd-dialog .window .content .series-details .horizontal-line {
+  border-bottom: 1px solid var(--border_8);
+  position: absolute;
+
+  /* top: 200px; */
+  width: 100%;
+  padding-top: 10px;
+  left: 0;
+  padding-left: 0;
+}
+
+.series-ncd-dialog .window .content .series-details label {
+  display: flex;
+  position: relative;
+}
+
+.series-ncd-dialog .window .content .series-details .radioField input[type=radio] {
+  display: none;
+}
+
+.series-ncd-dialog .window .content .series-details .radioField .checkmark {
+  position: absolute;
+  padding-right: 7px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid var(--input_border_orderPad);
+}
+
+.series-ncd-dialog .window .content .series-details .radioField .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--selected);
+}
+
+.series-ncd-dialog .window .content .series-details .radioField input:checked ~ .checkmark {
+  display: block;
+  border: 2px solid var(--selected);
+}
+
+.series-ncd-dialog .window .content .series-details .radioField input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.series-ncd-dialog .window .content .series-details .series-name {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-SemiBold';
+  margin-left: 25px;
+}
+
+.series-ncd-dialog .window .content .row.extra-info {
+  color: var(--label_color2);
+}
+
+.series-ncd-dialog .window .content .column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.series-ncd-dialog .window .content .column.center-align {
+  text-align: center;
+}
+
+.series-ncd-dialog .window .content .column.right-align {
+  text-align: right;
+}
+
+.series-ncd-dialog .window .content .column.right-align.cop-rate {
+  padding-right: 25px;
+}
+
+.series-ncd-dialog .window .content .column span.label {
+  font-size: var(--font_s5);
+  color: var(--data-label-popup);
+}
+
+.series-ncd-dialog .window .content .column span.value {
+  color: var(--data-value-popup);
+  font-family: OpenSans-Bold;
+  font-size: var(--font_m4);
+  padding-top: 3px;
+}
+
+.series-ncd-dialog .window .buttonRow {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.series-ncd-dialog .window .buttonRow .continueBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+}
+
+.series-ncd-dialog .window .buttonRow button {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+}
+
+.series-ncd-dialog .window .content .series-details .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--selected);
+}
+
+/* ====== Select NCD series css ends here  ========== */
+
+/* ====== Place NCD Order css Starts Here   ========== */
+
+.place-ncd-dialog .window {
+  width: 650px;
+
+  /* height: 72%; */
+  height: 720px;
+  min-height: 700px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.place-ncd-dialog .window .series-title-row {
+  height: 45px;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  color: var(--textcolor2);
+  font-family: "OpenSans-Bold";
+  font-size: var(--font_l1);
+  border-bottom: 1px solid var(--border_8);
+}
+
+.place-ncd-dialog .window .series-title-row .series-title {
+  font-size: var(--font_l1);
+  color: var(--data-value-popup);
+}
+
+.place-ncd-dialog .window .header {
+  height: 85px;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--bgcolor_7);
+  display: flex;
+
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.place-ncd-dialog .window .header .company-info {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+}
+
+.place-ncd-dialog .window .header .close {
+  width: 4%;
+
+  /* margin-left: 50%; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--font_xl5);
+
+  /* margin-top: 10px; */
+  align-items: center;
+}
+
+.place-ncd-dialog .window .header .close .closeIcon {
+  color: var(--textcolor15);
+  font-size: var(--font_xl3_1);
+}
+
+.place-ncd-dialog .window .header .symName {
+  font-size: var(--font_m4);
+  color: var(--textcolor13);
+}
+
+.place-ncd-dialog .window .header .dispSym {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+
+  /* white-space: nowrap; */
+}
+
+.place-ncd-dialog .window .content {
+  flex: 1;
+  padding: 4% 5% !important;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.place-ncd-dialog .window .content .data1 {
+  height: 110px;
+  display: flex;
+  align-items: center;
+
+  /* border-bottom: 1px solid var(--input_border); */
+}
+
+.place-ncd-dialog .window .content .data2 {
+  margin-top: 7%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* margin-bottom: 10%; */
+}
+
+.place-ncd-dialog .window .content .data2 .row1 {
+  display: flex;
+  padding-top: 20px;
+}
+
+.place-ncd-dialog .window .content .data2 .row2 {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.place-ncd-dialog .window .content .data2 .horizontal-line {
+  border-bottom: 1px solid var(--border_8);
+  position: absolute;
+
+  /* top: 200px; */
+  width: 100%;
+  padding-top: 10px;
+  left: 0;
+  padding-left: 0;
+}
+
+.place-ncd-dialog .window .content .data2 .row1 .column,
+.place-ncd-dialog .window .content .data2 .row2 .column {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.place-ncd-dialog .window .content .data2 .column.center-align {
+  text-align: center;
+}
+
+.place-ncd-dialog .window .content .data2 .column.center-align.left {
+  padding-right: 25px;
+}
+
+.place-ncd-dialog .window .content .data2 .column.right-align {
+  text-align: right;
+}
+
+.place-ncd-dialog .window .content .data2 .row1 .column .label,
+.place-ncd-dialog .window .content .data2 .row2 .column .label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.place-ncd-dialog .window .content .data2 .row1 .column .value,
+.place-ncd-dialog .window .content .data2 .row2 .column .value {
+  color: var(--label_color2);
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-Bold';
+  padding-top: 3px;
+}
+
+.place-ncd-dialog .window .content .row.qtyRow {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.place-ncd-dialog .window .content .row.UPIRow {
+  margin-bottom: 15px;
+}
+
+.place-ncd-dialog .window .content .row.UPIRow .labelInput {
+  display: flex;
+}
+
+.place-ncd-dialog .window .content .labelInput .label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.place-ncd-dialog .window .content .labelInput input {
+  height: 100%;
+  font-size: var(--font_l2);
+  padding: 0 15px;
+  color: var(--data-input-clr);
+}
+
+.place-ncd-dialog .window .content .errorInputDiv .label,
+.place-ncd-dialog .window .content .errorMsg-div {
+  color: var(--error_input_color) !important;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.place-ncd-dialog .window .content .errorMsg-div {
+  font-family: "OpenSans-Regular";
+  font-size: var(--font_s5);
+}
+
+.place-ncd-dialog .window .errorMessage-ncd {
+  height: 25px;
+  font-size: var(--font_s5);
+  color: var(--error_input_color) !important;
+  display: flex;
+  justify-content: center;
+  font-family: "OpenSans-Regular";
+  position: relative;
+  margin-bottom: 75px;
+  padding-bottom: 15px;
+
+  /* padding-top: 5px; */
+  align-items: center;
+}
+
+.place-ncd-dialog .window .content .errorInputDiv .labelInput {
+  border: 1px solid var(--error_input_color) !important;
+}
+
+.place-ncd-dialog .window .content .labelInput input:disabled {
+  opacity: 0.7;
+  color: var(--price-prefilled) !important;
+
+  /* color: var(--ncd-price-input); */
+}
+
+.place-ncd-dialog .window .content .row.UPIRow .labelInput .select-input-div {
+  width: 50%;
+  background-color: var(--border_primary);
+  padding-left: 10px;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  border-radius: 5px;
+  position: unset;
+}
+
+.place-ncd-dialog .window .content .row.UPIRow .labelInput .select-input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--textcolor2);
+}
+
+.place-ncd-dialog .window .content .select-input-div .select-input .downArrowIcon.faceDown {
+  color: var(--selected);
+  padding-right: 5px;
+}
+
+.place-ncd-dialog .window .content .row.UPIRow .labelInput .select-input-div.non-symbolSearch .options-div-base {
+  top: 60px;
+  width: 100%;
+  right: 0;
+  left: unset !important;
+}
+
+.place-ncd-dialog .window .content .select-input-div .options-div {
+  box-shadow: 0 2px 4px 1px var(--box-shadow2);
+}
+
+.place-ncd-dialog .window .content .select-input-div .options-div .option.selected {
+  color: var(--txtcolor_primary);
+}
+
+.place-ncd-dialog .window .content .select-input-div .options-div .option.selected,
+.place-ncd-dialog .window .content .select-input-div .options-div .option:hover {
+  background-color: var(--select_option_hover);
+
+  /* font-size: var(--font_l2); */
+}
+
+.place-ncd-dialog .window .content .select-input-div .options-div .option {
+  border-bottom: 1px solid var(--border_8) !important;
+  color: var(--txtcolor_10);
+  font-family: "OpenSans-SemiBold";
+  padding: 10px 10px;
+  font-size: var(--font_m4);
+}
+
+.place-ncd-dialog .window .content .row.UPIRow .UPIId {
+  font-size: var(--font_s5);
+  color: var(--label_color3);
+  padding-left: 5px;
+}
+
+.place-ncd-dialog .window .row.agreementRow {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_23);
+  border-top: 1px solid var(--border_8);
+  padding: 18px 5%;
+}
+
+.place-ncd-dialog .window .row.overViewData {
+  height: 63px;
+  margin-bottom: 10px;
+  background-color: var(--bgcolor_23);
+  border: 1px solid var(--border_8);
+  display: flex;
+  align-items: center;
+
+  /* margin-bottom: 110px; */
+  margin-left: 5%;
+  margin-right: 5%;
+
+  /* margin: 0 5%; */
+}
+
+.place-ncd-dialog .window .row.overViewData > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.place-ncd-dialog .window .row.overViewData > div:first-child {
+  border-right: 1px solid var(--border_8);
+}
+
+.place-ncd-dialog .window .row.overViewData .label {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_23);
+}
+
+.place-ncd-dialog .window .row.overViewData .value {
+  font-size: var(--font_m4);
+  color: var(--data-value-popup);
+  font-family: "OpenSans-Bold" !important;
+}
+
+.place-ncd-dialog .window .row.buttonRow {
+  height: 60px;
+
+  /* margin: 0 5%; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.place-ncd-dialog .window .row.buttonRow button {
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+}
+
+.place-ncd-dialog .window .content .inputDiv {
+  width: 43%;
+  height: 90px;
+}
+
+.place-ncd-dialog .window .content .data2 .inputDiv {
+  width: 55%;
+  min-width: 380px;
+}
+
+.place-ncd-dialog .window .agreementRow {
+  display: flex;
+}
+
+.place-ncd-dialog .window .checkBox {
+  font-size: var(--font_xl3);
+  margin-right: 10px;
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.place-ncd-dialog .window .content .inputDiv .lotDiv {
+  margin-top: 5px;
+  font-size: var(--font_s5);
+  color: var(--label_color3);
+  text-transform: capitalize;
+}
+
+.place-ncd-dialog .window .content .inputDiv .lotDiv .lotSize {
+  color: var(--textcolor2);
+  font-family: "OpenSans-Bold";
+  padding-left: 3px;
+}
+
+.place-ncd-dialog .window .content .inputDiv .labelInput {
+  width: 100% !important;
+
+  /* height: 70% !important; */
+}
+
+.place-ncd-dialog .window .content .row .labelInput {
+  width: 43%;
+  height: 60px;
+}
+
+.place-ncd-dialog .window .content .inputDiv:last-child {
+  margin-left: 15%;
+}
+
+.place-ncd-dialog .window .content .row .labelInput .lotChange {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  top: calc(50% - 15px);
+  right: 2px;
+}
+
+.place-ncd-dialog .window .content .row .labelInput .lotChange button {
+  font-size: 40px;
+  height: 30px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--selected);
+  background-color: var(--bgcolor_primary);
+  margin-right: 10px;
+}
+
+.place-ncd-dialog .window .row.buttonRow .submitBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+}
+
+.place-ncd-dialog .window .row.buttonRow .editBtn {
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--sym_search_add_border);
+  color: var(--arr_icon_color);
+}
+
+/* ======== Place NCD Order ends here ======== */
+
+/* ======== Confirm NCD Order starts here ======== */
+
+.confirm-ncd-dialog .window {
+  width: 33%;
+
+  /* height: 63%; */
+  height: 520px;
+
+  /* height: 730px; */
+  min-height: 500px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.confirm-ncd-dialog .window .header {
+  height: 85px;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--bgcolor_7);
+  display: flex;
+
+  /* flex-direction: column; */
+  padding-left: 5%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.confirm-ncd-dialog .window .header .company-info {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  justify-content: center;
+}
+
+.confirm-ncd-dialog .window .header .close {
+  width: 4%;
+
+  /* margin-left: 50%; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--font_xl5);
+
+  /* margin-top: 10px; */
+  align-items: center;
+}
+
+.confirm-ncd-dialog .window .header .close .closeIcon {
+  color: var(--textcolor15);
+  font-size: var(--font_xl3_1);
+}
+
+.confirm-ncd-dialog .window .header .symName {
+  font-size: var(--font_m4);
+  font-family: 'OpenSans-Regular';
+  color: var(--textcolor13);
+}
+
+.confirm-ncd-dialog .window .header .dispSym {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+}
+
+.confirm-ncd-dialog .window .content {
+  flex: 1;
+  padding: 4% 5% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm-ncd-dialog .window .row {
+  display: flex;
+  padding-top: 50px;
+}
+
+.confirm-ncd-dialog .window .row.first {
+  padding-top: 10px;
+}
+
+.confirm-ncd-dialog .window .row.rating {
+  background-color: var(--bgcolor_5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.confirm-ncd-dialog .window .row.rating .label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+  font-family: 'OpenSans-Regular';
+}
+
+.confirm-ncd-dialog .window .content .row.rating .value {
+  color: var(--input_color2);
+  font-family: OpenSans-Bold;
+  font-size: var(--font_m2);
+}
+
+.confirm-ncd-dialog .window .content .row.extra-info {
+  color: var(--label_color2);
+}
+
+.confirm-ncd-dialog .window .content .row .column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.confirm-ncd-dialog .window .content .row .column.center-align {
+  text-align: center;
+}
+
+.confirm-ncd-dialog .window .content .row .column.right-align {
+  text-align: right;
+}
+
+.confirm-ncd-dialog .window .content .column span.label {
+  font-size: var(--font_s5);
+  color: var(--data-label-popup);
+}
+
+.confirm-ncd-dialog .window .content .column span.value {
+  color: var(--data-value-popup);
+  font-family: OpenSans-Bold;
+  font-size: var(--font_m4);
+}
+
+.confirm-ncd-dialog .window .content .row.overViewData {
+  height: 63px;
+  background-color: var(--bgcolor_23);
+  border: 1px solid var(--border_8);
+  display: flex;
+  align-items: center;
+
+  /* margin: 0 5%; */
+  padding-top: 0;
+  margin-top: 60px;
+}
+
+.confirm-ncd-dialog .window .content .row.overViewData > div:first-child {
+  border-right: 1px solid var(--border_8);
+}
+
+.confirm-ncd-dialog .window .content .row.overViewData > div {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirm-ncd-dialog .window .content .row.overViewData .label {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_23);
+}
+
+.confirm-ncd-dialog .window .content .row.overViewData .value {
+  font-size: var(--font_m4);
+  color: var(--textcolor14);
+  font-family: "OpenSans-Bold" !important;
+}
+
+.confirm-ncd-dialog .window .content .row.buttonRow {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+}
+
+.confirm-ncd-dialog .window .content .row.buttonRow .editBtn {
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--sym_search_add_border);
+  color: var(--arr_icon_color);
+  width: 48%;
+}
+
+.confirm-ncd-dialog .window .content .row.buttonRow .confirmBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+  width: 48%;
+}
+
+.confirm-ncd-dialog .window .content .row.buttonRow button {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+}
+
+/* ======== Confirm NCD Order ends here ======== */
+
+/*  ========== Cancel NCD order css query starts here ======= */
+
+.cancel-ncd-dialog .window {
+  width: 28%;
+  height: 30%;
+  min-height: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cancel-ncd-dialog .window .header {
+  height: 80px;
+  border-bottom: 1px solid var(--vr_line);
+  color: var(--positive_btn_color);
+  font-size: var(--font_l1_1);
+  font-family: "OpenSans-Bold";
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.cancel-ncd-dialog .window .body {
+  height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4%;
+}
+
+.cancel-ncd-dialog .window .body .cancel-query {
+  color: var(--textcolor12);
+  font-size: var(--font_m4);
+}
+
+.cancel-ncd-dialog .window .body .symData .name {
+  color: var(--label_color6);
+  font-size: var(--font_m4);
+}
+
+.cancel-ncd-dialog .window .body .symData .bidName {
+  color: var(--date_icon_color);
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  padding-top: 8px;
+}
+
+.cancel-ncd-dialog .window .body .orderData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cancel-ncd-dialog .window .body .orderData .left {
+  text-align: left;
+}
+
+.cancel-ncd-dialog .window .body .orderData .center {
+  text-align: center;
+}
+
+.cancel-ncd-dialog .window .body .orderData .right {
+  text-align: right;
+}
+
+.cancel-ncd-dialog .window .body .orderData .label {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m4);
+}
+
+.cancel-ncd-dialog .window .body .orderData .value {
+  color: var(--textcolor2);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  padding-top: 8px;
+}
+
+.cancel-ncd-dialog .window .body .btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-ncd-dialog .window .body .btnDiv button {
+  text-transform: uppercase;
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+  padding: 15px;
+}
+
+.cancel-ncd-dialog .window .body .btnDiv button.yesBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+}
+
+.cancel-ncd-dialog .window .body .btnDiv button.noBtn {
+  margin-right: 10px;
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--border_6);
+}
+
+/* ========= Cancel NCD order query css ends here ======== */
+
+/* ====== Cancel NCD Order Result css starts here ==========  */
+
+.cancel-ncd-result-dialog .window {
+  width: 35%;
+  height: 30%;
+  min-height: 100px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 2% 2.5%;
+}
+
+.cancel-ncd-result-dialog .window .status {
+  font-size: var(--font_l1_1);
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-Bold";
+}
+
+.cancel-ncd-result-dialog .window .messageDiv {
+  color: var(--label_color6);
+  font-size: var(--font_m4);
+  width: 100%;
+  text-align: center;
+}
+
+.cancel-ncd-result-dialog .window .footer-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.cancel-ncd-result-dialog .window .okay-btn {
+  border: 2px solid var(--theme_color_4);
+  padding: 10px 30px;
+  font-family: 'OpenSans-SemiBold';
+  color: var(--theme_color_4);
+  background-color: var(--bgcolor_primary);
+  height: 60px;
+  width: 200px;
+  font-size: var(--font_l1);
+}
+
+/* ====== Cancel NCD Order Result css ends here ========== */
+
+/* ======  NCD Order Result css starts here ========== */
+
+.ncdDialog-base .window .detailsdiv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .ncdDialog-base.order-result-base.errorWindow,
+.ncdDialog-base.order-result-base.successWindow {
+  min-height: 450px;
+  height: 50%;
+  width: 30%;
+} */
+
+.ncdDialog-base.errorWindow .window,
+.ncdDialog-base.successWindow .window {
+  height: 420px;
+  min-height: 400px;
+  width: 28%;
+  min-width: 500px;
+  position: relative;
+}
+
+.ncdDialog-base.errorWindow .window .successImgDiv,
+.ncdDialog-base.successWindow .window .successImgDiv {
+  text-align: center;
+}
+
+.ncdDialog-base.errorWindow .window .detailsdiv .messageDiv,
+.ncdDialog-base.successWindow .window .detailsdiv .messageDiv {
+  text-align: center;
+}
+
+.ncdDialog-base.errorWindow .window .successImgDiv img,
+.ncdDialog-base.successWindow .window .successImgDiv img {
+  height: 100px;
+  width: 100px;
+}
+
+.ncdDialog-base.errorWindow .window .btnDiv,
+.ncdDialog-base.successWindow .window .btnDiv {
+  width: 45%;
+}
+
+.order-result-base .window {
+  width: 35%;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 2% 4.5% 1.5% 4.5%;
+}
+
+.order-result-base .window .status {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-Bold";
+}
+
+.order-result-base .window .status.success {
+  color: var(--greenColor);
+}
+
+.order-result-base .window .status.fail {
+  color: var(--redColor);
+}
+
+.order-result-base .window .symName {
+  color: var(--table_tbody_td_color);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.order-result-base .window .appIdDiv,
+.order-result-base .window .messageDiv {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m2);
+}
+
+.order-result-base .window .infoMsg {
+  color: var(--txtcolor_11);
+  text-align: center;
+}
+
+/* .order-result-base .window .btnDiv {
+  width: 35%;
+} */
+
+.order-result-base .window .btnDiv button {
+  font-size: var(--font_m5);
+  color: var(--positive_btn_color);
+  background-color: var(--bgcolor_primary);
+  border: 2px solid var(--positive_btn_color);
+  height: 60px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ======  NCD Order Result css ends here ========== */

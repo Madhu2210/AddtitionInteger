@@ -1,0 +1,762 @@
+.login-base {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.login-base .app-version {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: var(--app_version);
+  font-size: var(--font_s1);
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-base .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-base .left.light {
+  background-image: url('../images/login/screen_bg.svg');
+}
+
+.login-base .left.dark {
+  background-image: url('../images/dark/login/screen_bg.svg');
+}
+
+.login-base .left .slideShow-div {
+  flex: 36;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-base .left .sliderComponent .content-div .welcome {
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_16);
+  font-size: var(--font_l4);
+}
+
+.login-base .left .sliderComponent .content-div .welcome-2 {
+  font-family: 'OpenSans-SemiBold';
+  color: var(--txtcolor_16);
+  font-size: var(--font_l4);
+}
+
+.login-base .sliderComponent .content-div .highlight {
+  color: var(--theme_color_secondary);
+  font-size: var(--font_xl1);
+  font-family: 'OpenSans-Bold';
+}
+
+.login-base .sliderComponent .content-div .highlight-2 {
+  color: var(--theme_color_secondary);
+  font-size: var(--font_l4);
+  font-family: 'OpenSans-Bold';
+}
+
+.login-base .sliderComponent .content-div .info {
+  color: var(--txtcolor_16);
+  font-size: var(--font_l4);
+}
+
+.login-base .sliderComponent .content-div .info-2 {
+  color: var(--txtcolor_16);
+  font-size: var(--font_xl3);
+  font-family: 'OpenSans-Regular';
+  margin-top: 10px;
+}
+
+.login-base .sliderComponent .content-div .applyBtn {
+  width: 34%;
+  padding: 10px 12px;
+  font-size: var(--font_m4);
+  margin-top: 10px;
+}
+
+.login-base .left .footer {
+  flex: 4;
+  display: flex;
+
+  /* min-height: 50px; */
+}
+
+.login-base .left .footer .appStore {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-base .left .footer .appStore img {
+  height: 70%;
+  max-height: 55px;
+  cursor: pointer;
+}
+
+.login-base .left .footer .appStore a {
+  margin-left: 10px;
+}
+
+.login-base .left .footer .appStore img:nth-child(2) {
+  margin-left: 30px;
+}
+
+.login-base .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgcolor_3);
+}
+
+.login-base .right .header {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px 2px 9%;
+}
+
+/* .login-base .right .header .logo-div img {
+  height: 100px;
+    width: 270px;
+} */
+
+/* .login-base .gwc-logo {
+  height: 75px;
+    width:300px
+} */
+
+.login-base .haveAccQes {
+  cursor: pointer;
+  color: var(--need_help_text);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.login-base .haveAccQes-dont {
+  color: var(--txtcolor_tertiary);
+  font-size: var(--font_s5);
+}
+
+.login-base .languageMenu {
+  cursor: pointer;
+  color: var(--need_help_text);
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  padding-left: 10px;
+}
+
+.login-base .openAcc-div {
+  display: flex;
+  align-items: center;
+}
+
+.login-base .openAcc-div .tooltip-container {
+  left: unset !important;
+  right: -30px;
+  top: 15px;
+  min-height: 235px;
+  background-color: var(--bgcolor_10);
+  width: 430px;
+}
+
+.login-base .openAcc-div .tooltip-container .triangle {
+  height: 30px;
+  width: 30px;
+  top: -14px;
+}
+
+.login-base .right .content {
+  flex: 8;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 0 10%;
+}
+
+.login-base .right .footer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+  flex-direction: column;
+}
+
+.login-base .right .footer .contact-details {
+  font-size: var(--font_m2);
+  margin-bottom: 14px;
+  width: 80%;
+}
+
+.login-base .right .footer .contact-details .details {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.login-base .right .footer .contact-details .details.phone {
+  padding-right: 10px;
+  border-right: 1px solid var(--separator_line);
+  color: var(--txtcolor_14);
+}
+
+.login-base .right .footer .contact-details .details .emailTxt {
+  color: var(--txtcolor_13);
+  font-family: 'OpenSans-Regular';
+}
+
+.login-base .right .footer .copyrights {
+  height: 18px;
+  color: var(--txtcolor_14);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-Regular';
+  padding-left: 10%;
+}
+
+.login-base .right .open-account-btn {
+  padding: 10px;
+  font-size: var(--font_m1);
+  margin-left: 15px;
+  color: var(--theme_color_secondary);
+  background-color: unset;
+  border: 1px solid var(--theme_color_4);
+  border-radius: 10px;
+  font-family: 'OpenSans-Bold';
+}
+
+.login-base .right .content .row {
+  padding-top: 5px;
+  width: 100%;
+}
+
+.login-base .right .content .row.trade-btn-div {
+  display: flex;
+  margin-top: 10px;
+}
+
+.login-base .right .content .label {
+  color: var(--label_color);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.login-base .right .forgetPass-link,
+.login-base .right .forgetUId-link,
+.login-base .right .dob_pan_link_div {
+  padding-top: 5px;
+}
+
+.login-base .content .password-label {
+  display: flex;
+  align-items: center;
+}
+
+.login-base .right .content .input-div,
+.pwd-sett-base .input-div {
+  margin-top: 6px;
+  display: flex;
+  position: relative;
+}
+
+.pwd-sett-base .input-div {
+  height: 15%;
+}
+
+.login-base .right .content .input-div .input-ele,
+.pwd-sett-base .input-el .input-div {
+  padding-right: 50px;
+  margin-left: -2px;
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+}
+
+.login-base .right .content .inputVal,
+.pwd-sett-base .inputVal {
+  width: 100%;
+  padding: 15px;
+
+  /* color: #D1D2D5; */
+}
+
+.login-base .right .linkBtn {
+  color: var(--h_link_color);
+}
+
+.login-base .right .content .loginBtn {
+  width: 100%;
+  padding: 14px 12px;
+  font-size: var(--font_m4);
+}
+
+.login-base .right .content .virtualTrade-btn,
+.login-base .right .content .guest-btn {
+  padding: 5px;
+  flex: 1;
+  font-size: var(--font_m2);
+}
+
+/* .login-base .right .content .guest-btn {
+  margin-left: 30px;
+} */
+
+/* .login-base .right .content .virtualTrade-btn .text,
+.login-base .right .content .guest-btn .text {
+  flex: 1;
+} */
+
+.login-base .right .content .virtualTrade-btn .virtualTradeIcon,
+.login-base .right .content .guest-btn .guestUserIcon {
+  font-size: var(--font_xl4);
+  margin-left: 5px;
+  font-weight: 500;
+  color: var(--txtcolor_7);
+}
+
+.login-base .right .content .eyeOpenIcon,
+.login-base .right .content .eyeCloseIcon,
+.pwd-sett-base .eyeCloseIcon,
+.pwd-sett-base .eyeOpenIcon {
+  font-size: var(--font_l5);
+  cursor: pointer;
+  color: var(--password_eye_icon);
+}
+
+.pwd-sett-base {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 48px 8px;
+}
+
+.pwd-sett .footer {
+  padding: 16px 48px 8px;
+}
+
+.pwd-sett-base .passwordIcon {
+  font-size: 32px;
+  color: var(--input_icon_color_appDialog);
+}
+
+.pwd-sett-base .label {
+  color: var(--settings_label_color);
+  font-size: 14px;
+  font-family: 'OpenSans-semiBold';
+}
+
+.settings-base .input-ele {
+  border: 1px solid var(--input_border_appDialog);
+}
+
+.settings-base .input-div .addOnIcon {
+  border: 1px solid var(--input_border_appDialog);
+}
+
+.settings-base .footer {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.settings-base .footer button {
+  flex: 1;
+  background-color: transparent;
+  height: 90%;
+  font-size: 14px;
+  margin-right: 5%;
+  border-radius: 8px;
+}
+
+.settings-base .footer .negativeBtn {
+  color: var(--settings_neg_btn_color);
+  border: 1px solid var(--border_secondary);
+  background-color: var(--bgcolor_18);
+}
+
+.settings-base .footer .negativeBtn:hover {
+  color: var(--negative_btn_hover);
+}
+
+.settings-base .footer .positiveBtn {
+  color: white;
+  background-color: var(--greenColor);
+}
+
+.content .errorDiv {
+  height: 17px;
+  padding-top: 5px;
+  font-size: var(--font_m1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--txtcolor_20);
+}
+
+.content .errorDiv.add-watchlist {
+  color: var(--error_input_color) !important;
+}
+
+.login-base .errorDiv .error {
+  font-family: 'OpenSans-Regular';
+}
+
+.errorDiv .error.passwordError {
+  padding-right: 8px;
+}
+
+.login-base .content .forgetPassword-link,
+.login-base .content .forgetUserId-link {
+  font-size: var(--font_m1);
+  color: var(--theme_color_4);
+}
+
+.login-base .content .dob_pan_link {
+  font-size: var(--font_m4);
+  color: var(--txtcolor_tertiary);
+}
+
+.login-base .content .dob_pan_link span {
+  margin-left: 10px;
+}
+
+.login-base .content .dob_pan_link span.active {
+  color: var(--theme_color_4);
+  font-family: 'OpenSans-Bold' !important;
+}
+
+.login-base .content .forgetPassword-link,
+.login-base .content .forgetUserId-link,
+.login-base .content .dob_pan_link {
+  white-space: nowrap;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.login-base .content u.membershipLink {
+  color: var(--txtcolor_secondary);
+}
+
+.login-base .content .membership-link {
+  font-size: var(--font_m2);
+  color: var(--txtcolor_secondary);
+  font-family: "OpenSans-Bold";
+}
+
+.login-base .right .social-media {
+  height: 50px;
+  padding-top: 15px !important;
+}
+
+.login-base .right .social-media img {
+  margin-left: 20px;
+  height: 70px;
+  width: 70px;
+}
+
+.login-base .right .content .membership-div {
+  padding-top: 0 !important;
+}
+
+/* slideShow styles */
+
+.login-base .slider-div {
+  flex: 17;
+}
+
+.login-base .left .sliderCircle-div {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35px;
+}
+
+.login-base .left .sliderCircle {
+  height: 3px;
+  width: 50px;
+  background-color: var(--slide_bar);
+  margin-left: 25px;
+}
+
+.login-base .left .sliderCircle.active {
+  background-color: var(--theme_color);
+}
+
+.login-base .sliderComponent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-base .sliderComponent .image-div {
+  flex: 75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-top: 30px; */
+}
+
+.login-base .sliderComponent .image-div img {
+  position: absolute;
+  height: 50%;
+  top: 30px;
+}
+
+.login-base .sliderComponent .image-div.second-banner img {
+  position: absolute;
+  height: 70%;
+  top: -55px;
+}
+
+.login-base .sliderComponent .content-div {
+  flex: 27;
+  color: var(--theme_color_tertiary);
+  padding: 0 20%;
+
+  /* margin-top: 30px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* slideShow styles */
+
+.login-base .content .userIcon,
+.login-base .content .passwordIcon,
+.login-base .content .panNumIcon,
+.login-base .content .dateIcon {
+  font-size: var(--font_xl3_1);
+  color: var(--icon_color);
+}
+
+.login-base .content .dateIcon {
+  color: var(--theme_color_4) !important;
+}
+
+.login-base .footer .phoneIcon,
+.login-base .footer .emailIcon {
+  color: var(--icon_color2);
+  font-size: var(--font_m4);
+  padding-right: 5px;
+}
+
+.login-base .content .infoIcon {
+  font-size: var(--font_l3);
+  color: var(--icon_color);
+  padding-left: 10px;
+}
+
+.login-base .tooltip-container {
+  font-size: var(--font_m2) !important;
+  width: 400px;
+  bottom: 42px;
+}
+
+.login-base .tooltip-container.pwd-marati-tooltip {
+  height: 52px;
+  width: 365px;
+}
+
+.login-base .datePickerTooltip {
+  cursor: default !important;
+}
+
+.login-base .datePickerTooltip .tooltip-container {
+  bottom: 55px !important;
+  box-shadow: 0 -3px 7px 1px var(--tooltip_shadow) !important;
+}
+
+.login-base .tooltip-container.top .triangle {
+  height: 25px;
+  width: 25px;
+  top: 41px;
+  left: 24px;
+}
+
+.login-base .tooltip-container.top .triangle.marati-triangle {
+  top: 37px !important;
+}
+
+/* OTP Screen */
+
+.otpScreen .otpMsg {
+  font-size: 24px !important;
+  color: #000 !important;
+  line-height: 35px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+}
+
+.otp_wrapper_full .form-group {
+  position: relative;
+}
+
+.otp_wrapper_full .form-group label {
+  font-size: 18px;
+  color: #242424;
+  position: absolute;
+  top: 30%;
+  left: 60px;
+  z-index: 0;
+}
+
+.otpScreen .otpInputBox {
+  border: 1px solid var(--input_border);
+  border-left: 0 !important;
+  border-radius: 0 10px 10px 0;
+  padding: 20px 60px 10px;
+  margin-bottom: 5px;
+  font-size: 23px;
+  margin-top: 0;
+  margin-right: 0;
+  height: 70px;
+  width: 100%;
+}
+
+.otpIcon .addOnIcon {
+  padding: 0;
+  height: 70px;
+  border-radius: 10px 0 0 10px;
+  border-right: 0 !important;
+}
+
+.otp_wrapper_full .form-group input:focus-within + label {
+  top: 13%;
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.OTPinput {
+  position: relative;
+}
+
+.otpeye {
+  position: absolute;
+  top: 22%;
+  right: 15px;
+  font-size: 35px !important;
+  color: #aeb2b7 !important;
+}
+
+.otp_wrapper_full .otp-span-time {
+  font-size: 18px;
+  float: right;
+  color: #aeb2b7 !important;
+  margin-top: -23px;
+}
+
+.otp_wrapper_full .resendOtp-div {
+  display: flex;
+}
+
+.resendOtp-div .resendOtp-link {
+  font-weight: bold;
+  color: #ff6700;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* .verify-otp-btn {
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 12px 20px !important;
+  background-color: transparent;
+  border: 1px solid var(--separator_line);
+  cursor: pointer;
+} */
+
+.resume-screen .userName {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.resume-screen .userId {
+  font-size: 18px;
+  margin: 0;
+}
+
+.userDetail_screen {
+  margin-bottom: 50px;
+}
+
+.otpInput {
+  border-radius: 10px;
+  height: 70px;
+}
+
+.resume-screen .proceedBtn,
+.otpScreen .proceedBtn {
+  margin-top: 50px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login-another {
+  font-size: 16px;
+  color: #242424;
+  line-height: 1;
+  margin-top: 30px;
+}
+
+.login-another a {
+  color: #0069b4;
+}
+
+.otpIcon .keyIcon,
+.otpIcon .passIcon {
+  padding: 5px;
+  border: 1px solid var(--input_border);
+  border-right: none;
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  font-size: 33px;
+  color: #aeb2b7;
+  border-radius: 10px 0 0 10px;
+}
+
+.errorInput .keyIco,
+.errorInput .passIcon {
+  border: 1px solid var(--error_input_border) !important;
+  border-right: 0 !important;
+}
+
+.resendOtp-div.isDisabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+#darkTheme .otpMsg,
+#darkTheme .resendOtp-div,
+#darkTheme .app-version,
+#darkTheme .resume-screen .userName,
+#darkTheme .resume-screen .userId,
+#darkTheme .login-another p {
+  color: #fff !important;
+}

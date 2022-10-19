@@ -1,0 +1,183 @@
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"/><style>.message-handler {
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    width: calc(100% - 40px);
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #717880;
+  }
+
+  .ciq-draw,
+  cq-share-button,
+  cq-comparison,
+  cq-chart-price,
+  .ciq-shortcut-button,
+  .stx-full-screen,
+  .tableview-ui,
+  .symbolName-div,
+  cq-lookup-filters {
+    display: none !important;
+  }
+
+  .chart-grid {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .chart-grid cq-instant-chart {
+    display: block;
+    float: left;
+    width: calc(50% - 5px);
+    height: 100%;
+    position: relative;
+    margin: 2.5px;
+  }
+
+  .instance-chart.chart-view-2 {
+    height: 100vh;
+  }
+
+  .instance-chart.chart-view-4 {
+    height: 50vh;
+  }
+
+  .instance-chart.chart-view-6 {
+    height: 50vh;
+    width: calc(33.3% - 5px);
+  }</style><title>BFSL - Multi Charts</title><link href="./css/chartiq-styles.css" rel="stylesheet"></head><body cq-context class="multi-charts-body"><div class="chart-grid"></div><script src="js/thirdparty/custom-elements.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script><script src="../msf-js-weblib-base.js"></script><script>let streamSymbolList = [];
+        var streamingController;
+        var req = {
+            cb: onStreamCB,
+            compName: 'MULTI_CHARTS',
+            keys: [],
+            forceSubscribe: false
+        }
+        window.stxx = [];
+
+        function openConnection(session, url) {
+
+            streamingManager.setSession(session);
+            streamingManager.setStreamingURL(url);
+            streamingManager.setBinary(true);
+            streamingManager.setRetryCount(1000);
+            streamingManager.setRetryInternal(5000);
+            streamingManager.setDisconnectedCB(onError);
+            streamingManager.start();
+            console.log("open connection")
+        }
+
+        function onError(evt) {
+            console.log("socket err", JSON.stringify(evt))
+        }
+
+        function onStreamCB(resp) {
+            let { data } = resp;
+            console.log("stream response", data)
+            sendStreamResponse(data);
+        }
+
+        function sendStreamResponse(resp) {
+            if (resp && streamSymbolList) {
+                let newList = streamSymbolList.map(row => {
+                    if (row.streamSym === resp.symbol) {
+                        row = Object.assign({}, row, resp);
+                    }
+                    return row;
+                })
+                if (newList && newList.length) {
+                    newList.map((item) => {
+                        window.streamingSimulatorFn(item)
+                    })
+                }
+            }
+        }
+
+        function subscribeLeve1() {
+            if (streamSymbolList){
+                streamingManager.subscribeLevel1Syms(req, streamSymbolList)
+            }
+        }
+
+        function unsubscribe() {
+            streamingController.unRegisterStreamCB(req);
+        }
+
+        function disconnect() {
+            streamingManager.stop();
+            console.log("open connection disconnect")
+        }
+
+        function chartReadyHandler(e) {
+            const { node, params, callbacks } = e.detail;
+            const { initialSymbol, restore } = params;
+            const enabledAddOns = CIQ.clone(params);
+            delete enabledAddOns.initialSymbol;
+            delete enabledAddOns.restore;
+
+            const config = getConfig({
+                scrollStyle: PerfectScrollbar,
+                quoteFeed: quoteFeedSimulator
+            });
+
+            CIQ.extend(config, {
+                callbacks,
+                initialSymbol,
+                restore,
+                enabledAddOns
+            });
+            node.stxx = config.createChart(node);
+            window.stxx[node.stxx.chart.symbolObject.chartID] = node.stxx;
+        }
+        document.body.addEventListener("signal-chart-ready", chartReadyHandler);
+        document.querySelectorAll("[cq-event-flag]").forEach(function (el) {
+            chartReadyHandler(el.signalEvent);
+        });
+
+        window.onload = function () {
+            if (window.location.search) {
+                let data = getQueryParams(window.location.search);
+                if (data) {
+                    let sessionID = data && data.sessionID;
+                    let socketURL = data && data.socketURL;
+                    if (sessionID && socketURL) {
+                        openConnection(sessionID, socketURL);
+                    }
+                }
+                if (data && data.symbolObject && data.symbolObject.length) {
+                    for (var x = 1; x <= data.symbolObject.length; x++) {
+                        $('.chart-grid').append('<cq-instant-chart class="instance-chart chart-view-' + data.symbolObject.length + '" tmpl-src="examples/templates/partials/sample-template-advanced-context.html"' +
+                            ' id="chart' + x + '">' +
+                            '</cq-instant-chart>')
+                    }
+                }
+            }
+        }
+
+        window.addEventListener('message', function (evt) {
+            if (evt && evt.data) {
+                let symData = JSON.parse(evt.data);
+                if (symData && symData.id === 'startStream' && symData.data &&
+                    symData.data.symbolObj && symData.data.symbolObj.streamSym) {
+                    let symArr = Object.assign([], streamSymbolList);
+                    let itemIndex = symArr.findIndex(item => item.chartID === symData.data.symbolObj.chartID);
+                    if (itemIndex === -1) {
+                        symArr.push(symData.data.symbolObj)
+                    } else {
+                        symArr[itemIndex] = symData.data.symbolObj
+                    }
+                    streamSymbolList = symArr;
+                    if (streamSymbolList && streamSymbolList.length) {
+                        subscribeLeve1();
+                    }
+                }
+
+                if(symData && symData.id === "invalidSession"){
+                    disconnect();
+                }
+            }
+        })</script><script defer="defer" src="js/chartiq-core.788e46aec29574c78060.js"></script><script defer="defer" src="js/chartiq-core.fc4286b923fdf0eae88d.js"></script><script defer="defer" src="js/chartiq-core.646d833ba2466e812f03.js"></script><script defer="defer" src="js/chartiq-core.112487b25845218007ac.js"></script><script defer="defer" src="js/chartiq-core.5759f799f435a6416763.js"></script></body></html>

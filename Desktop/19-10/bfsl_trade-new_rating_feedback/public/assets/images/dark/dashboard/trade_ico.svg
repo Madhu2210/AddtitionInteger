@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.645" height="21.761" viewBox="0 0 19.645 21.761">
+  <g id="trade_ico" transform="translate(-1475.5 -567.24)">
+    <g id="add-3" transform="translate(1474 570.35)">
+      <path id="Path_34438" data-name="Path 34438" d="M65.143,57.055A8.584,8.584,0,1,1,56.571,48a8.823,8.823,0,0,1,8.572,9.055Zm0,0" transform="translate(-44.002 -51.11)" fill="#4987ee" opacity="0.2"/>
+      <text id="T" transform="translate(7.077 14.651)" fill="#1c74d0" font-size="14" font-family="OpenSans-SemiBold, Open Sans" font-weight="600"><tspan x="0" y="0">T</tspan></text>
+    </g>
+    <path id="Path_34437" data-name="Path 34437" d="M9,18a9,9,0,1,1,9-9A9,9,0,0,1,9,18ZM9,.6A8.4,8.4,0,1,0,17.4,9,8.4,8.4,0,0,0,9,.6Zm0,0" transform="translate(1476 570.35)" fill="#4987ee" stroke="#4987ee" stroke-width="1"/>
+  </g>
+</svg>

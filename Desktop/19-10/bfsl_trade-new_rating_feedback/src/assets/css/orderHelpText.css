@@ -1,0 +1,161 @@
+.orderPadBase .fieldRow .label {
+  display: flex;
+  align-items: center;
+}
+
+.custom-header {
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  height: 20px;
+}
+
+.custom-title p {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+  padding-right: 50px;
+}
+
+.custom-title h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #fff !important;
+}
+
+.custom-title {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hovercard {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  min-width: 230px;
+  z-index: 99;
+  top: 32px;
+  left: -45px;
+}
+
+.custom-title i {
+  background-color: blue;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.custom-tooltip {
+  background-color: #0069b4;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.custom-tooltip::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 16px solid #0069b4;
+  left: 46px;
+  top: -10px;
+}
+
+.custom-tooltip p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
+  padding-right: 0;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.custom-tooltip span {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 11px;
+  color: #fff;
+  padding-right: 0;
+  font-family: 'OpenSans-SemiBold';
+}
+
+.tooltip-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tooltip-bottom a {
+  font-size: 13px;
+  text-decoration: none;
+  padding-left: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 27px;
+  line-height: 26px;
+}
+
+.tooltip-bottom a:hover {
+  color: #fff;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 7px solid #fff;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.backBtn {
+  color: #fff;
+}
+
+.nextBtn {
+  background-color: #fff;
+  color: #1c74d0 !important;
+  border-radius: 5px;
+  padding: 5px 13px !important;
+  display: inline-block;
+}
+
+.custom-title:hover .hovercard {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+
+.toastMsgDiv {
+  z-index: 999;
+}
+
+.orderPadBase .fieldRow .field {
+  width: 30%;
+  margin-right: 3%;
+}
+
+.tooltip-icon {
+  font-family: 'OpenSans-Regular';
+  line-height: 18px;
+  display: inline-block;
+  text-align: center;
+  font-size: 22px;
+}

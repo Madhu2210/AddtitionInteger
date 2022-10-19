@@ -1,0 +1,678 @@
+.ideaBase {
+  position: relative;
+  height: 100%;
+  padding: 18px 18px 15px 18px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  /* margin: 15px; */
+  border: 1px solid var(--border_primary);
+  background-color: var(--bgcolor_3);
+}
+
+.ideaBase .ideaBase-header {
+  /* height: 110px; */
+  border: 1px solid var(--bgcolor_4);
+
+  /* border-bottom: none; */
+}
+
+.ideaBase > .widget-loader-div {
+  height: calc(100% - 110px);
+  border: 1px solid var(--bgcolor_4);
+}
+
+.ideaBase .ideaBase-header .headerBase {
+  padding: 0 20px;
+  height: 55px;
+  font-size: var(--font_s5);
+  background-color: var(--bgcolor_primary);
+  margin: 0 !important;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ideaBase .ideaBase-header .headerBase .head-name {
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  color: var(--selected);
+  height: 40px;
+  padding-top: 5px;
+
+  /* padding: 0 2%;  */
+}
+
+.ideaBase .ideaBase-header .headerBase .close-button {
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.ideaBase .ideaBase-content {
+  height: 100%;
+  background-color: var(--bgcolor_primary);
+  font-size: var(--font_s1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid var(--bgcolor_4);
+  overflow: auto;
+}
+
+.ideaBase .ideaBase-content .errorRow {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ideaBase .ideaBase-content .errorRow .colspan {
+  border: none !important;
+  font-size: var(--font_m1);
+  font-family: "OpenSans-SemiBold";
+  color: var(--txtcolor_tertiary);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase {
+  height: 100% !important;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .row {
+  margin: 10px;
+
+  /* margin-top: 10px; */
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column {
+  display: inline-flex;
+  overflow-x: auto;
+  height: 300px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column .error-div {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--font_m4);
+  color: var(--txtcolor_tertiary);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-us {
+  background: transparent linear-gradient(180deg, var(--vested_bgcolor_one) 0%, var(--vested-bgcolor_two) 100%) 0% 0% no-repeat padding-box;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-pick {
+  background: transparent linear-gradient(180deg, var(--pickright_bgcolor_one) 0%, var(--pickright_bgcolor_two) 100%) 0% 0% no-repeat padding-box;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-goldenpi {
+  background: transparent linear-gradient(180deg, var(--goldenpi_bgcolor_one) 0%, var(--goldenpi_bgcolor_two) 100%) 0% 0% no-repeat padding-box;
+}
+
+@media screen and (max-width: 600px) {
+  .ideaBase .ideaBase-content .ideaBase-cardBase .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card {
+  display: flex;
+  width: 33%;
+  min-width: 33%;
+  position: relative;
+  margin: 20px;
+  border: 1px solid var(--border_4);
+  border-radius: 5px;
+  height: 250px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card.pickright-card {
+  background-color: var(--pickright_card);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card.usinvest-card {
+  background-color: var(--ideacared_color);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card.goldenpi-card {
+  background-color: var(--goldenpi_card);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card .bank-img-div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: -20px;
+  left: 15px;
+  background-color: var(--app_dialog_bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 var(--box-shadow);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card-us {
+  display: flex;
+  width: 33%;
+  position: relative;
+  border-radius: 5px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase iframe#Ideas {
+  border: none;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card img {
+  width: 100%;
+  object-fit: fill;
+  display: block;
+  height: 100%;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright {
+  display: flex;
+  flex-direction: column;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .head-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .head-div .title-row {
+  display: flex;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .head-div .view {
+  color: var(--selected);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .head {
+  margin-left: 15px;
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-SemiBold';
+  margin-top: 10px;
+  color: var(--idea_head_color);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .name-head {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border_4);
+  color: var(--idea_title_color);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .name-head span.title {
+  width: 120px;
+  display: inline;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data.cagr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .val {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .cgrDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .cgrDiv .cagrLabel {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  color: var(--idea_title_color);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .cgrDiv .cagrValue {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  text-align: right;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .val:last-child {
+  text-align: right;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .valueGraph-base {
+  width: 100%;
+  height: 4px;
+  margin: 5px 0;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .val:last-child .valueGraph-base {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .valueGraph-base .valueGraph {
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--greenColor);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .valueGraph-base .valueGraph.negGraph {
+  background-color: var(--redColor);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .val .value {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  color: var(--ideacard_content);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .data .val .label {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  color: var(--txtcolor_4);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .ideas-btn {
+  border-radius: 3px;
+  font-size: var(--font_s4);
+  font-family: "OpenSans-Bold";
+  padding: 10px 20px;
+  background-color: var(--selected);
+  color: var(--app_dialog_bg);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.us-banner {
+  background: var(--coverBG2);
+}
+
+.us-banner .content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.us-banner .content img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.us-banner .content .start-btn {
+  position: absolute;
+  top: 68%;
+  left: 13%;
+  background-color: var(--selected);
+  color: var(--app_dialog_bg);
+  font-size: var(--font_m3);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.us-banner .content .banner-check {
+  position: absolute;
+  top: 46%;
+  left: 13%;
+  color: var(--app_dialog_bg);
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-Regular';
+  display: flex;
+  text-align: center;
+}
+
+.us-banner .content .us-info-data {
+  position: absolute;
+  top: 82%;
+  left: 13%;
+  color: var(--app_dialog_bg);
+  font-size: var(--font_m3);
+  font-family: 'OpenSans-Regular';
+  display: flex;
+  text-align: left;
+}
+
+.us-banner .content .us-info-data span.info-msg {
+  margin-left: 5px;
+  width: 80%;
+}
+
+.us-banner .content .banner-check .data {
+  text-align: left;
+  margin-left: 5px;
+  width: 55%;
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m3);
+}
+
+.us-banner .content .banner-check .data a.link {
+  color: var(--app_dialog_bg);
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m3);
+  border-bottom: 1px solid var(--app_dialog_bg);
+}
+
+/* .us-banner .content .banner-check .data a.link:hover {
+  border-bottom: 1px solid var(--selected);
+} */
+
+.us-banner .content .banner-check .checkbox {
+  cursor: pointer;
+  font-size: var(--font_xl3);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .goldenpi-head {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border_4);
+  color: var(--idea_title_color);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .goldenpi-head .golden-val {
+  font-family: 'OpenSans-Regular';
+  font-size: var(--font_m3);
+  color: var(--idea_title_color);
+  padding-top: 15px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .goldenpi-head .title {
+  height: 40px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .pickright .card .topPack .goldenpi-head .golden-val .cmp {
+  font-family: 'OpenSans-Bold';
+  font-size: var(--font_m3);
+  margin-left: 10px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith {
+  display: flex;
+  flex-direction: column;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .heading-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .heading-div .pick-img {
+  padding: 8px 0;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .heading-div .title-rows {
+  display: flex;
+
+  /* flex-direction: column; */
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .heading-div .title-rows .heading {
+  margin-left: 30px;
+  font-size: var(--font_l2);
+  font-family: 'OpenSans-SemiBold';
+  margin-top: 10px;
+  color: var(--idea_head_color);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .heading-div .view {
+  color: var(--selected);
+  font-size: var(--font_m2);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .heading-div .title-rows .description {
+  margin-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-marketsmith {
+  background: transparent linear-gradient(180deg, var(--marketsmith_background_1) 0%, var(--marketsmith_background_2) 100%) 0% 0% no-repeat padding-box;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-marketsmith.blurLock {
+  background-image: url('../images/marketsmith_blur.png');
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-marketsmith .newSubscription {
+  font-size: var(--font_l1_1);
+  width: 100%;
+  text-align: center;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-marketsmith .newSubscription .unlockContent {
+  font-size: var(--font_m3);
+  margin-top: 5px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-marketsmith .newSubscription .unlockbutton {
+  border-radius: 5px;
+  font-size: var(--font_s4);
+  font-family: "OpenSans-Bold";
+  padding: 10px 20px;
+  background-color: var(--selected);
+  color: var(--app_dialog_bg);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-marketsmith .pendingContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: var(--font_m2);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .label-div {
+  font-size: var(--font_m4);
+  margin-left: 68px;
+  line-height: 2;
+  color: var(--idea_title_color_ms);
+  font-family: 'OpenSans-Regular'
+
+  /* margin-bottom: 15px; */
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .expiryCount {
+  color: var(--theme_color);
+  margin-top: 4px;
+  font-size: var(--font_m2);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .expiryCount .expiryDetailParent {
+  display: flex;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .expiryCount .cancelSubscription {
+  align-self: center;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .expiryCount .expiryDetailDiv {
+  align-self: center;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .expiryCount .expiryClockIcon {
+  font-size: var(--font_xl4);
+  padding: 0 0 0 5px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .expiryCount .expiryCountDetail {
+  font-family: "OpenSans-Bold";
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .card.marketsmith-card {
+  background-color: var(--marketsmith_background_3);
+  border-radius: 10px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .name-head {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border_4);
+  color: var(--idea_title_color);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .ideas-btn {
+  border-radius: 3px;
+  font-size: var(--font_s4);
+  font-family: "OpenSans-Bold";
+  padding: 10px 20px;
+  background-color: var(--selected);
+  color: var(--app_dialog_bg);
+  margin-right: auto;
+  margin-left: auto;
+  width: 122px;
+  margin-bottom: -15px;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .name-head .actionZone {
+  font-size: var(--font_m2);
+  background-color: var(--bgcolor_6_mrktSmth);
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: var(--greenColor);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .name-head .actionZone.sellZoneDiv {
+  background-color: var(--marketsmith_background_4);
+  color: var(--marketsmith_border_3);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .name-head .actionZone.masterScore {
+  color: var(--marketsmith_txtcolor_10);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .data .val {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .data .val .label {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_m2);
+  color: var(--txtcolor_4);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .data .val .value {
+  font-family: 'OpenSans-SemiBold';
+  font-size: var(--font_l1);
+  color: var(--ideacard_content);
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .marketsmith .card .topPack .data .val:last-child {
+  text-align: right;
+}
+
+.hideLongCard {
+  display: none !important;
+}
+
+.hideShortCard {
+  display: none !important;
+}
+
+.ideaBase .ideaBase-content .ideaBase-cardBase .column.colu-marketsmith .viewmoreBtn {
+  border-radius: 3px;
+  font-size: var(--font_s4);
+  font-family: "OpenSans-Bold";
+  padding: 15px 20px;
+  background-color: var(--selected);
+  color: var(--app_dialog_bg);
+  margin-right: 40px;
+  margin-left: auto;
+
+  /* width: 122px; */
+  margin-bottom: -15px;
+}
+
+.marketsmith-iframe .window {
+  height: 93%;
+  width: 96%;
+  min-width: 800px;
+  min-height: 600px;
+}
+
+.marketsmith-iframe .window .content {
+  height: 100%;
+  padding: 20px !important;
+  background-color: var(--chart_bg) !important;
+}
+
+.marketsmith-iframe .window .closeIcon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--bgcolor_6_mrktSmth);
+  z-index: 1;
+  border-radius: 50%;
+  font-size: var(--font_l2);
+  color: var(--txtcolor_4);
+  font-weight: bold;
+  cursor: pointer;
+}

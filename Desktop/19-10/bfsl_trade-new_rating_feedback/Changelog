@@ -1,0 +1,230 @@
+## [1.3.0] - 30-09-2022
+### Added
+- Login 2FA Flow added
+- Addition of BO & CO help text
+### changed
+- MTF URL
+- Square off Buy/Sell to be renamed as Target Price
+- Stop Loss Buy/Sell to be renamed as Stop Loss Price
+- Removal of "What is" statement from all the help text
+- NFO to be renamed as For Futures - FUT,For Options - OPT
+- Financial Ledger report - Date sequence change
+- Notifications on Web - Count will be 0 once open the notification icon
+
+## [1.2.9] - 22-09-2022
+### Added
+- Order Page info added
+- Watchlist stock addition
+- ChartIQ v8.7 : Upgraded
+- Bulk upload of client list in shield
+- MTF to Cash 
+- Bracket & Cover Order
+### changed
+- MTF interest logic
+- BO & CO : Removed for Options and Indices
+- MTF to Margin : Renamed
+- DP ID - text change
+## [1.2.8] - 02-09-2022
+### Changed 
+- Live Issue Fix - Missing Buy Button translation in Quote screen resolved
+## [1.2.7] - 19-08-2022
+### Changed
+- Deep Linking - implemented for 7 screens
+## [1.2.6] - 19-08-2022
+### Changed
+- Rejected reason - Production issue fixed
+## [1.2.5] - 17-08-2022
+### Changed
+- Appflyer - Recorded events made user-specific
+- Ipo - Incorrect text issue in cancel ipo screen resolved 
+## [1.2.4] - 13-08-2022
+### Changed
+- Rejected order - Flow changed  and additional CTAs added when order gets rejected due to insufficient funds
+- Net positions - Additional CTAs added
+- Trade Summary - Price modification implemented
+- OrderPad - IOC added for LIMIT and removed in SL-M
+- Holdings - Additional CTAs added
+
+### Added
+- EVoting - Added in Client Holdings Report
+- Chart IQ - Timeframe added
+- Watchlist - Stocck search categorisation implemented
+
+
+## [1.2.3] - 26-07-2022
+### Changed
+- Watchlist: Production issue fixed
+## [1.2.2] - 25-07-2022
+### Changed
+- Chart: Buy Sell button added in chart and also in expanded view of Quote screen
+- Scanners:scanners Description change
+- BO reports: LTCG Report renamed to Days To Long Term
+- Guest User-  LAS menu removed and landing screen changed to Markets
+- Watchlist - Sorting UI changed
+### Added
+- Vernacular language support added
+- AppFlyer event recording added
+- Watchlist - Holdings quantity displayed next to symbol name  
+## [1.2.1] - 30-06-2022
+### Changed
+- Chart: Buy Sell button added in chart and also in expanded view of Quote screen
+- Help and support: " Redirection to Samadhan while clicking on Help and Support Section in Profile
+### Added
+- Scanners:scanners module added
+
+## [1.2.0] - 03-06-2022
+### Changed
+- Notifications : BF-2496 fixed
+- LAS : CDSL APIs timeout set to 2 minutes and other API timeouts reset to 30 seconds
+
+## [1.1.9] - 16-05-2022
+### Changed
+- Holdings : Production issue regarding invested field resolved
+
+## [1.1.8] - 13-05-2022
+### Added
+- LAS added 
+- Ideas : Golden PI added
+
+## [1.1.7] - 13-04-2022
+### Changed
+- NCD : Decreament quantity issue fixed
+- BO Reports : Date filter issue fixed
+## [1.1.6] - 01-04-2022
+### Changed
+- Income declaration : Flow changed
+- Guest user: Redirection urls changed
+
+## [1.1.5] - 30-03-2022
+### Changed
+- Login : Banner image changed
+
+## [1.1.4] - 21-03-2022
+### Added
+- Ideas : Pickright added
+
+### changed 
+- Income declaration flow changed
+- Orderpad: BO CO options removed 
+- Demo tour new flow integrated
+- New base url added for splash screen service
+
+## [1.1.3] - 11-03-2022
+### Added
+- NCD added
+
+## [1.1.2] - 25-02-2022
+### Added
+- BO Reports : DP Bill Charges added
+
+## [1.1.1] - 18-02-2022
+### Added
+- Alerts & Notifications : New menu added 
+- Forget User ID : New Popup added
+
+### changed
+- Demo : Removed in Menu added in Help & Support
+- Menu : Profile,Help & Support,Settings,Logout added in Header
+
+### Fixed
+- Banners : Fixed with new images & UI changes with Close icon
+- Reports : UI Fixes
+
+
+## [1.1.0] - 28-01-2022
+### Added
+- Scanners : New menu added 
+- BO Reports : New menu added
+- Demo Tour : New menu added
+
+
+## [1.0.9] - 13-01-2022
+### Added
+- Guest User : Enabled 
+- News : new menu added
+- Help & Support : Enabled
+
+### changed
+- Net Positions : Removed equity & derivative filter
+
+### Fixed
+- Banners : fixed with new images
+
+
+## [1.0.8] - 31-12-2021
+### Added
+- Income Declaration : Enabled 
+- Detailed View : Brokerage Field added
+
+### changed
+- Funds : Withdraw Funds amount has been set to 100
+- Watchlist : Search dropdown extended till last
+- Search : Space is allowed for 3rd character 
+
+### Fixed
+- Orderpad : Minimum qty button and modify product type fixed
+
+
+## [1.0.7] - 09-12-2021
+### Fixed
+- Net Positions - P&L and Todays P&L formula Updated.
+
+## [1.0.6] - 03-12-2021
+### Fixed
+- Funds - Withdraw dropdown.
+
+## [1.0.5] - 26-11-2021
+### Added
+- NetPositions : Multiple SquareOff Enabled
+- Markets : Global indices added
+- ChartiQ : Multiple Charts Introduced
+
+### changed
+- Funds : E-Collect Option in Funds
+- Search : Sequence of Scrip display in search
+
+
+## [1.0.4] - 24-07-2021
+### Added
+- IPO - IPO Menu added.
+
+
+
+## [1.0.3] - 16-07-2021
+### Added
+- Holdings:  New column Days' PNL added.
+- ForgetPassword Screen: Added Password policy
+
+### changed
+- Holding:  LTP and change% column is merged.
+- Ordepad:  IOC types added for Market and SL-M Orders and removed from Limit and SL Orders
+
+
+
+
+## [1.0.2] - 02-07-2021
+### Added
+- Password : Password policy added
+- Watchlist : seesion management as per user click
+- Watchlist : Total count in respective watclist 
+
+### changed
+- OTP : Resend OTP timer fixes.
+- Orderpad : AMO changes
+
+
+
+## [1.0.1] - 18-06-2021
+### Added
+- Holdings : Value and Total value column added in Holdings table
+
+### changed
+- Funds : Amount restriction validations done for Add funds
+- Orderpad : AMO changes
+
+### Fixed
+- Markets : Value column key mapping issue fixed in Derivative table
+
+
+## [1.0.] - 24-05-2021
+- Initial release.

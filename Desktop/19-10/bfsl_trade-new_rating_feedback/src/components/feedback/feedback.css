@@ -1,0 +1,247 @@
+.main {
+ 
+  width: 100%;
+  height: 100%;
+}
+.parent-card {
+  /* border: 1px solid blue; */
+  background-color: white;
+  max-width: 100%;
+  width: 80%;
+  max-height: 450px;
+  overflow-y: scroll;
+  /* padding: 17px 0 10px 0; */
+}
+
+.maintab {
+  padding: 0;
+}
+.start-txt{
+  display: flex;
+  justify-content: center;
+  color: #0d408d;
+  font-weight: bold;
+}
+.quotes{
+  color: black;
+  font-size: 12px;
+  opacity: 0.3;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  padding-top: 10px;
+}
+.emojitab {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-around;
+  /* width: 40vw; */
+  height: 10%;
+  background-color: white;
+}
+#emoji {
+  height: 40px;
+}
+
+.tell-us {
+  padding: 0 15px;
+}
+
+.tell-us h4 {
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+}
+.tell-us h3 {
+  font-size: 12px;
+  display: flex;
+  /* margin: 0; */
+  margin-top: 5px;
+  justify-content: center;
+}
+.tell-us h4 {
+  margin: 0;
+}
+
+.feedback-message {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  max-width: 98%;
+  width: 100%;
+  /* justify-content: space-between; */
+  margin: 0 auto;
+  /* border: 1px solid black; */
+
+  /* line-height: 10px; */
+}
+.feedback-message label {
+  position: relative;
+  min-width: 161px;
+  width: auto;
+
+  /* width :calc(33.3333333333% - 20px); */
+}
+.feedback-message .personal-input {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  opacity: 0;
+}
+.feedback-message .personal-input:checked + .form-card {
+  background: #0072bc;
+  color: #ffffff;
+}
+.feedback-message .form-card {
+  color: #002356;
+  width: 100%;
+  padding: 8px 2px;
+  margin-right: 10px;
+  display: inline-block;
+  font: 500 10px "Rubik";
+  background-color: rgb(245, 240, 230);
+  text-align: center;
+  word-break: break-word;
+  border-radius: 8px;
+}
+
+/* .feedback-message label:last-child {
+  width: 100%;
+} */
+
+.leave {
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.two-button {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid #f5eeee;
+  padding-top: 12px;
+}
+.common-btn1 {
+  padding: 15px 30px 15px 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.common-btn2 {
+  padding: 15px 30px 15px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(99, 216, 99);
+  color: white;
+}
+.average-h {
+  color: orangered;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  /* opacity: 0.9; */
+}
+.excellent-h {
+  color: rgb(95, 197, 95);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  /* opacity: 0.9; */
+}
+
+/* average-form */
+
+.average-form .feedback-message label:last-child {
+  width: unset;
+}
+
+.average-form .feedback-message label:nth-child(5) {
+  width: 100%;
+}
+
+.txt-box {
+  width: 90%;
+  height: 100px;
+  resize: none;
+  margin-left: 8px;
+  border: 1px solid rgb(197, 186, 186);
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+}
+.txt-box::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+  font-size: 12px;
+}
+
+#attachImg {
+  width: 10px;
+  height: 15px;
+  padding-right: 5px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  /* padding-top: 5px; */
+  overflow: hidden;
+  display: inline-block;
+  display: flex;
+}
+
+.btn {
+  border: none;
+  color: gray;
+  background-color: white;
+  padding-left: 8px;
+  display: flex;
+  /* border-radius: 8px; */
+  font-size: 12px;
+  font-weight: bold;
+  color: #0072bc;
+  /* background-color: yellow; */
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.pic-extension {
+  opacity: 0.2;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.character {
+  opacity: 0.3;
+  font-size: 10px;
+  font-weight: 600;
+  padding-left: 80px;
+}
+
+.success{
+  width: 100%;
+  max-width: 420px;
+  background-color: white;
+}
+#tick-img{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+.txt-success{
+  color: rgb(61, 207, 61);
+  font-weight: 900;
+}
+.submit-msg{
+font-size: 12px;
+padding-bottom: 20px;
+}

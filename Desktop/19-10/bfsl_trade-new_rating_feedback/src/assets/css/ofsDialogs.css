@@ -1,0 +1,745 @@
+.ofsDialog-base {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 70%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100;
+
+  /* border: 1px solid var(--border_11); */
+}
+
+.ofsDialog-base .window {
+  border: 1px solid var(--input_border);
+  box-shadow: 0 -1px 3px 0 var(--box-shadow);
+  background-color: var(--bgcolor_primary);
+}
+
+/* ======== apply OFS starts here ======== */
+
+.apply-ofs-dialog .window {
+  width: 40%;
+  height: 72%;
+  min-height: 670px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.apply-ofs-dialog .window .header {
+  height: 80px;
+  background-color: var(--bgcolor_7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px 5%;
+}
+
+.apply-ofs-dialog .window .header .symName {
+  font-size: var(--font_m4);
+  color: var(--textcolor13);
+}
+
+.apply-ofs-dialog .window .header .dispSym {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  color: var(--date_icon_color);
+}
+
+.apply-ofs-dialog .window .content {
+  flex: 1;
+  padding: 4% 5% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-ofs-dialog .window .content .data1 {
+  height: 110px;
+  display: flex;
+  align-items: center;
+
+  /* border-bottom: 1px solid var(--input_border); */
+}
+
+.apply-ofs-dialog .window .content .firstRow-floorcutoff {
+  display: flex;
+}
+
+.apply-ofs-dialog .window .content .firstRow-floorcutoff .column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 28%;
+  padding-bottom: 10%;
+  text-align: right;
+}
+
+.apply-ofs-dialog .window .content .firstRow-floorcutoff.HNI .column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 41%;
+  padding-bottom: 10%;
+  text-align: right;
+}
+
+.apply-ofs-dialog .window .content .firstRow-floorcutoff .column span.label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.apply-ofs-dialog .window .content .firstRow-floorcutoff .column span.value {
+  color: var(--input_color2);
+  font-family: OpenSans-Bold;
+}
+
+.apply-ofs-dialog .window .content .data2 {
+  /* margin-top: 5%; */
+  height: calc(100% - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apply-ofs-dialog .window .content .row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.apply-ofs-dialog .window .content .row.UPIRow {
+  margin-bottom: 15px;
+}
+
+.apply-ofs-dialog .window .content .row.UPIRow .labelInput {
+  display: flex;
+}
+
+.apply-ofs-dialog .window .content .labelInput .label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.apply-ofs-dialog .window .content .labelInput input {
+  height: 100%;
+  font-size: var(--font_l2);
+  padding: 0 10px;
+  color: var(--input_color2);
+  padding-bottom: 5px;
+}
+
+.apply-ofs-dialog .window .content .labelInput input.qty-input {
+  padding-left: 8%;
+}
+
+.apply-ofs-dialog .window .content .errorInputDiv .label,
+.apply-ofs-dialog .window .content .errorMsg-div {
+  color: var(--error_input_color) !important;
+}
+
+.apply-ofs-dialog .window .content .errorMsg-div {
+  font-size: var(--font_s3);
+}
+
+.apply-ofs-dialog .window .content .errorMessage-ofs {
+  height: 50px;
+  font-size: var(--font_m1);
+  color: var(--error_input_color) !important;
+  display: flex;
+  justify-content: center;
+}
+
+.apply-ofs-dialog .window .content .errorInputDiv .labelInput {
+  border: 1px solid var(--error_input_color) !important;
+}
+
+.apply-ofs-dialog .window .content .labelInput input:disabled {
+  opacity: 0.7;
+}
+
+.apply-ofs-dialog .window .content .row.UPIRow .labelInput .select-input-div {
+  width: 50%;
+  background-color: var(--border_primary);
+  padding-left: 10px;
+  font-size: var(--font_m4);
+  font-family: "OpenSans-Bold";
+  border-radius: 5px;
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content .inputDiv .labelInput.error-label {
+  border: 1px solid var(--error_input_color) !important;
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content .inputDiv .labelInput.cutoff-selected {
+  color: var(--marketDepth_inactive_clr) !important;
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content .inputDiv.price .labelInput::before {
+  content: " ₹";
+  font-size: var(--font_l3_1);
+  padding-top: 8px;
+  padding-left: 10px;
+  color: var(--input_color2);
+}
+
+.apply-ofs-dialog .window .content .row.UPIRow .labelInput .select-input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--textcolor2);
+}
+
+.apply-ofs-dialog .window .content .select-input-div .select-input .downArrowIcon.faceDown {
+  color: var(--selected);
+}
+
+.apply-ofs-dialog .window .content .row.UPIRow .labelInput .select-input-div.non-symbolSearch .options-div-base {
+  top: 60px;
+  width: 200px;
+  right: 0;
+  left: unset !important;
+}
+
+.apply-ofs-dialog .window .content .select-input-div .options-div .option.selected {
+  color: var(--txtcolor_primary);
+}
+
+.apply-ofs-dialog .window .content .select-input-div .options-div .option.selected,
+.apply-ofs-dialog .window .content .select-input-div .options-div .option:hover {
+  background-color: var(--bgcolor_tertiary);
+}
+
+.apply-ofs-dialog .window .content .select-input-div .options-div .option {
+  border-bottom: 1px solid var(--bgcolor_tertiary);
+  color: var(--txtcolor_10);
+  font-family: "OpenSans-SemiBold";
+  padding: 10px 10px;
+  font-size: var(--font_s5);
+}
+
+.apply-ofs-dialog .window .content .row.UPIRow .UPIId {
+  font-size: var(--font_s5);
+  color: var(--label_color3);
+}
+
+.apply-ofs-dialog .window .content .row.prefRow,
+.apply-ofs-dialog .window .content .row.agreementRow {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_23);
+}
+
+.apply-ofs-dialog .window .content .row.overViewData {
+  height: 120px;
+  background-color: var(--bgcolor_23);
+  border: 1px solid var(--border_8);
+  display: flex;
+  align-items: center;
+
+  /* margin: 0 5%; */
+}
+
+.apply-ofs-dialog .window .content .row.overViewData > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply-ofs-dialog .window .content .row.overViewData > div:first-child {
+  border-right: 1px solid var(--border_8);
+}
+
+.apply-ofs-dialog .window .content .row.overViewData .label {
+  font-size: var(--font_s5);
+  color: var(--txtcolor_23);
+}
+
+.apply-ofs-dialog .window .content .row.overViewData .value {
+  font-size: var(--font_m2);
+  color: var(--textcolor14);
+  font-family: "OpenSans-Bold" !important;
+}
+
+.apply-ofs-dialog .window .content .row.buttonRow {
+  height: 90px;
+
+  /* margin: 0 5%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.apply-ofs-dialog .window .content .row.buttonRow button {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+
+  /* margin-left: 25%; */
+}
+
+.apply-ofs-dialog .window .content .inputDiv {
+  width: 43%;
+  height: 60px;
+}
+
+.apply-ofs-dialog .window .content .data2 .inputDiv {
+  width: 55%;
+  min-width: 380px;
+}
+
+.apply-ofs-dialog .window .content .agreementRow {
+  display: flex;
+}
+
+.apply-ofs-dialog .window .content .checkBox {
+  font-size: var(--font_xl3);
+  margin-right: 10px;
+  color: var(--theme_color_4);
+  cursor: pointer;
+}
+
+.apply-ofs-dialog .window .content .inputDiv .lotDiv {
+  margin-top: 5px;
+  font-size: var(--font_s5);
+  color: var(--label_color3);
+  text-transform: capitalize;
+}
+
+.apply-ofs-dialog .window .content .inputDiv .lotDiv .lotSize {
+  color: var(--textcolor2);
+  font-family: "OpenSans-Bold";
+}
+
+.apply-ofs-dialog .window .content .inputDiv .labelInput {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+}
+
+.apply-ofs-dialog .window .content .row .labelInput {
+  width: 43%;
+  height: 60px;
+}
+
+.apply-ofs-dialog .window .content .inputDiv:last-child {
+  margin-left: 10%;
+}
+
+.apply-ofs-dialog .window .content .row .labelInput .lotChange {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  top: calc(50% - 15px);
+  right: 2px;
+}
+
+.apply-ofs-dialog .window .content .row .labelInput .lotChange button {
+  font-size: 40px;
+  height: 30px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--selected);
+  background-color: var(--bgcolor_primary);
+  margin-right: 10px;
+}
+
+.apply-ofs-dialog .window .content .row.buttonRow .submitBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+}
+
+.apply-ofs-dialog .window .content .row.buttonRow .cancelBtn {
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--sym_search_add_border);
+  color: var(--arr_icon_color);
+}
+
+.apply-ofs-dialog .window .content .cutoff-checkbox span.text {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+  display: flex;
+  height: 30px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.apply-ofs-dialog .window .content-confirm {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ======== apply OFS ends here ======== */
+
+/* ======== OFS order result starts here ======== */
+
+.order-result-base .window {
+  width: 35%;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 2% 4.5% 1.5% 4.5%;
+}
+
+.order-result-base.successWindow .window {
+  height: 60%;
+  min-height: 550px;
+}
+
+.order-result-base.errorWindow .window {
+  height: 50%;
+  min-height: 500px;
+}
+
+.order-result-base .window .status {
+  font-size: var(--font_l2);
+  font-family: "OpenSans-Bold";
+}
+
+.order-result-base .window .status.success {
+  color: var(--greenColor);
+}
+
+.order-result-base .window .status.fail {
+  color: var(--redColor);
+}
+
+.ofsDialog-base.order-result-base .window .symName {
+  color: var(--table_tbody_td_color);
+  font-size: var(--font_m2);
+  font-family: "OpenSans-SemiBold";
+}
+
+.ofsDialog-base.order-result-base .window .symName .exchange {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.order-result-base .window .appIdDiv,
+.order-result-base .window .messageDiv {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m2);
+}
+
+.order-result-base .window .infoMsg {
+  color: var(--txtcolor_11);
+  text-align: center;
+}
+
+.order-result-base .window .btnDiv {
+  width: 35%;
+}
+
+.order-result-base .window .btnDiv button {
+  font-size: var(--font_m5);
+  color: var(--positive_btn_color);
+  background-color: var(--bgcolor_primary);
+  border: 2px solid var(--positive_btn_color);
+  height: 60px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.apply-ofs-dialog .window .content-confirm .firstRow-floorcutoff {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.apply-ofs-dialog .window .content-confirm .firstRow-floorcutoff .column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 12%;
+  margin-left: 1%;
+  padding-bottom: 10%;
+  padding-top: 2%;
+}
+
+.apply-ofs-dialog .window .content-confirm .firstRow-floorcutoff .column span.label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+  width: 100px;
+}
+
+.apply-ofs-dialog .window .content-confirm .firstRow-floorcutoff .column span.value {
+  color: var(--input_color2);
+  font-family: OpenSans-Bold;
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content-confirm .secondRow {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding-bottom: 12%;
+  padding-left: 8%;
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content-confirm .secondRow .column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1%;
+  margin-left: 1%;
+  text-align: center;
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content-confirm .secondRow .column.first {
+  display: flex;
+  flex-direction: column;
+  padding-right: 14%;
+  margin-left: 1%;
+  text-align: center;
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content-confirm .secondRow .column span.label {
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content-confirm .secondRow .column span.value {
+  color: var(--input_color2);
+  font-family: OpenSans-Bold;
+}
+
+.apply-ofs-dialog .window .content-confirm .row.overViewData {
+  height: 80px;
+  background-color: var(--bgcolor_23);
+  border: 1px solid var(--border_8);
+  display: flex;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.apply-ofs-dialog .window .content-confirm .row.overViewData span.label {
+  /* color: var(--input_color2);
+  font-family: OpenSans-Bold; */
+  font-family: OpenSans-Bold;
+  font-size: var(--font_s5);
+  color: var(--label_color2);
+}
+
+.apply-ofs-dialog .window .content-confirm .row.overViewData span.value {
+  color: var(--input_color2);
+  font-family: OpenSans-Bold;
+}
+
+.apply-ofs-dialog .window .content-confirm .row.overViewData > div:first-child {
+  border-right: 1px solid var(--border_8);
+}
+
+.apply-ofs-dialog .window .content-confirm .row.overViewData > div {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply-ofs-dialog .window .content-confirm .row.buttonRow {
+  height: 60px;
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.apply-ofs-dialog .window .content-confirm .row.buttonRow button {
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+}
+
+.apply-ofs-dialog .window .content-confirm .row.buttonRow .confirmBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+}
+
+.apply-ofs-dialog .window .content-confirm .row.buttonRow .editBtn {
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--sym_search_add_border);
+  color: var(--arr_icon_color);
+}
+
+.ofsDialog-base.apply-ofs-dialog .window .content .cutoff-checkbox {
+  /* margin-left: 53%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px; */
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 28%;
+  padding-top: 2%;
+}
+
+/* ======== OFS order result ends here ======== */
+
+/* ======== OFS cancel order starts here ======== */
+
+.cancel-ofs-dialog .window {
+  width: 35%;
+  height: 35%;
+  min-height: 400px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cancel-ofs-dialog .window .header {
+  height: 80px;
+  border-bottom: 1px solid var(--vr_line);
+  color: var(--positive_btn_color);
+  font-size: var(--font_l1_1);
+  font-family: "OpenSans-Bold";
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.cancel-ofs-dialog .window .body {
+  height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4%;
+}
+
+.cancel-ofs-dialog .window .body .cancel-query {
+  color: var(--textcolor12);
+  font-size: var(--font_s5);
+}
+
+.cancel-ofs-dialog .window .body .symData .name {
+  color: var(--label_color6);
+  font-size: var(--font_m4);
+}
+
+.cancel-ofs-dialog .window .body .symData .bidName {
+  color: var(--date_icon_color);
+  font-size: var(--font_l2);
+  font-family: "OpenSans-SemiBold";
+  padding-top: 8px;
+}
+
+.cancel-ofs-dialog .window .body .orderData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cancel-ofs-dialog .window .body .orderData .left {
+  text-align: left;
+}
+
+.cancel-ofs-dialog .window .body .orderData .center {
+  text-align: center;
+}
+
+.cancel-ofs-dialog .window .body .orderData .right {
+  text-align: right;
+}
+
+.cancel-ofs-dialog .window .body .orderData .label {
+  color: var(--txtcolor_23);
+  font-size: var(--font_m4);
+}
+
+.cancel-ofs-dialog .window .body .orderData .value {
+  color: var(--textcolor2);
+  font-size: var(--font_m4);
+  font-family: "OpenSans-SemiBold";
+  padding-top: 8px;
+}
+
+.cancel-ofs-dialog .window .body .btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-ofs-dialog .window .body .btnDiv button {
+  /* background-color: var(--positive_btn_color);
+  color: var(--txtcolor_9);
+  font-size: var(--font_m5);
+  font-family: "OpenSans-SemiBold";
+  width: 32%;
+  padding: 15px;
+  border-radius: 8px; */
+  text-transform: uppercase;
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  font-size: var(--font_m4);
+  padding: 15px;
+}
+
+.cancel-ofs-dialog .window .body .btnDiv button.yesBtn {
+  background-color: var(--greenColor);
+  color: var(--txtcolor_9);
+}
+
+.cancel-ofs-dialog .window .body .btnDiv button.noBtn {
+  margin-right: 10px;
+  background-color: var(--bgcolor_18);
+  border: 1px solid var(--border_6);
+}
+
+/* ======== OFS cancel order ends here ======== */
+
+/* ======== OFS cancel order result dialog css starts here ======== */
+
+.cancel-ofs-result-dialog .window {
+  width: 35%;
+  height: 30%;
+  min-height: 100px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 2% 2.5%;
+}
+
+.cancel-ofs-result-dialog .window .status {
+  font-size: var(--font_l1_1);
+  color: var(--positive_btn_color);
+  font-family: "OpenSans-Bold";
+}
+
+.cancel-ofs-result-dialog .window .messageDiv {
+  color: var(--label_color6);
+  font-size: var(--font_m4);
+  width: 100%;
+  text-align: center;
+}
+
+.cancel-ofs-result-dialog .window .footer-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.cancel-ofs-result-dialog .window .okay-btn {
+  border: 2px solid var(--theme_color_4);
+  padding: 10px 30px;
+  font-family: 'OpenSans-SemiBold';
+  color: var(--theme_color_4);
+  background-color: var(--bgcolor_primary);
+  height: 60px;
+  width: 200px;
+  font-size: var(--font_l1);
+}
+
+/* ======== OFS cancel order result dialog css ends here ======== */

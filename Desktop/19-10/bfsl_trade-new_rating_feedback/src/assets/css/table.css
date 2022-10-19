@@ -1,0 +1,459 @@
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+table thead tr {
+  color: var(--table_thead_color);
+  height: 35px;
+}
+
+table tbody #thead_row {
+  height: 40px !important;
+  border-bottom: none !important;
+  font-family: 'OpenSans-Bold' !important;
+}
+
+table tbody #thead_row td {
+  color: var(--table_thead_color) !important;
+  font-size: var(--font_s1) !important;
+}
+
+table thead tr th {
+  user-select: none;
+  font-size: var(--font_s3);
+  font-weight: normal;
+  min-width: 30px;
+  text-align: right;
+  padding: 0 5px 0 5px;
+  position: relative;
+  font-family: "OpenSans-Regular";
+}
+
+table tbody tr {
+  height: 65px;
+  border-bottom: 1px solid var(--border_primary);
+}
+
+table tbody tr.noBorder,
+table tbody tr.errorRow {
+  border: none !important;
+}
+
+table tbody tr td {
+  color: var(--textcolor2);
+  font-size: var(--font_m2);
+  text-align: right;
+  padding: 0 5px 0 5px;
+  position: relative;
+  font-family: "OpenSans-SemiBold";
+}
+
+table tr .center {
+  text-align: center;
+}
+
+table .symName-column .symName {
+  font-size: var(--font_s4);
+  color: var(--txtcolor_6);
+  font-family: "OpenSans-Regular";
+}
+
+table .symName-column .primary {
+  display: flex;
+  align-items: flex-end;
+}
+
+table .symName-column .ordAction {
+  font-size: var(--font_s3);
+  font-family: "OpenSans-SemiBold";
+  margin-right: 5px;
+}
+
+table tbody tr td .exc {
+  font-size: var(--font_s3);
+  color: var(--txtcolor_4);
+  padding-left: 6px;
+  margin-bottom: 2px;
+  font-family: "OpenSans-Regular";
+}
+
+table tbody tr td .pTypeVal {
+  font-size: var(--font_s3);
+  color: var(--txtcolor_7);
+  border: 1px solid var(--txtcolor_5);
+  padding: 0 4px;
+  margin-left: 6px;
+  border-radius: 3px;
+  font-family: "OpenSans-Regular";
+}
+
+table tbody tr td .pTypeVal.buy-clr {
+  border: 1px solid var(--greenColor);
+}
+
+table tbody tr td .date-div {
+  padding-top: 2px;
+}
+
+table tbody tr td .date {
+  font-size: var(--font_s2);
+  color: var(--txtcolor_tertiary);
+  margin-top: 10px;
+}
+
+table tbody tr td .orderId_time {
+  display: flex;
+  flex-direction: column;
+}
+
+table tbody tr td .orderId_time .time {
+  color: var(--border_3);
+  font-size: var(--font_s3);
+  font-family: "OpenSans-Regular";
+  letter-spacing: 1px;
+}
+
+table tbody tr .colspan {
+  text-align: center !important;
+  border: none !important;
+  font-size: var(--font_s3);
+  color: var(--txtcolor_tertiary);
+}
+
+table tbody tr .colspan_left {
+  text-align: left !important;
+  border: none !important;
+  font-size: var(--font_s4);
+  color: var(--txtcolor_tertiary);
+}
+
+table tbody tr.errorRow:hover {
+  background-color: unset !important;
+}
+
+table thead tr th.firstChild {
+  text-align: left;
+  padding-left: 25px;
+}
+
+table tbody tr td.firstChild {
+  text-align: left;
+  padding-left: 25px;
+  position: relative;
+}
+
+table tbody tr.errorRow {
+  height: 100% !important;
+}
+
+table tr .checkbox-td {
+  min-width: 20px;
+}
+
+.thead-scroller,
+.tbody-scroller tr,
+tfoot tr,
+.inner-tbody-scroller tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  /* padding-right: 5px; */
+}
+
+.thead-scroller {
+  padding-right: 20px;
+}
+
+.tbody-scroller tr,
+.inner-tbody-scroller tr {
+  padding-right: 5px;
+}
+
+.tbody-scroller {
+  padding-right: 4px;
+}
+
+.tbody-scroller,
+.inner-tbody-scroller {
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: var(--scroll_thumb) transparent;
+  scrollbar-width: thin;
+}
+
+/* .tbody-scroller:hover, .inner-tbody-scroller:hover {
+    overflow-y: auto;
+} */
+
+.tableData-flex {
+  justify-content: flex-end;
+}
+
+/* .tradeDetails-div .inner-tbody-scroller {
+    max-height: calc(100vh - 500px);
+} */
+
+.tbody-scroller::-webkit-scrollbar,
+.inner-tbody-scroller::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* //////////////////////////////// */
+
+.small-widget .show-lg {
+  display: none !important;
+}
+
+/* Small widget table css */
+
+.small-widget table tbody tr {
+  height: 55px;
+}
+
+.small-widget .watchlist-table .tbody-scroller {
+  height: 703px;
+}
+
+/* //////////////////////////////// */
+
+/* Large widget table css starts here */
+
+.large-widget {
+  margin: 5px 10px 10px 10px;
+}
+
+.large-widget table thead tr {
+  height: 40px;
+}
+
+.large-widget table tbody tr {
+  height: 50px;
+}
+
+.large-widget .tbody-scroller {
+  height: calc(100vh - 240px);
+}
+
+.large-widget .show-sm {
+  display: none !important;
+}
+
+/* Large widget table css ends here */
+
+table tr .width1 {
+  width: 1%;
+}
+
+table tr .width1d8 {
+  width: 1.8%;
+}
+
+table tr .width2 {
+  width: 2%;
+}
+
+table tr .width3 {
+  width: 3%;
+}
+
+table tr .width4 {
+  width: 4%;
+}
+
+table tr .width4d3 {
+  width: 4.3%;
+}
+
+table tr .width4d7 {
+  width: 4.7%;
+}
+
+table tr .width5 {
+  width: 5%;
+}
+
+table tr .width5d3 {
+  width: 5.3%;
+}
+
+table tr .width6 {
+  width: 6%;
+}
+
+table tr .width7 {
+  width: 7%;
+}
+
+table tr .width8 {
+  width: 8%;
+}
+
+table tr .width9 {
+  width: 9%;
+}
+
+table tr .width10 {
+  width: 10%;
+}
+
+table tr .width10d5 {
+  width: 10.5%;
+}
+
+table tr .width11 {
+  width: 11%;
+}
+
+table tr .width11d5 {
+  width: 11.5%;
+}
+
+table tr .width12 {
+  width: 12%;
+}
+
+table tr .width13 {
+  width: 13%;
+}
+
+table tr .width14 {
+  width: 14%;
+}
+
+table tr .width15 {
+  width: 15%;
+}
+
+table tr .width18 {
+  width: 18%;
+}
+
+table tr .width20 {
+  width: 20%;
+}
+
+table tr .width22 {
+  width: 22%;
+}
+
+table tr .width23 {
+  width: 23%;
+}
+
+table tr .width24 {
+  width: 24%;
+}
+
+table tr .width25 {
+  width: 25%;
+}
+
+table tr .width27 {
+  width: 27%;
+}
+
+table tr .width28 {
+  width: 28%;
+}
+
+table tr .width30 {
+  width: 30%;
+}
+
+table tr .width35 {
+  width: 35%;
+}
+
+table tr .width36 {
+  width: 36%;
+}
+
+table tr .width40 {
+  width: 40%;
+}
+
+table tr .width45 {
+  width: 45%;
+}
+
+table tr .b_width {
+  width: 50px;
+}
+
+table tr .b_width-hist {
+  width: 55px;
+}
+
+table tr .minWidth6 {
+  width: 6%;
+}
+
+table tr .minWidth7 {
+  width: 7%;
+}
+
+table tr .minWidth8 {
+  width: 8%;
+}
+
+/* Sorting icon css in table columns */
+
+.sort-icon-container {
+  position: relative;
+  padding-left: 1px;
+  padding-right: 2px;
+  color: var(--sort_icon);
+  font-size: var(--font_s5);
+}
+
+th > .sort-icon-container {
+  /* position: absolute; */
+  margin-top: -2px;
+  margin-left: 2px;
+}
+
+.filled_qty .sort-icon-container {
+  padding-right: 12px;
+}
+
+.sort-icon-container > .arrow-up {
+  position: absolute;
+  bottom: 5px;
+  z-index: 2;
+}
+
+.sort-icon-container > .arrow-down {
+  position: absolute;
+  top: 7px;
+  z-index: 2;
+}
+
+.inFirefox .sort-icon-container > .arrow-up {
+  bottom: 5px !important;
+}
+
+.inFirefox .sort-icon-container > .arrow-down {
+  top: 7px !important;
+}
+
+.non-sort {
+  opacity: 0.4;
+}
+
+/* /////////////////////////////////// */
+
+/* ================     Firefox height mapping ================ */
+
+.inFirefox .dashboard-base .watchlistBase .watchlist-table .tbody-scroller {
+  height: calc(100vh - 300px) !important;
+}
+
+.inFirefox .dashboard-base .orderTableBase-div .orderTable-base .order-table .tbody-scroller {
+  height: calc(100vh - 260px);
+}
+
+/* ================     Firefox height mapping ================ */
